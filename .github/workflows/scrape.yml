@@ -1,0 +1,57 @@
+name: Scrape IBJJF Events
+
+on:
+  schedule:
+    # Run daily at 11:00 UTC (7 AM ET)
+    - cron: "0 11 * * *"
+  workflow_dispatch:  # Allow manual trigger from GitHub UI
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Needed to push events.json to gh-pages
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: backend/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r backend/requirements.txt
+
+      - name: Run scraper
+        run: python backend/scrape.py
+        timeout-minutes: 15
+
+      - name: Verify output
+        run: |
+          python3 -c "
+          import json, sys
+          with open('events.json') as f:
+              data = json.load(f)
+          events = data['events']
+          print(f'events.json: {len(events)} events')
+          assert len(events) >= 1, 'No events found!'
+          with_prices = sum(1 for e in events if e['priceTiers'])
+          with_divs = sum(1 for e in events if e['divisions'])
+          print(f'  With price tiers: {with_prices}/{len(events)}')
+          print(f'  With divisions:   {with_divs}/{len(events)}')
+          print('OK')
+          "
+
+      - name: Publish events.json to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: gh-pages
+          include_files: events.json
+          commit_message: "chore: update events.json [skip ci]"
+          keep_files: true  # Don't wipe other files on gh-pages branch

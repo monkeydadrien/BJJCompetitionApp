@@ -1,0 +1,1342 @@
+[
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855727,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1867409,
+        "AcademyTeamName": "Renato Tavares Association",
+        "AthleteName": "Sebastian Alonzo Chavez-Salazar"
+      }
+    ],
+    "FriendlyName": "WHITE / Adult / Male / Rooster (127.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855747,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1857884,
+        "AcademyTeamName": "Gracie Barra Celebration",
+        "AthleteName": "Bruno Melato Ribeiro"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1829398,
+        "AcademyTeamName": "Marcio Cruz BJJ",
+        "AthleteName": "Arvin Xavier Banegas"
+      }
+    ],
+    "FriendlyName": "WHITE / Adult / Male / Middle (181.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855752,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1835088,
+        "AcademyTeamName": "Fabin Rosa BJJ B Team",
+        "AthleteName": "Francisco Jose Fonseca Rodriguez"
+      }
+    ],
+    "FriendlyName": "WHITE / Adult / Male / Medium-Heavy (195.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855762,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1851338,
+        "AcademyTeamName": "Renato Tavares Association",
+        "AthleteName": "Wilfredo Robert Cintron III"
+      }
+    ],
+    "FriendlyName": "WHITE / Adult / Male / Super-Heavy (222.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855832,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1831331,
+        "AcademyTeamName": "Checkmat Riverview",
+        "AthleteName": "Daniel Coello"
+      }
+    ],
+    "FriendlyName": "WHITE / Master 1 / Male / Middle (181.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855837,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1862315,
+        "AcademyTeamName": "Team Carvalho Treasure Coast",
+        "AthleteName": "Jamie Alexander Zambrano"
+      }
+    ],
+    "FriendlyName": "WHITE / Master 1 / Male / Medium-Heavy (195.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855907,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1865477,
+        "AcademyTeamName": "Athlas Training Team",
+        "AthleteName": "William Parker Simon"
+      }
+    ],
+    "FriendlyName": "WHITE / Master 2 / Male / Feather (154.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855917,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1855653,
+        "AcademyTeamName": "Tactics",
+        "AthleteName": "Paul Michael Badillo Rivera"
+      }
+    ],
+    "FriendlyName": "WHITE / Master 2 / Male / Middle (181.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855957,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1856477,
+        "AcademyTeamName": "Flow305",
+        "AthleteName": "Eliza Joy Pegors"
+      }
+    ],
+    "FriendlyName": "WHITE / Master 2 / Female / Light (141.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855967,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1864641,
+        "AcademyTeamName": "UFC Gym",
+        "AthleteName": "Laura Karolyi"
+      }
+    ],
+    "FriendlyName": "WHITE / Master 2 / Female / Medium-Heavy (163.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856007,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1856460,
+        "AcademyTeamName": "Flow305",
+        "AthleteName": "Carlos Alberto Cubero Ponce"
+      }
+    ],
+    "FriendlyName": "WHITE / Master 3 / Male / Medium-Heavy (195.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856097,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1856531,
+        "AcademyTeamName": "Gracie Barra Clermont",
+        "AthleteName": "Corey David Heflin"
+      }
+    ],
+    "FriendlyName": "WHITE / Master 4 / Male / Heavy (208.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856182,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1861038,
+        "AcademyTeamName": "Luiz Palhares Jiu-Jitsu",
+        "AthleteName": "Rob John Broglio"
+      }
+    ],
+    "FriendlyName": "WHITE / Master 5 / Male / Heavy (208.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856192,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1866052,
+        "AcademyTeamName": "Nelson Jiu-Jitsu",
+        "AthleteName": "Walter Thomas Sherrod"
+      }
+    ],
+    "FriendlyName": "WHITE / Master 5 / Male / Ultra-Heavy"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856222,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1835585,
+        "AcademyTeamName": "Shield BJJ / MMA & Self Defense ",
+        "AthleteName": "Kyriacou Michael Achillea"
+      }
+    ],
+    "FriendlyName": "WHITE / Master 5 / Female / Medium-Heavy (163.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856309,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1863877,
+        "AcademyTeamName": "Asenjo Brasil",
+        "AthleteName": "Jo\u00e3o Emanuel Moreira Prestes"
+      }
+    ],
+    "FriendlyName": "BLUE / Juvenile / Male / Light-Feather (129.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856312,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1843532,
+        "AcademyTeamName": "Jungle Time",
+        "AthleteName": "Giovanni Patrick Scamacca"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1857792,
+        "AcademyTeamName": "Renato Tavares Association",
+        "AthleteName": "Jeremiah Daniel Desousa"
+      }
+    ],
+    "FriendlyName": "BLUE / Juvenile / Male / Feather (141.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856315,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1867634,
+        "AcademyTeamName": "Gracie Barra Kissimmee",
+        "AthleteName": "Feanix Dominic Jaks"
+      }
+    ],
+    "FriendlyName": "BLUE / Juvenile / Male / Light (152.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856318,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1863140,
+        "AcademyTeamName": "Renato Tavares Association",
+        "AthleteName": "Iosua Kealoha Onosa'i Perreira"
+      }
+    ],
+    "FriendlyName": "BLUE / Juvenile / Male / Middle (163.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856348,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1861760,
+        "AcademyTeamName": "Renato Tavares Association",
+        "AthleteName": "Amaries Ariel Daily"
+      }
+    ],
+    "FriendlyName": "BLUE / Juvenile / Female / Medium-Heavy (143.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855743,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1854398,
+        "AcademyTeamName": "Renato Tavares Association",
+        "AthleteName": "Caiden Garret Holling "
+      }
+    ],
+    "FriendlyName": "BLUE / Adult / Male / Light (168.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855753,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1854721,
+        "AcademyTeamName": "Apollo Beach Jiu-Jitsu",
+        "AthleteName": "Sharif Eldin Sobol"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1827072,
+        "AcademyTeamName": "Lira Jiu-Jitsu",
+        "AthleteName": "Anthony Vincent Hampson"
+      }
+    ],
+    "FriendlyName": "BLUE / Adult / Male / Medium-Heavy (195.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855758,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1862549,
+        "AcademyTeamName": "Team Carvalho Treasure Coast",
+        "AthleteName": "Chandler James Mccaskill "
+      }
+    ],
+    "FriendlyName": "BLUE / Adult / Male / Heavy (208.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855768,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1866592,
+        "AcademyTeamName": "Burns BJJ USA",
+        "AthleteName": "Mich Lee Georges Anglade"
+      }
+    ],
+    "FriendlyName": "BLUE / Adult / Male / Ultra-Heavy"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855778,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1865024,
+        "AcademyTeamName": "Checkmat Clearwater",
+        "AthleteName": "Kaycie Leanne Stanger"
+      }
+    ],
+    "FriendlyName": "BLUE / Adult / Female / Light-Feather (118.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855783,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1839413,
+        "AcademyTeamName": "G T S",
+        "AthleteName": "Marisa Woods"
+      }
+    ],
+    "FriendlyName": "BLUE / Adult / Female / Feather (129.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855788,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1860042,
+        "AcademyTeamName": "Brazilian Top Team - Florida",
+        "AthleteName": "Shayla Meadow Jones"
+      }
+    ],
+    "FriendlyName": "BLUE / Adult / Female / Light (141.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855803,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1846133,
+        "AcademyTeamName": "Fabin Rosa Brazilian Jiu-Jitsu",
+        "AthleteName": "Emari Ja'khia Brown"
+      }
+    ],
+    "FriendlyName": "BLUE / Adult / Female / Heavy (175.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855828,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1854623,
+        "AcademyTeamName": "Atos Winter Garden | Lucas Pinheiro",
+        "AthleteName": "Edwin Ricardo Resto Roman"
+      }
+    ],
+    "FriendlyName": "BLUE / Master 1 / Male / Light (168.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855833,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1863626,
+        "AcademyTeamName": "Brazilian Top Team - Florida",
+        "AthleteName": "Andrew Ryan Hamel"
+      }
+    ],
+    "FriendlyName": "BLUE / Master 1 / Male / Middle (181.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855838,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1858121,
+        "AcademyTeamName": "Gracie Elite Team",
+        "AthleteName": "Thomas Collazo"
+      }
+    ],
+    "FriendlyName": "BLUE / Master 1 / Male / Medium-Heavy (195.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855848,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1842012,
+        "AcademyTeamName": "Shield BJJ / MMA & Self Defense ",
+        "AthleteName": "Anthony Andres Cecil Brown"
+      }
+    ],
+    "FriendlyName": "BLUE / Master 1 / Male / Super-Heavy (222.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855873,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1858309,
+        "AcademyTeamName": "Gracie Barra Kissimmee",
+        "AthleteName": "Bianca M. Lafontaine Vazquez "
+      }
+    ],
+    "FriendlyName": "BLUE / Master 1 / Female / Light (141.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855878,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1860113,
+        "AcademyTeamName": "Renato Tavares Association",
+        "AthleteName": "Jenny Jhor Claracay Uy"
+      }
+    ],
+    "FriendlyName": "BLUE / Master 1 / Female / Middle (152.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855883,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1867611,
+        "AcademyTeamName": "Tactics",
+        "AthleteName": "Natalie Elise Torretti"
+      }
+    ],
+    "FriendlyName": "BLUE / Master 1 / Female / Medium-Heavy (163.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855903,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1856788,
+        "AcademyTeamName": "Gracie Barra Clermont",
+        "AthleteName": "Robert Anthony Surace II"
+      }
+    ],
+    "FriendlyName": "BLUE / Master 2 / Male / Light-Feather (141.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855908,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1857975,
+        "AcademyTeamName": "Calixto BJJ",
+        "AthleteName": "Douglas E Wilder"
+      }
+    ],
+    "FriendlyName": "BLUE / Master 2 / Male / Feather (154.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855913,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1827987,
+        "AcademyTeamName": "Pagels BJJ",
+        "AthleteName": "Joel Andrew Johnson"
+      }
+    ],
+    "FriendlyName": "BLUE / Master 2 / Male / Light (168.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855918,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1863649,
+        "AcademyTeamName": "Buiu BJJ Team",
+        "AthleteName": "Daniel B. Goldsmith"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1824070,
+        "AcademyTeamName": "Gracie Barra Windermere",
+        "AthleteName": "Leonardo Yassuda Stocco C. Neves"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1851972,
+        "AcademyTeamName": "Orlando Brazilian Jiu-Jitsu LLC",
+        "AthleteName": "Duane Alan Hiebert"
+      }
+    ],
+    "FriendlyName": "BLUE / Master 2 / Male / Middle (181.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855928,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1846104,
+        "AcademyTeamName": "Mario Sperry Jiu-Jitsu",
+        "AthleteName": "Liviu Cojocaru"
+      }
+    ],
+    "FriendlyName": "BLUE / Master 2 / Male / Heavy (208.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855943,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1863714,
+        "AcademyTeamName": "Ares BJJ Diego Bispo Academy",
+        "AthleteName": "Rebecka Rodriguez"
+      }
+    ],
+    "FriendlyName": "BLUE / Master 2 / Female / Rooster (107.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856003,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1821983,
+        "AcademyTeamName": "Ares BJJ Diego Bispo Academy",
+        "AthleteName": "Marnetto A. Lampedecchio III"
+      }
+    ],
+    "FriendlyName": "BLUE / Master 3 / Male / Middle (181.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856013,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1857932,
+        "AcademyTeamName": "Fabin Rosa BJJ B Team",
+        "AthleteName": "Patrick L. Thomas"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1854738,
+        "AcademyTeamName": "Gracie Barra Clermont",
+        "AthleteName": "Ryan Espy White"
+      }
+    ],
+    "FriendlyName": "BLUE / Master 3 / Male / Heavy (208.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856023,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1852927,
+        "AcademyTeamName": "Calixto BJJ",
+        "AthleteName": "Kirk A Simmonds "
+      }
+    ],
+    "FriendlyName": "BLUE / Master 3 / Male / Ultra-Heavy"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856058,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1862391,
+        "AcademyTeamName": "Gracie Elite Team",
+        "AthleteName": "Allison Kay Arreguin"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1859088,
+        "AcademyTeamName": "Vinci Jiu-Jitsu",
+        "AthleteName": "Danielle Marie Medal "
+      }
+    ],
+    "FriendlyName": "BLUE / Master 3 / Female / Heavy (175.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856108,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1864409,
+        "AcademyTeamName": "GFTeam / Orlando Jr",
+        "AthleteName": "Karl Douglas Lane"
+      }
+    ],
+    "FriendlyName": "BLUE / Master 4 / Male / Ultra-Heavy"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856163,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1865916,
+        "AcademyTeamName": "Shield BJJ / MMA & Self Defense ",
+        "AthleteName": "Paulo Pinto Veiga Junior"
+      }
+    ],
+    "FriendlyName": "BLUE / Master 5 / Male / Feather (154.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856188,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1820281,
+        "AcademyTeamName": "G.A.D./B9",
+        "AthleteName": "Harold Wayne Clark Jr"
+      }
+    ],
+    "FriendlyName": "BLUE / Master 5 / Male / Super-Heavy (222.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856281,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1860761,
+        "AcademyTeamName": "Gracie Barra Boca Raton",
+        "AthleteName": "Heather Catherine Leone-Prather"
+      }
+    ],
+    "FriendlyName": "BLUE / Master 6 / Female / Feather (129.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855744,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1837456,
+        "AcademyTeamName": "Checkmat Olympus",
+        "AthleteName": "Conor David Owens"
+      }
+    ],
+    "FriendlyName": "PURPLE / Adult / Male / Light (168.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855749,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1859136,
+        "AcademyTeamName": "Fabin Rosa Brazilian Jiu-Jitsu",
+        "AthleteName": "Gabriel Boeira da Silva"
+      }
+    ],
+    "FriendlyName": "PURPLE / Adult / Male / Middle (181.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855794,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1849470,
+        "AcademyTeamName": "Gordo Jiu-Jitsu ",
+        "AthleteName": "Thaiammy Souza do Nascimento Paix\u00e3o"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1856202,
+        "AcademyTeamName": "Sainz Team Alpha Miami",
+        "AthleteName": "Daniela Alejandra Casanueva"
+      }
+    ],
+    "FriendlyName": "PURPLE / Adult / Female / Middle (152.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855819,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1855253,
+        "AcademyTeamName": "City Of Palms BJJ",
+        "AthleteName": "Justin Chandler Wise"
+      }
+    ],
+    "FriendlyName": "PURPLE / Master 1 / Male / Light-Feather (141.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855829,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1860815,
+        "AcademyTeamName": "Checkmat Clearwater",
+        "AthleteName": "Kavaris Lavontaye Service"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1862139,
+        "AcademyTeamName": "Renato Tavares Association",
+        "AthleteName": "Luciano Reges Nicacio"
+      }
+    ],
+    "FriendlyName": "PURPLE / Master 1 / Male / Light (168.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855834,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1862313,
+        "AcademyTeamName": "Team Carvalho Treasure Coast",
+        "AthleteName": "Alejandro Miguel Saez Jr"
+      }
+    ],
+    "FriendlyName": "PURPLE / Master 1 / Male / Middle (181.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855839,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1861920,
+        "AcademyTeamName": "Dare Jiu-Jitsu",
+        "AthleteName": "Francisco Eduardo Bermudez Jr"
+      }
+    ],
+    "FriendlyName": "PURPLE / Master 1 / Male / Medium-Heavy (195.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855854,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1860138,
+        "AcademyTeamName": "Gracie Barra Celebration",
+        "AthleteName": "Rafael Santos de Souza Freitas"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1866324,
+        "AcademyTeamName": "Orlando Brazilian Jiu-Jitsu LLC",
+        "AthleteName": "Yalmar Francisco Toruno"
+      }
+    ],
+    "FriendlyName": "PURPLE / Master 1 / Male / Ultra-Heavy"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855864,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1868312,
+        "AcademyTeamName": "Elementum Jiu-Jitsu",
+        "AthleteName": "Shilpa Setlur Colangelo"
+      }
+    ],
+    "FriendlyName": "PURPLE / Master 1 / Female / Light-Feather (118.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855874,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1818323,
+        "AcademyTeamName": "Elementum Jiu-Jitsu",
+        "AthleteName": "Albexys Gabriela D. Marquina"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1828578,
+        "AcademyTeamName": "Pedro Sauer Team",
+        "AthleteName": "Sara Bienvenu Wright"
+      }
+    ],
+    "FriendlyName": "PURPLE / Master 1 / Female / Light (141.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855889,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1859990,
+        "AcademyTeamName": "Team Alves Pagels Jiu-Jitsu",
+        "AthleteName": "Caitlin Michele Lyons"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1858807,
+        "AcademyTeamName": "Teknica Jiu-Jitsu",
+        "AthleteName": "Madison Saravia Askew"
+      }
+    ],
+    "FriendlyName": "PURPLE / Master 1 / Female / Heavy (175.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855924,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1859119,
+        "AcademyTeamName": "Xcell Jiu-Jitsu Academy",
+        "AthleteName": "Martin Lenn Cantu Jr"
+      }
+    ],
+    "FriendlyName": "PURPLE / Master 2 / Male / Medium-Heavy (195.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855929,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1859555,
+        "AcademyTeamName": "Liborio BJJ",
+        "AthleteName": "Julien Lucien Xavier Emmanuel"
+      }
+    ],
+    "FriendlyName": "PURPLE / Master 2 / Male / Heavy (208.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855939,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1867597,
+        "AcademyTeamName": "Jungle Time",
+        "AthleteName": "Keenan Rashad Griffin"
+      }
+    ],
+    "FriendlyName": "PURPLE / Master 2 / Male / Ultra-Heavy"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855959,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1856010,
+        "AcademyTeamName": "Asenjo Brazilian Jiu-Jitsu",
+        "AthleteName": "Victoria Frances Jacobs"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1863349,
+        "AcademyTeamName": "Southwest Florida Brazilian Jiu-Jitsu",
+        "AthleteName": "Danielle Michelle Justice"
+      }
+    ],
+    "FriendlyName": "PURPLE / Master 2 / Female / Light (141.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855999,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1863423,
+        "AcademyTeamName": "Marcelo Pereira Brazilian Jiu-Jitsu",
+        "AthleteName": "Mitchell Eugene Davenport"
+      }
+    ],
+    "FriendlyName": "PURPLE / Master 3 / Male / Light (168.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856004,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1862130,
+        "AcademyTeamName": "Brazilian Top Team - BTT Jax",
+        "AthleteName": "Nathan Frederick Rogero"
+      }
+    ],
+    "FriendlyName": "PURPLE / Master 3 / Male / Middle (181.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856009,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1854691,
+        "AcademyTeamName": "Nelson Jiu-Jitsu",
+        "AthleteName": "Jon Griffin Pietarila"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1855394,
+        "AcademyTeamName": "Renato Tavares Association",
+        "AthleteName": "Jason Michael Newman"
+      }
+    ],
+    "FriendlyName": "PURPLE / Master 3 / Male / Medium-Heavy (195.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856059,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1861326,
+        "AcademyTeamName": "Gulf Breeze Brazilian Jiu-Jitsu/Checkmat",
+        "AthleteName": "Rebecca Alice Margaret Mendes"
+      }
+    ],
+    "FriendlyName": "PURPLE / Master 3 / Female / Heavy (175.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856084,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1855845,
+        "AcademyTeamName": "Art In Motion Jiu-Jitsu",
+        "AthleteName": "Carey David Jung"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1853972,
+        "AcademyTeamName": "Asenjo Brazilian Jiu-Jitsu",
+        "AthleteName": "Sean Alvin Cumberbatch"
+      }
+    ],
+    "FriendlyName": "PURPLE / Master 4 / Male / Light (168.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856094,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1863172,
+        "AcademyTeamName": "Elementum Jiu-Jitsu",
+        "AthleteName": "Adam Turner Lawson"
+      }
+    ],
+    "FriendlyName": "PURPLE / Master 4 / Male / Medium-Heavy (195.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856204,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1849873,
+        "AcademyTeamName": "Tactics",
+        "AthleteName": "Elizabeth Rodriguez "
+      }
+    ],
+    "FriendlyName": "PURPLE / Master 5 / Female / Light-Feather (118.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855735,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1834167,
+        "AcademyTeamName": "Atos Winter Garden | Lucas Pinheiro",
+        "AthleteName": "Washington Ferreira dos Santos"
+      }
+    ],
+    "FriendlyName": "BROWN / Adult / Male / Light-Feather (141.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855750,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1840469,
+        "AcademyTeamName": "Gracie Barra Hunter\u2019s Creek",
+        "AthleteName": "Marcello Andrade F. Gon\u00e7alves"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1819202,
+        "AcademyTeamName": "Liborio BJJ",
+        "AthleteName": "Howard Duncan A. Graham"
+      }
+    ],
+    "FriendlyName": "BROWN / Adult / Male / Middle (181.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855840,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1863747,
+        "AcademyTeamName": "Buiu BJJ Team",
+        "AthleteName": "Daniel Enrique Ramirez"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1859918,
+        "AcademyTeamName": "Carlson Gracie Winter Haven",
+        "AthleteName": "Zachary Seth Campbell"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1864112,
+        "AcademyTeamName": "Cary Brazilian Jiu-Jitsu",
+        "AthleteName": "Tyler Zachary Rowe "
+      }
+    ],
+    "FriendlyName": "BROWN / Master 1 / Male / Medium-Heavy (195.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855845,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1866921,
+        "AcademyTeamName": "Brazilian Top Team - Florida",
+        "AthleteName": "Nicholas Alexander Vazzana"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1859501,
+        "AcademyTeamName": "Carbon Submission Grappling",
+        "AthleteName": "Chase Taylor Yoselowitz"
+      }
+    ],
+    "FriendlyName": "BROWN / Master 1 / Male / Heavy (208.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855915,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1863728,
+        "AcademyTeamName": "Pedro Sauer Team",
+        "AthleteName": "Ngoan Huu Vo"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1866604,
+        "AcademyTeamName": "Schlosser BJJ",
+        "AthleteName": "Jake Harrison Steven Engelen"
+      }
+    ],
+    "FriendlyName": "BROWN / Master 2 / Male / Light (168.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855935,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1867789,
+        "AcademyTeamName": "Jungle Time",
+        "AthleteName": "Joshua Richard Walker"
+      }
+    ],
+    "FriendlyName": "BROWN / Master 2 / Male / Super-Heavy (222.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856095,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1848344,
+        "AcademyTeamName": "Gracie Barra Kissimmee",
+        "AthleteName": "Erwin Figueroa"
+      }
+    ],
+    "FriendlyName": "BROWN / Master 4 / Male / Medium-Heavy (195.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856125,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1857743,
+        "AcademyTeamName": "Nelson Jiu-Jitsu",
+        "AthleteName": "Juliana Veloso"
+      }
+    ],
+    "FriendlyName": "BROWN / Master 4 / Female / Feather (129.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855751,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1859441,
+        "AcademyTeamName": "Academia Jiu-Jitsu",
+        "AthleteName": "Michael Francisco Lugo"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1864867,
+        "AcademyTeamName": "Alliance Marcelo Garcia",
+        "AthleteName": "Serge Joseph Severenchuk"
+      }
+    ],
+    "FriendlyName": "BLACK / Adult / Male / Middle (181.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855806,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1822873,
+        "AcademyTeamName": "Elementum Jiu-Jitsu",
+        "AthleteName": "Larissa Dias de Almeida"
+      }
+    ],
+    "FriendlyName": "BLACK / Adult / Female / Heavy (175.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855841,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1855342,
+        "AcademyTeamName": "Art In Motion Jiu-Jitsu",
+        "AthleteName": "Yeison Abraham Perez Amador"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1860859,
+        "AcademyTeamName": "Checkmat Clearwater",
+        "AthleteName": "Kauan Argimon Barboza"
+      }
+    ],
+    "FriendlyName": "BLACK / Master 1 / Male / Medium-Heavy (195.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855846,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1867929,
+        "AcademyTeamName": "Pimenta Jiu-Jitsu",
+        "AthleteName": "Christian Gabriel Hernandez Briceno"
+      }
+    ],
+    "FriendlyName": "BLACK / Master 1 / Male / Heavy (208.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855851,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1856772,
+        "AcademyTeamName": "Elementum Jiu-Jitsu",
+        "AthleteName": "Michael Seyed Sahebi"
+      }
+    ],
+    "FriendlyName": "BLACK / Master 1 / Male / Super-Heavy (222.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855916,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1851949,
+        "AcademyTeamName": "American Top Team - West Palm Beach",
+        "AthleteName": "Yoandry Rodriguez Cueto"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1867240,
+        "AcademyTeamName": "Hamilton's Brazilian Jiu-Jitsu",
+        "AthleteName": "Patrick Charles Hamilton III"
+      }
+    ],
+    "FriendlyName": "BLACK / Master 2 / Male / Light (168.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855926,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1819300,
+        "AcademyTeamName": "Rollyson Brazilian Jiu-Jitsu",
+        "AthleteName": "Richard Hernandez "
+      }
+    ],
+    "FriendlyName": "BLACK / Master 2 / Male / Medium-Heavy (195.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2855931,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1843010,
+        "AcademyTeamName": "Renato Tavares Association",
+        "AthleteName": "Joseph Anthony Suarez"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1856733,
+        "AcademyTeamName": "RMNU Team",
+        "AthleteName": "James Lee Spaulding"
+      }
+    ],
+    "FriendlyName": "BLACK / Master 2 / Male / Heavy (208.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856001,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1852584,
+        "AcademyTeamName": "Gulf Breeze Brazilian Jiu-Jitsu/Checkmat",
+        "AthleteName": "C\u00e9sar N. Fernandes"
+      }
+    ],
+    "FriendlyName": "BLACK / Master 3 / Male / Light (168.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856086,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1866466,
+        "AcademyTeamName": "Vinci Jiu-Jitsu",
+        "AthleteName": "Michael Dolmundo Cruz"
+      }
+    ],
+    "FriendlyName": "BLACK / Master 4 / Male / Light (168.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856091,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1857738,
+        "AcademyTeamName": "Nelson Jiu-Jitsu",
+        "AthleteName": "Ricky Lane Nelson Jr."
+      }
+    ],
+    "FriendlyName": "BLACK / Master 4 / Male / Middle (181.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856096,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1853368,
+        "AcademyTeamName": "Gracie Elite Team",
+        "AthleteName": "Jason Michael Reynolds"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1859101,
+        "AcademyTeamName": "Xcell Jiu-Jitsu Academy",
+        "AthleteName": "Jorge Santiago Rodrigues"
+      }
+    ],
+    "FriendlyName": "BLACK / Master 4 / Male / Medium-Heavy (195.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856101,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1864376,
+        "AcademyTeamName": "Fabin Rosa Brazilian Jiu-Jitsu",
+        "AthleteName": "Anthony Vincent Falotico"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1859226,
+        "AcademyTeamName": "Gracie Humaita South Bay",
+        "AthleteName": "Efrain Alberto Cintron"
+      }
+    ],
+    "FriendlyName": "BLACK / Master 4 / Male / Heavy (208.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856156,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1865010,
+        "AcademyTeamName": "Dare Jiu-Jitsu",
+        "AthleteName": "Daniel Carvalho da S. Rego"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1867371,
+        "AcademyTeamName": "Greco Jiu-Jitsu",
+        "AthleteName": "Christophoros Constantinidis"
+      }
+    ],
+    "FriendlyName": "BLACK / Master 5 / Male / Rooster (127.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856171,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1863389,
+        "AcademyTeamName": "Calixto BJJ",
+        "AthleteName": "Timothy Andrew Price"
+      }
+    ],
+    "FriendlyName": "BLACK / Master 5 / Male / Light (168.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856176,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1855055,
+        "AcademyTeamName": "Gracie Barra Kissimmee",
+        "AthleteName": "Dwayne Michael Gooding"
+      }
+    ],
+    "FriendlyName": "BLACK / Master 5 / Male / Middle (181.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856191,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1866919,
+        "AcademyTeamName": "Coral Springs Jiu-Jitsu",
+        "AthleteName": "Jason Joseph Baron"
+      },
+      {
+        "ChampionshipRegistrationCategoryId": 1859306,
+        "AcademyTeamName": "Gracie Barra Kissimmee",
+        "AthleteName": "Ashley Lamar Willis"
+      }
+    ],
+    "FriendlyName": "BLACK / Master 5 / Male / Super-Heavy (222.00lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856196,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1833884,
+        "AcademyTeamName": "Carlson Gracie Team",
+        "AthleteName": "William Franklin Dees Jr."
+      }
+    ],
+    "FriendlyName": "BLACK / Master 5 / Male / Ultra-Heavy"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856216,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1848824,
+        "AcademyTeamName": "Teknica Jiu-Jitsu",
+        "AthleteName": "Gina Michelle Sanchez"
+      }
+    ],
+    "FriendlyName": "BLACK / Master 5 / Female / Light (141.60lb)"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856236,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1848661,
+        "AcademyTeamName": "DarkwolfMMA",
+        "AthleteName": "Melissa R Lohsen"
+      }
+    ],
+    "FriendlyName": "BLACK / Master 5 / Female / Super-Heavy"
+  },
+  {
+    "ChampionshipId": 3175,
+    "CategorySetId": 2856256,
+    "RegistrationCategories": [
+      {
+        "ChampionshipRegistrationCategoryId": 1866267,
+        "AcademyTeamName": "Jungle Time",
+        "AthleteName": "Eraldo Ribeiro Jr."
+      }
+    ],
+    "FriendlyName": "BLACK / Master 6 / Male / Middle (181.60lb)"
+  }
+]

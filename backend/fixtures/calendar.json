@@ -1,0 +1,552 @@
+{
+  "infosite_events": [
+    {
+      "id": 2456,
+      "name": "Pan Kids IBJJF Jiu-Jitsu Championship 2024",
+      "championshipType": "Pan Kids",
+      "region": "North America",
+      "startDay": 26,
+      "endDay": 28,
+      "intervalDays": "Jul 26 - Jul 28",
+      "month": "Jul",
+      "year": 2024,
+      "yearMonth": "2024-Jul",
+      "local": "Silver Spurs Arena (Osceola Heritage Park)",
+      "city": "Kissimmee",
+      "logoBaseColor": "#5CACC0",
+      "status": "published",
+      "pageUrl": "/events/pan-kids-ibjjf-jiu-jitsu-championship-2024",
+      "asteriskPosition": null,
+      "asterisk": "",
+      "eventGroups": [
+        {
+          "id": 2,
+          "name": "Kids"
+        }
+      ]
+    },
+    {
+      "id": 2977,
+      "name": "New York Fall International Open IBJJF Jiu-Jitsu No-Gi Championship 2025",
+      "championshipType": "International Open",
+      "region": "North America",
+      "startDay": 9,
+      "endDay": 9,
+      "intervalDays": "Nov 9",
+      "month": "Nov",
+      "year": 2025,
+      "yearMonth": "2025-Nov",
+      "local": "David S. Mack Sports and Exhibition Complex",
+      "city": "Hempstead",
+      "logoBaseColor": "#C92534",
+      "status": "published",
+      "pageUrl": "/events/new-york-fall-international-open-ibjjf-jiu-jitsu-no-gi-championship-2025",
+      "asteriskPosition": null,
+      "asterisk": "",
+      "eventGroups": [
+        {
+          "id": 3,
+          "name": "No-Gi"
+        },
+        {
+          "id": 5,
+          "name": "International Open"
+        }
+      ]
+    },
+    {
+      "id": 3102,
+      "name": "New York Spring International Open IBJJF Jiu-Jitsu Championship 2026",
+      "championshipType": "International Open",
+      "region": "North America",
+      "startDay": 11,
+      "endDay": 12,
+      "intervalDays": "Apr 11 - Apr 12",
+      "month": "Apr",
+      "year": 2026,
+      "yearMonth": "2026-Apr",
+      "local": "David S. Mack Sports and Exhibition Complex\t",
+      "city": "Hempstead",
+      "logoBaseColor": "#C61A27",
+      "status": "published",
+      "pageUrl": "/events/new-york-spring-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "asteriskPosition": null,
+      "asterisk": "",
+      "eventGroups": [
+        {
+          "id": 5,
+          "name": "International Open"
+        }
+      ]
+    },
+    {
+      "id": 3105,
+      "name": "Houston International Open IBJJF Jiu-Jitsu Championship 2026",
+      "championshipType": "International Open",
+      "region": "North America",
+      "startDay": 11,
+      "endDay": 12,
+      "intervalDays": "Apr 11 - Apr 12",
+      "month": "Apr",
+      "year": 2026,
+      "yearMonth": "2026-Apr",
+      "local": "NRG Arena - Hall C",
+      "city": "Houston",
+      "logoBaseColor": "#009FE5",
+      "status": "published",
+      "pageUrl": "/events/houston-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "asteriskPosition": null,
+      "asterisk": "",
+      "eventGroups": [
+        {
+          "id": 5,
+          "name": "International Open"
+        }
+      ]
+    },
+    {
+      "id": 3168,
+      "name": "Orange County Spring International Open IBJJF Jiu-Jitsu Championship 2026",
+      "championshipType": "International Open",
+      "region": "North America",
+      "startDay": 11,
+      "endDay": 12,
+      "intervalDays": "Apr 11 - Apr 12",
+      "month": "Apr",
+      "year": 2026,
+      "yearMonth": "2026-Apr",
+      "local": "Cal State Fullerton Titan Gymnasium",
+      "city": "Fullerton",
+      "logoBaseColor": "#EE730B",
+      "status": "published",
+      "pageUrl": "/events/orange-county-spring-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "asteriskPosition": null,
+      "asterisk": "",
+      "eventGroups": [
+        {
+          "id": 5,
+          "name": "International Open"
+        }
+      ]
+    },
+    {
+      "id": 3103,
+      "name": "New York Spring International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "championshipType": "International Open",
+      "region": "North America",
+      "startDay": 12,
+      "endDay": 12,
+      "intervalDays": "Apr 12",
+      "month": "Apr",
+      "year": 2026,
+      "yearMonth": "2026-Apr",
+      "local": "David S. Mack Sports and Exhibition Complex\t",
+      "city": "Hempstead",
+      "logoBaseColor": "#C61A27",
+      "status": "published",
+      "pageUrl": "/events/new-york-spring-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "asteriskPosition": null,
+      "asterisk": "",
+      "eventGroups": [
+        {
+          "id": 3,
+          "name": "No-Gi"
+        },
+        {
+          "id": 5,
+          "name": "International Open"
+        }
+      ]
+    },
+    {
+      "id": 3104,
+      "name": "New York Spring Kids International Open IBJJF Jiu-Jitsu Championship 2026",
+      "championshipType": "[city name] International Open Kids",
+      "region": "North America",
+      "startDay": 12,
+      "endDay": 12,
+      "intervalDays": "Apr 12",
+      "month": "Apr",
+      "year": 2026,
+      "yearMonth": "2026-Apr",
+      "local": "David S. Mack Sports and Exhibition Complex\t",
+      "city": "Hempstead",
+      "logoBaseColor": "#C61A27",
+      "status": "published",
+      "pageUrl": "/events/new-york-spring-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "asteriskPosition": null,
+      "asterisk": "",
+      "eventGroups": [
+        {
+          "id": 2,
+          "name": "Kids"
+        },
+        {
+          "id": 5,
+          "name": "International Open"
+        }
+      ]
+    },
+    {
+      "id": 3106,
+      "name": "Houston International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "championshipType": "International Open",
+      "region": "North America",
+      "startDay": 12,
+      "endDay": 12,
+      "intervalDays": "Apr 12",
+      "month": "Apr",
+      "year": 2026,
+      "yearMonth": "2026-Apr",
+      "local": "NRG Arena - Hall C",
+      "city": "Houston",
+      "logoBaseColor": "#009FE5",
+      "status": "published",
+      "pageUrl": "/events/houston-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "asteriskPosition": null,
+      "asterisk": "",
+      "eventGroups": [
+        {
+          "id": 3,
+          "name": "No-Gi"
+        },
+        {
+          "id": 5,
+          "name": "International Open"
+        }
+      ]
+    },
+    {
+      "id": 3107,
+      "name": "Houston Kids International Open IBJJF Jiu-Jitsu Championship 2026",
+      "championshipType": "[city name] International Open Kids",
+      "region": "North America",
+      "startDay": 12,
+      "endDay": 12,
+      "intervalDays": "Apr 12",
+      "month": "Apr",
+      "year": 2026,
+      "yearMonth": "2026-Apr",
+      "local": "NRG Arena - Hall C",
+      "city": "Houston",
+      "logoBaseColor": "#009FE5",
+      "status": "published",
+      "pageUrl": "/events/houston-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "asteriskPosition": null,
+      "asterisk": "",
+      "eventGroups": [
+        {
+          "id": 2,
+          "name": "Kids"
+        },
+        {
+          "id": 5,
+          "name": "International Open"
+        }
+      ]
+    },
+    {
+      "id": 3169,
+      "name": "Orange County Spring International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "championshipType": "International Open",
+      "region": "North America",
+      "startDay": 12,
+      "endDay": 12,
+      "intervalDays": "Apr 12",
+      "month": "Apr",
+      "year": 2026,
+      "yearMonth": "2026-Apr",
+      "local": "Cal State Fullerton Titan Gymnasium",
+      "city": "Fullerton",
+      "logoBaseColor": "#EE730B",
+      "status": "published",
+      "pageUrl": "/events/orange-county-spring-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "asteriskPosition": null,
+      "asterisk": "",
+      "eventGroups": [
+        {
+          "id": 3,
+          "name": "No-Gi"
+        },
+        {
+          "id": 5,
+          "name": "International Open"
+        }
+      ]
+    },
+    {
+      "id": 3170,
+      "name": "Orange County Spring Kids International Open IBJJF Jiu-Jitsu Championship 2026",
+      "championshipType": "[city name] International Open Kids",
+      "region": "North America",
+      "startDay": 12,
+      "endDay": 12,
+      "intervalDays": "Apr 12",
+      "month": "Apr",
+      "year": 2026,
+      "yearMonth": "2026-Apr",
+      "local": "Cal State Fullerton Titan Gymnasium",
+      "city": "Fullerton",
+      "logoBaseColor": "#EE730B",
+      "status": "published",
+      "pageUrl": "/events/orange-county-spring-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "asteriskPosition": null,
+      "asterisk": "",
+      "eventGroups": [
+        {
+          "id": 2,
+          "name": "Kids"
+        },
+        {
+          "id": 5,
+          "name": "International Open"
+        }
+      ]
+    },
+    {
+      "id": 3133,
+      "name": "Chicago Spring International Open IBJJF Jiu-Jitsu Championship 2026",
+      "championshipType": "International Open",
+      "region": "North America",
+      "startDay": 18,
+      "endDay": 19,
+      "intervalDays": "Apr 18 - Apr 19",
+      "month": "Apr",
+      "year": 2026,
+      "yearMonth": "2026-Apr",
+      "local": "Dr. Conrad Worrill Track & Field Center",
+      "city": "Chicago",
+      "logoBaseColor": "#00993C",
+      "status": "published",
+      "pageUrl": "/events/chicago-spring-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "asteriskPosition": null,
+      "asterisk": "",
+      "eventGroups": [
+        {
+          "id": 5,
+          "name": "International Open"
+        }
+      ]
+    },
+    {
+      "id": 3134,
+      "name": "Chicago Spring International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "championshipType": "International Open",
+      "region": "North America",
+      "startDay": 18,
+      "endDay": 19,
+      "intervalDays": "Apr 18 - Apr 19",
+      "month": "Apr",
+      "year": 2026,
+      "yearMonth": "2026-Apr",
+      "local": "Dr. Conrad Worrill Track & Field Center",
+      "city": "Chicago",
+      "logoBaseColor": "#00993C",
+      "status": "published",
+      "pageUrl": "/events/chicago-spring-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "asteriskPosition": null,
+      "asterisk": "",
+      "eventGroups": [
+        {
+          "id": 3,
+          "name": "No-Gi"
+        },
+        {
+          "id": 5,
+          "name": "International Open"
+        }
+      ]
+    },
+    {
+      "id": 3135,
+      "name": "Chicago Spring Kids International Open IBJJF Jiu-Jitsu Championship 2026",
+      "championshipType": "[city name] International Open Kids",
+      "region": "North America",
+      "startDay": 19,
+      "endDay": 19,
+      "intervalDays": "Apr 19",
+      "month": "Apr",
+      "year": 2026,
+      "yearMonth": "2026-Apr",
+      "local": "Dr. Conrad Worrill Track & Field Center",
+      "city": "Chicago",
+      "logoBaseColor": "#00993C",
+      "status": "published",
+      "pageUrl": "/events/chicago-spring-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "asteriskPosition": null,
+      "asterisk": "",
+      "eventGroups": [
+        {
+          "id": 2,
+          "name": "Kids"
+        },
+        {
+          "id": 5,
+          "name": "International Open"
+        }
+      ]
+    },
+    {
+      "id": 3178,
+      "name": "Denver International Open IBJJF Jiu-Jitsu Championship 2026",
+      "championshipType": "International Open",
+      "region": "North America",
+      "startDay": 25,
+      "endDay": 26,
+      "intervalDays": "Apr 25 - Apr 26",
+      "month": "Apr",
+      "year": 2026,
+      "yearMonth": "2026-Apr",
+      "local": "Regis University - Regis Field House",
+      "city": "Denver",
+      "logoBaseColor": "#E84F13",
+      "status": "published",
+      "pageUrl": "/events/denver-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "asteriskPosition": null,
+      "asterisk": "",
+      "eventGroups": [
+        {
+          "id": 5,
+          "name": "International Open"
+        }
+      ]
+    },
+    {
+      "id": 3179,
+      "name": "Denver International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "championshipType": "International Open",
+      "region": "North America",
+      "startDay": 25,
+      "endDay": 26,
+      "intervalDays": "Apr 25 - Apr 26",
+      "month": "Apr",
+      "year": 2026,
+      "yearMonth": "2026-Apr",
+      "local": "Regis University - Regis Field House",
+      "city": "Denver",
+      "logoBaseColor": "#E84F13",
+      "status": "published",
+      "pageUrl": "/events/denver-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "asteriskPosition": null,
+      "asterisk": "",
+      "eventGroups": [
+        {
+          "id": 3,
+          "name": "No-Gi"
+        },
+        {
+          "id": 5,
+          "name": "International Open"
+        }
+      ]
+    },
+    {
+      "id": 3116,
+      "name": "Atlanta Spring International Open IBJJF Jiu-Jitsu Championship 2026",
+      "championshipType": "International Open",
+      "region": "North America",
+      "startDay": 2,
+      "endDay": 3,
+      "intervalDays": "May 2 - May 3",
+      "month": "May",
+      "year": 2026,
+      "yearMonth": "2026-May",
+      "local": "Georgia International Convention Center - Hall C",
+      "city": "College Park",
+      "logoBaseColor": "#D7273E",
+      "status": "published",
+      "pageUrl": "/events/atlanta-spring-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "asteriskPosition": null,
+      "asterisk": "",
+      "eventGroups": [
+        {
+          "id": 5,
+          "name": "International Open"
+        }
+      ]
+    },
+    {
+      "id": 3117,
+      "name": "Atlanta Spring International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "championshipType": "International Open",
+      "region": "North America",
+      "startDay": 2,
+      "endDay": 3,
+      "intervalDays": "May 2 - May 3",
+      "month": "May",
+      "year": 2026,
+      "yearMonth": "2026-May",
+      "local": "Georgia International Convention Center - Hall C",
+      "city": "College Park",
+      "logoBaseColor": "#D7273E",
+      "status": "published",
+      "pageUrl": "/events/atlanta-spring-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "asteriskPosition": null,
+      "asterisk": "",
+      "eventGroups": [
+        {
+          "id": 3,
+          "name": "No-Gi"
+        },
+        {
+          "id": 5,
+          "name": "International Open"
+        }
+      ]
+    },
+    {
+      "id": 3119,
+      "name": "Santa Cruz International Open IBJJF Jiu-Jitsu Championship 2026",
+      "championshipType": "International Open",
+      "region": "North America",
+      "startDay": 2,
+      "endDay": 3,
+      "intervalDays": "May 2 - May 3",
+      "month": "May",
+      "year": 2026,
+      "yearMonth": "2026-May",
+      "local": "Kaiser Permanente Arena",
+      "city": "Santa Cruz",
+      "logoBaseColor": "#DD0C29",
+      "status": "published",
+      "pageUrl": "/events/santa-cruz-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "asteriskPosition": null,
+      "asterisk": "",
+      "eventGroups": [
+        {
+          "id": 5,
+          "name": "International Open"
+        }
+      ]
+    },
+    {
+      "id": 3120,
+      "name": "Santa Cruz International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "championshipType": "International Open",
+      "region": "North America",
+      "startDay": 2,
+      "endDay": 3,
+      "intervalDays": "May 2 - May 3",
+      "month": "May",
+      "year": 2026,
+      "yearMonth": "2026-May",
+      "local": "Kaiser Permanente Arena",
+      "city": "Santa Cruz",
+      "logoBaseColor": "#DD0C29",
+      "status": "published",
+      "pageUrl": "/events/santa-cruz-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "asteriskPosition": null,
+      "asterisk": "",
+      "eventGroups": [
+        {
+          "id": 3,
+          "name": "No-Gi"
+        },
+        {
+          "id": 5,
+          "name": "International Open"
+        }
+      ]
+    }
+  ]
+}
