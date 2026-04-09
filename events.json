@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-08T18:31:34.298550+00:00",
+  "generatedAt": "2026-04-09T11:58:43.198226+00:00",
   "events": [
     {
       "id": 2456,
@@ -17453,18 +17453,6 @@
       "divisions": [
         {
           "belt": "WHITE",
-          "ageDivision": "Juvenile",
-          "gender": "Male",
-          "weightClass": "Middle",
-          "athletes": [
-            {
-              "name": "Abner Machado Teixeira",
-              "team": "Grip Brazilian Jiu-Jitsu Headquarters"
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
           "ageDivision": "Adult",
           "gender": "Male",
           "weightClass": "Light-Feather",
@@ -17974,18 +17962,6 @@
         {
           "belt": "WHITE",
           "ageDivision": "Master 1",
-          "gender": "Male",
-          "weightClass": "Ultra-Heavy",
-          "athletes": [
-            {
-              "name": "Mohammed Mizanur Rahman",
-              "team": "A-Force Brazilian Jiu-Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
-          "ageDivision": "Master 1",
           "gender": "Female",
           "weightClass": "Feather",
           "athletes": [
@@ -18024,18 +18000,6 @@
             {
               "name": "Elena Self",
               "team": "Unity Jiu-jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
-          "ageDivision": "Master 1",
-          "gender": "Female",
-          "weightClass": "Middle",
-          "athletes": [
-            {
-              "name": "Sofia Maria Chelpon",
-              "team": "Pillar Jiu-Jitsu"
             }
           ]
         },
@@ -18211,20 +18175,12 @@
           "belt": "WHITE",
           "ageDivision": "Master 3",
           "gender": "Male",
-          "weightClass": "Light-Feather",
+          "weightClass": "Light",
           "athletes": [
             {
               "name": "Timothy Michael Haley Jr.",
               "team": "Altus Jiu-Jitsu USA"
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
-          "ageDivision": "Master 3",
-          "gender": "Male",
-          "weightClass": "Light",
-          "athletes": [
+            },
             {
               "name": "Neale Kangal",
               "team": "Pillar Jiu-Jitsu"
@@ -18272,18 +18228,6 @@
             {
               "name": "Robert Charles Apelian",
               "team": "Serra BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
-          "ageDivision": "Master 4",
-          "gender": "Male",
-          "weightClass": "Heavy",
-          "athletes": [
-            {
-              "name": "Dimitris Christodoulou",
-              "team": "Lotus Club USA"
             }
           ]
         },
@@ -18467,18 +18411,6 @@
           "belt": "BLUE",
           "ageDivision": "Juvenile",
           "gender": "Female",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Verona Raphaela Pesce",
-              "team": "Frazatto Jiu-Jitsu Academy"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Juvenile",
-          "gender": "Female",
           "weightClass": "Middle",
           "athletes": [
             {
@@ -18492,18 +18424,6 @@
             {
               "name": "Kendra Elizabeth Vega",
               "team": "Upper Academy Florida"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Juvenile",
-          "gender": "Female",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Alexi Roan Stapelberg",
-              "team": "Carlson Gracie Team"
             }
           ]
         },
@@ -18718,10 +18638,6 @@
               "team": "SAS Team Syracuse"
             },
             {
-              "name": "Miraden Hodzic",
-              "team": "Unity Jiu-jitsu"
-            },
-            {
               "name": "Robert Joseph Danes",
               "team": "Vamos Brazilian Jiu Jitsu"
             }
@@ -18851,7 +18767,7 @@
             },
             {
               "name": "Thomas Paul Kruse II",
-              "team": "TAC Team BJJ"
+              "team": "TAC Team Jiu-Jitsu"
             },
             {
               "name": "David Z Mossad",
@@ -19078,6 +18994,10 @@
               "team": "A-Force Brazilian Jiu-Jitsu"
             },
             {
+              "name": "Melissa Beth Miller",
+              "team": "CJJA Long Island City"
+            },
+            {
               "name": "Kaitlyn Marie Intindola",
               "team": "Renzo Gracie"
             }
@@ -19142,10 +19062,6 @@
           "weightClass": "Light",
           "athletes": [
             {
-              "name": "Griffin Robert Carlborg",
-              "team": "Alliance "
-            },
-            {
               "name": "Sean Patrick Finn",
               "team": "Breathe Jiu-Jitsu"
             },
@@ -19179,10 +19095,6 @@
             },
             {
               "name": "Daniel Michael Tammaro",
-              "team": "Wind Jiu-Jitsu"
-            },
-            {
-              "name": "Michael Villanueva",
               "team": "Wind Jiu-Jitsu"
             }
           ]
@@ -19349,30 +19261,6 @@
         },
         {
           "belt": "BLUE",
-          "ageDivision": "Master 1",
-          "gender": "Female",
-          "weightClass": "Heavy",
-          "athletes": [
-            {
-              "name": "Kelsey Nichole Hawkins",
-              "team": "Dream Art Las Vegas"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Master 1",
-          "gender": "Female",
-          "weightClass": "Super-Heavy",
-          "athletes": [
-            {
-              "name": "Melissa Beth Miller",
-              "team": "CJJA Long Island City"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
           "ageDivision": "Master 2",
           "gender": "Male",
           "weightClass": "Feather",
@@ -19428,10 +19316,6 @@
             {
               "name": "Andre Richard DeRosa",
               "team": "Altus Jiu-Jitsu USA"
-            },
-            {
-              "name": "James Curtis Nelson IV",
-              "team": "Jiu-Jitsu Haus"
             },
             {
               "name": "Jesse A Day",
@@ -19618,6 +19502,10 @@
               "team": "Carlos Rosado - Jiu Jitsu Modern"
             },
             {
+              "name": "Kelsey Nichole Hawkins",
+              "team": "Dream Art Las Vegas"
+            },
+            {
               "name": "Adrienne Taneea Alonzo",
               "team": "Gregor Gracie Jiu-Jitsu"
             }
@@ -19759,18 +19647,6 @@
           "belt": "BLUE",
           "ageDivision": "Master 3",
           "gender": "Female",
-          "weightClass": "Light-Feather",
-          "athletes": [
-            {
-              "name": "Kristin Marie Russo",
-              "team": "Unity Jiu-jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Master 3",
-          "gender": "Female",
           "weightClass": "Feather",
           "athletes": [
             {
@@ -19784,42 +19660,6 @@
             {
               "name": "Jennifer M. Bruno",
               "team": "Team Oliveira"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Master 3",
-          "gender": "Female",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Katia R Richards",
-              "team": "R1NG BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Master 3",
-          "gender": "Female",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Kristen Elizabeth Desjardins",
-              "team": "Upstream BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Master 4",
-          "gender": "Male",
-          "weightClass": "Light-Feather",
-          "athletes": [
-            {
-              "name": "Danyi Shen",
-              "team": "Lotus Club USA"
             }
           ]
         },
@@ -20186,6 +20026,10 @@
               "team": "Frankie Passos Academy"
             },
             {
+              "name": "Matthew Diaz",
+              "team": "Gregor Gracie Jiu-Jitsu"
+            },
+            {
               "name": "Noah James Gifford",
               "team": "Movement Art"
             }
@@ -20325,18 +20169,6 @@
         },
         {
           "belt": "PURPLE",
-          "ageDivision": "Adult",
-          "gender": "Female",
-          "weightClass": "Super-Heavy",
-          "athletes": [
-            {
-              "name": "Pascale Dominique Paul",
-              "team": "Native Brazilian Jiu-Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
           "ageDivision": "Master 1",
           "gender": "Male",
           "weightClass": "Light-Feather",
@@ -20416,10 +20248,6 @@
             {
               "name": "Brendan Christopher Loska",
               "team": "Team Juc\u00e3o"
-            },
-            {
-              "name": "Piero Alessi",
-              "team": "The A-Team"
             },
             {
               "name": "Michael Anthony Tai",
@@ -20502,18 +20330,6 @@
         {
           "belt": "PURPLE",
           "ageDivision": "Master 1",
-          "gender": "Male",
-          "weightClass": "Super-Heavy",
-          "athletes": [
-            {
-              "name": "Matthew Diaz",
-              "team": "Gregor Gracie Jiu-Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 1",
           "gender": "Female",
           "weightClass": "Light-Feather",
           "athletes": [
@@ -20561,6 +20377,10 @@
           "gender": "Female",
           "weightClass": "Middle",
           "athletes": [
+            {
+              "name": "Cindy Chung",
+              "team": "GMAC"
+            },
             {
               "name": "Amber Lee Richards",
               "team": "Pedro Sauer Team"
@@ -20783,18 +20603,6 @@
           "belt": "PURPLE",
           "ageDivision": "Master 2",
           "gender": "Female",
-          "weightClass": "Middle",
-          "athletes": [
-            {
-              "name": "Cindy Chung",
-              "team": "GMAC"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 2",
-          "gender": "Female",
           "weightClass": "Heavy",
           "athletes": [
             {
@@ -20914,6 +20722,10 @@
               "team": "Balance"
             },
             {
+              "name": "Peter Otto",
+              "team": "Carlos Henrique Brazilian Jiu-Jitsu Team"
+            },
+            {
               "name": "Duy Quang Nguyen",
               "team": "Carlos Rosado - Jiu Jitsu Modern"
             },
@@ -20945,10 +20757,6 @@
           "gender": "Male",
           "weightClass": "Heavy",
           "athletes": [
-            {
-              "name": "Michael Ignatius Lebess",
-              "team": "Essential Jiu-Jitsu"
-            },
             {
               "name": "Justin T. Klepper",
               "team": "TAC Team BJJ"
@@ -21051,18 +20859,6 @@
           "belt": "PURPLE",
           "ageDivision": "Master 4",
           "gender": "Male",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Peter Otto",
-              "team": "Carlos Henrique Brazilian Jiu-Jitsu Team"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 4",
-          "gender": "Male",
           "weightClass": "Heavy",
           "athletes": [
             {
@@ -21099,18 +20895,6 @@
           "belt": "PURPLE",
           "ageDivision": "Master 4",
           "gender": "Female",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Laura K Sheridan",
-              "team": "Valle Jiu-Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 4",
-          "gender": "Female",
           "weightClass": "Medium-Heavy",
           "athletes": [
             {
@@ -21128,30 +20912,6 @@
             {
               "name": "Ravindran Rajakumar",
               "team": "Masterskya"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 5",
-          "gender": "Male",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Mark Alan Hanebury ",
-              "team": "R1NG BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 6",
-          "gender": "Male",
-          "weightClass": "Super-Heavy",
-          "athletes": [
-            {
-              "name": "Byron A Divins Jr.",
-              "team": "Serra BJJ"
             }
           ]
         },
@@ -21427,18 +21187,6 @@
           "belt": "BROWN",
           "ageDivision": "Master 1",
           "gender": "Male",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Roothchild St Germain",
-              "team": "Pillar Jiu-Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Master 1",
-          "gender": "Male",
           "weightClass": "Light",
           "athletes": [
             {
@@ -21460,6 +21208,10 @@
             {
               "name": "Seongjae Lee",
               "team": "Lotus Club USA"
+            },
+            {
+              "name": "Piero Alessi",
+              "team": "The A-Team"
             },
             {
               "name": "Harout Simon Karaoghlanian",
@@ -21670,10 +21422,6 @@
               "team": "G13 BJJ USA"
             },
             {
-              "name": "Joshua N. Smith",
-              "team": "Haven Jiu-Jitsu"
-            },
-            {
               "name": "Jorge Valencia",
               "team": "Nova Uni\u00e3o"
             }
@@ -21696,18 +21444,6 @@
             {
               "name": "Joao Paulo Lemos",
               "team": "Renzo Gracie"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Master 3",
-          "gender": "Female",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Erin S. Brinew",
-              "team": "Alliance "
             }
           ]
         },
@@ -21816,6 +21552,10 @@
             {
               "name": "Peter Pabon",
               "team": "Renzo Gracie"
+            },
+            {
+              "name": "John F. Palladino",
+              "team": "Yamasaki Academy"
             }
           ]
         },
@@ -21860,30 +21600,6 @@
             {
               "name": "Richard Christopher Crossman",
               "team": "Walters Jiu-Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Master 6",
-          "gender": "Male",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Karl Edwin Hedgepath",
-              "team": "TAC Team BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Master 7",
-          "gender": "Male",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "John F. Palladino",
-              "team": "Yamasaki Academy"
             }
           ]
         },
@@ -22351,30 +22067,6 @@
           "belt": "BLACK",
           "ageDivision": "Master 1",
           "gender": "Female",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Brenda Lynn Wunner",
-              "team": "Form Jiu Jitsu Academy"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Master 1",
-          "gender": "Female",
-          "weightClass": "Middle",
-          "athletes": [
-            {
-              "name": "Bruna Driely Ricalde Maciel",
-              "team": "GF Team"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Master 1",
-          "gender": "Female",
           "weightClass": "Heavy",
           "athletes": [
             {
@@ -22388,18 +22080,6 @@
             {
               "name": "Michelle Marques de Oliveira",
               "team": "Team Forsa"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Master 1",
-          "gender": "Female",
-          "weightClass": "Super-Heavy",
-          "athletes": [
-            {
-              "name": "Mayara Monteiro Cust\u00f3dio",
-              "team": "CheckMat"
             }
           ]
         },
@@ -22523,18 +22203,6 @@
           "belt": "BLACK",
           "ageDivision": "Master 2",
           "gender": "Female",
-          "weightClass": "Rooster",
-          "athletes": [
-            {
-              "name": "Gabrielle H Czernik",
-              "team": "Movement Art"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Master 2",
-          "gender": "Female",
           "weightClass": "Feather",
           "athletes": [
             {
@@ -22551,7 +22219,7 @@
           "belt": "BLACK",
           "ageDivision": "Master 2",
           "gender": "Female",
-          "weightClass": "Middle",
+          "weightClass": "Medium-Heavy",
           "athletes": [
             {
               "name": "Giulia Frederica Chen-Dardani",
@@ -22891,18 +22559,6 @@
           "belt": "BLACK",
           "ageDivision": "Master 4",
           "gender": "Female",
-          "weightClass": "Rooster",
-          "athletes": [
-            {
-              "name": "January L. Tongay",
-              "team": "Nova Uni\u00e3o"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Master 4",
-          "gender": "Female",
           "weightClass": "Feather",
           "athletes": [
             {
@@ -22956,18 +22612,6 @@
             {
               "name": "Byung Cheol Goo",
               "team": "Lotus Club USA"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Master 5",
-          "gender": "Male",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Jean Jereissati Neto",
-              "team": "Alliance "
             }
           ]
         },
@@ -23089,35 +22733,11 @@
           "belt": "WHITE",
           "ageDivision": "Juvenile",
           "gender": "Male",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Levi Joaquin Lowe",
-              "team": "Alliance "
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
-          "ageDivision": "Juvenile",
-          "gender": "Male",
           "weightClass": "Ultra-Heavy",
           "athletes": [
             {
               "name": "Cristian Andres Fernandez",
               "team": "Alliance "
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
-          "ageDivision": "Juvenile",
-          "gender": "Female",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Claudia Isabel Gonzalez",
-              "team": "T & D Jiu-Jitsu"
             }
           ]
         },
@@ -23172,10 +22792,6 @@
               "team": "Alliance "
             },
             {
-              "name": "Andr\u00e9 Almeida Silva",
-              "team": "Atos Winter Garden | Lucas Pinheiro"
-            },
-            {
               "name": "Raul Alexander Lopez IV",
               "team": "BJJ Revolution Team"
             },
@@ -23190,6 +22806,10 @@
             {
               "name": "Jesus Morales",
               "team": "Gracie Barra"
+            },
+            {
+              "name": "Andr\u00e9 Almeida Silva",
+              "team": "Lucas Pinheiro Jiu-Jitsu"
             },
             {
               "name": "Keanu Domonique Livigni",
@@ -23344,6 +22964,10 @@
               "team": "BJJ Revolution Team"
             },
             {
+              "name": "Ivan Guadalupe Martinez",
+              "team": "GF Team"
+            },
+            {
               "name": "Zachary Kyle Grayson",
               "team": "GF Team"
             },
@@ -23368,33 +22992,13 @@
         {
           "belt": "WHITE",
           "ageDivision": "Adult",
-          "gender": "Male",
-          "weightClass": "Ultra-Heavy",
-          "athletes": [
-            {
-              "name": "Steven Edward Good",
-              "team": "Ed Ramos Jiu-Jitsu Brasil"
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
-          "ageDivision": "Adult",
           "gender": "Female",
-          "weightClass": "Rooster",
+          "weightClass": "Light-Feather",
           "athletes": [
             {
               "name": "Peyton Dieunane Claude Richie",
               "team": "Double Five Highland Village "
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
-          "ageDivision": "Adult",
-          "gender": "Female",
-          "weightClass": "Light-Feather",
-          "athletes": [
+            },
             {
               "name": "Michelle Ann Phillips",
               "team": "Renzo Gracie"
@@ -23405,20 +23009,12 @@
           "belt": "WHITE",
           "ageDivision": "Adult",
           "gender": "Female",
-          "weightClass": "Feather",
+          "weightClass": "Light",
           "athletes": [
             {
               "name": "Grace Mary Elias",
               "team": "BJJ Revolution Team"
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
-          "ageDivision": "Adult",
-          "gender": "Female",
-          "weightClass": "Light",
-          "athletes": [
+            },
             {
               "name": "Anakaren Alvarez",
               "team": "Ephesians Six Jiu-Jitsu"
@@ -23577,18 +23173,6 @@
           "belt": "WHITE",
           "ageDivision": "Master 1",
           "gender": "Male",
-          "weightClass": "Heavy",
-          "athletes": [
-            {
-              "name": "Ivan Guadalupe Martinez",
-              "team": "GF Team"
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
-          "ageDivision": "Master 1",
-          "gender": "Male",
           "weightClass": "Super-Heavy",
           "athletes": [
             {
@@ -23661,20 +23245,12 @@
           "belt": "WHITE",
           "ageDivision": "Master 2",
           "gender": "Male",
-          "weightClass": "Light-Feather",
+          "weightClass": "Feather",
           "athletes": [
             {
               "name": "Jose Antonio Gonzalez Marti",
               "team": "BJJ Revolution Team"
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
-          "ageDivision": "Master 2",
-          "gender": "Male",
-          "weightClass": "Feather",
-          "athletes": [
+            },
             {
               "name": "Derrick Justin Waterman",
               "team": "Gracie Barra"
@@ -23788,6 +23364,10 @@
           "weightClass": "Super-Heavy",
           "athletes": [
             {
+              "name": "Akihito James Fukasawa",
+              "team": "CheckMat"
+            },
+            {
               "name": "Elon Renee Maniece",
               "team": "One Way Jiu-Jitsu"
             },
@@ -23877,18 +23457,6 @@
           "belt": "WHITE",
           "ageDivision": "Master 3",
           "gender": "Male",
-          "weightClass": "Super-Heavy",
-          "athletes": [
-            {
-              "name": "Akihito James Fukasawa",
-              "team": "CheckMat"
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
-          "ageDivision": "Master 3",
-          "gender": "Male",
           "weightClass": "Ultra-Heavy",
           "athletes": [
             {
@@ -23937,18 +23505,6 @@
           "belt": "WHITE",
           "ageDivision": "Master 4",
           "gender": "Male",
-          "weightClass": "Heavy",
-          "athletes": [
-            {
-              "name": "Darren Paul Grimm Jr.",
-              "team": "Gracie Humaita Huntsville"
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
-          "ageDivision": "Master 4",
-          "gender": "Male",
           "weightClass": "Super-Heavy",
           "athletes": [
             {
@@ -23958,6 +23514,10 @@
             {
               "name": "Joshua David Stehr",
               "team": "Carlson Gracie Team"
+            },
+            {
+              "name": "Robert G. Gilliland",
+              "team": "Champions - Gorilla Academy"
             }
           ]
         },
@@ -23976,36 +23536,12 @@
         {
           "belt": "WHITE",
           "ageDivision": "Master 5",
-          "gender": "Male",
-          "weightClass": "Super-Heavy",
-          "athletes": [
-            {
-              "name": "Robert G. Gilliland",
-              "team": "Champions - Gorilla Academy"
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
-          "ageDivision": "Master 5",
           "gender": "Female",
           "weightClass": "Heavy",
           "athletes": [
             {
               "name": "Lilian Therezinha Alevato",
               "team": "Gracie Barra"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Juvenile",
-          "gender": "Male",
-          "weightClass": "Rooster",
-          "athletes": [
-            {
-              "name": "Andrew Nguyen",
-              "team": "Pablo Silva BJJ"
             }
           ]
         },
@@ -24169,18 +23705,6 @@
           "belt": "BLUE",
           "ageDivision": "Juvenile",
           "gender": "Female",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Kimberly Vallejo",
-              "team": "Pablo Silva BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Juvenile",
-          "gender": "Female",
           "weightClass": "Light",
           "athletes": [
             {
@@ -24201,35 +23725,11 @@
           "belt": "BLUE",
           "ageDivision": "Juvenile",
           "gender": "Female",
-          "weightClass": "Middle",
-          "athletes": [
-            {
-              "name": "Danna Margaret Dy",
-              "team": "Pablo Silva BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Juvenile",
-          "gender": "Female",
           "weightClass": "Medium-Heavy",
           "athletes": [
             {
               "name": "A'niyah Reyn Keohaname-Apodaca",
               "team": "GF Team"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Juvenile",
-          "gender": "Female",
-          "weightClass": "Super-Heavy",
-          "athletes": [
-            {
-              "name": "Saraliza Madalena Barbey",
-              "team": "Cass\u00e3o Team USA"
             }
           ]
         },
@@ -24556,6 +24056,10 @@
               "team": "Ed Ramos Jiu-Jitsu USA "
             },
             {
+              "name": "Ariel Beney Chatman ",
+              "team": "GF Team"
+            },
+            {
               "name": "Ashley Jeslyn Soto",
               "team": "Pablo Silva BJJ"
             }
@@ -24837,18 +24341,6 @@
           "belt": "BLUE",
           "ageDivision": "Master 1",
           "gender": "Female",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Ariel Beney Chatman ",
-              "team": "GF Team"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Master 1",
-          "gender": "Female",
           "weightClass": "Light",
           "athletes": [
             {
@@ -24914,18 +24406,6 @@
             {
               "name": "Sharicka Mims",
               "team": "Trein Club"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Master 2",
-          "gender": "Male",
-          "weightClass": "Rooster",
-          "athletes": [
-            {
-              "name": "Kameco Jabareus Andrews",
-              "team": "Gracie Barra"
             }
           ]
         },
@@ -25098,18 +24578,6 @@
             {
               "name": "Curiosity Stockstill Hunter",
               "team": "BJJ Revolution Team"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Master 2",
-          "gender": "Female",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Marie Aim\u00e9e Madeleine Cheynel",
-              "team": "B9 - Paris "
             }
           ]
         },
@@ -25486,18 +24954,6 @@
             {
               "name": "Joe Matthew Martinez",
               "team": "Annunziato Jiu-Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Master 4",
-          "gender": "Female",
-          "weightClass": "Rooster",
-          "athletes": [
-            {
-              "name": "Sarah Kathleen Holzhalb",
-              "team": "Inicio Jiu-Jitsu"
             }
           ]
         },
@@ -25981,18 +25437,6 @@
           "belt": "PURPLE",
           "ageDivision": "Master 1",
           "gender": "Female",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Sarah J. Choleva",
-              "team": "CheckMat"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 1",
-          "gender": "Female",
           "weightClass": "Middle",
           "athletes": [
             {
@@ -26074,10 +25518,6 @@
             {
               "name": "Brent Michael Matthews",
               "team": "Gracie Barra"
-            },
-            {
-              "name": "Alexander Joel Lieblich",
-              "team": "Rilion Gracie Texas"
             }
           ]
         },
@@ -26186,10 +25626,6 @@
             {
               "name": "Ashton Paul Daigle",
               "team": "Gracie Barra"
-            },
-            {
-              "name": "Shane Michael Kimler",
-              "team": "Soul Fighters BJJ"
             }
           ]
         },
@@ -26373,18 +25809,6 @@
           "belt": "PURPLE",
           "ageDivision": "Master 4",
           "gender": "Male",
-          "weightClass": "Middle",
-          "athletes": [
-            {
-              "name": "Bradley Glenn Flurry",
-              "team": "BJJ Revolution Team"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 4",
-          "gender": "Male",
           "weightClass": "Heavy",
           "athletes": [
             {
@@ -26402,18 +25826,6 @@
             {
               "name": "Chad M. Tamanaha",
               "team": "LEAD BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 5",
-          "gender": "Male",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Manuel David Alvarado",
-              "team": "Twin Wolves MMA"
             }
           ]
         },
@@ -26442,18 +25854,6 @@
             {
               "name": "Jeffrey Scott Luffman",
               "team": "North Broadway Jiu-Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 5",
-          "gender": "Female",
-          "weightClass": "Light-Feather",
-          "athletes": [
-            {
-              "name": "Quennie Sheri Davis",
-              "team": "Carlson Gracie Team"
             }
           ]
         },
@@ -26524,12 +25924,12 @@
           "weightClass": "Light-Feather",
           "athletes": [
             {
-              "name": "Washington Ferreira dos Santos",
-              "team": "Atos Winter Garden | Lucas Pinheiro"
-            },
-            {
               "name": "Patrick Aaron Deleon",
               "team": "LEAD BJJ"
+            },
+            {
+              "name": "Washington Ferreira dos Santos",
+              "team": "Lucas Pinheiro Jiu-Jitsu"
             }
           ]
         },
@@ -26582,6 +25982,10 @@
             {
               "name": "Bruno Javier Castro Alban",
               "team": "Rilion Gracie Texas"
+            },
+            {
+              "name": "Erik J Boerner",
+              "team": "Six Blades Jiu-Jitsu"
             },
             {
               "name": "Tyler Urbano Taveira",
@@ -26737,20 +26141,12 @@
           "belt": "BROWN",
           "ageDivision": "Master 1",
           "gender": "Female",
-          "weightClass": "Feather",
+          "weightClass": "Light",
           "athletes": [
             {
               "name": "Jocelyn N. Castillo Robles",
               "team": "BJJ Revolution Team"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Master 1",
-          "gender": "Female",
-          "weightClass": "Light",
-          "athletes": [
+            },
             {
               "name": "Julie Michelle McLelland",
               "team": "BJJ Revolution Team"
@@ -26844,6 +26240,10 @@
           "weightClass": "Medium-Heavy",
           "athletes": [
             {
+              "name": "Luke Austin Norsworthy",
+              "team": "Brazilian Top Team"
+            },
+            {
               "name": "Dhavid Ricardo Antunez Diaz",
               "team": "CMJJ Headquarters"
             },
@@ -26857,39 +26257,11 @@
           "belt": "BROWN",
           "ageDivision": "Master 2",
           "gender": "Male",
-          "weightClass": "Heavy",
-          "athletes": [
-            {
-              "name": "Nicholas Austin Rochetti",
-              "team": "BJJ Revolution Team"
-            },
-            {
-              "name": "Alexander Benjamin Roodman",
-              "team": "Rilion Gracie Jiu-Jitsu Academy"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Master 2",
-          "gender": "Male",
           "weightClass": "Ultra-Heavy",
           "athletes": [
             {
               "name": "Alexander Joseph Peterson",
               "team": "Gracie Elite Team"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Master 2",
-          "gender": "Female",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Natalie Joy Guiao",
-              "team": "Ohana Jiu-Jitsu Academy"
             }
           ]
         },
@@ -26910,30 +26282,6 @@
             {
               "name": "Susana Morado",
               "team": "Pablo Silva BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Master 2",
-          "gender": "Female",
-          "weightClass": "Super-Heavy",
-          "athletes": [
-            {
-              "name": "Veronica Gonzalez",
-              "team": "Ohana Jiu-Jitsu Academy"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Master 3",
-          "gender": "Male",
-          "weightClass": "Light-Feather",
-          "athletes": [
-            {
-              "name": "Michael G. Casas",
-              "team": "T & D Jiu-Jitsu"
             }
           ]
         },
@@ -26966,18 +26314,6 @@
             {
               "name": "Alfred Thomas Varon",
               "team": "Rodrigo Pinheiro BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Master 3",
-          "gender": "Male",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Luke Austin Norsworthy",
-              "team": "Brazilian Top Team"
             }
           ]
         },
@@ -27039,18 +26375,6 @@
         },
         {
           "belt": "BROWN",
-          "ageDivision": "Master 3",
-          "gender": "Female",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Mendi Melville Carlson",
-              "team": "Genesis Jiu-Jitsu Azle"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
           "ageDivision": "Master 4",
           "gender": "Male",
           "weightClass": "Light",
@@ -27074,10 +26398,6 @@
             {
               "name": "Jose Felipe Marinho",
               "team": "GF Team"
-            },
-            {
-              "name": "James Viet Ninh",
-              "team": "Gracie Barra"
             },
             {
               "name": "Timothy Ray Waybright",
@@ -27234,18 +26554,6 @@
             {
               "name": "Erik Kjell Kvarme",
               "team": "GF Team"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Adult",
-          "gender": "Male",
-          "weightClass": "Rooster",
-          "athletes": [
-            {
-              "name": "Joshua Aaron Metcalf",
-              "team": "Slomo"
             }
           ]
         },
@@ -27489,35 +26797,11 @@
           "belt": "BLACK",
           "ageDivision": "Adult",
           "gender": "Female",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Olivia Evelyn Schauer",
-              "team": "Tony Passos Jiu-Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Adult",
-          "gender": "Female",
           "weightClass": "Heavy",
           "athletes": [
             {
               "name": "Larissa Dias de Almeida",
               "team": "Elementum Jiu-Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Master 1",
-          "gender": "Male",
-          "weightClass": "Rooster",
-          "athletes": [
-            {
-              "name": "Carlos Alberto Henriquez Mejia",
-              "team": "Pablo Silva BJJ"
             }
           ]
         },
@@ -27566,6 +26850,10 @@
             {
               "name": "Gerardo T. Vazquez",
               "team": "Ohana Jiu-Jitsu Academy"
+            },
+            {
+              "name": "Carlos Alberto Henriquez Mejia",
+              "team": "Pablo Silva BJJ"
             },
             {
               "name": "Corey James Stockton",
@@ -27685,18 +26973,6 @@
             },
             {
               "name": "Lu\u00edza Gabriela Ribeiro Dantas",
-              "team": "Gracie Barra"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Master 1",
-          "gender": "Female",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Vict\u00f3ria Montrezor",
               "team": "Gracie Barra"
             }
           ]
@@ -27845,18 +27121,6 @@
           "belt": "BLACK",
           "ageDivision": "Master 2",
           "gender": "Female",
-          "weightClass": "Rooster",
-          "athletes": [
-            {
-              "name": "Maggie Lillibeth Torres",
-              "team": "Six Blades Jiu-Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Master 2",
-          "gender": "Female",
           "weightClass": "Feather",
           "athletes": [
             {
@@ -27878,30 +27142,6 @@
             {
               "name": "Thais Eliasen Viana",
               "team": "Inspirit Jiu-Jitsu Academy"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Master 3",
-          "gender": "Male",
-          "weightClass": "Rooster",
-          "athletes": [
-            {
-              "name": "Darious Demond Williams",
-              "team": "Ohana Jiu-Jitsu Academy"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Master 3",
-          "gender": "Male",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Ivaniel Cavalcante de Oliveira",
-              "team": "CheckMat"
             }
           ]
         },
@@ -27934,10 +27174,6 @@
             {
               "name": "Joshua Daniel Olliff",
               "team": "Ares BJJ"
-            },
-            {
-              "name": "Robert Max Bookman",
-              "team": "Gracie Barra"
             }
           ]
         },
@@ -28208,6 +27444,10 @@
           "weightClass": "Heavy",
           "athletes": [
             {
+              "name": "Donald R. Hale",
+              "team": "Ares BJJ"
+            },
+            {
               "name": "Marcello Chapuis Monteiro",
               "team": "BJJ Coach Intl. Association"
             },
@@ -28246,18 +27486,6 @@
             {
               "name": "Federico Soto lll",
               "team": "Carlson Gracie Team"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Master 6",
-          "gender": "Male",
-          "weightClass": "Heavy",
-          "athletes": [
-            {
-              "name": "Donald R. Hale",
-              "team": "Ares BJJ"
             }
           ]
         },
@@ -28406,6 +27634,10 @@
           "weightClass": "Light",
           "athletes": [
             {
+              "name": "Bruno Santos Borges",
+              "team": "Alliance "
+            },
+            {
               "name": "Sky Ofek Nahum",
               "team": "Alliance "
             },
@@ -28548,6 +27780,10 @@
             {
               "name": "Sivan Ben-Shitrit",
               "team": "Gracie Barra"
+            },
+            {
+              "name": "Stephanie Ann Sayre",
+              "team": "Street Sports BJJ- Sherman Oaks"
             }
           ]
         },
@@ -28560,6 +27796,10 @@
             {
               "name": "Bushra Hani Abunamous",
               "team": "Beverly Hills Jiu Jitsu Club"
+            },
+            {
+              "name": "Sondra Aileen Pepe",
+              "team": "Gracie Fighter"
             },
             {
               "name": "Sandra C. Zendali",
@@ -28585,18 +27825,6 @@
         },
         {
           "belt": "WHITE",
-          "ageDivision": "Master 2",
-          "gender": "Male",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Bruno Santos Borges",
-              "team": "Alliance "
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
           "ageDivision": "Master 3",
           "gender": "Male",
           "weightClass": "Middle",
@@ -28608,18 +27836,6 @@
             {
               "name": "Kentaro Abe",
               "team": "WLAJJ"
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
-          "ageDivision": "Master 3",
-          "gender": "Female",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Stephanie Ann Sayre",
-              "team": "Street Sports BJJ- Sherman Oaks"
             }
           ]
         },
@@ -28639,30 +27855,6 @@
           "belt": "WHITE",
           "ageDivision": "Master 4",
           "gender": "Male",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Lin Li Johnnie Cheng",
-              "team": "Steez Jiu-Jitsu Club"
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
-          "ageDivision": "Master 4",
-          "gender": "Male",
-          "weightClass": "Heavy",
-          "athletes": [
-            {
-              "name": "Brett Elliot Blumstein",
-              "team": "Gracie Barra"
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
-          "ageDivision": "Master 4",
-          "gender": "Male",
           "weightClass": "Ultra-Heavy",
           "athletes": [
             {
@@ -28672,30 +27864,6 @@
             {
               "name": "Roger Francisco Mendez",
               "team": "Gracie Barra"
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
-          "ageDivision": "Master 4",
-          "gender": "Female",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Sondra Aileen Pepe",
-              "team": "Gracie Fighter"
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
-          "ageDivision": "Master 5",
-          "gender": "Male",
-          "weightClass": "Super-Heavy",
-          "athletes": [
-            {
-              "name": "Kenn Frankel",
-              "team": "Winner Behring Jiu Jitsu Usa"
             }
           ]
         },
@@ -28850,20 +28018,12 @@
               "team": "Alliance "
             },
             {
-              "name": "Bernardo Rautte Bernert",
-              "team": "Start Doing"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Juvenile",
-          "gender": "Male",
-          "weightClass": "Super-Heavy",
-          "athletes": [
-            {
               "name": "David Ryan Nevarez",
               "team": "CheckMat"
+            },
+            {
+              "name": "Bernardo Rautte Bernert",
+              "team": "Start Doing"
             }
           ]
         },
@@ -29293,18 +28453,6 @@
         },
         {
           "belt": "BLUE",
-          "ageDivision": "Adult",
-          "gender": "Female",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Dania Silva",
-              "team": "AOJ"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
           "ageDivision": "Master 1",
           "gender": "Male",
           "weightClass": "Light-Feather",
@@ -29332,6 +28480,10 @@
             {
               "name": "Andrew Joseph Valentino",
               "team": "Brea Jiu-Jitsu"
+            },
+            {
+              "name": "Henry Duran",
+              "team": "Coachella Valley BJJ"
             },
             {
               "name": "Chase Elliot Davis",
@@ -29395,10 +28547,10 @@
           "belt": "BLUE",
           "ageDivision": "Master 1",
           "gender": "Male",
-          "weightClass": "Super-Heavy",
+          "weightClass": "Ultra-Heavy",
           "athletes": [
             {
-              "name": "Arapari-Hargous Rahiti Matorai",
+              "name": "Rahiti Matorai Arapari-Hargous",
               "team": "MB Academy CSLG Tahiti"
             }
           ]
@@ -29456,22 +28608,6 @@
             {
               "name": "John H Shin",
               "team": "Varsity Jiu-Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Master 2",
-          "gender": "Male",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Henry Duran",
-              "team": "Coachella Valley BJJ"
-            },
-            {
-              "name": "Ryan M Snow",
-              "team": "Gracie Barra"
             }
           ]
         },
@@ -29966,10 +29102,6 @@
               "team": "Gracie Barra BJJ"
             },
             {
-              "name": "Yoshiki Hirokawa",
-              "team": "Jiu-Jitsu For Life Canada"
-            },
-            {
               "name": "Elijah J. Michael C. Rodriguez",
               "team": "One Jiu-Jitsu USA"
             },
@@ -30077,30 +29209,6 @@
         },
         {
           "belt": "PURPLE",
-          "ageDivision": "Adult",
-          "gender": "Female",
-          "weightClass": "Light-Feather",
-          "athletes": [
-            {
-              "name": "Natalee Funegra",
-              "team": "AOJ"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Adult",
-          "gender": "Female",
-          "weightClass": "Heavy",
-          "athletes": [
-            {
-              "name": "Tiffani Amanda Pope",
-              "team": "Triunfo Brazilian Jiu Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
           "ageDivision": "Master 1",
           "gender": "Male",
           "weightClass": "Feather",
@@ -30120,6 +29228,10 @@
             {
               "name": "Joji Asako",
               "team": "Corvus Grappling Collective"
+            },
+            {
+              "name": "Douglas Tat Dat Do",
+              "team": "Triunfo Brazilian Jiu Jitsu"
             }
           ]
         },
@@ -30227,18 +29339,6 @@
           "belt": "PURPLE",
           "ageDivision": "Master 1",
           "gender": "Female",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Jasmine R Veloz",
-              "team": "Carlson Gracie Team"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 1",
-          "gender": "Female",
           "weightClass": "Light",
           "athletes": [
             {
@@ -30271,35 +29371,11 @@
           "belt": "PURPLE",
           "ageDivision": "Master 1",
           "gender": "Female",
-          "weightClass": "Heavy",
-          "athletes": [
-            {
-              "name": "Mariya Asako",
-              "team": "Corvus Grappling Collective"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 1",
-          "gender": "Female",
           "weightClass": "Super-Heavy",
           "athletes": [
             {
               "name": "Daisy Gonzalez",
               "team": "Carlson Gracie Team"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 2",
-          "gender": "Male",
-          "weightClass": "Light-Feather",
-          "athletes": [
-            {
-              "name": "Douglas Tat Dat Do",
-              "team": "Triunfo Brazilian Jiu Jitsu"
             }
           ]
         },
@@ -30412,18 +29488,6 @@
             {
               "name": "Lance James Krum",
               "team": "R1NG BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 2",
-          "gender": "Female",
-          "weightClass": "Light-Feather",
-          "athletes": [
-            {
-              "name": "Adriana Alejandra Contreras Cabrera",
-              "team": "Carlson Gracie Team"
             }
           ]
         },
@@ -30586,6 +29650,10 @@
               "team": "AOJ"
             },
             {
+              "name": "Mario Junior",
+              "team": "Gracie Barra"
+            },
+            {
               "name": "Richard Ramirez Jr",
               "team": "Lansang Brazilian Jiu-Jitsu"
             }
@@ -30627,42 +29695,6 @@
           "athletes": [
             {
               "name": "Joseph Edward Schloss",
-              "team": "Carlson Gracie Team"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 4",
-          "gender": "Female",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Yujia Sylvia Huo",
-              "team": "CheckMat"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 5",
-          "gender": "Male",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Mario Junior",
-              "team": "Gracie Barra"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 5",
-          "gender": "Male",
-          "weightClass": "Middle",
-          "athletes": [
-            {
-              "name": "Jeffrey Albert Blake",
               "team": "Carlson Gracie Team"
             }
           ]
@@ -30811,7 +29843,7 @@
           "belt": "BROWN",
           "ageDivision": "Adult",
           "gender": "Female",
-          "weightClass": "Heavy",
+          "weightClass": "Super-Heavy",
           "athletes": [
             {
               "name": "Anna Vyrginnia da Silva Rocha",
@@ -31085,18 +30117,6 @@
         },
         {
           "belt": "BROWN",
-          "ageDivision": "Master 3",
-          "gender": "Female",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Tammi Ngoc Chu",
-              "team": "One Jiu-Jitsu USA"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
           "ageDivision": "Master 4",
           "gender": "Male",
           "weightClass": "Light",
@@ -31108,18 +30128,10 @@
             {
               "name": "Ahnne William W. Faatoa",
               "team": "MB Academy"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Master 4",
-          "gender": "Male",
-          "weightClass": "Heavy",
-          "athletes": [
+            },
             {
-              "name": "Francisco Lorenzo Baldivia Jr. ",
-              "team": "Sektor BJJ"
+              "name": "Richard Kijae Kim",
+              "team": "R1NG BJJ"
             }
           ]
         },
@@ -31132,18 +30144,6 @@
             {
               "name": "Jeffrey Walter Mayes",
               "team": "Gracie Barra"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Master 5",
-          "gender": "Male",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Richard Kijae Kim",
-              "team": "R1NG BJJ"
             }
           ]
         },
@@ -31170,56 +30170,12 @@
               "team": "AOJ"
             },
             {
-              "name": "Jason Christopher Lopez",
-              "team": "R1NG BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Master 6",
-          "gender": "Male",
-          "weightClass": "Middle",
-          "athletes": [
-            {
               "name": "Matthew Kuo-Yang Chuang",
               "team": "Higher Ground BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Master 6",
-          "gender": "Male",
-          "weightClass": "Heavy",
-          "athletes": [
+            },
             {
-              "name": "Marcus James Mataya",
-              "team": "Cascao BJJ Las Vegas"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Master 7",
-          "gender": "Male",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Charles Henry Padilla",
-              "team": "Allground"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Adult",
-          "gender": "Male",
-          "weightClass": "Rooster",
-          "athletes": [
-            {
-              "name": "Samuel David Marquez",
-              "team": "Fabio Santos BJJ"
+              "name": "Jason Christopher Lopez",
+              "team": "R1NG BJJ"
             }
           ]
         },
@@ -31365,6 +30321,10 @@
           "gender": "Male",
           "weightClass": "Heavy",
           "athletes": [
+            {
+              "name": "Samir Abdol Kader",
+              "team": "Carlson Gracie Team"
+            },
             {
               "name": "Lucas Norat Lopes",
               "team": "Gracie Barra"
@@ -31643,18 +30603,6 @@
           "belt": "BLACK",
           "ageDivision": "Master 1",
           "gender": "Male",
-          "weightClass": "Heavy",
-          "athletes": [
-            {
-              "name": "Samir Abdol Kader",
-              "team": "Carlson Gracie Team"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Master 1",
-          "gender": "Male",
           "weightClass": "Super-Heavy",
           "athletes": [
             {
@@ -31906,10 +30854,6 @@
               "team": "Mission Grappling Club"
             },
             {
-              "name": "Scott Erikson Torres",
-              "team": "New Breed Academy"
-            },
-            {
               "name": "Gino C. Silanoe",
               "team": "Silanoe Martial Arts"
             }
@@ -31960,18 +30904,6 @@
             {
               "name": "Laerte Fanucchi S. Rodrigues Jr",
               "team": "Gracie Barra"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Master 3",
-          "gender": "Female",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Amy Mai Alonso",
-              "team": "Carlson Gracie Team"
             }
           ]
         },
@@ -32120,18 +31052,6 @@
             {
               "name": "Eric Andrew Altaffer",
               "team": "Higher Ground BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Master 4",
-          "gender": "Female",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Yi Liu-Williams",
-              "team": "Legacy Jiu-Jitsu - Team Alberto Crane"
             }
           ]
         },
@@ -32503,18 +31423,6 @@
         },
         {
           "belt": "BLUE",
-          "ageDivision": "Juvenile",
-          "gender": "Female",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Alexi Roan Stapelberg",
-              "team": "Carlson Gracie Team"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
           "ageDivision": "Adult",
           "gender": "Male",
           "weightClass": "Rooster",
@@ -32688,6 +31596,10 @@
               "team": "Essential Jiu-Jitsu"
             },
             {
+              "name": "Eric Isaac Honig",
+              "team": "Malverne Monarch Jiu-Jitsu"
+            },
+            {
               "name": "Jayden Marc Brown",
               "team": "Masterskya"
             },
@@ -32702,10 +31614,6 @@
             {
               "name": "Keven de Ara\u00fajo  Borges da Silva",
               "team": "TDBJJ"
-            },
-            {
-              "name": "Eric Isaac Honig",
-              "team": "The Vanguard Academy"
             },
             {
               "name": "Evan Michael Dunford",
@@ -32837,7 +31745,7 @@
             },
             {
               "name": "Jonah Harry Deykin",
-              "team": "Alliance "
+              "team": "Alliance Marcelo Garcia"
             },
             {
               "name": "Kyle Matthew Inlander",
@@ -33012,10 +31920,6 @@
           "weightClass": "Light",
           "athletes": [
             {
-              "name": "Griffin Robert Carlborg",
-              "team": "Alliance "
-            },
-            {
               "name": "Sean Patrick Finn",
               "team": "Breathe Jiu-Jitsu"
             },
@@ -33046,6 +31950,10 @@
             {
               "name": "Anderson Soares da Silva Santos",
               "team": "Grip Brazilian Jiu-Jitsu Headquarters"
+            },
+            {
+              "name": "Stephan J Bogardus",
+              "team": "North Fork Jiu-Jitsu"
             }
           ]
         },
@@ -33116,20 +32024,12 @@
               "team": "Carlos Rosado - Jiu Jitsu Modern"
             },
             {
+              "name": "Franklin Armando Lopez Chavez",
+              "team": "GF Team"
+            },
+            {
               "name": "Lawrence H Ayala Pacheco",
               "team": "R1NG BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Master 2",
-          "gender": "Male",
-          "weightClass": "Middle",
-          "athletes": [
-            {
-              "name": "Stephan J Bogardus",
-              "team": "North Fork Jiu-Jitsu"
             }
           ]
         },
@@ -33221,18 +32121,6 @@
           "belt": "BLUE",
           "ageDivision": "Master 3",
           "gender": "Male",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Franklin Armando Lopez Chavez",
-              "team": "GF Team"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Master 3",
-          "gender": "Male",
           "weightClass": "Middle",
           "athletes": [
             {
@@ -33282,42 +32170,6 @@
             {
               "name": "Johnattan Isaac Harton de Leon",
               "team": "SAS Team Syracuse"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Master 3",
-          "gender": "Male",
-          "weightClass": "Super-Heavy",
-          "athletes": [
-            {
-              "name": "Joseph P Sarcone",
-              "team": "Transcend Grappling Academy"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Master 3",
-          "gender": "Female",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Kristen Elizabeth Desjardins",
-              "team": "Upstream BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Master 3",
-          "gender": "Female",
-          "weightClass": "Heavy",
-          "athletes": [
-            {
-              "name": "Brienne Phillips Marks",
-              "team": "10th Planet Finishers"
             }
           ]
         },
@@ -33378,30 +32230,6 @@
             {
               "name": "Juan Alberto Cosme",
               "team": "Pedro Sauer Team"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Master 7",
-          "gender": "Male",
-          "weightClass": "Super-Heavy",
-          "athletes": [
-            {
-              "name": "James William Redmore",
-              "team": "TDBJJ"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Adult",
-          "gender": "Male",
-          "weightClass": "Rooster",
-          "athletes": [
-            {
-              "name": "Ericson Espaillat",
-              "team": "Team Prospect AP Jiu-Jitsu"
             }
           ]
         },
@@ -33864,6 +32692,10 @@
           "weightClass": "Ultra-Heavy",
           "athletes": [
             {
+              "name": "Gabriel Estadella",
+              "team": "Park Slope Brazilian Jiu-Jitsu"
+            },
+            {
               "name": "Iurii Khoruzhyi",
               "team": "Renzo Gracie"
             },
@@ -33894,30 +32726,6 @@
             {
               "name": "Jessica Rae Spencer",
               "team": "GF Team"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 3",
-          "gender": "Male",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Vincent Panza",
-              "team": "Renzo Gracie"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 3",
-          "gender": "Male",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Brian Bobby Chiong",
-              "team": "Renzo Gracie"
             }
           ]
         },
@@ -33979,18 +32787,6 @@
         },
         {
           "belt": "PURPLE",
-          "ageDivision": "Master 3",
-          "gender": "Female",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Claire Elizabeth Meyer",
-              "team": "RABJJ Academy"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
           "ageDivision": "Master 4",
           "gender": "Male",
           "weightClass": "Middle",
@@ -34031,18 +32827,6 @@
         },
         {
           "belt": "PURPLE",
-          "ageDivision": "Master 4",
-          "gender": "Male",
-          "weightClass": "Ultra-Heavy",
-          "athletes": [
-            {
-              "name": "Gabriel Estadella",
-              "team": "Park Slope Brazilian Jiu-Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
           "ageDivision": "Master 7",
           "gender": "Male",
           "weightClass": "Ultra-Heavy",
@@ -34050,18 +32834,6 @@
             {
               "name": "Lazaro Joaquin Cosme",
               "team": "Pedro Sauer Team"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Adult",
-          "gender": "Male",
-          "weightClass": "Rooster",
-          "athletes": [
-            {
-              "name": "Sean Timothy Cunningham",
-              "team": "Movement Art"
             }
           ]
         },
@@ -34231,18 +33003,6 @@
         },
         {
           "belt": "BROWN",
-          "ageDivision": "Adult",
-          "gender": "Female",
-          "weightClass": "Super-Heavy",
-          "athletes": [
-            {
-              "name": "Tyler Anne Murray",
-              "team": "The Tradewinds Network"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
           "ageDivision": "Master 1",
           "gender": "Male",
           "weightClass": "Feather",
@@ -34315,30 +33075,6 @@
         },
         {
           "belt": "BROWN",
-          "ageDivision": "Master 1",
-          "gender": "Female",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Vanessa Rae Malone",
-              "team": "Renzo Gracie"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Master 1",
-          "gender": "Female",
-          "weightClass": "Heavy",
-          "athletes": [
-            {
-              "name": "Allison Kendall McAllister",
-              "team": "Sucker Free Jiu-Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
           "ageDivision": "Master 2",
           "gender": "Male",
           "weightClass": "Light",
@@ -34386,18 +33122,6 @@
             {
               "name": "Brian C Aparicio",
               "team": "Serra BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Master 2",
-          "gender": "Male",
-          "weightClass": "Heavy",
-          "athletes": [
-            {
-              "name": "Keenan W. Powers",
-              "team": "Balance"
             }
           ]
         },
@@ -34458,18 +33182,6 @@
             {
               "name": "Laina Giselle Mason",
               "team": "Double Five Highland Village "
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Master 4",
-          "gender": "Male",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Carlos Alejandro Salguero",
-              "team": "Vogel BJJ"
             }
           ]
         },
@@ -34673,18 +33385,6 @@
           "belt": "BLACK",
           "ageDivision": "Adult",
           "gender": "Female",
-          "weightClass": "Middle",
-          "athletes": [
-            {
-              "name": "Naomi Sharp",
-              "team": "Unity Jiu-jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Adult",
-          "gender": "Female",
           "weightClass": "Medium-Heavy",
           "athletes": [
             {
@@ -34694,6 +33394,10 @@
             {
               "name": "Nicole Secundino R. de Oliveira",
               "team": "A-Force Brazilian Jiu-Jitsu"
+            },
+            {
+              "name": "Naomi Sharp",
+              "team": "Unity Jiu-jitsu"
             }
           ]
         },
@@ -34890,22 +33594,6 @@
             {
               "name": "Eldar Rafigaev",
               "team": "Jungle BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Master 3",
-          "gender": "Male",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Zachary Paul Maslany",
-              "team": "10th Planet Finishers"
-            },
-            {
-              "name": "Santiago Amaral Campos",
-              "team": "PSLPB Cicero Costha USA"
             }
           ]
         },
@@ -35142,18 +33830,6 @@
             {
               "name": "Preston Natchanon Tso",
               "team": "CJJA Long Island City"
-            }
-          ]
-        },
-        {
-          "belt": "GREY",
-          "ageDivision": "Mighty-Mite 2",
-          "gender": "Female",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Olivia Marie McConnell",
-              "team": "Alex Humen JJ"
             }
           ]
         },
@@ -35592,12 +34268,12 @@
               "team": "Renzo Gracie"
             },
             {
-              "name": "Daisy Clara Morris",
+              "name": "Parker Noelle Melia",
               "team": "Renzo Gracie"
             },
             {
-              "name": "Parker Noelle Melia",
-              "team": "Renzo Gracie"
+              "name": "Daisy Clara Morris",
+              "team": "Renzo Gracie Academy"
             }
           ]
         },
@@ -36005,18 +34681,6 @@
           "belt": "GREY",
           "ageDivision": "Junior 1",
           "gender": "Female",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Mariana Diaz Leon",
-              "team": "Cardonas BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "GREY",
-          "ageDivision": "Junior 1",
-          "gender": "Female",
           "weightClass": "Light",
           "athletes": [
             {
@@ -36198,6 +34862,10 @@
             {
               "name": "Madeline Phuong-Uyen Su",
               "team": "Alliance "
+            },
+            {
+              "name": "Mariana Diaz Leon",
+              "team": "Cardonas BJJ"
             },
             {
               "name": "Beatrix Lily Resnick",
@@ -36625,18 +35293,6 @@
           "belt": "GREY",
           "ageDivision": "Teen 1",
           "gender": "Female",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Aaleyah Estevez",
-              "team": "TAC Team BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "GREY",
-          "ageDivision": "Teen 1",
-          "gender": "Female",
           "weightClass": "Light",
           "athletes": [
             {
@@ -36644,12 +35300,12 @@
               "team": "Essential Jiu-Jitsu"
             },
             {
-              "name": "Robin Sadie Rose Kelly",
+              "name": "Yasmin Valentina Ferreira Santos",
               "team": "Essential Jiu-Jitsu"
             },
             {
-              "name": "Yasmin Valentina Ferreira Santos",
-              "team": "Essential Jiu-Jitsu"
+              "name": "Robin Sadie Rose Kelly",
+              "team": "Essential Jiu-Jitsu Dublin"
             }
           ]
         },
@@ -36813,18 +35469,6 @@
           "belt": "GREY",
           "ageDivision": "Teen 2",
           "gender": "Female",
-          "weightClass": "Middle",
-          "athletes": [
-            {
-              "name": "Naomi Monaco Mensah",
-              "team": "Crazy 88"
-            }
-          ]
-        },
-        {
-          "belt": "GREY",
-          "ageDivision": "Teen 2",
-          "gender": "Female",
           "weightClass": "Ultra-Heavy",
           "athletes": [
             {
@@ -36976,6 +35620,10 @@
           "weightClass": "Light",
           "athletes": [
             {
+              "name": "Naomi Monaco Mensah",
+              "team": "Crazy 88"
+            },
+            {
               "name": "Briella Lynn Rivello",
               "team": "Logic"
             },
@@ -37005,18 +35653,6 @@
           "belt": "GREY",
           "ageDivision": "Teen 3",
           "gender": "Female",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Laila S McCravey",
-              "team": "R1NG BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "GREY",
-          "ageDivision": "Teen 3",
-          "gender": "Female",
           "weightClass": "Super-Heavy",
           "athletes": [
             {
@@ -37026,6 +35662,10 @@
             {
               "name": "Abigail Mae Barnett",
               "team": "LEAD BJJ"
+            },
+            {
+              "name": "Laila S McCravey",
+              "team": "R1NG BJJ"
             }
           ]
         },
@@ -37054,18 +35694,6 @@
             {
               "name": "Ryland Roberto Privitello",
               "team": "G13 BJJ USA"
-            }
-          ]
-        },
-        {
-          "belt": "YELLOW",
-          "ageDivision": "Junior 1",
-          "gender": "Male",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Anson Wang",
-              "team": "A-Force Brazilian Jiu-Jitsu"
             }
           ]
         },
@@ -37147,6 +35775,10 @@
           "gender": "Male",
           "weightClass": "Light",
           "athletes": [
+            {
+              "name": "Anson Wang",
+              "team": "A-Force Brazilian Jiu-Jitsu"
+            },
             {
               "name": "Ezekiel Austin Thompson",
               "team": "Gregor Gracie Jiu-Jitsu"
@@ -37320,18 +35952,6 @@
         {
           "belt": "YELLOW",
           "ageDivision": "Junior 3",
-          "gender": "Male",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Tawan James Sullivan",
-              "team": "Crazy 88"
-            }
-          ]
-        },
-        {
-          "belt": "YELLOW",
-          "ageDivision": "Junior 3",
           "gender": "Female",
           "weightClass": "Feather",
           "athletes": [
@@ -37448,6 +36068,10 @@
               "team": "Black Hole Jiu-Jitsu"
             },
             {
+              "name": "Tawan James Sullivan",
+              "team": "Crazy 88"
+            },
+            {
               "name": "Maxwell Thomas Kizuka",
               "team": "Gracie Barra"
             },
@@ -37533,23 +36157,15 @@
           "belt": "YELLOW",
           "ageDivision": "Teen 2",
           "gender": "Female",
-          "weightClass": "Middle",
-          "athletes": [
-            {
-              "name": "Valeria Cortes-Balbuena",
-              "team": "Masterskya"
-            }
-          ]
-        },
-        {
-          "belt": "YELLOW",
-          "ageDivision": "Teen 2",
-          "gender": "Female",
           "weightClass": "Medium-Heavy",
           "athletes": [
             {
               "name": "Emaline Phuong-An Su",
               "team": "Alliance "
+            },
+            {
+              "name": "Valeria Cortes-Balbuena",
+              "team": "Masterskya"
             },
             {
               "name": "Fiona Francoise Laframboise",
@@ -37566,10 +36182,6 @@
             {
               "name": "Dillon Patrick Feehan",
               "team": "Nova Uni\u00e3o"
-            },
-            {
-              "name": "Logan James Granda",
-              "team": "Trasso Jiu-Jitsu"
             }
           ]
         },
@@ -37781,18 +36393,6 @@
           "belt": "ORANGE",
           "ageDivision": "Teen 2",
           "gender": "Male",
-          "weightClass": "Rooster",
-          "athletes": [
-            {
-              "name": "David Andres Cevallos",
-              "team": "Nova Uni\u00e3o"
-            }
-          ]
-        },
-        {
-          "belt": "ORANGE",
-          "ageDivision": "Teen 2",
-          "gender": "Male",
           "weightClass": "Light-Feather",
           "athletes": [
             {
@@ -37875,18 +36475,6 @@
         },
         {
           "belt": "ORANGE",
-          "ageDivision": "Teen 2",
-          "gender": "Male",
-          "weightClass": "Ultra-Heavy",
-          "athletes": [
-            {
-              "name": "Flavio Santiago Orozco Chele",
-              "team": "A-Force Brazilian Jiu-Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "ORANGE",
           "ageDivision": "Teen 3",
           "gender": "Male",
           "weightClass": "Medium-Heavy",
@@ -37910,30 +36498,6 @@
             {
               "name": "Evan Robert Gourley",
               "team": "Gracie Barra"
-            }
-          ]
-        },
-        {
-          "belt": "ORANGE",
-          "ageDivision": "Teen 3",
-          "gender": "Female",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Andrea Yamile Portillo Muralles",
-              "team": "Carlson Gracie Team"
-            }
-          ]
-        },
-        {
-          "belt": "ORANGE",
-          "ageDivision": "Teen 3",
-          "gender": "Female",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Raina Donatella Tumminello",
-              "team": "Essential Jiu-Jitsu"
             }
           ]
         },
@@ -38087,20 +36651,12 @@
           "belt": "BLUE",
           "ageDivision": "Adult",
           "gender": "Male",
-          "weightClass": "Rooster",
+          "weightClass": "Light",
           "athletes": [
             {
               "name": "Ethan Fernando Rodriguez",
               "team": "A1J-Art in Motion"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Adult",
-          "gender": "Male",
-          "weightClass": "Light",
-          "athletes": [
+            },
             {
               "name": "Ra\u00fal Alexandro Vega L\u00f3pez ",
               "team": "Renzo Gracie"
@@ -38386,6 +36942,10 @@
           "weightClass": "Super-Heavy",
           "athletes": [
             {
+              "name": "Madison J Galvan",
+              "team": "LEAD BJJ"
+            },
+            {
               "name": "Mary elizabeth Vidal",
               "team": "UFC Gym"
             }
@@ -38452,18 +37012,6 @@
             {
               "name": "Anthony John Brown Jr ",
               "team": "Roberto Traven BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Master 1",
-          "gender": "Female",
-          "weightClass": "Super-Heavy",
-          "athletes": [
-            {
-              "name": "Madison J Galvan",
-              "team": "LEAD BJJ"
             }
           ]
         },
@@ -38609,18 +37157,6 @@
         },
         {
           "belt": "BLUE",
-          "ageDivision": "Master 3",
-          "gender": "Female",
-          "weightClass": "Middle",
-          "athletes": [
-            {
-              "name": "Kimberly Elise Coates",
-              "team": "Flux MMA"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
           "ageDivision": "Master 5",
           "gender": "Male",
           "weightClass": "Ultra-Heavy",
@@ -38628,18 +37164,6 @@
             {
               "name": "Aaron James Ebertowski",
               "team": "BJJ Revolution Team"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Master 6",
-          "gender": "Male",
-          "weightClass": "Super-Heavy",
-          "athletes": [
-            {
-              "name": "Arthur Dee Balis",
-              "team": "Gracie Humait\u00e1 - Willis, Tx"
             }
           ]
         },
@@ -38831,18 +37355,6 @@
           "belt": "PURPLE",
           "ageDivision": "Master 1",
           "gender": "Male",
-          "weightClass": "Heavy",
-          "athletes": [
-            {
-              "name": "Blake Taylor Perez",
-              "team": "GF Team"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 1",
-          "gender": "Male",
           "weightClass": "Super-Heavy",
           "athletes": [
             {
@@ -38864,18 +37376,6 @@
             {
               "name": "Alejandro Guadalupe Q. Perales",
               "team": "Ares BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 2",
-          "gender": "Male",
-          "weightClass": "Middle",
-          "athletes": [
-            {
-              "name": "Ashton Paul Daigle",
-              "team": "Gracie Barra"
             }
           ]
         },
@@ -38960,18 +37460,6 @@
             {
               "name": "Jonathan Sain Meyer",
               "team": "Rodrigo Pinheiro BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 3",
-          "gender": "Male",
-          "weightClass": "Ultra-Heavy",
-          "athletes": [
-            {
-              "name": "Martin Willis Pepper",
-              "team": "Gracie Barra"
             }
           ]
         },
@@ -39083,7 +37571,7 @@
           "belt": "BROWN",
           "ageDivision": "Adult",
           "gender": "Male",
-          "weightClass": "Super-Heavy",
+          "weightClass": "Ultra-Heavy",
           "athletes": [
             {
               "name": "Jo\u00e3o Pedro de Brito Obelard",
@@ -39107,23 +37595,15 @@
           "belt": "BROWN",
           "ageDivision": "Master 1",
           "gender": "Female",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Jocelyn N. Castillo Robles",
-              "team": "BJJ Revolution Team"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Master 1",
-          "gender": "Female",
           "weightClass": "Light",
           "athletes": [
             {
               "name": "Amber Danielle Medina",
               "team": "10th Planet Freaks"
+            },
+            {
+              "name": "Jocelyn N. Castillo Robles",
+              "team": "BJJ Revolution Team"
             },
             {
               "name": "Sussanna Martinez",
@@ -39161,18 +37641,6 @@
         },
         {
           "belt": "BROWN",
-          "ageDivision": "Master 3",
-          "gender": "Female",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Mendi Melville Carlson",
-              "team": "Genesis Jiu-Jitsu Azle"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
           "ageDivision": "Master 4",
           "gender": "Male",
           "weightClass": "Light",
@@ -39196,18 +37664,6 @@
             {
               "name": "Casey Dylan Thom",
               "team": "BJJ Revolution Team"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Master 4",
-          "gender": "Female",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Marie Lee Davis",
-              "team": "Gracie Barra"
             }
           ]
         },
@@ -39341,18 +37797,6 @@
         },
         {
           "belt": "BLACK",
-          "ageDivision": "Adult",
-          "gender": "Female",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Vict\u00f3ria Montrezor",
-              "team": "Gracie Barra"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
           "ageDivision": "Master 1",
           "gender": "Male",
           "weightClass": "Medium-Heavy",
@@ -39423,39 +37867,15 @@
           "belt": "BLACK",
           "ageDivision": "Master 3",
           "gender": "Male",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Darious Demond Williams",
-              "team": "Ohana Jiu-Jitsu Academy"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Master 3",
-          "gender": "Male",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Ricky Dean Below Jr.",
-              "team": "Team Juc\u00e3o"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Master 3",
-          "gender": "Male",
           "weightClass": "Middle",
           "athletes": [
             {
-              "name": "Robert Max Bookman",
-              "team": "Gracie Barra"
-            },
-            {
               "name": "Felipe Mendoza",
               "team": "Pragma Jiu-Jitsu"
+            },
+            {
+              "name": "Ricky Dean Below Jr.",
+              "team": "Team Juc\u00e3o"
             }
           ]
         },
@@ -39876,18 +38296,6 @@
             {
               "name": "Damon Michael Lyeu",
               "team": "Reign Jiu-Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "GREY",
-          "ageDivision": "Pee-Wee 1",
-          "gender": "Female",
-          "weightClass": "Light-Feather",
-          "athletes": [
-            {
-              "name": "Olivia Penelope Rodriguez ",
-              "team": "Pablo Silva BJJ"
             }
           ]
         },
@@ -40443,20 +38851,12 @@
           "belt": "GREY",
           "ageDivision": "Pee-Wee 3",
           "gender": "Female",
-          "weightClass": "Middle",
+          "weightClass": "Medium-Heavy",
           "athletes": [
             {
               "name": "Camille Louise King",
               "team": "CheckMat"
-            }
-          ]
-        },
-        {
-          "belt": "GREY",
-          "ageDivision": "Pee-Wee 3",
-          "gender": "Female",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
+            },
             {
               "name": "Verda Necla Saygili",
               "team": "Northern Tribe Brazilian Jiu-jitsu"
@@ -40616,18 +39016,6 @@
             {
               "name": "Barry Asher Johnston",
               "team": "BJJ Revolution Team"
-            }
-          ]
-        },
-        {
-          "belt": "GREY",
-          "ageDivision": "Junior 1",
-          "gender": "Male",
-          "weightClass": "Super-Heavy",
-          "athletes": [
-            {
-              "name": "Cameron James Campos",
-              "team": "Rodrigo Pinheiro BJJ"
             }
           ]
         },
@@ -40800,10 +39188,6 @@
             {
               "name": "Roman Cade Zalamea Jones",
               "team": "Houzn Jiu-Jitsu Academy "
-            },
-            {
-              "name": "Noah Gavin Thomas",
-              "team": "Mohler Jiu-Jitsu "
             }
           ]
         },
@@ -41650,18 +40034,6 @@
         {
           "belt": "GREY",
           "ageDivision": "Teen 3",
-          "gender": "Male",
-          "weightClass": "Ultra-Heavy",
-          "athletes": [
-            {
-              "name": "Derac Wayne Smith",
-              "team": "\u00c1guila Jiu-Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "GREY",
-          "ageDivision": "Teen 3",
           "gender": "Female",
           "weightClass": "Light-Feather",
           "athletes": [
@@ -41680,18 +40052,6 @@
             {
               "name": "Addison Riley Cochrane",
               "team": "Liberatus Jiu-Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "YELLOW",
-          "ageDivision": "Pee-Wee 3",
-          "gender": "Male",
-          "weightClass": "Light-Feather",
-          "athletes": [
-            {
-              "name": "Raiden Alexander Powell",
-              "team": "Gracie Barra"
             }
           ]
         },
@@ -41951,18 +40311,6 @@
           "belt": "YELLOW",
           "ageDivision": "Teen 1",
           "gender": "Male",
-          "weightClass": "Rooster",
-          "athletes": [
-            {
-              "name": "Case Steven Sullivan",
-              "team": "All American MMA"
-            }
-          ]
-        },
-        {
-          "belt": "YELLOW",
-          "ageDivision": "Teen 1",
-          "gender": "Male",
           "weightClass": "Light-Feather",
           "athletes": [
             {
@@ -41984,34 +40332,6 @@
             {
               "name": "Graysen Steele Villalvazo",
               "team": "Soul Fighters BJJ"
-            },
-            {
-              "name": "Micheal Josef Herzog",
-              "team": "Team Reis Grip Brazilian Jiu-Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "YELLOW",
-          "ageDivision": "Teen 1",
-          "gender": "Male",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Ammon Thomas Burnside",
-              "team": "Soul Fighters BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "YELLOW",
-          "ageDivision": "Teen 1",
-          "gender": "Male",
-          "weightClass": "Middle",
-          "athletes": [
-            {
-              "name": "Emilio Aaron Metcalf ",
-              "team": "Slomo"
             }
           ]
         },
@@ -42079,20 +40399,12 @@
           "belt": "YELLOW",
           "ageDivision": "Teen 1",
           "gender": "Female",
-          "weightClass": "Super-Heavy",
+          "weightClass": "Ultra-Heavy",
           "athletes": [
             {
               "name": "Sophie Anne Stulce",
               "team": "CheckMat"
-            }
-          ]
-        },
-        {
-          "belt": "YELLOW",
-          "ageDivision": "Teen 1",
-          "gender": "Female",
-          "weightClass": "Ultra-Heavy",
-          "athletes": [
+            },
             {
               "name": "Arya Delaney Hudgins",
               "team": "Double Five South Ms"
@@ -42195,18 +40507,6 @@
           "belt": "YELLOW",
           "ageDivision": "Teen 2",
           "gender": "Female",
-          "weightClass": "Rooster",
-          "athletes": [
-            {
-              "name": "Makynlee Rayne Gibson",
-              "team": "TAC Team BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "YELLOW",
-          "ageDivision": "Teen 2",
-          "gender": "Female",
           "weightClass": "Feather",
           "athletes": [
             {
@@ -42236,30 +40536,6 @@
             {
               "name": "Emily Jean Hoang",
               "team": "Pablo Silva BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "YELLOW",
-          "ageDivision": "Teen 2",
-          "gender": "Female",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Ashley Nicole Odell",
-              "team": "Pablo Silva BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "YELLOW",
-          "ageDivision": "Teen 3",
-          "gender": "Male",
-          "weightClass": "Rooster",
-          "athletes": [
-            {
-              "name": "Ezra Matthew Burnside",
-              "team": "Soul Fighters BJJ"
             }
           ]
         },
@@ -42363,18 +40639,6 @@
           "belt": "YELLOW",
           "ageDivision": "Teen 3",
           "gender": "Female",
-          "weightClass": "Light-Feather",
-          "athletes": [
-            {
-              "name": "Aurea Sophia De Chene",
-              "team": "Rodrigo Pinheiro BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "YELLOW",
-          "ageDivision": "Teen 3",
-          "gender": "Female",
           "weightClass": "Feather",
           "athletes": [
             {
@@ -42384,42 +40648,6 @@
             {
               "name": "Celeste Mariah Martinez",
               "team": "Pablo Silva BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "YELLOW",
-          "ageDivision": "Teen 3",
-          "gender": "Female",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Isela Emily Martinez",
-              "team": "BJJ Revolution Team"
-            }
-          ]
-        },
-        {
-          "belt": "ORANGE",
-          "ageDivision": "Junior 2",
-          "gender": "Male",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Kole Robert Smith",
-              "team": "Texas Punishment Crew"
-            }
-          ]
-        },
-        {
-          "belt": "ORANGE",
-          "ageDivision": "Teen 1",
-          "gender": "Male",
-          "weightClass": "Light-Feather",
-          "athletes": [
-            {
-              "name": "Kane James Smith",
-              "team": "Texas Punishment Crew"
             }
           ]
         },
@@ -42444,10 +40672,6 @@
             {
               "name": "Harris Spencer Wood III",
               "team": "CheckMat"
-            },
-            {
-              "name": "Joao Lucas Bastos",
-              "team": "LEAD BJJ"
             }
           ]
         },
@@ -42475,18 +40699,6 @@
           "athletes": [
             {
               "name": "Braeden Joe Reyes-Lira",
-              "team": "Gracie Barra"
-            }
-          ]
-        },
-        {
-          "belt": "ORANGE",
-          "ageDivision": "Teen 2",
-          "gender": "Male",
-          "weightClass": "Ultra-Heavy",
-          "athletes": [
-            {
-              "name": "Ayrton Aleksander Linder",
               "team": "Gracie Barra"
             }
           ]
@@ -42691,18 +40903,6 @@
         },
         {
           "belt": "BLUE",
-          "ageDivision": "Juvenile",
-          "gender": "Female",
-          "weightClass": "Heavy",
-          "athletes": [
-            {
-              "name": "Alejandra Boixader Banol",
-              "team": "AOJ"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
           "ageDivision": "Adult",
           "gender": "Male",
           "weightClass": "Light-Feather",
@@ -42885,10 +41085,10 @@
           "belt": "BLUE",
           "ageDivision": "Master 1",
           "gender": "Male",
-          "weightClass": "Super-Heavy",
+          "weightClass": "Ultra-Heavy",
           "athletes": [
             {
-              "name": "Arapari-Hargous Rahiti Matorai",
+              "name": "Rahiti Matorai Arapari-Hargous",
               "team": "MB Academy CSLG Tahiti"
             }
           ]
@@ -42969,47 +41169,11 @@
           "belt": "BLUE",
           "ageDivision": "Master 4",
           "gender": "Male",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Bryce Whitney Kerr",
-              "team": "Lotus Club Arizona"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Master 4",
-          "gender": "Male",
           "weightClass": "Middle",
           "athletes": [
             {
               "name": "Patrick Huang Tsi Hui",
               "team": "MB Academy CSLG Tahiti"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Master 5",
-          "gender": "Male",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Miguel Jurado",
-              "team": "CheckMat"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Adult",
-          "gender": "Male",
-          "weightClass": "Light-Feather",
-          "athletes": [
-            {
-              "name": "Cristian Labastida Dominguez",
-              "team": "10th Planet Villains"
             }
           ]
         },
@@ -43050,10 +41214,6 @@
             {
               "name": "Joel Lopez",
               "team": "Gracie Barra"
-            },
-            {
-              "name": "Yoshiki Hirokawa",
-              "team": "Jiu-Jitsu For Life Canada"
             },
             {
               "name": "Alexander Dylan Ray",
@@ -43161,18 +41321,6 @@
           "belt": "PURPLE",
           "ageDivision": "Master 2",
           "gender": "Male",
-          "weightClass": "Light-Feather",
-          "athletes": [
-            {
-              "name": "Daniel J Shuman",
-              "team": "AOJ"
-            }
-          ]
-        },
-        {
-          "belt": "PURPLE",
-          "ageDivision": "Master 2",
-          "gender": "Male",
           "weightClass": "Light",
           "athletes": [
             {
@@ -43230,30 +41378,6 @@
             {
               "name": "Adrian Roy Ramiscal Santos",
               "team": "AOJ"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Adult",
-          "gender": "Male",
-          "weightClass": "Middle",
-          "athletes": [
-            {
-              "name": "Mario Eduardo Esquivies",
-              "team": "Baret Submissions USA"
-            }
-          ]
-        },
-        {
-          "belt": "BROWN",
-          "ageDivision": "Adult",
-          "gender": "Male",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Eduardo Barbosa",
-              "team": "Alliance "
             }
           ]
         },
@@ -43501,18 +41625,6 @@
           "belt": "BLACK",
           "ageDivision": "Master 2",
           "gender": "Male",
-          "weightClass": "Middle",
-          "athletes": [
-            {
-              "name": "Dylan James Falduto",
-              "team": "CheckMat"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
-          "ageDivision": "Master 2",
-          "gender": "Male",
           "weightClass": "Super-Heavy",
           "athletes": [
             {
@@ -43611,18 +41723,6 @@
         },
         {
           "belt": "BLACK",
-          "ageDivision": "Master 4",
-          "gender": "Female",
-          "weightClass": "Light",
-          "athletes": [
-            {
-              "name": "Amy Mai Alonso",
-              "team": "Carlson Gracie Team"
-            }
-          ]
-        },
-        {
-          "belt": "BLACK",
           "ageDivision": "Master 5",
           "gender": "Male",
           "weightClass": "Feather",
@@ -43709,23 +41809,15 @@
           "belt": "GREY",
           "ageDivision": "Mighty-Mite 3",
           "gender": "Male",
-          "weightClass": "Rooster",
-          "athletes": [
-            {
-              "name": "Royce Van Bui",
-              "team": "AOJ"
-            }
-          ]
-        },
-        {
-          "belt": "GREY",
-          "ageDivision": "Mighty-Mite 3",
-          "gender": "Male",
           "weightClass": "Light-Feather",
           "athletes": [
             {
               "name": "Bodhi J Nguyen",
               "team": "Alliance "
+            },
+            {
+              "name": "Royce Van Bui",
+              "team": "AOJ"
             },
             {
               "name": "Cameron Richard Cooley",
@@ -43742,18 +41834,6 @@
             {
               "name": "Osiris Arthur Hernandez",
               "team": "Lebre Jiu-Jitsu Academy"
-            }
-          ]
-        },
-        {
-          "belt": "GREY",
-          "ageDivision": "Mighty-Mite 3",
-          "gender": "Female",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Lilah Diana Suarez",
-              "team": "AOJ"
             }
           ]
         },
@@ -43986,18 +42066,6 @@
             {
               "name": "Ronden Kawika Joshua Andrade Jr. ",
               "team": "Roma Jiu-Jitsu Academy"
-            }
-          ]
-        },
-        {
-          "belt": "GREY",
-          "ageDivision": "Pee-Wee 2",
-          "gender": "Male",
-          "weightClass": "Ultra-Heavy",
-          "athletes": [
-            {
-              "name": "Nathan A Hernandez ",
-              "team": "Sabha Jiu-Jitsu"
             }
           ]
         },
@@ -44531,30 +42599,6 @@
         },
         {
           "belt": "GREY",
-          "ageDivision": "Junior 1",
-          "gender": "Female",
-          "weightClass": "Heavy",
-          "athletes": [
-            {
-              "name": "Zoe Rita Parchman",
-              "team": "Carlson Gracie Team"
-            }
-          ]
-        },
-        {
-          "belt": "GREY",
-          "ageDivision": "Junior 1",
-          "gender": "Female",
-          "weightClass": "Ultra-Heavy",
-          "athletes": [
-            {
-              "name": "Ruby L Hernandez ",
-              "team": "Sabha Jiu-Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "GREY",
           "ageDivision": "Junior 2",
           "gender": "Male",
           "weightClass": "Rooster",
@@ -44798,6 +42842,10 @@
             {
               "name": "Mia Adrianne Gonzalez",
               "team": "Alliance "
+            },
+            {
+              "name": "Zoe Rita Parchman",
+              "team": "Carlson Gracie Team"
             },
             {
               "name": "Valentina Aguirre Ibarra",
@@ -45059,18 +43107,6 @@
         },
         {
           "belt": "GREY",
-          "ageDivision": "Junior 3",
-          "gender": "Female",
-          "weightClass": "Ultra-Heavy",
-          "athletes": [
-            {
-              "name": "Aiyana Frankie Boucher",
-              "team": "Conde Koma BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "GREY",
           "ageDivision": "Teen 1",
           "gender": "Male",
           "weightClass": "Rooster",
@@ -45189,23 +43225,15 @@
           "belt": "GREY",
           "ageDivision": "Teen 1",
           "gender": "Male",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Matthew Thomas Lee White",
-              "team": "Gracie Barra"
-            }
-          ]
-        },
-        {
-          "belt": "GREY",
-          "ageDivision": "Teen 1",
-          "gender": "Male",
           "weightClass": "Heavy",
           "athletes": [
             {
               "name": "Alejandro C Rodriguez ",
               "team": "Cleber Jiu-Jitsu Visalia"
+            },
+            {
+              "name": "Matthew Thomas Lee White",
+              "team": "Gracie Barra"
             }
           ]
         },
@@ -45334,18 +43362,6 @@
             {
               "name": "Maliyah Ashlynn Dagani",
               "team": "Sektor BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "GREY",
-          "ageDivision": "Teen 1",
-          "gender": "Female",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Izabella Janelle Ferreyra",
-              "team": "Ares BJJ"
             }
           ]
         },
@@ -45496,6 +43512,10 @@
           "weightClass": "Middle",
           "athletes": [
             {
+              "name": "Izabella Janelle Ferreyra",
+              "team": "Ares BJJ"
+            },
+            {
               "name": "Naomi Vianney Reyes",
               "team": "Arizona Au BJJ"
             },
@@ -45537,35 +43557,15 @@
           "belt": "GREY",
           "ageDivision": "Teen 3",
           "gender": "Female",
-          "weightClass": "Light-Feather",
+          "weightClass": "Feather",
           "athletes": [
             {
               "name": "Mia Jalissa Ibarra",
               "team": "Gracie Barra"
-            }
-          ]
-        },
-        {
-          "belt": "GREY",
-          "ageDivision": "Teen 3",
-          "gender": "Female",
-          "weightClass": "Feather",
-          "athletes": [
+            },
             {
               "name": "Nina Sophie M. Kricken",
               "team": "Kola Ajose Jiu-Jitsu Academy"
-            }
-          ]
-        },
-        {
-          "belt": "YELLOW",
-          "ageDivision": "Pee-Wee 3",
-          "gender": "Male",
-          "weightClass": "Light-Feather",
-          "athletes": [
-            {
-              "name": "Arshan Arun Advani",
-              "team": "Gracie Barra"
             }
           ]
         },
@@ -45813,23 +43813,15 @@
           "belt": "YELLOW",
           "ageDivision": "Junior 3",
           "gender": "Female",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Chloe Danielle Pichardo",
-              "team": "TRUJITSU"
-            }
-          ]
-        },
-        {
-          "belt": "YELLOW",
-          "ageDivision": "Junior 3",
-          "gender": "Female",
           "weightClass": "Middle",
           "athletes": [
             {
               "name": "Yves Sabre Lebdeh",
               "team": "AOJ"
+            },
+            {
+              "name": "Chloe Danielle Pichardo",
+              "team": "TRUJITSU"
             }
           ]
         },
@@ -45846,18 +43838,6 @@
             {
               "name": "Kennedy Marie Sepulveda",
               "team": "Sektor BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "YELLOW",
-          "ageDivision": "Junior 3",
-          "gender": "Female",
-          "weightClass": "Heavy",
-          "athletes": [
-            {
-              "name": "Dhalayla Xuan Nguyen",
-              "team": "Gracie Barra"
             }
           ]
         },
@@ -45980,18 +43960,6 @@
         {
           "belt": "YELLOW",
           "ageDivision": "Teen 1",
-          "gender": "Male",
-          "weightClass": "Heavy",
-          "athletes": [
-            {
-              "name": "Dylan Gaytan",
-              "team": "Sektor BJJ"
-            }
-          ]
-        },
-        {
-          "belt": "YELLOW",
-          "ageDivision": "Teen 1",
           "gender": "Female",
           "weightClass": "Light-Feather",
           "athletes": [
@@ -46080,6 +44048,10 @@
               "team": "Conde Koma BJJ"
             },
             {
+              "name": "Dhalayla Xuan Nguyen",
+              "team": "Gracie Barra"
+            },
+            {
               "name": "Brisya Ruby Moreno",
               "team": "R1NG BJJ"
             }
@@ -46142,6 +44114,10 @@
             {
               "name": "Dominic Allen King",
               "team": "One Jiu-Jitsu USA"
+            },
+            {
+              "name": "Dylan Gaytan",
+              "team": "Sektor BJJ"
             }
           ]
         },
@@ -46221,20 +44197,12 @@
           "belt": "YELLOW",
           "ageDivision": "Teen 3",
           "gender": "Male",
-          "weightClass": "Rooster",
+          "weightClass": "Light-Feather",
           "athletes": [
             {
               "name": "Dohyun Kang",
               "team": "Alliance "
-            }
-          ]
-        },
-        {
-          "belt": "YELLOW",
-          "ageDivision": "Teen 3",
-          "gender": "Male",
-          "weightClass": "Light-Feather",
-          "athletes": [
+            },
             {
               "name": "Andersen Richard Park",
               "team": "One Jiu-Jitsu USA"
@@ -46314,6 +44282,18 @@
             {
               "name": "Aurora Kendall Garcia",
               "team": "Soriano Jiu-Jitsu Academy"
+            }
+          ]
+        },
+        {
+          "belt": "ORANGE",
+          "ageDivision": "Teen 2",
+          "gender": "Male",
+          "weightClass": "Medium-Heavy",
+          "athletes": [
+            {
+              "name": "Christopher Jhing Mabilin Romero",
+              "team": "Kola Ajose Jiu-Jitsu Academy"
             }
           ]
         },
@@ -46424,30 +44404,6 @@
               "team": "Start Doing"
             }
           ]
-        },
-        {
-          "belt": "GREEN",
-          "ageDivision": "Teen 3",
-          "gender": "Female",
-          "weightClass": "Feather",
-          "athletes": [
-            {
-              "name": "Luana de Jesus Solis Neyra",
-              "team": "Guigo JJ International"
-            }
-          ]
-        },
-        {
-          "belt": "GREEN",
-          "ageDivision": "Teen 3",
-          "gender": "Female",
-          "weightClass": "Medium-Heavy",
-          "athletes": [
-            {
-              "name": "Savannah Kay Spitale",
-              "team": "CheckMat"
-            }
-          ]
         }
       ]
     },
@@ -46515,18 +44471,6 @@
           "belt": "WHITE",
           "ageDivision": "Adult",
           "gender": "Male",
-          "weightClass": "Rooster",
-          "athletes": [
-            {
-              "name": "Joshua Peyton Biruk Curtis",
-              "team": "Pedigo Submission Fighting"
-            }
-          ]
-        },
-        {
-          "belt": "WHITE",
-          "ageDivision": "Adult",
-          "gender": "Male",
           "weightClass": "Light-Feather",
           "athletes": [
             {
@@ -46543,6 +44487,10 @@
             },
             {
               "name": "Joshua Jay Dorsch",
+              "team": "Pedigo Submission Fighting"
+            },
+            {
+              "name": "Joshua Peyton Biruk Curtis",
               "team": "Pedigo Submission Fighting"
             },
             {
@@ -47106,6 +45054,10 @@
               "team": "Downriver Jiu-Jitsu"
             },
             {
+              "name": "Drake Lamar Harris",
+              "team": "Gracie Humaita St. Louis"
+            },
+            {
               "name": "Edison M. De La Pe\u00f1a III",
               "team": "TAC Team BJJ"
             },
@@ -47252,6 +45204,10 @@
             {
               "name": "Maria Catalina Marzola Loaiza",
               "team": "Carlson Gracie Team"
+            },
+            {
+              "name": "Emilie Hammouche Creagh",
+              "team": "GFTeam Charlotte"
             }
           ]
         },
@@ -47756,6 +45712,10 @@
             {
               "name": "Addelynn Marie Beal",
               "team": "Gracie Humaita St. Louis"
+            },
+            {
+              "name": "Kimberly Vallejo",
+              "team": "Pablo Silva BJJ"
             }
           ]
         },
@@ -48214,6 +46174,10 @@
               "team": "Champlin Jiu-Jitsu Academy"
             },
             {
+              "name": "Samuel Joseph Schenkel",
+              "team": "Double Five Chicago"
+            },
+            {
               "name": "Selvin Abdiel Carias Baca",
               "team": "Gracie Barra Libertyville"
             },
@@ -48421,10 +46385,6 @@
           "gender": "Male",
           "weightClass": "Feather",
           "athletes": [
-            {
-              "name": "John Patrick Brennan",
-              "team": "Alliance Madison"
-            },
             {
               "name": "Uriel Chapa Jimenez",
               "team": "CheckMat Lake County"
@@ -48650,10 +46610,6 @@
               "team": "Adam Gomez Jiu-Jitsu Academy"
             },
             {
-              "name": "Meredith Ann Sciortino",
-              "team": "Caique Jiu-Jitsu"
-            },
-            {
               "name": "Brianna Kaitlyn Markell ",
               "team": "Cascao Jiu-Jitsu"
             },
@@ -48680,6 +46636,10 @@
             {
               "name": "Brianna Dolores Ramirez",
               "team": "Alliance Madison"
+            },
+            {
+              "name": "Meredith Ann Sciortino",
+              "team": "Caique Jiu-Jitsu"
             },
             {
               "name": "Chelsea Belle Miller",
@@ -48760,6 +46720,18 @@
             {
               "name": "Sara Hope Shirer",
               "team": "Valko BJJ"
+            }
+          ]
+        },
+        {
+          "belt": "BLUE",
+          "ageDivision": "Master 2",
+          "gender": "Male",
+          "weightClass": "Feather",
+          "athletes": [
+            {
+              "name": "John Patrick Brennan",
+              "team": "Alliance Madison"
             }
           ]
         },
@@ -48961,6 +46933,10 @@
           "gender": "Female",
           "weightClass": "Middle",
           "athletes": [
+            {
+              "name": "Catherine Marian Scott Caetano",
+              "team": "Clark Gracie Team"
+            },
             {
               "name": "Dana Marie Knowles",
               "team": "Pedigo Submission Fighting"
@@ -49238,10 +47214,6 @@
               "team": "Alliance Madison"
             },
             {
-              "name": "Jeremy A. Parker",
-              "team": "Carlson Gracie Team"
-            },
-            {
               "name": "George Anthony Morales Jr",
               "team": "Cascao Jiu-Jitsu"
             },
@@ -49290,6 +47262,10 @@
               "team": "Brasa CTA"
             },
             {
+              "name": "Wilfredo A. Bermudez Echeverria",
+              "team": "Champlin Jiu-Jitsu Academy"
+            },
+            {
               "name": "Chad Lee Argabright",
               "team": "Gracie Barra Quincy"
             },
@@ -49318,10 +47294,6 @@
               "team": "Alliance Madison"
             },
             {
-              "name": "Jon-Paul Nicholas Long",
-              "team": "Carlson Gracie Team"
-            },
-            {
               "name": "Benjamin Neil LaFrinier",
               "team": "GFTeam Minnesota"
             }
@@ -49333,6 +47305,10 @@
           "gender": "Male",
           "weightClass": "Super-Heavy",
           "athletes": [
+            {
+              "name": "Jon-Paul Nicholas Long",
+              "team": "Carlson Gracie Team"
+            },
             {
               "name": "Joseph Albert Lauenroth",
               "team": "Savage Citizen Jiu-Jitsu Academy"
@@ -49429,6 +47405,10 @@
           "gender": "Male",
           "weightClass": "Light",
           "athletes": [
+            {
+              "name": "Jeremy A. Parker",
+              "team": "Carlson Gracie Team"
+            },
             {
               "name": "Robert Joshua Tate",
               "team": "GFTeam Arkansas"
@@ -50351,6 +48331,18 @@
           "belt": "PURPLE",
           "ageDivision": "Master 2",
           "gender": "Male",
+          "weightClass": "Heavy",
+          "athletes": [
+            {
+              "name": "Aaron Robert Geiger",
+              "team": "Alliance Madison"
+            }
+          ]
+        },
+        {
+          "belt": "PURPLE",
+          "ageDivision": "Master 2",
+          "gender": "Male",
           "weightClass": "Super-Heavy",
           "athletes": [
             {
@@ -50818,16 +48810,16 @@
           "weightClass": "Light-Feather",
           "athletes": [
             {
-              "name": "Washington Ferreira dos Santos",
-              "team": "Atos Winter Garden | Lucas Pinheiro"
-            },
-            {
               "name": "Samuel A. Tijerina",
               "team": "Carlson Gracie Team"
             },
             {
               "name": "Anthony Avila-Arellano",
               "team": "Gracie Barra Libertyville"
+            },
+            {
+              "name": "Washington Ferreira dos Santos",
+              "team": "Lucas Pinheiro Jiu-Jitsu"
             }
           ]
         },
@@ -51024,10 +49016,6 @@
             {
               "name": "Sivarooban Markandu",
               "team": "Salvosa BJJ Ascension"
-            },
-            {
-              "name": "Danny Flores",
-              "team": "Valko BJJ"
             }
           ]
         },
@@ -51060,6 +49048,10 @@
             {
               "name": "Anthony Michael Marolda",
               "team": "Pedigo Submission Fighting"
+            },
+            {
+              "name": "Danny Flores",
+              "team": "Valko BJJ"
             }
           ]
         },
@@ -51149,6 +49141,10 @@
           "gender": "Female",
           "weightClass": "Feather",
           "athletes": [
+            {
+              "name": "Rachel Corrine Malik",
+              "team": "Alliance Charlotte"
+            },
             {
               "name": "Dakota Rae Zimmerman",
               "team": "Arnold Brazilian Jiu-Jitsu"
@@ -51365,10 +49361,6 @@
           "gender": "Female",
           "weightClass": "Feather",
           "athletes": [
-            {
-              "name": "Rachel Corrine Malik",
-              "team": "Alliance Charlotte"
-            },
             {
               "name": "Linden Ashley Clark",
               "team": "Canada Pura BJJ"
@@ -51782,10 +49774,6 @@
               "team": "GF Team"
             },
             {
-              "name": "Jung-Cheol Kim",
-              "team": "Gracie Barra Korea"
-            },
-            {
               "name": "Rehan Muttalib",
               "team": "Varsity Jiu-Jitsu"
             }
@@ -51800,6 +49788,10 @@
             {
               "name": "Connor Gray Waddell",
               "team": "Champlin Jiu-Jitsu Academy"
+            },
+            {
+              "name": "Jung-Cheol Kim",
+              "team": "Gracie Barra Korea"
             }
           ]
         },
@@ -51847,7 +49839,7 @@
           "belt": "BLACK",
           "ageDivision": "Adult",
           "gender": "Female",
-          "weightClass": "Heavy",
+          "weightClass": "Super-Heavy",
           "athletes": [
             {
               "name": "Larissa Dias de Almeida",
@@ -51933,6 +49925,10 @@
           "gender": "Male",
           "weightClass": "Medium-Heavy",
           "athletes": [
+            {
+              "name": "Gialysson Ad\u00e3o Silva Freitas",
+              "team": "GFTeam Charlotte"
+            },
             {
               "name": "Han Byol Kim",
               "team": "Molinaro Jiu-Jitsu"
@@ -52072,10 +50068,6 @@
             {
               "name": "Diogo Rodrigo de Oliveira",
               "team": "Brazil 021 School of Jiu-Jitsu BR"
-            },
-            {
-              "name": "Alexander Charles Yablong",
-              "team": "Easton BJJ"
             },
             {
               "name": "Matthew Joseph Glynn",
@@ -52774,6 +50766,10 @@
           "weightClass": "Ultra-Heavy",
           "athletes": [
             {
+              "name": "Ravinder Singh Basi",
+              "team": "Renzo Gracie Ottawa"
+            },
+            {
               "name": "Christopher M. Hubartt",
               "team": "Team James Clingerman"
             }
@@ -53392,10 +51388,6 @@
           "weightClass": "Light-Feather",
           "athletes": [
             {
-              "name": "Maria Alejandra Figueroa Moreira",
-              "team": "10th Planet Jiu Jitsu"
-            },
-            {
               "name": "Isabelle Marina Armstrong",
               "team": "Armstrong Academy of Martial Arts"
             },
@@ -53412,6 +51404,10 @@
           "weightClass": "Feather",
           "athletes": [
             {
+              "name": "Maria Alejandra Figueroa Moreira",
+              "team": "10th Planet Jiu Jitsu"
+            },
+            {
               "name": "Tessa Ann Vires",
               "team": "Cascao BJJ Las Vegas"
             },
@@ -53427,6 +51423,10 @@
           "gender": "Female",
           "weightClass": "Middle",
           "athletes": [
+            {
+              "name": "Valerie Sanchez",
+              "team": "Checkmat Pure Brazilian Jiu-Jitsu"
+            },
             {
               "name": "Adyn Elizabeth Noorlun",
               "team": "Easton BJJ"
@@ -53571,6 +51571,10 @@
           "gender": "Male",
           "weightClass": "Medium-Heavy",
           "athletes": [
+            {
+              "name": "Christopher S Selasky",
+              "team": "Carlson Gracie Grand Rapids"
+            },
             {
               "name": "Alex Blaine Ferreira",
               "team": "Choke-U"
@@ -54078,6 +52082,10 @@
             {
               "name": "Hunter Daniel Estabrook",
               "team": "Pedro Sauer Team"
+            },
+            {
+              "name": "Brendan Patrick Regelbrugge",
+              "team": "Renzo Gracie Orlando "
             },
             {
               "name": "Mason Alexander Stritzel",
@@ -54881,7 +52889,7 @@
           "belt": "BROWN",
           "ageDivision": "Master 4",
           "gender": "Male",
-          "weightClass": "Medium-Heavy",
+          "weightClass": "Heavy",
           "athletes": [
             {
               "name": "Angel Fernando Castillo Veliz",
@@ -55876,6 +53884,10 @@
               "team": "Brasa "
             },
             {
+              "name": "William Harrison Gregor",
+              "team": "Brasa "
+            },
+            {
               "name": "Ibraheem Mohammad Abuasi ",
               "team": "Pedigo Submission Fighting"
             }
@@ -56248,16 +54260,16 @@
           "weightClass": "Light",
           "athletes": [
             {
-              "name": "Julian Francisco Fabian Jr",
-              "team": "Atos Winter Garden | Lucas Pinheiro"
-            },
-            {
               "name": "Micah Kaleoikaikaokalani Wilson",
               "team": "Checkmat Pure Brazilian Jiu-Jitsu"
             },
             {
               "name": "Noah Rory Cochon",
               "team": "Checkmat Pure Brazilian Jiu-Jitsu"
+            },
+            {
+              "name": "Julian Francisco Fabian Jr",
+              "team": "Lucas Pinheiro Jiu-Jitsu"
             },
             {
               "name": "Rayan Alismaeel",
@@ -56315,6 +54327,10 @@
           "gender": "Male",
           "weightClass": "Heavy",
           "athletes": [
+            {
+              "name": "Tsoni Gingoyon Kostov",
+              "team": "Arctic Training Center"
+            },
             {
               "name": "Marcos Henrique Ferret Hofman",
               "team": "Asenjo Brazilian Jiu-Jitsu"
@@ -56435,6 +54451,10 @@
           "gender": "Male",
           "weightClass": "Light-Feather",
           "athletes": [
+            {
+              "name": "Jose Daniel Cedano",
+              "team": "Carlson Gracie Team"
+            },
             {
               "name": "Mateo Jordan Nanalig",
               "team": "Ferro Academy"
@@ -56558,6 +54578,18 @@
             {
               "name": "Abigail Burgos Beltran",
               "team": "Lovato Jiu-Jitsu"
+            }
+          ]
+        },
+        {
+          "belt": "GREY",
+          "ageDivision": "Junior 2",
+          "gender": "Female",
+          "weightClass": "Feather",
+          "athletes": [
+            {
+              "name": "Mikeyla Gonzalez",
+              "team": "Taylor Biagi Jiu-Jitsu"
             }
           ]
         },
@@ -56690,6 +54722,10 @@
             {
               "name": "Holden James Basiorka",
               "team": "BJJ Coach - Corral's Martial Arts"
+            },
+            {
+              "name": "Jacob Sikora",
+              "team": "Brasa "
             }
           ]
         },
@@ -56699,10 +54735,6 @@
           "gender": "Male",
           "weightClass": "Medium-Heavy",
           "athletes": [
-            {
-              "name": "Jacob Sikora",
-              "team": "Brasa "
-            },
             {
               "name": "Henry Michael Albert",
               "team": "Carlson Gracie Team"
@@ -56947,6 +54979,10 @@
           "gender": "Female",
           "weightClass": "Heavy",
           "athletes": [
+            {
+              "name": "Evelyn R Ortner",
+              "team": "New Lighthouse Jiu-Jitsu Academy"
+            },
             {
               "name": "Iris Leigh Falacienski",
               "team": "Watermark Jiu-Jitsu"
@@ -57412,24 +55448,16 @@
               "team": "Brazil-021 Arlington Heights ,IL"
             },
             {
+              "name": "Aiden Lee Clingan",
+              "team": "Commonwealth Jiu-Jitsu"
+            },
+            {
               "name": "Loren William Sole",
               "team": "GFTeam Minnesota"
             },
             {
               "name": "Austin Blake McGarry",
               "team": "Tac Team Chicago - The Academy Brazilian Jiu-Jitsu"
-            }
-          ]
-        },
-        {
-          "belt": "YELLOW",
-          "ageDivision": "Junior 3",
-          "gender": "Male",
-          "weightClass": "Middle",
-          "athletes": [
-            {
-              "name": "Aiden Lee Clingan",
-              "team": "Commonwealth Jiu-Jitsu"
             }
           ]
         },
@@ -57594,6 +55622,10 @@
             {
               "name": "Hunter David Horwath",
               "team": "Brazil-021 Arlington Heights ,IL"
+            },
+            {
+              "name": "Silas Joaquin Dominguez ",
+              "team": "Tac Team BJJ - Midwest "
             }
           ]
         },
@@ -57817,7 +55849,7 @@
           "belt": "YELLOW",
           "ageDivision": "Teen 3",
           "gender": "Female",
-          "weightClass": "Feather",
+          "weightClass": "Light",
           "athletes": [
             {
               "name": "Abigail Marie Martin",
@@ -57957,6 +55989,10 @@
           "gender": "Male",
           "weightClass": "Light",
           "athletes": [
+            {
+              "name": "Peyton Michael George ",
+              "team": "Bulls BJJ Colorado"
+            },
             {
               "name": "Joshua Michael Parker",
               "team": "Fulcrum Jiu-Jitsu Academy"
@@ -58171,6 +56207,18 @@
           "belt": "WHITE",
           "ageDivision": "Master 1",
           "gender": "Male",
+          "weightClass": "Feather",
+          "athletes": [
+            {
+              "name": "Gautham Vishal Vinod",
+              "team": "Demian Maia Jiu-Jitsu USA"
+            }
+          ]
+        },
+        {
+          "belt": "WHITE",
+          "ageDivision": "Master 1",
+          "gender": "Male",
           "weightClass": "Light",
           "athletes": [
             {
@@ -58309,6 +56357,10 @@
           "gender": "Male",
           "weightClass": "Middle",
           "athletes": [
+            {
+              "name": "Sammy Se Jin Park",
+              "team": "Demian Maia Jiu-Jitsu USA"
+            },
             {
               "name": "Anthony Jackson Senn",
               "team": "G-Bar Training Center"
@@ -58776,6 +56828,10 @@
             {
               "name": "Kayson Christopher Parker",
               "team": "Fulcrum Jiu-Jitsu Academy"
+            },
+            {
+              "name": "Javier Salvador Sojo",
+              "team": "Logos JJ"
             }
           ]
         },
@@ -59419,20 +57475,12 @@
           "belt": "BLUE",
           "ageDivision": "Master 3",
           "gender": "Male",
-          "weightClass": "Light-Feather",
+          "weightClass": "Feather",
           "athletes": [
             {
               "name": "Eric C Sato",
               "team": "Buiu BJJ Team"
-            }
-          ]
-        },
-        {
-          "belt": "BLUE",
-          "ageDivision": "Master 3",
-          "gender": "Male",
-          "weightClass": "Feather",
-          "athletes": [
+            },
             {
               "name": "Jeremy Scott Kamphuis",
               "team": "Logos JJ"
@@ -59947,6 +57995,18 @@
           "belt": "PURPLE",
           "ageDivision": "Adult",
           "gender": "Male",
+          "weightClass": "Middle",
+          "athletes": [
+            {
+              "name": "Jeffrey H Le",
+              "team": "Logos JJ"
+            }
+          ]
+        },
+        {
+          "belt": "PURPLE",
+          "ageDivision": "Adult",
+          "gender": "Male",
           "weightClass": "Medium-Heavy",
           "athletes": [
             {
@@ -60056,6 +58116,10 @@
             {
               "name": "Omar Taher",
               "team": "Logos JJ"
+            },
+            {
+              "name": "Sergio Ivan Lucero Acosta",
+              "team": "Wanderley Jiu-Jitsu "
             }
           ]
         },
@@ -60268,6 +58332,18 @@
             {
               "name": "Eric Garland Hayes",
               "team": "Brasa Caio Terra"
+            }
+          ]
+        },
+        {
+          "belt": "PURPLE",
+          "ageDivision": "Master 3",
+          "gender": "Male",
+          "weightClass": "Ultra-Heavy",
+          "athletes": [
+            {
+              "name": "Victor Joe Mccullough",
+              "team": "Ken Gabrielson's Combative Fighting Systems"
             }
           ]
         },
@@ -61147,6 +59223,18 @@
           "belt": "BLACK",
           "ageDivision": "Master 1",
           "gender": "Male",
+          "weightClass": "Light",
+          "athletes": [
+            {
+              "name": "Norman Julian Velazquez",
+              "team": "Atos Jiu-Jitsu"
+            }
+          ]
+        },
+        {
+          "belt": "BLACK",
+          "ageDivision": "Master 1",
+          "gender": "Male",
           "weightClass": "Middle",
           "athletes": [
             {
@@ -61192,10 +59280,6 @@
             {
               "name": "Ruben Hernandez",
               "team": "Ares BJJ MABJJ Academy "
-            },
-            {
-              "name": "Alexander Charles Yablong",
-              "team": "Easton BJJ"
             },
             {
               "name": "Timothy John Ivers",
@@ -61701,6 +59785,10 @@
           "athletes": [
             {
               "name": "Alan Gonzales Dominguez",
+              "team": "Easton BJJ"
+            },
+            {
+              "name": "Colton Allen Grantham",
               "team": "Easton BJJ"
             },
             {
@@ -62622,6 +60710,18 @@
             {
               "name": "Eric Garland Hayes",
               "team": "Brasa Caio Terra"
+            }
+          ]
+        },
+        {
+          "belt": "PURPLE",
+          "ageDivision": "Master 3",
+          "gender": "Male",
+          "weightClass": "Ultra-Heavy",
+          "athletes": [
+            {
+              "name": "Victor Joe Mccullough",
+              "team": "Ken Gabrielson's Combative Fighting Systems"
             }
           ]
         },
@@ -63632,6 +61732,10 @@
             {
               "name": "Brandon Troy McCrary",
               "team": "Inicio Tallahassee"
+            },
+            {
+              "name": "Jeffery Wayne Roys",
+              "team": "Nova Uni\u00e3o USA"
             }
           ]
         },
@@ -63672,6 +61776,10 @@
             {
               "name": "Anna Marie Richardson",
               "team": "Nova Uni\u00e3o USA"
+            },
+            {
+              "name": "Katelyn Renee Bell",
+              "team": "Outsiders Jiu-Jitsu"
             }
           ]
         },
@@ -63728,6 +61836,18 @@
             {
               "name": "Ryan Robert Flager",
               "team": "Kevin Gallagher U C K BJJ"
+            }
+          ]
+        },
+        {
+          "belt": "WHITE",
+          "ageDivision": "Master 2",
+          "gender": "Female",
+          "weightClass": "Feather",
+          "athletes": [
+            {
+              "name": "Angela Leigh Poulos",
+              "team": "American Top Team Atlanta"
             }
           ]
         },
@@ -63873,6 +61993,10 @@
           "gender": "Male",
           "weightClass": "Light",
           "athletes": [
+            {
+              "name": "Braulio Corral III",
+              "team": "BJJ Coach - Corral's Martial Arts"
+            },
             {
               "name": "Feanix Dominic Jaks",
               "team": "Gracie Barra Kissimmee"
@@ -64342,12 +62466,36 @@
         {
           "belt": "BLUE",
           "ageDivision": "Master 3",
+          "gender": "Male",
+          "weightClass": "Ultra-Heavy",
+          "athletes": [
+            {
+              "name": "Nathaniel Hollis ll",
+              "team": "Roberto Traven BJJ"
+            }
+          ]
+        },
+        {
+          "belt": "BLUE",
+          "ageDivision": "Master 3",
           "gender": "Female",
           "weightClass": "Heavy",
           "athletes": [
             {
               "name": "Abby Marie Jamison",
               "team": "Famous Five 6 BJJ"
+            }
+          ]
+        },
+        {
+          "belt": "BLUE",
+          "ageDivision": "Master 4",
+          "gender": "Male",
+          "weightClass": "Light-Feather",
+          "athletes": [
+            {
+              "name": "Peter Jay Parris",
+              "team": "Campe\u00e3o United Jiu-Jitsu"
             }
           ]
         },
@@ -64372,6 +62520,18 @@
             {
               "name": "Adewole Adeola Adu",
               "team": "Creighton Mixed Martial Arts Academy"
+            }
+          ]
+        },
+        {
+          "belt": "BLUE",
+          "ageDivision": "Master 4",
+          "gender": "Female",
+          "weightClass": "Feather",
+          "athletes": [
+            {
+              "name": "Sarah Kathleen Holzhalb",
+              "team": "Inicio Vida Jiu-Jitsu"
             }
           ]
         },
@@ -64891,7 +63051,7 @@
           "athletes": [
             {
               "name": "Washington Ferreira dos Santos",
-              "team": "Atos Winter Garden | Lucas Pinheiro"
+              "team": "Lucas Pinheiro Jiu-Jitsu"
             }
           ]
         },
@@ -65190,6 +63350,10 @@
           "weightClass": "Light",
           "athletes": [
             {
+              "name": "Jonata Gomes Ramos",
+              "team": "Checkmat Olympus"
+            },
+            {
               "name": "Leandro Lima de Souza",
               "team": "Lotus Club"
             }
@@ -65267,7 +63431,7 @@
           "belt": "BLACK",
           "ageDivision": "Adult",
           "gender": "Female",
-          "weightClass": "Heavy",
+          "weightClass": "Super-Heavy",
           "athletes": [
             {
               "name": "Larissa Dias de Almeida",
@@ -65478,6 +63642,10 @@
               "team": "R1NG BJJ"
             },
             {
+              "name": "Timothy Michael McNamara",
+              "team": "Renzo Gracie Academy"
+            },
+            {
               "name": "Jon Jacob Dysert",
               "team": "Seymour BJJ Academy"
             },
@@ -65498,6 +63666,10 @@
               "team": "Danilo Cherman BJJ"
             },
             {
+              "name": "Diego Ralph Burani",
+              "team": "Gel\u00e9ia Team"
+            },
+            {
               "name": "Nicolas Andres Alarcon",
               "team": "Roberto Traven BJJ"
             }
@@ -65512,6 +63684,10 @@
             {
               "name": "Ian Alexander McPherson",
               "team": "Alliance Acworth"
+            },
+            {
+              "name": "Joshua Robert Souder",
+              "team": "Checkmat Olympus"
             }
           ]
         },
@@ -65540,6 +63716,10 @@
             {
               "name": "Eman Issam H. Bilbaisi",
               "team": "BlackSmith Jiu-Jitsu"
+            },
+            {
+              "name": "Constanze Traudl Beier",
+              "team": "CheckMat USA"
             }
           ]
         },
@@ -65654,8 +63834,24 @@
           "weightClass": "Middle",
           "athletes": [
             {
+              "name": "Brianne Michelle Corral",
+              "team": "BJJ Coach Intl. Association"
+            },
+            {
               "name": "Melissa Barberino",
               "team": "Team Tooke Mixed Martial Arts"
+            }
+          ]
+        },
+        {
+          "belt": "BLACK",
+          "ageDivision": "Master 5",
+          "gender": "Male",
+          "weightClass": "Feather",
+          "athletes": [
+            {
+              "name": "Douglas Guncet",
+              "team": "Checkmat Olympus"
             }
           ]
         },
@@ -65958,7 +64154,15 @@
             {
               "name": "Darrick McShain Loftus",
               "team": "Alliance Roswell"
-            },
+            }
+          ]
+        },
+        {
+          "belt": "BLUE",
+          "ageDivision": "Master 1",
+          "gender": "Male",
+          "weightClass": "Super-Heavy",
+          "athletes": [
             {
               "name": "Juwan Noel Gaul",
               "team": "ODSY Jiu-Jitsu"
@@ -66054,6 +64258,18 @@
             {
               "name": "Daniel J Badia",
               "team": "X3 Sports BJJ"
+            }
+          ]
+        },
+        {
+          "belt": "BLUE",
+          "ageDivision": "Master 4",
+          "gender": "Male",
+          "weightClass": "Feather",
+          "athletes": [
+            {
+              "name": "Peter Jay Parris",
+              "team": "Campe\u00e3o United Jiu-Jitsu"
             }
           ]
         },
@@ -66299,6 +64515,18 @@
         },
         {
           "belt": "BROWN",
+          "ageDivision": "Master 1",
+          "gender": "Male",
+          "weightClass": "Medium-Heavy",
+          "athletes": [
+            {
+              "name": "Garrett Ray Blackburn",
+              "team": "Creighton Mixed Martial Arts Academy"
+            }
+          ]
+        },
+        {
+          "belt": "BROWN",
           "ageDivision": "Master 3",
           "gender": "Male",
           "weightClass": "Light-Feather",
@@ -66469,6 +64697,18 @@
           "belt": "BLACK",
           "ageDivision": "Master 3",
           "gender": "Male",
+          "weightClass": "Medium-Heavy",
+          "athletes": [
+            {
+              "name": "Diego Ralph Burani",
+              "team": "Gel\u00e9ia Team"
+            }
+          ]
+        },
+        {
+          "belt": "BLACK",
+          "ageDivision": "Master 3",
+          "gender": "Male",
           "weightClass": "Super-Heavy",
           "athletes": [
             {
@@ -66526,6 +64766,18 @@
             {
               "name": "Isaac Lee Henderson",
               "team": "Sylvio Behring USA"
+            }
+          ]
+        },
+        {
+          "belt": "BLACK",
+          "ageDivision": "Master 5",
+          "gender": "Male",
+          "weightClass": "Feather",
+          "athletes": [
+            {
+              "name": "Douglas Guncet",
+              "team": "Checkmat Olympus"
             }
           ]
         },
@@ -66712,6 +64964,10 @@
             {
               "name": "Sarah Nicole Nance",
               "team": "Central Coast Fortaleza"
+            },
+            {
+              "name": "Laura Daniela Nino Cortes",
+              "team": "Kuleana Jiu-Jitsu"
             }
           ]
         },
@@ -66757,6 +65013,10 @@
           "gender": "Male",
           "weightClass": "Ultra-Heavy",
           "athletes": [
+            {
+              "name": "Raymond Tabios",
+              "team": "Apxbjj - Vacaville"
+            },
             {
               "name": "Osvaldo De La Paz",
               "team": "Cleber Jiu-Jitsu Visalia"
@@ -67738,6 +65998,10 @@
           "weightClass": "Light",
           "athletes": [
             {
+              "name": "Alexander Trujillo",
+              "team": "Alliance Jiu-Jitsu San Fernando Valley"
+            },
+            {
               "name": "Tanner Saxton Ross",
               "team": "Brasa Caio Terra"
             },
@@ -68036,6 +66300,10 @@
             {
               "name": "Joshua Allan Perry",
               "team": "Gracie Barra Roseville"
+            },
+            {
+              "name": "Alexander Michael Hernandez",
+              "team": "Unique Logic Jiu-Jitsu HQ"
             }
           ]
         },
@@ -69442,6 +67710,14 @@
               "team": "Carlson Gracie Dayton Hq"
             },
             {
+              "name": "Owen Deane Walton",
+              "team": "Nova Uni\u00e3o Ohio"
+            },
+            {
+              "name": "Titus Ryan Kerr",
+              "team": "Nova Uni\u00e3o Ohio"
+            },
+            {
               "name": "Cody Ray Johnson ",
               "team": "Queen City Grappling Club"
             }
@@ -69546,6 +67822,10 @@
           "weightClass": "Light",
           "athletes": [
             {
+              "name": "Maria Eileen Romito",
+              "team": "Tac Team BJJ - Midwest "
+            },
+            {
               "name": "Natalie Christine Tobin",
               "team": "Tac Team BJJ - Midwest "
             }
@@ -69560,6 +67840,10 @@
             {
               "name": "Emma Morgan Joseph",
               "team": "Hurricane Jiu-Jitsu"
+            },
+            {
+              "name": "Kayla Stenson Bassett",
+              "team": "Tac Team BJJ - Midwest "
             }
           ]
         },
@@ -70222,6 +68506,10 @@
               "team": "Hurricane Jiu-Jitsu"
             },
             {
+              "name": "Brandon Patrick Oneill",
+              "team": "Nova Uni\u00e3o Ohio"
+            },
+            {
               "name": "Kane William Victor Townes",
               "team": "Tac Team BJJ - Midwest "
             }
@@ -70626,10 +68914,6 @@
           "weightClass": "Heavy",
           "athletes": [
             {
-              "name": "Chase Layton Ferguson",
-              "team": "Brasa - Clyde, OH"
-            },
-            {
               "name": "Nathan Edward Polick",
               "team": "Super System BJJ"
             }
@@ -70672,6 +68956,10 @@
             {
               "name": "Madeline Nicole Stites",
               "team": "GF Team Ohio"
+            },
+            {
+              "name": "Hannah Grace Maple",
+              "team": "Indio Dojo "
             }
           ]
         },
@@ -70728,6 +69016,18 @@
             {
               "name": "Joseph William Ashley",
               "team": "Tac Team BJJ - Midwest "
+            }
+          ]
+        },
+        {
+          "belt": "PURPLE",
+          "ageDivision": "Master 1",
+          "gender": "Male",
+          "weightClass": "Super-Heavy",
+          "athletes": [
+            {
+              "name": "Chase Layton Ferguson",
+              "team": "Brasa - Clyde, OH"
             }
           ]
         },
@@ -71267,6 +69567,18 @@
           "belt": "BROWN",
           "ageDivision": "Master 5",
           "gender": "Male",
+          "weightClass": "Super-Heavy",
+          "athletes": [
+            {
+              "name": "Randall Jason Denny",
+              "team": "Team James Clingerman"
+            }
+          ]
+        },
+        {
+          "belt": "BROWN",
+          "ageDivision": "Master 5",
+          "gender": "Male",
           "weightClass": "Ultra-Heavy",
           "athletes": [
             {
@@ -71742,6 +70054,10 @@
             {
               "name": "Cameron James Stopak",
               "team": "GF Team Ohio"
+            },
+            {
+              "name": "Danny Dwayne Murray Jr.",
+              "team": "Queen City Grappling Club"
             }
           ]
         },
@@ -72195,6 +70511,10 @@
           "gender": "Female",
           "weightClass": "Medium-Heavy",
           "athletes": [
+            {
+              "name": "Hannah Grace Maple",
+              "team": "Indio Dojo "
+            },
             {
               "name": "Sarah Anne Allen",
               "team": "Ruffhouse"
@@ -72739,6 +71059,18 @@
         },
         {
           "belt": "BLACK",
+          "ageDivision": "Master 5",
+          "gender": "Male",
+          "weightClass": "Light",
+          "athletes": [
+            {
+              "name": "Ulric Szabo",
+              "team": "Brasa "
+            }
+          ]
+        },
+        {
+          "belt": "BLACK",
           "ageDivision": "Master 6",
           "gender": "Male",
           "weightClass": "Heavy",
@@ -72901,6 +71233,18 @@
           "belt": "GREY",
           "ageDivision": "Pee-Wee 1",
           "gender": "Male",
+          "weightClass": "Light",
+          "athletes": [
+            {
+              "name": "Ashton John Noah",
+              "team": "Obx Martial Arts"
+            }
+          ]
+        },
+        {
+          "belt": "GREY",
+          "ageDivision": "Pee-Wee 1",
+          "gender": "Male",
           "weightClass": "Heavy",
           "athletes": [
             {
@@ -72936,16 +71280,16 @@
               "team": "Alliance Greenville"
             },
             {
-              "name": "Ethan Peixoto Mibielli",
-              "team": "Atos Winter Garden | Lucas Pinheiro"
-            },
-            {
               "name": "Ace Sincere Anleu",
               "team": "Behring Puerto Rico"
             },
             {
               "name": "Kainoa Clement Kimi",
               "team": "Gracie Barra Ashburn"
+            },
+            {
+              "name": "Ethan Peixoto Mibielli",
+              "team": "Lucas Pinheiro Jiu-Jitsu"
             },
             {
               "name": "Lucas Ferreira Marchi",
@@ -73172,6 +71516,10 @@
           "weightClass": "Feather",
           "athletes": [
             {
+              "name": "Bronsen Michael Corral",
+              "team": "BJJ Coach - Corral's Martial Arts"
+            },
+            {
               "name": "Hayden Lee Conlin",
               "team": "Gracie Barra Summerville"
             }
@@ -73359,6 +71707,10 @@
           "gender": "Female",
           "weightClass": "Rooster",
           "athletes": [
+            {
+              "name": "Gianna Michelle Dilag",
+              "team": "BJJ Coach - Corral's Martial Arts"
+            },
             {
               "name": "Leila Nereida Roldos",
               "team": "Kevin Gallagher U C K BJJ"
@@ -73565,6 +71917,18 @@
           "athletes": [
             {
               "name": "Noah Anthony Botello",
+              "team": "Pablo Silva BJJ"
+            }
+          ]
+        },
+        {
+          "belt": "GREY",
+          "ageDivision": "Teen 1",
+          "gender": "Male",
+          "weightClass": "Light",
+          "athletes": [
+            {
+              "name": "Josh Nguyen Le",
               "team": "Pablo Silva BJJ"
             }
           ]
@@ -73924,6 +72288,10 @@
           "weightClass": "Light",
           "athletes": [
             {
+              "name": "Pietro Patrial Burani",
+              "team": "Gel\u00e9ia Team"
+            },
+            {
               "name": "Jordan Anthony Gallow",
               "team": "Union Team BJJ"
             }
@@ -74094,6 +72462,18 @@
             {
               "name": "No\u00e9 Mois\u00e9s Acevedo Claudio ",
               "team": "GNS Academy BJJ"
+            }
+          ]
+        },
+        {
+          "belt": "YELLOW",
+          "ageDivision": "Teen 3",
+          "gender": "Male",
+          "weightClass": "Light-Feather",
+          "athletes": [
+            {
+              "name": "Jordan Nguyen Le",
+              "team": "Pablo Silva BJJ"
             }
           ]
         },
@@ -74386,6 +72766,10 @@
           "weightClass": "Light",
           "athletes": [
             {
+              "name": "Rachel Ann Enriquez Pomerleau",
+              "team": "Alamo Ranch Jiu-Jitsu Academy - Sajj"
+            },
+            {
               "name": "Kelli Sue-Erin Ruddy",
               "team": "Heart & Dagger Martial Arts"
             }
@@ -74626,8 +73010,24 @@
           "weightClass": "Feather",
           "athletes": [
             {
+              "name": "Josue Perez",
+              "team": "Brazilian Top Team - ATX"
+            },
+            {
               "name": "Pedro J Sifonte Rivera ",
               "team": "Ohana Jiu-Jitsu Academy"
+            }
+          ]
+        },
+        {
+          "belt": "BLUE",
+          "ageDivision": "Adult",
+          "gender": "Male",
+          "weightClass": "Middle",
+          "athletes": [
+            {
+              "name": "Caleb Vicent Nicholas Vourazeris",
+              "team": "Rodrigo Pinheiro "
             }
           ]
         },
@@ -74760,6 +73160,18 @@
             {
               "name": "Marcus Domingo Cisneros Jr.",
               "team": "Gracie Barra Buda"
+            }
+          ]
+        },
+        {
+          "belt": "BLUE",
+          "ageDivision": "Master 2",
+          "gender": "Male",
+          "weightClass": "Middle",
+          "athletes": [
+            {
+              "name": "Kristian Keith Phillips",
+              "team": "Ohana Jiu-Jitsu Academy"
             }
           ]
         },
@@ -75017,6 +73429,10 @@
           "gender": "Male",
           "weightClass": "Medium-Heavy",
           "athletes": [
+            {
+              "name": "Hunter Elias Busby",
+              "team": "10/50"
+            },
             {
               "name": "Donivan Kaelan Justice",
               "team": "San Antonio Jiu-Jitsu Syndicate"
@@ -75291,7 +73707,7 @@
           "athletes": [
             {
               "name": "Washington Ferreira dos Santos",
-              "team": "Atos Winter Garden | Lucas Pinheiro"
+              "team": "Lucas Pinheiro Jiu-Jitsu"
             }
           ]
         },
@@ -75482,12 +73898,12 @@
         {
           "belt": "BLACK",
           "ageDivision": "Master 1",
-          "gender": "Female",
-          "weightClass": "Light-Feather",
+          "gender": "Male",
+          "weightClass": "Super-Heavy",
           "athletes": [
             {
-              "name": "Linda Cristal Gutierrez",
-              "team": "San Antonio Jiu-Jitsu Syndicate"
+              "name": "Antonio  Zuazo",
+              "team": "Rasai Jiu-Jitsu"
             }
           ]
         },
@@ -75923,6 +74339,18 @@
         },
         {
           "belt": "PURPLE",
+          "ageDivision": "Adult",
+          "gender": "Male",
+          "weightClass": "Heavy",
+          "athletes": [
+            {
+              "name": "Hunter Elias Busby",
+              "team": "10/50"
+            }
+          ]
+        },
+        {
+          "belt": "PURPLE",
           "ageDivision": "Master 2",
           "gender": "Male",
           "weightClass": "Super-Heavy",
@@ -76066,6 +74494,18 @@
             {
               "name": "Mishaylah Miriam Rhodes ",
               "team": "Team SDR"
+            }
+          ]
+        },
+        {
+          "belt": "BLACK",
+          "ageDivision": "Master 1",
+          "gender": "Male",
+          "weightClass": "Super-Heavy",
+          "athletes": [
+            {
+              "name": "Antonio  Zuazo",
+              "team": "Rasai Jiu-Jitsu"
             }
           ]
         },
@@ -76313,6 +74753,10 @@
           "gender": "Male",
           "weightClass": "Middle",
           "athletes": [
+            {
+              "name": "Joseph Ilan Campbell Cruz",
+              "team": "Arte Suave Costa Rica"
+            },
             {
               "name": "William Thomas Burns",
               "team": "Atom BJJ"
@@ -76687,6 +75131,18 @@
           "belt": "WHITE",
           "ageDivision": "Master 2",
           "gender": "Male",
+          "weightClass": "Super-Heavy",
+          "athletes": [
+            {
+              "name": "Nicholas Alexander Livingston",
+              "team": "Luiz Paulo Jiu-Jitsu USA"
+            }
+          ]
+        },
+        {
+          "belt": "WHITE",
+          "ageDivision": "Master 2",
+          "gender": "Male",
           "weightClass": "Ultra-Heavy",
           "athletes": [
             {
@@ -76946,6 +75402,10 @@
               "team": "Cesario Brazilian Jiu Jitsu Team"
             },
             {
+              "name": "Samuel Zohar Berenfeld",
+              "team": "Renzo Gracie Rockland"
+            },
+            {
               "name": "Morgan Thomas Roy ",
               "team": "Team Link"
             }
@@ -77060,6 +75520,14 @@
             {
               "name": "Brian Patrick Caldwell",
               "team": "Team Forsa"
+            },
+            {
+              "name": "Blake James Story",
+              "team": "USMMA Headquarters"
+            },
+            {
+              "name": "Eric Maia Santospago",
+              "team": "Versus Brazilian Jiu-Jitsu Academy"
             }
           ]
         },
@@ -77080,6 +75548,10 @@
             {
               "name": "Aquilino Gerard Centrella",
               "team": "GF Team Massachusetts"
+            },
+            {
+              "name": "John Patrick Higgins",
+              "team": "Gianeis - The Lab Oteri BJJ"
             },
             {
               "name": "Rowan Michael Curtin",
@@ -77173,6 +75645,10 @@
           "gender": "Female",
           "weightClass": "Light",
           "athletes": [
+            {
+              "name": "Maya Rose Warren",
+              "team": "Fight Sports"
+            },
             {
               "name": "Imogen Cleaver-Stigum",
               "team": "Ginsberg Academy of Brazilian Jiu Jitsu"
@@ -77459,6 +75935,18 @@
           "belt": "BLUE",
           "ageDivision": "Master 2",
           "gender": "Male",
+          "weightClass": "Medium-Heavy",
+          "athletes": [
+            {
+              "name": "Steven Lansing",
+              "team": "Atlas Jiu-Jitsu - BJJ Revolution Team"
+            }
+          ]
+        },
+        {
+          "belt": "BLUE",
+          "ageDivision": "Master 2",
+          "gender": "Male",
           "weightClass": "Super-Heavy",
           "athletes": [
             {
@@ -77574,10 +76062,6 @@
           "weightClass": "Super-Heavy",
           "athletes": [
             {
-              "name": "Matt Christopher Dello Russo",
-              "team": "Brazilian Top Team Boston"
-            },
-            {
               "name": "Sean Douglas Brown",
               "team": "Nova Uniao Connecticut"
             },
@@ -77680,6 +76164,18 @@
             {
               "name": "Leo Anthony Sacco",
               "team": "Tac Team BJJ - Midwest "
+            }
+          ]
+        },
+        {
+          "belt": "BLUE",
+          "ageDivision": "Master 4",
+          "gender": "Male",
+          "weightClass": "Super-Heavy",
+          "athletes": [
+            {
+              "name": "Israel Hintz",
+              "team": "Atrium BJJ USA"
             }
           ]
         },
@@ -77884,6 +76380,10 @@
             {
               "name": "Justin Dela Amevor",
               "team": "Abusado Team"
+            },
+            {
+              "name": "Ethan James Ennis",
+              "team": "Florian BJJ"
             },
             {
               "name": "Illia Kotliar",
@@ -78263,6 +76763,18 @@
           "belt": "PURPLE",
           "ageDivision": "Master 4",
           "gender": "Female",
+          "weightClass": "Feather",
+          "athletes": [
+            {
+              "name": "Jessie Elizabeth Herzog Forsythe",
+              "team": "Testudo BJJ"
+            }
+          ]
+        },
+        {
+          "belt": "PURPLE",
+          "ageDivision": "Master 4",
+          "gender": "Female",
           "weightClass": "Light",
           "athletes": [
             {
@@ -78429,6 +76941,14 @@
           "gender": "Male",
           "weightClass": "Heavy",
           "athletes": [
+            {
+              "name": "Keenan W. Powers",
+              "team": "Balance"
+            },
+            {
+              "name": "Alexander Jonah Karasik",
+              "team": "GF Team Massachusetts"
+            },
             {
               "name": "Christopher D Frediani",
               "team": "Team Forsa"
@@ -78747,6 +77267,18 @@
           "belt": "BLACK",
           "ageDivision": "Master 2",
           "gender": "Male",
+          "weightClass": "Medium-Heavy",
+          "athletes": [
+            {
+              "name": "Dzmitry Maskaleu",
+              "team": "Club Ne-Waza BJJ"
+            }
+          ]
+        },
+        {
+          "belt": "BLACK",
+          "ageDivision": "Master 2",
+          "gender": "Male",
           "weightClass": "Heavy",
           "athletes": [
             {
@@ -78977,6 +77509,18 @@
         },
         {
           "belt": "BLACK",
+          "ageDivision": "Master 5",
+          "gender": "Female",
+          "weightClass": "Heavy",
+          "athletes": [
+            {
+              "name": "Beth Simione Bahret",
+              "team": "Fenix BJJ Woburn"
+            }
+          ]
+        },
+        {
+          "belt": "BLACK",
           "ageDivision": "Master 6",
           "gender": "Male",
           "weightClass": "Medium-Heavy",
@@ -79037,6 +77581,18 @@
         }
       ],
       "divisions": [
+        {
+          "belt": "BLUE",
+          "ageDivision": "Juvenile",
+          "gender": "Male",
+          "weightClass": "Feather",
+          "athletes": [
+            {
+              "name": "Samuel Zohar Berenfeld",
+              "team": "Renzo Gracie Rockland"
+            }
+          ]
+        },
         {
           "belt": "BLUE",
           "ageDivision": "Juvenile",
@@ -79203,6 +77759,10 @@
           "gender": "Female",
           "weightClass": "Light",
           "athletes": [
+            {
+              "name": "Maya Rose Warren",
+              "team": "Fight Sports"
+            },
             {
               "name": "Larissa Sass de Oliveira",
               "team": "Harmony Jiu-Jitsu"
@@ -79402,6 +77962,10 @@
             {
               "name": "Jacob N Parla",
               "team": "Florian BJJ"
+            },
+            {
+              "name": "John Michael Semenuk IV",
+              "team": "Pedigo Submission Fighting"
             }
           ]
         },
@@ -79411,6 +77975,10 @@
           "gender": "Male",
           "weightClass": "Medium-Heavy",
           "athletes": [
+            {
+              "name": "Ethan James Ennis",
+              "team": "Florian BJJ"
+            },
             {
               "name": "Illia Kotliar",
               "team": "Logos JJ"
@@ -79618,6 +78186,18 @@
           ]
         },
         {
+          "belt": "BROWN",
+          "ageDivision": "Master 2",
+          "gender": "Male",
+          "weightClass": "Heavy",
+          "athletes": [
+            {
+              "name": "Keenan W. Powers",
+              "team": "Balance"
+            }
+          ]
+        },
+        {
           "belt": "BLACK",
           "ageDivision": "Adult",
           "gender": "Male",
@@ -79807,6 +78387,18 @@
           "belt": "WHITE",
           "ageDivision": "Adult",
           "gender": "Male",
+          "weightClass": "Middle",
+          "athletes": [
+            {
+              "name": "Ethan Milton Kolker",
+              "team": "7n7 Concept BJJ"
+            }
+          ]
+        },
+        {
+          "belt": "WHITE",
+          "ageDivision": "Adult",
+          "gender": "Male",
           "weightClass": "Medium-Heavy",
           "athletes": [
             {
@@ -79824,6 +78416,18 @@
             {
               "name": "Ryan Anthony Baines",
               "team": "Surfight Jiu-Jitsu"
+            }
+          ]
+        },
+        {
+          "belt": "WHITE",
+          "ageDivision": "Master 1",
+          "gender": "Male",
+          "weightClass": "Light",
+          "athletes": [
+            {
+              "name": "Jirael Francis Lagmay Hipol",
+              "team": "Fabio Santos BJJ"
             }
           ]
         },
@@ -79956,6 +78560,18 @@
             {
               "name": "Anthony Paz",
               "team": "Unique Logic Jiu-Jitsu HQ"
+            }
+          ]
+        },
+        {
+          "belt": "BLUE",
+          "ageDivision": "Adult",
+          "gender": "Female",
+          "weightClass": "Light",
+          "athletes": [
+            {
+              "name": "Helen Suseth Sirias",
+              "team": "Team Predador Internacional"
             }
           ]
         },
@@ -80533,6 +79149,18 @@
         },
         {
           "belt": "BROWN",
+          "ageDivision": "Adult",
+          "gender": "Male",
+          "weightClass": "Middle",
+          "athletes": [
+            {
+              "name": "Alexander Michael Hernandez",
+              "team": "Unique Logic Jiu-Jitsu HQ"
+            }
+          ]
+        },
+        {
+          "belt": "BROWN",
           "ageDivision": "Master 1",
           "gender": "Male",
           "weightClass": "Feather",
@@ -80788,6 +79416,10 @@
             {
               "name": "Brian Koshiro Matsumoto",
               "team": "Cascao BJJ Las Vegas"
+            },
+            {
+              "name": "Perry Pangilinan",
+              "team": "Rasai Jiu-Jitsu"
             }
           ]
         },
@@ -81284,6 +79916,10 @@
           "weightClass": "Light",
           "athletes": [
             {
+              "name": "Lucee Enriquez Galicia",
+              "team": "Alamo Ranch Jiu-Jitsu Academy - Sajj"
+            },
+            {
               "name": "Liberty Rae Tucker",
               "team": "Marra Senki BJJ Academy LLC"
             }
@@ -81421,6 +80057,18 @@
           "belt": "GREY",
           "ageDivision": "Pee-Wee 3",
           "gender": "Male",
+          "weightClass": "Medium-Heavy",
+          "athletes": [
+            {
+              "name": "Mark Olvera",
+              "team": "Ohana Jiu-Jitsu Academy"
+            }
+          ]
+        },
+        {
+          "belt": "GREY",
+          "ageDivision": "Pee-Wee 3",
+          "gender": "Male",
           "weightClass": "Ultra-Heavy",
           "athletes": [
             {
@@ -81442,6 +80090,18 @@
             {
               "name": "Camila Gonzalez",
               "team": "Ohana Jiu-Jitsu Academy"
+            }
+          ]
+        },
+        {
+          "belt": "GREY",
+          "ageDivision": "Pee-Wee 3",
+          "gender": "Female",
+          "weightClass": "Feather",
+          "athletes": [
+            {
+              "name": "Kali Enriquez Galicia",
+              "team": "Alamo Ranch Jiu-Jitsu Academy - Sajj"
             }
           ]
         },
@@ -81626,6 +80286,18 @@
             {
               "name": "Mark Anthony Rubalcava",
               "team": "Controlled Chaos BJJ"
+            }
+          ]
+        },
+        {
+          "belt": "GREY",
+          "ageDivision": "Junior 2",
+          "gender": "Female",
+          "weightClass": "Rooster",
+          "athletes": [
+            {
+              "name": "Ellie Enriquez Galicia",
+              "team": "Alamo Ranch Jiu-Jitsu Academy - Sajj"
             }
           ]
         },
@@ -82153,6 +80825,18 @@
           "belt": "ORANGE",
           "ageDivision": "Teen 2",
           "gender": "Male",
+          "weightClass": "Light",
+          "athletes": [
+            {
+              "name": "Ethan Pineda Trivette",
+              "team": "All American MMA"
+            }
+          ]
+        },
+        {
+          "belt": "ORANGE",
+          "ageDivision": "Teen 2",
+          "gender": "Male",
           "weightClass": "Middle",
           "athletes": [
             {
@@ -82218,6 +80902,14 @@
             {
               "name": "Ian Peng",
               "team": "Atom BJJ"
+            },
+            {
+              "name": "Ray Hakyun Song",
+              "team": "Brazilian Top Team Boston"
+            },
+            {
+              "name": "Roy Dokyun Song",
+              "team": "Brazilian Top Team Boston"
             },
             {
               "name": "Nolan Jax Gon\u00e7alves Desa",
@@ -82460,8 +81152,24 @@
           "weightClass": "Light",
           "athletes": [
             {
+              "name": "Benjamin Delpupo",
+              "team": "Gracie Barra Peabody/MA"
+            },
+            {
               "name": "Luis Carlos Aguilar Guerrero",
               "team": "Team Forsa"
+            }
+          ]
+        },
+        {
+          "belt": "GREY",
+          "ageDivision": "Pee-Wee 3",
+          "gender": "Male",
+          "weightClass": "Middle",
+          "athletes": [
+            {
+              "name": "Aiden Carter Weatherbee-Mulk ",
+              "team": "Cristyan Brazilian Jiu-Jitsu Academy"
             }
           ]
         },
@@ -82502,6 +81210,10 @@
             {
               "name": "Maria Aria Bezas",
               "team": "GF Team"
+            },
+            {
+              "name": "Fiona Patel",
+              "team": "Halifax BJJ"
             }
           ]
         },
@@ -83123,6 +81835,18 @@
         },
         {
           "belt": "YELLOW",
+          "ageDivision": "Junior 2",
+          "gender": "Female",
+          "weightClass": "Middle",
+          "athletes": [
+            {
+              "name": "Isabelly Sophia Silva Soares",
+              "team": "Alliance Framingham"
+            }
+          ]
+        },
+        {
+          "belt": "YELLOW",
           "ageDivision": "Junior 3",
           "gender": "Male",
           "weightClass": "Feather",
@@ -83659,7 +82383,7 @@
           "athletes": [
             {
               "name": "Edwin Ricardo Resto Roman",
-              "team": "Atos Winter Garden | Lucas Pinheiro"
+              "team": "Lucas Pinheiro Jiu-Jitsu"
             }
           ]
         },
@@ -83909,6 +82633,18 @@
         },
         {
           "belt": "BLUE",
+          "ageDivision": "Master 5",
+          "gender": "Male",
+          "weightClass": "Ultra-Heavy",
+          "athletes": [
+            {
+              "name": "Terry Allen Muncy Jr",
+              "team": "The OGC"
+            }
+          ]
+        },
+        {
+          "belt": "BLUE",
           "ageDivision": "Master 6",
           "gender": "Female",
           "weightClass": "Feather",
@@ -84075,6 +82811,18 @@
           "belt": "PURPLE",
           "ageDivision": "Master 2",
           "gender": "Male",
+          "weightClass": "Feather",
+          "athletes": [
+            {
+              "name": "Carlos Alberto Lorenzo Jr ",
+              "team": "Tactics"
+            }
+          ]
+        },
+        {
+          "belt": "PURPLE",
+          "ageDivision": "Master 2",
+          "gender": "Male",
           "weightClass": "Medium-Heavy",
           "athletes": [
             {
@@ -84223,7 +82971,7 @@
           "athletes": [
             {
               "name": "Washington Ferreira dos Santos",
-              "team": "Atos Winter Garden | Lucas Pinheiro"
+              "team": "Lucas Pinheiro Jiu-Jitsu"
             }
           ]
         },
@@ -84309,6 +83057,18 @@
         },
         {
           "belt": "BROWN",
+          "ageDivision": "Master 3",
+          "gender": "Male",
+          "weightClass": "Light",
+          "athletes": [
+            {
+              "name": "Pedro Alberto Alfonso-Hernandez",
+              "team": "Gracie Barra Hallandale Beach"
+            }
+          ]
+        },
+        {
+          "belt": "BROWN",
           "ageDivision": "Master 4",
           "gender": "Male",
           "weightClass": "Medium-Heavy",
@@ -84351,7 +83111,7 @@
           "belt": "BLACK",
           "ageDivision": "Adult",
           "gender": "Female",
-          "weightClass": "Heavy",
+          "weightClass": "Super-Heavy",
           "athletes": [
             {
               "name": "Larissa Dias de Almeida",
@@ -84725,7 +83485,7 @@
           "athletes": [
             {
               "name": "Edwin Ricardo Resto Roman",
-              "team": "Atos Winter Garden | Lucas Pinheiro"
+              "team": "Lucas Pinheiro Jiu-Jitsu"
             }
           ]
         },
@@ -84822,6 +83582,18 @@
             {
               "name": "Dejan Lazic",
               "team": "Rio Grappling Club Europe"
+            }
+          ]
+        },
+        {
+          "belt": "PURPLE",
+          "ageDivision": "Adult",
+          "gender": "Male",
+          "weightClass": "Heavy",
+          "athletes": [
+            {
+              "name": "Nikolas  Ratomir Perovic",
+              "team": "Pimenta Jiu-Jitsu"
             }
           ]
         },
@@ -84938,6 +83710,18 @@
             {
               "name": "Nicholas Alexander Vazzana",
               "team": "Brazilian Top Team - Florida"
+            }
+          ]
+        },
+        {
+          "belt": "BROWN",
+          "ageDivision": "Master 3",
+          "gender": "Male",
+          "weightClass": "Light",
+          "athletes": [
+            {
+              "name": "Pedro Alberto Alfonso-Hernandez",
+              "team": "Gracie Barra Hallandale Beach"
             }
           ]
         },
@@ -85087,6 +83871,18 @@
         }
       ],
       "divisions": [
+        {
+          "belt": "WHITE",
+          "ageDivision": "Adult",
+          "gender": "Male",
+          "weightClass": "Light",
+          "athletes": [
+            {
+              "name": "Derrick Tyler McGiffin ",
+              "team": "Ares BJJ"
+            }
+          ]
+        },
         {
           "belt": "WHITE",
           "ageDivision": "Adult",
@@ -85500,6 +84296,18 @@
             {
               "name": "Kevin M. O'Bryan",
               "team": "Scott Audas Jiu-Jitsu Academy"
+            }
+          ]
+        },
+        {
+          "belt": "BLUE",
+          "ageDivision": "Master 5",
+          "gender": "Male",
+          "weightClass": "Feather",
+          "athletes": [
+            {
+              "name": "David Michael Messinger",
+              "team": "Ares BJJ Diego Bispo Academy"
             }
           ]
         },
@@ -86158,6 +84966,10 @@
             {
               "name": "Amon Mathew Presley",
               "team": "Fabin Rosa BJJ B Team"
+            },
+            {
+              "name": "Martin Ilievski",
+              "team": "Ground Control MMA"
             }
           ]
         },
@@ -86378,6 +85190,18 @@
             {
               "name": "Gabriel Battaglia Cruz",
               "team": "Gracie Elite Team"
+            }
+          ]
+        },
+        {
+          "belt": "GREY",
+          "ageDivision": "Junior 2",
+          "gender": "Male",
+          "weightClass": "Ultra-Heavy",
+          "athletes": [
+            {
+              "name": "Jameson Finley Pratt",
+              "team": "Renato Tavares Association"
             }
           ]
         },
@@ -87050,6 +85874,18 @@
             {
               "name": "Kalila Danielle Russo",
               "team": "Double Five South Ms"
+            }
+          ]
+        },
+        {
+          "belt": "GREY",
+          "ageDivision": "Junior 1",
+          "gender": "Male",
+          "weightClass": "Rooster",
+          "athletes": [
+            {
+              "name": "Elias Thomas Messinger",
+              "team": "Ares BJJ Diego Bispo Academy"
             }
           ]
         },
@@ -87913,6 +86749,14 @@
               "team": "Black Gold Jiu-Jitsu Academy"
             },
             {
+              "name": "Ryo Jimbo",
+              "team": "Carpe Diem Nagoya"
+            },
+            {
+              "name": "Charles Lafayette Campbell",
+              "team": "Excel Jiu-Jitsu MMA"
+            },
+            {
               "name": "Gregory Kyle Harada",
               "team": "Tinguinha BJJ"
             }
@@ -88421,6 +87265,10 @@
           "weightClass": "Middle",
           "athletes": [
             {
+              "name": "Gregory Joseph Mangan",
+              "team": "Arashi Do Behring Jiu-Jitsu"
+            },
+            {
               "name": "Jean Herbert Chiquini da Costa",
               "team": "Carlson Gracie South Bay"
             },
@@ -88595,7 +87443,15 @@
             {
               "name": "Sheila Anes Ebrahimi",
               "team": "Brazilian Top Team Long Beach"
-            },
+            }
+          ]
+        },
+        {
+          "belt": "PURPLE",
+          "ageDivision": "Master 4",
+          "gender": "Female",
+          "weightClass": "Feather",
+          "athletes": [
             {
               "name": "Yujia Sylvia Huo",
               "team": "CheckMat USA"
@@ -89302,6 +88158,18 @@
           "belt": "BLACK",
           "ageDivision": "Master 1",
           "gender": "Male",
+          "weightClass": "Super-Heavy",
+          "athletes": [
+            {
+              "name": "Augusto Fernando Moraes Diniz",
+              "team": "Manimal Family"
+            }
+          ]
+        },
+        {
+          "belt": "BLACK",
+          "ageDivision": "Master 1",
+          "gender": "Male",
           "weightClass": "Ultra-Heavy",
           "athletes": [
             {
@@ -89503,6 +88371,10 @@
             {
               "name": "Sanghyun Lee",
               "team": "Jiu-Jitsu Rim"
+            },
+            {
+              "name": "Bernardo Correa da Cruz",
+              "team": "Rolles Gracie Academy"
             },
             {
               "name": "Jeffrey Emmanuel B Nolasco",
@@ -90394,6 +89266,10 @@
               "team": "Atos Jiu-Jitsu"
             },
             {
+              "name": "Adrianna Marie Sciacca",
+              "team": "Brazilian Top Team - Florida"
+            },
+            {
               "name": "Maya Citlali Padilla",
               "team": "Bruno Bastos BJJ Midland"
             },
@@ -90552,6 +89428,10 @@
             {
               "name": "Kai Paul McKinney",
               "team": "Rodrigo Pinheiro "
+            },
+            {
+              "name": "Aaron Cory Anzai",
+              "team": "X-Treme Ebina"
             }
           ]
         },
@@ -90750,10 +89630,6 @@
               "team": "AOJ"
             },
             {
-              "name": "Kaden Zane Leal Pires",
-              "team": "Atos Winter Garden | Lucas Pinheiro"
-            },
-            {
               "name": "Dienekes Alexander Kylis",
               "team": "Carlson Gracie Team"
             },
@@ -90764,6 +89640,10 @@
             {
               "name": "Maroine Bouziane",
               "team": "GF Team France"
+            },
+            {
+              "name": "Kaden Zane Leal Pires",
+              "team": "Lucas Pinheiro Jiu-Jitsu"
             },
             {
               "name": "Eunseoung Kim",
@@ -91754,12 +90634,20 @@
               "team": "Figueroa Academy of Brazilian Jiu-Jitsu"
             },
             {
+              "name": "Rostyslav Martyniuk",
+              "team": "Intelligent Team Ukraine"
+            },
+            {
               "name": "Victor Daniel Jimenez Fernandez",
               "team": "Nova Uniao Costa Rica"
             },
             {
               "name": "Robert Sergey Audy",
               "team": "Okanagan Brazilian Jiu-Jitsu"
+            },
+            {
+              "name": "Pedro Bisi de Jesus",
+              "team": "Rmac Manama"
             },
             {
               "name": "Andrew Joseph Cosper",
@@ -92062,12 +90950,12 @@
           "weightClass": "Rooster",
           "athletes": [
             {
-              "name": "Washington Ferreira dos Santos",
-              "team": "Atos Winter Garden | Lucas Pinheiro"
-            },
-            {
               "name": "Bernardo Rosalba de Menezes",
               "team": "Gracie Humaita"
+            },
+            {
+              "name": "Washington Ferreira dos Santos",
+              "team": "Lucas Pinheiro Jiu-Jitsu"
             }
           ]
         },
@@ -92222,6 +91110,10 @@
               "team": "American Top Team Warner Robins"
             },
             {
+              "name": "Tomasz Swiderski",
+              "team": "Frontline Academy"
+            },
+            {
               "name": "Selvin Ismael Mendez Estrada",
               "team": "Legacy Jiu-Jitsu - Team Alberto Crane"
             },
@@ -92290,8 +91182,28 @@
               "team": "Enhanced BJJ"
             },
             {
+              "name": "Benjamin Reynolds Hardy",
+              "team": "Impact Jiu Jitsu"
+            },
+            {
+              "name": "Dustin Cody Chevalier",
+              "team": "Las Vegas Jiu-Jitsu"
+            },
+            {
               "name": "Oskar Gabriel Gasperski",
               "team": "Nottingham - Total BJJ & Grappling"
+            }
+          ]
+        },
+        {
+          "belt": "BROWN",
+          "ageDivision": "Adult",
+          "gender": "Male",
+          "weightClass": "Ultra-Heavy",
+          "athletes": [
+            {
+              "name": "Brenno Silva Gonzaga",
+              "team": "Michel Safi Brazilian Jiu-Jitsu School"
             }
           ]
         },
@@ -93015,6 +91927,18 @@
         },
         {
           "belt": "BLUE",
+          "ageDivision": "Master 4",
+          "gender": "Male",
+          "weightClass": "Ultra-Heavy",
+          "athletes": [
+            {
+              "name": "Bryan Joel Kroger",
+              "team": "Deep Waters Jiu Jitsu"
+            }
+          ]
+        },
+        {
+          "belt": "BLUE",
           "ageDivision": "Master 5",
           "gender": "Male",
           "weightClass": "Heavy",
@@ -93142,6 +92066,18 @@
             {
               "name": "Elijah Sacra",
               "team": "Triangle Jiu-Jitsu"
+            }
+          ]
+        },
+        {
+          "belt": "BROWN",
+          "ageDivision": "Master 5",
+          "gender": "Male",
+          "weightClass": "Super-Heavy",
+          "athletes": [
+            {
+              "name": "Thomas Charles Getsinger Jr.",
+              "team": "Round Table BJJ"
             }
           ]
         },
@@ -93594,6 +92530,18 @@
             {
               "name": "Williamson Bradley Matthew",
               "team": "Alliance Port Huron"
+            }
+          ]
+        },
+        {
+          "belt": "BLUE",
+          "ageDivision": "Master 1",
+          "gender": "Female",
+          "weightClass": "Feather",
+          "athletes": [
+            {
+              "name": "Brianna Kaitlyn Markell ",
+              "team": "Cascao Jiu-Jitsu"
             }
           ]
         },
@@ -94086,6 +93034,10 @@
           "weightClass": "Middle",
           "athletes": [
             {
+              "name": "Justin Thomas Strong",
+              "team": "Cascao BJJ Las Vegas"
+            },
+            {
               "name": "Ahmad Mahmoud Abbas",
               "team": "Detroit Jiu-Jitsu Syndicate"
             }
@@ -94099,6 +93051,30 @@
           "athletes": [
             {
               "name": "Joshua Ryan Johnson",
+              "team": "Detroit Jiu-Jitsu Syndicate"
+            }
+          ]
+        },
+        {
+          "belt": "BLUE",
+          "ageDivision": "Master 1",
+          "gender": "Female",
+          "weightClass": "Feather",
+          "athletes": [
+            {
+              "name": "Brianna Kaitlyn Markell ",
+              "team": "Cascao Jiu-Jitsu"
+            }
+          ]
+        },
+        {
+          "belt": "BLUE",
+          "ageDivision": "Master 2",
+          "gender": "Male",
+          "weightClass": "Light",
+          "athletes": [
+            {
+              "name": "Jason Thomas Masters",
               "team": "Detroit Jiu-Jitsu Syndicate"
             }
           ]
@@ -95987,6 +94963,18 @@
         },
         {
           "belt": "BLUE",
+          "ageDivision": "Adult",
+          "gender": "Male",
+          "weightClass": "Light",
+          "athletes": [
+            {
+              "name": "Dylan Myles Young",
+              "team": "Carlson Gracie Team"
+            }
+          ]
+        },
+        {
+          "belt": "BLUE",
           "ageDivision": "Master 1",
           "gender": "Male",
           "weightClass": "Light",
@@ -96787,6 +95775,18 @@
         },
         {
           "belt": "WHITE",
+          "ageDivision": "Master 2",
+          "gender": "Female",
+          "weightClass": "Light",
+          "athletes": [
+            {
+              "name": "Julieann Ailani Kaniela Castillo",
+              "team": "Gracie Barra Arizona"
+            }
+          ]
+        },
+        {
+          "belt": "WHITE",
           "ageDivision": "Master 3",
           "gender": "Female",
           "weightClass": "Middle",
@@ -96951,6 +95951,10 @@
           "gender": "Female",
           "weightClass": "Feather",
           "athletes": [
+            {
+              "name": "Brianna Kaitlyn Markell ",
+              "team": "Cascao Jiu-Jitsu"
+            },
             {
               "name": "Jennika Ann Kasim Esoy",
               "team": "Lebre Jiu-Jitsu Academy"
@@ -97393,7 +96397,7 @@
           "athletes": [
             {
               "name": "Washington Ferreira dos Santos",
-              "team": "Atos Winter Garden | Lucas Pinheiro"
+              "team": "Lucas Pinheiro Jiu-Jitsu"
             }
           ]
         },
@@ -97593,7 +96597,7 @@
           "belt": "BLACK",
           "ageDivision": "Adult",
           "gender": "Female",
-          "weightClass": "Heavy",
+          "weightClass": "Super-Heavy",
           "athletes": [
             {
               "name": "Larissa Dias de Almeida",
@@ -97993,6 +96997,18 @@
         },
         {
           "belt": "BLUE",
+          "ageDivision": "Master 1",
+          "gender": "Female",
+          "weightClass": "Feather",
+          "athletes": [
+            {
+              "name": "Brianna Kaitlyn Markell ",
+              "team": "Cascao Jiu-Jitsu"
+            }
+          ]
+        },
+        {
+          "belt": "BLUE",
           "ageDivision": "Master 2",
           "gender": "Male",
           "weightClass": "Light",
@@ -98243,7 +97259,7 @@
           "athletes": [
             {
               "name": "Washington Ferreira dos Santos",
-              "team": "Atos Winter Garden | Lucas Pinheiro"
+              "team": "Lucas Pinheiro Jiu-Jitsu"
             }
           ]
         },
@@ -99049,6 +98065,18 @@
           "belt": "GREY",
           "ageDivision": "Junior 2",
           "gender": "Male",
+          "weightClass": "Light",
+          "athletes": [
+            {
+              "name": "Kaiden Keoni Mirador Bishop",
+              "team": "Gracie Barra Arizona"
+            }
+          ]
+        },
+        {
+          "belt": "GREY",
+          "ageDivision": "Junior 2",
+          "gender": "Male",
           "weightClass": "Middle",
           "athletes": [
             {
@@ -99102,6 +98130,18 @@
             {
               "name": "Jensen Bradley Lawson",
               "team": "TRUJITSU"
+            }
+          ]
+        },
+        {
+          "belt": "GREY",
+          "ageDivision": "Junior 3",
+          "gender": "Male",
+          "weightClass": "Feather",
+          "athletes": [
+            {
+              "name": "Konrad Keilani Mirador Bishop",
+              "team": "Gracie Barra Arizona"
             }
           ]
         },
@@ -99445,6 +98485,18 @@
           "belt": "YELLOW",
           "ageDivision": "Junior 2",
           "gender": "Female",
+          "weightClass": "Medium-Heavy",
+          "athletes": [
+            {
+              "name": "Ezra Skai Gonzales Atillo",
+              "team": "Gracie Barra Roseville"
+            }
+          ]
+        },
+        {
+          "belt": "YELLOW",
+          "ageDivision": "Junior 2",
+          "gender": "Female",
           "weightClass": "Heavy",
           "athletes": [
             {
@@ -99519,6 +98571,10 @@
           "gender": "Male",
           "weightClass": "Medium-Heavy",
           "athletes": [
+            {
+              "name": "Sawyer Aloysius Gardner",
+              "team": "Brasa "
+            },
             {
               "name": "Esteban Gael Castellanos ",
               "team": "Checkmat Pure Brazilian Jiu-Jitsu"
@@ -99691,20 +98747,12 @@
           "belt": "GREY",
           "ageDivision": "Mighty-Mite 2",
           "gender": "Male",
-          "weightClass": "Light-Feather",
+          "weightClass": "Feather",
           "athletes": [
             {
               "name": "Zayden Uriah Lee Bisong",
               "team": "Gracie Barra New Mexico"
-            }
-          ]
-        },
-        {
-          "belt": "GREY",
-          "ageDivision": "Mighty-Mite 2",
-          "gender": "Male",
-          "weightClass": "Feather",
-          "athletes": [
+            },
             {
               "name": "Peter Beckett Rivera",
               "team": "SIA - Sharpen Iron Academy"
@@ -100243,6 +99291,18 @@
           "belt": "YELLOW",
           "ageDivision": "Junior 2",
           "gender": "Female",
+          "weightClass": "Medium-Heavy",
+          "athletes": [
+            {
+              "name": "Ezra Skai Gonzales Atillo",
+              "team": "Gracie Barra Roseville"
+            }
+          ]
+        },
+        {
+          "belt": "YELLOW",
+          "ageDivision": "Junior 2",
+          "gender": "Female",
           "weightClass": "Heavy",
           "athletes": [
             {
@@ -100284,6 +99344,18 @@
             {
               "name": "Dhalayla Xuan Nguyen",
               "team": "Gracie Barra Studio City"
+            }
+          ]
+        },
+        {
+          "belt": "YELLOW",
+          "ageDivision": "Teen 1",
+          "gender": "Male",
+          "weightClass": "Medium-Heavy",
+          "athletes": [
+            {
+              "name": "Sawyer Aloysius Gardner",
+              "team": "Brasa "
             }
           ]
         },
@@ -101586,6 +100658,18 @@
         {
           "belt": "YELLOW",
           "ageDivision": "Teen 1",
+          "gender": "Male",
+          "weightClass": "Medium-Heavy",
+          "athletes": [
+            {
+              "name": "Sawyer Aloysius Gardner",
+              "team": "Brasa "
+            }
+          ]
+        },
+        {
+          "belt": "YELLOW",
+          "ageDivision": "Teen 1",
           "gender": "Female",
           "weightClass": "Feather",
           "athletes": [
@@ -101726,6 +100810,18 @@
             {
               "name": "Teana Pikakeonaona Motoyama",
               "team": "Mano Jiu-Jitsu"
+            }
+          ]
+        },
+        {
+          "belt": "BLUE",
+          "ageDivision": "Master 1",
+          "gender": "Male",
+          "weightClass": "Super-Heavy",
+          "athletes": [
+            {
+              "name": "Josiah O. N. Y. X. Sinagra",
+              "team": "Relson Gracie"
             }
           ]
         },
@@ -101874,6 +100970,18 @@
             {
               "name": "Gary Lundy Hunter",
               "team": "Brasa Caio Terra"
+            }
+          ]
+        },
+        {
+          "belt": "BROWN",
+          "ageDivision": "Adult",
+          "gender": "Male",
+          "weightClass": "Light-Feather",
+          "athletes": [
+            {
+              "name": "Masaki Ueda",
+              "team": "Kyoto Uji BJJ"
             }
           ]
         },
@@ -103417,6 +102525,18 @@
         },
         {
           "belt": "GREY",
+          "ageDivision": "Pee-Wee 2",
+          "gender": "Female",
+          "weightClass": "Feather",
+          "athletes": [
+            {
+              "name": "Evan L Nguyen ",
+              "team": "AOJ"
+            }
+          ]
+        },
+        {
+          "belt": "GREY",
           "ageDivision": "Pee-Wee 3",
           "gender": "Male",
           "weightClass": "Light-Feather",
@@ -103774,6 +102894,18 @@
             {
               "name": "Ivanna Alexandra Wiesner Leon",
               "team": "Alliance Ecuador"
+            }
+          ]
+        },
+        {
+          "belt": "WHITE",
+          "ageDivision": "Master 1",
+          "gender": "Male",
+          "weightClass": "Medium-Heavy",
+          "athletes": [
+            {
+              "name": "Daniel Coello",
+              "team": "Checkmat Riverview"
             }
           ]
         },
@@ -104654,6 +103786,18 @@
         {
           "belt": "GREY",
           "ageDivision": "Junior 3",
+          "gender": "Male",
+          "weightClass": "Ultra-Heavy",
+          "athletes": [
+            {
+              "name": "Leonardo Alejandro Rico",
+              "team": "Cleber Jiu-Jitsu Visalia"
+            }
+          ]
+        },
+        {
+          "belt": "GREY",
+          "ageDivision": "Junior 3",
           "gender": "Female",
           "weightClass": "Rooster",
           "athletes": [
@@ -104859,7 +104003,7 @@
           "athletes": [
             {
               "name": "Sof\u00eda Esther Salas",
-              "team": "Fast Lane Jiu-Jitsu Academy"
+              "team": "BJJ Revolution Team"
             }
           ]
         },
@@ -104881,6 +104025,10 @@
           "gender": "Female",
           "weightClass": "Heavy",
           "athletes": [
+            {
+              "name": "Hailey Arabella Ramirez Gallegos",
+              "team": "Cleber Jiu-Jitsu Visalia"
+            },
             {
               "name": "Maria Paula Maestrelli Soares",
               "team": "Marcos Vin\u00edcius BJJ Academy"
@@ -104912,6 +104060,10 @@
             {
               "name": "Tiago Alexandre Santos",
               "team": "Brampton BJJ"
+            },
+            {
+              "name": "Joseph Bryan D'Angelo II",
+              "team": "Checkmat Daphne"
             }
           ]
         },
@@ -104945,6 +104097,10 @@
           "gender": "Male",
           "weightClass": "Ultra-Heavy",
           "athletes": [
+            {
+              "name": "Ezekiel M Rico",
+              "team": "Cleber Jiu-Jitsu Visalia"
+            },
             {
               "name": "Spencer Bryce Sharmin",
               "team": "Shark BJJ"
@@ -105152,6 +104308,18 @@
             {
               "name": "Yehorov Yelisiei",
               "team": "ZR Team Ukraine"
+            }
+          ]
+        },
+        {
+          "belt": "YELLOW",
+          "ageDivision": "Junior 1",
+          "gender": "Female",
+          "weightClass": "Medium-Heavy",
+          "athletes": [
+            {
+              "name": "Adison Faith Kim",
+              "team": "Reign Jiu-Jitsu"
             }
           ]
         },
@@ -105596,6 +104764,18 @@
             {
               "name": "Sage X. Cruz",
               "team": "Hui IJJ Worldwide"
+            }
+          ]
+        },
+        {
+          "belt": "ORANGE",
+          "ageDivision": "Teen 2",
+          "gender": "Male",
+          "weightClass": "Feather",
+          "athletes": [
+            {
+              "name": "Blaize Makarden Joseph-Tavernier",
+              "team": "New Journey Jiu-Jitsu"
             }
           ]
         },
@@ -106742,16 +105922,16 @@
               "team": "Arta"
             },
             {
-              "name": "Edwin Ricardo Resto Roman",
-              "team": "Atos Winter Garden | Lucas Pinheiro"
-            },
-            {
               "name": "Dillon Gray Clifton",
               "team": "CXBJJ Academy"
             },
             {
               "name": "Mulkum Mursalov",
               "team": "Gracie Elite Team America"
+            },
+            {
+              "name": "Edwin Ricardo Resto Roman",
+              "team": "Lucas Pinheiro Jiu-Jitsu"
             },
             {
               "name": "Alexandre Mandengue Ndoumbe",
@@ -106985,6 +106165,10 @@
           "gender": "Female",
           "weightClass": "Feather",
           "athletes": [
+            {
+              "name": "Brianna Kaitlyn Markell ",
+              "team": "Cascao Jiu-Jitsu"
+            },
             {
               "name": "Mayra Martinez",
               "team": "GF Team Texas"
@@ -107682,6 +106866,10 @@
           "weightClass": "Medium-Heavy",
           "athletes": [
             {
+              "name": "Thiago da Silva Adriano",
+              "team": "Alliance SP"
+            },
+            {
               "name": "Phillip Lawrence Bossi",
               "team": "Alvarez Brazilian Jiu-Jitsu"
             },
@@ -108114,6 +107302,10 @@
               "team": "DarkwolfMMA"
             },
             {
+              "name": "Sarah Kathleen Holzhalb",
+              "team": "Inicio Vida Jiu-Jitsu"
+            },
+            {
               "name": "Valerie Hsueh Ping Ly",
               "team": "XCMMA"
             }
@@ -108185,6 +107377,10 @@
           "gender": "Male",
           "weightClass": "Feather",
           "athletes": [
+            {
+              "name": "David Michael Messinger",
+              "team": "Ares BJJ Diego Bispo Academy"
+            },
             {
               "name": "Thomas Jay Manor",
               "team": "Kings Gambit"
@@ -109366,6 +108562,10 @@
               "team": "Coalition 95 "
             },
             {
+              "name": "Hans Lee Burnett",
+              "team": "Excellence School of Jiu-Jitsu USA"
+            },
+            {
               "name": "Lloyd P. Healy",
               "team": "Fulcrum Jiu-Jitsu Academy"
             },
@@ -110057,6 +109257,10 @@
           "gender": "Male",
           "weightClass": "Heavy",
           "athletes": [
+            {
+              "name": "Armando Blondin",
+              "team": "Alliance Coral Springs"
+            },
             {
               "name": "Raymond Herrera",
               "team": "Cassio Werneck BJJ"
@@ -112402,10 +111606,6 @@
               "team": "Kaboom Brazilian Jiu-Jitsu"
             },
             {
-              "name": "Marcos Marquez",
-              "team": "Omaha's Academy Of Brazilian Jiu-Jitsu"
-            },
-            {
               "name": "Jared Robert Vevera",
               "team": "Tac Team BJJ - Midwest "
             }
@@ -113032,6 +112232,10 @@
             {
               "name": "Suzanne Sable Beall",
               "team": "Big Brothers"
+            },
+            {
+              "name": "Kelly Ann Beringson",
+              "team": "Th\u00e1rros Jiu-Jitsu Academy"
             }
           ]
         },
@@ -113156,6 +112360,10 @@
             {
               "name": "Arlan Shabdarbayev",
               "team": "Qazaqstan Top Team"
+            },
+            {
+              "name": "Yuji Okamoto",
+              "team": "RJJ"
             },
             {
               "name": "Roberto Daniel Martinez",
@@ -113592,6 +112800,10 @@
             {
               "name": "Victor Manuel Chicaiza",
               "team": "Team Predador Jiu-Jitsu"
+            },
+            {
+              "name": "Christopher Jerome Carlino",
+              "team": "Triton Fight Center"
             }
           ]
         },
@@ -115732,6 +114944,18 @@
         },
         {
           "belt": "GREY",
+          "ageDivision": "Pee-Wee 2",
+          "gender": "Female",
+          "weightClass": "Feather",
+          "athletes": [
+            {
+              "name": "Evan L Nguyen ",
+              "team": "AOJ"
+            }
+          ]
+        },
+        {
+          "belt": "GREY",
           "ageDivision": "Pee-Wee 3",
           "gender": "Male",
           "weightClass": "Feather",
@@ -116444,6 +115668,10 @@
           "gender": "Male",
           "weightClass": "Medium-Heavy",
           "athletes": [
+            {
+              "name": "Sawyer Aloysius Gardner",
+              "team": "Brasa "
+            },
             {
               "name": "Noah Ryder McLaughlin",
               "team": "Lotus Club USA"
@@ -117207,6 +116435,10 @@
           "weightClass": "Medium-Heavy",
           "athletes": [
             {
+              "name": "Sawyer Aloysius Gardner",
+              "team": "Brasa "
+            },
+            {
               "name": "Noah Ryder McLaughlin",
               "team": "Lotus Club USA"
             }
@@ -117538,6 +116770,18 @@
             {
               "name": "Andre Bebeto ",
               "team": "Future School of Jiu-Jitsu"
+            }
+          ]
+        },
+        {
+          "belt": "BLUE",
+          "ageDivision": "Master 1",
+          "gender": "Female",
+          "weightClass": "Feather",
+          "athletes": [
+            {
+              "name": "Brianna Kaitlyn Markell ",
+              "team": "Cascao Jiu-Jitsu"
             }
           ]
         },
