@@ -137,10 +137,12 @@ def _parse_price_string(raw: str) -> tuple[float, str]:
 
 
 @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=2, max=10))
-def fetch_event_detail(client: httpx.Client, slug: str, event_id: int) -> tuple[int, list[PriceTier]]:
+def fetch_event_detail(
+    client: httpx.Client, slug: str, event_id: int
+) -> tuple[int, list[PriceTier], str, str]:
     """
-    Fetch the ibjjf.com event detail page and return (championship_id, price_tiers).
-    championship_id is extracted from embedded links (confirms == event_id from calendar).
+    Fetch the ibjjf.com event detail page and return
+    (championship_id, price_tiers, venue, address).
     """
     time.sleep(POLITE_DELAY)
     resp = client.get(f"{IBJJF_BASE}{slug}", headers={**HEADERS, "Accept": "text/html"})
@@ -164,7 +166,21 @@ def fetch_event_detail(client: httpx.Client, slug: str, event_id: int) -> tuple[
             if amount and deadline:
                 price_tiers.append(PriceTier(name=title, price=amount, deadline=deadline))
 
-    return champ_id, price_tiers
+    # Parse venue and address from <address> block
+    venue = ""
+    address = ""
+    addr_block = soup.select_one("address")
+    if addr_block:
+        venue = (addr_block.select_one(".local") or addr_block).get_text(strip=True)
+        street = (addr_block.select_one(".address_lines") or addr_block).get_text(strip=True) if addr_block.select_one(".address_lines") else ""
+        city   = addr_block.select_one(".complement")
+        city   = city.get_text(strip=True) if city else ""
+        state_zip = addr_block.select_one(".complement2")
+        state_zip = re.sub(r"\s*-\s*", " ", state_zip.get_text(strip=True)) if state_zip else ""
+        parts = [p for p in [street, city, state_zip] if p]
+        address = ", ".join(parts)
+
+    return champ_id, price_tiers, venue, address
 
 
 # ---------------------------------------------------------------------------
@@ -232,10 +248,10 @@ def build_event(client: httpx.Client, raw: dict) -> Optional[Event]:
     start, end = _parse_month_year(raw["month"], raw["year"], raw["startDay"], raw["endDay"])
 
     try:
-        champ_id, price_tiers = fetch_event_detail(client, slug, event_id)
+        champ_id, price_tiers, venue, address = fetch_event_detail(client, slug, event_id)
     except Exception as e:
         print(f"  [WARN] Could not fetch detail for {slug}: {e}")
-        champ_id, price_tiers = event_id, []
+        champ_id, price_tiers, venue, address = event_id, [], "", ""
 
     try:
         divisions = fetch_registrations(champ_id)
@@ -251,6 +267,8 @@ def build_event(client: httpx.Client, raw: dict) -> Optional[Event]:
         endDate=end,
         city=raw.get("city", ""),
         country="US",
+        venue=venue,
+        address=address,
         registrationUrl=f"{IBJJFDB_BASE}/ChampionshipResults/{champ_id}/PublicRegistrations?lang=en-US",
         priceTiers=price_tiers,
         divisions=divisions,

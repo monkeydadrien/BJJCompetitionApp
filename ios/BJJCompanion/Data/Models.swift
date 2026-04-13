@@ -17,6 +17,8 @@ struct BJJEvent: Codable, Identifiable {
     let endDate: String
     let city: String
     let country: String
+    let venue: String?
+    let address: String?
     let registrationUrl: String
     let priceTiers: [PriceTier]
     let divisions: [Division]
@@ -31,6 +33,21 @@ struct BJJEvent: Codable, Identifiable {
             .filter { ($0.deadlineParsed ?? .distantPast) > now }
             .sorted { ($0.deadlineParsed ?? .distantPast) < ($1.deadlineParsed ?? .distantPast) }
             .first
+    }
+
+    /// True when the event offers a Gi + No-Gi combo registration option.
+    var hasCombo: Bool {
+        priceTiers.contains { $0.name.contains("Combo") }
+    }
+
+    private static let kidsBelts: Set<String> = ["GREY", "GREY, YELLOW", "YELLOW", "ORANGE", "GREEN"]
+
+    var hasAdultDivisions: Bool {
+        divisions.contains { !Self.kidsBelts.contains($0.belt.uppercased()) }
+    }
+
+    var hasKidsDivisions: Bool {
+        divisions.contains { Self.kidsBelts.contains($0.belt.uppercased()) }
     }
 }
 
@@ -128,12 +145,12 @@ struct Competitor: Codable {
     }
 }
 
-struct Tournament: Codable, Identifiable {
+struct Tournament: Codable, Identifiable, Hashable, Equatable {
     let id: Int
     let name: String
 }
 
-struct BracketCategory: Codable, Identifiable {
+struct BracketCategory: Codable, Identifiable, Hashable, Equatable {
     let id: Int
     let tournamentId: Int
     let gender: String

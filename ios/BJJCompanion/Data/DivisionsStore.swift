@@ -17,7 +17,7 @@ final class DivisionsStore {
     static let ageDivisions  = ["Juvenile", "Adult", "Master 1", "Master 2", "Master 3", "Master 4", "Master 5", "Master 6", "Master 7"]
     static let belts         = ["WHITE", "BLUE", "PURPLE", "BROWN", "BLACK"]
     static let weightClasses = [
-        "Rooster", "Light Feather", "Feather", "Light",
+        "Rooster", "Light-Feather", "Feather", "Light",
         "Middle", "Medium-Heavy", "Heavy", "Super-Heavy", "Ultra-Heavy"
     ]
 

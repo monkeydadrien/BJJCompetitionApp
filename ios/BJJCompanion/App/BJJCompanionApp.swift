@@ -10,6 +10,7 @@ struct BJJCompanionApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .preferredColorScheme(.dark)
                 .environment(eventsRepo)
                 .environment(bracketRepo)
                 .environment(divisionsStore)

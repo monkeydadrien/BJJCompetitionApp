@@ -34,6 +34,8 @@ class Event(BaseModel):
     endDate: str     # "YYYY-MM-DD"
     city: str
     country: str
+    venue: str = ""       # e.g. "Silver Spurs Arena - Osceola Heritage Park"
+    address: str = ""     # e.g. "1875 Silver Spur Ln, Kissimmee, FL 34744"
     registrationUrl: str
     priceTiers: list[PriceTier]
     divisions: list[Division]

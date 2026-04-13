@@ -28,7 +28,6 @@ struct DivisionPickerView: View {
                     .onDelete { store.myDivisions.remove(atOffsets: $0) }
                 }
             }
-            .tint(.gold)
             .navigationTitle("My Divisions")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {

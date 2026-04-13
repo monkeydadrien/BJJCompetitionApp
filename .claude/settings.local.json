@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:app.ibjjfdb.com)",
+      "WebFetch(domain:ibjjf.com)",
+      "Bash(curl -s \"https://ibjjf.com/events/calendar\")",
+      "Bash(curl -s \"https://app.ibjjfdb.com/en-US/athletes/championships/registrations?championshipId=2955\")",
+      "Bash(curl -s \"https://ibjjf.com/packs/js/calendar-c34fc82dec356d826e12.js\")",
+      "Bash(curl -s \"https://app.ibjjfdb.com/_nuxt/7cdc0513269f9c052bfd.js\")",
+      "Bash(grep -oE '\"\\(/[a-zA-Z0-9/_-]+\\){2,}\"')",
+      "Bash(curl -s \"https://ibjjf.com/api/v1/events/calendar.json\")",
+      "Bash(python3 -m json.tool)",
+      "Bash(curl -s \"https://ibjjf.com/api/v1/event_groups/list.json\")",
+      "Bash(curl -s \"https://app.ibjjfdb.com/_nuxt/2e41a9fdb515f2886f11.js\")",
+      "Bash(curl -s https://ibjjf.com/api/v1/events/calendar.json -H 'Referer: https://ibjjf.com/events/calendar' -H 'Origin: https://ibjjf.com' -H 'User-Agent: Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/123.0.0.0 Safari/537.36' -H 'Accept: application/json, text/plain, */*' -H 'X-Requested-With: XMLHttpRequest')",
+      "Bash(curl -s \"https://ibjjf.com/packs/js/ibjjf-9032a399bcddf9282195.js\")",
+      "Bash(curl -sc /tmp/ibjjf_cookies.txt https://ibjjf.com/events/calendar -H 'User-Agent: Mozilla/5.0' -o /dev/null)",
+      "Bash(curl -s \"https://ibjjf.com/events/new-york-spring-international-open-ibjjf-jiu-jitsu-championship-2026\")",
+      "Bash(python3 -c ':*)",
+      "Bash(grep -oE 'baseURL[^,;\\)]{0,100}')",
+      "Bash(grep -oE '\"api[A-Za-z]*\":[^,}]{1,80}')",
+      "Read(//tmp/**)",
+      "Bash(curl -s \"https://app.ibjjfdb.com/\")",
+      "Bash(curl -sb /tmp/ibjjf_cookies.txt https://ibjjf.com/events/new-york-spring-international-open-ibjjf-jiu-jitsu-championship-2026 -H 'User-Agent: Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/123.0.0.0 Safari/537.36')",
+      "Bash(grep -oE '__NUXT__[^<]{0,500}|window\\\\.__[A-Z_]+[^<]{0,300}|data-page=\"[^\"]{0,500}\"')",
+      "Bash(python3)",
+      "Bash(pip install:*)",
+      "Bash(pip3 install:*)",
+      "Bash(python3 scrape.py --dry-run)",
+      "Bash(python3 scrape.py --limit 1)",
+      "Bash(python3 -m json.tool \"/Users/adrienibarra/Desktop/Coding Projects/BJJ/events.json\")",
+      "Bash(xcodebuild -version)"
+    ]
+  }
+}

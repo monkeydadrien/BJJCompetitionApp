@@ -12,5 +12,6 @@ struct ContentView: View {
             DivisionPickerView()
                 .tabItem { Label("My Divisions", systemImage: "person.fill") }
         }
+        .tint(.gold)
     }
 }
