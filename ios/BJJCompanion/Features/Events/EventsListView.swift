@@ -16,19 +16,28 @@ struct EventsListView: View {
         NavigationStack {
             Group {
                 if repo.isLoading && repo.events.isEmpty {
-                    ProgressView("Loading events…")
-                        .tint(.gold)
+                    ZStack {
+                        Color.appBackground.ignoresSafeArea()
+                        ProgressView("Loading events…").tint(.gold)
+                    }
                 } else if repo.events.isEmpty {
-                    ContentUnavailableView(
-                        "No Events",
-                        systemImage: "calendar.badge.exclamationmark",
-                        description: Text(repo.errorMessage ?? "Pull to refresh")
-                    )
+                    ZStack {
+                        Color.appBackground.ignoresSafeArea()
+                        ContentUnavailableView(
+                            "No Events",
+                            systemImage: "calendar.badge.exclamationmark",
+                            description: Text(repo.errorMessage ?? "Pull to refresh")
+                        )
+                    }
                 } else {
                     list
                 }
             }
             .navigationTitle("IBJJF Events")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbarBackground(Color.appBackground, for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
+            .toolbarColorScheme(.dark, for: .navigationBar)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     if repo.isLoading {
@@ -65,6 +74,7 @@ struct EventsListView: View {
             .padding(.horizontal, 16)
             .padding(.vertical, 12)
         }
+        .background(Color.appBackground.ignoresSafeArea())
         .refreshable { await repo.refresh() }
     }
 
@@ -89,11 +99,11 @@ struct EventRowView: View {
     let myDivisions: [MyDivision]
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 11) {
 
             Text(event.name)
                 .font(.system(size: 15, weight: .semibold))
-                .foregroundStyle(.primary)
+                .foregroundStyle(.white)
                 .lineLimit(2)
                 .multilineTextAlignment(.leading)
 
@@ -103,54 +113,70 @@ struct EventRowView: View {
                 Label(event.city, systemImage: "mappin.circle.fill")
             }
             .font(.caption)
-            .foregroundStyle(.secondary)
+            .foregroundStyle(.white.opacity(0.4))
 
             HStack(alignment: .center, spacing: 8) {
                 if let next = event.nextDeadline {
                     HStack(spacing: 5) {
                         Circle()
                             .fill(pricingColor)
-                            .frame(width: 7, height: 7)
+                            .frame(width: 6, height: 6)
                         Text("\(next.priceFormatted) · \(next.deadlineFormatted)")
+                            .foregroundStyle(pricingColor)
                     }
                     .font(.caption)
                     .fontWeight(.medium)
-                    .foregroundStyle(pricingColor)
                     .padding(.horizontal, 8)
                     .padding(.vertical, 4)
-                    .background(pricingColor.opacity(0.15))
+                    .background(pricingColor.opacity(0.12))
                     .clipShape(Capsule())
+                    .overlay(Capsule().strokeBorder(pricingColor.opacity(0.25), lineWidth: 1))
                 }
                 Spacer()
                 if event.hasCombo {
-                    Text("Gi + No-Gi")
-                        .font(.caption2)
-                        .fontWeight(.medium)
-                        .foregroundStyle(.gold)
+                    Text("GI + NO-GI")
+                        .font(.system(size: 9, weight: .bold))
+                        .foregroundStyle(.white.opacity(0.5))
+                        .kerning(0.6)
                         .padding(.horizontal, 6)
                         .padding(.vertical, 3)
-                        .background(Color.gold.opacity(0.15))
+                        .background(Color.white.opacity(0.07))
                         .clipShape(Capsule())
                 }
-                Text("\(event.divisions.count) div")
-                    .font(.caption2)
-                    .foregroundStyle(.tertiary)
+                VStack(alignment: .trailing, spacing: 1) {
+                    Text("\(event.divisions.count) divisions")
+                        .font(.caption2)
+                        .foregroundStyle(.white.opacity(0.25))
+                    Text("\(event.divisions.flatMap { $0.athletes }.count) athletes")
+                        .font(.caption2)
+                        .foregroundStyle(.white.opacity(0.25))
+                }
             }
 
             if myDivisionCount > 0 {
-                Label(
-                    "\(myDivisionCount) athlete\(myDivisionCount == 1 ? "" : "s") in your division\(myDivisions.count > 1 ? "s" : "")",
-                    systemImage: "person.2.fill"
-                )
+                HStack(spacing: 5) {
+                    Circle().fill(Color.gold).frame(width: 5, height: 5)
+                    Text("\(myDivisionCount) athlete\(myDivisionCount == 1 ? "" : "s") in your division\(myDivisions.count > 1 ? "s" : "")")
+                        .foregroundStyle(.gold)
+                }
                 .font(.caption)
                 .fontWeight(.medium)
-                .foregroundStyle(.gold)
             }
         }
-        .padding(14)
+        .padding(16)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color(.secondarySystemBackground))
+        .background(Color.cardSurface)
         .clipShape(RoundedRectangle(cornerRadius: 14))
+        .overlay(
+            RoundedRectangle(cornerRadius: 14)
+                .strokeBorder(Color.white.opacity(0.07), lineWidth: 1)
+        )
+        .overlay(alignment: .leading) {
+            RoundedRectangle(cornerRadius: 2)
+                .fill(pricingColor)
+                .frame(width: 3)
+                .padding(.vertical, 16)
+        }
     }
 
     private var dateRange: String {

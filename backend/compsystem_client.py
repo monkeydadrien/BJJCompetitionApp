@@ -15,12 +15,17 @@ NOTE: robots.txt disallows all crawling. We keep requests polite:
 from __future__ import annotations
 
 import re
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Optional
 
 import httpx
 from bs4 import BeautifulSoup
 from tenacity import retry, stop_after_attempt, wait_exponential
+
+# Limit concurrent outbound requests to compsystem to be polite
+_semaphore = threading.Semaphore(3)
 
 COMPSYS_BASE = "https://www.bjjcompsystem.com"
 POLITE_DELAY = 1.0
@@ -217,3 +222,60 @@ def fetch_bracket(tournament_id: int, category_id: int) -> dict:
         "label": label,
         "matches": matches,
     }
+
+
+# ---------------------------------------------------------------------------
+# Full tournament scan (used by the /schedule endpoint)
+# ---------------------------------------------------------------------------
+
+def _fetch_bracket_safe(tournament_id: int, category_id: int) -> dict | None:
+    """Fetch a bracket with semaphore-controlled concurrency. Returns None on failure."""
+    with _semaphore:
+        try:
+            return fetch_bracket(tournament_id, category_id)
+        except Exception:
+            return None
+
+
+def fetch_all_tournament_matches(tournament_id: int) -> list[dict]:
+    """
+    Fetch ALL matches across ALL categories for a tournament (both genders).
+    Each returned match dict includes categoryLabel and categoryId.
+
+    This is the expensive operation — the proxy caches it for SCHEDULE_TTL seconds.
+    Name filtering is done per-request on top of this cached result.
+    """
+    # Collect categories for both genders
+    categories: list[dict] = []
+    for gender_id in (1, 2):
+        try:
+            cats = fetch_categories(tournament_id, gender_id)
+            categories.extend(cats)
+        except Exception:
+            pass  # if one gender fails, still try the other
+
+    if not categories:
+        return []
+
+    all_matches: list[dict] = []
+
+    # Fetch all brackets concurrently, semaphore limits to 3 in-flight at once
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        future_to_cat = {
+            executor.submit(_fetch_bracket_safe, tournament_id, cat["id"]): cat
+            for cat in categories
+        }
+        for future in as_completed(future_to_cat):
+            cat = future_to_cat[future]
+            bracket = future.result()
+            if not bracket:
+                continue
+            for match in bracket.get("matches", []):
+                all_matches.append({
+                    **match,
+                    "categoryLabel": cat.get("label", ""),
+                    "categoryId":    cat["id"],
+                    "tournamentId":  tournament_id,
+                })
+
+    return all_matches

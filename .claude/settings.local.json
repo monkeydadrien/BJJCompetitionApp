@@ -29,7 +29,28 @@
       "Bash(python3 scrape.py --dry-run)",
       "Bash(python3 scrape.py --limit 1)",
       "Bash(python3 -m json.tool \"/Users/adrienibarra/Desktop/Coding Projects/BJJ/events.json\")",
-      "Bash(xcodebuild -version)"
+      "Bash(xcodebuild -version)",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Bash(bash -c 'f=$\\(jq -r '\\\\''.tool_input.file_path // \"\"'\\\\''\\); [[ \"$f\" == */ios/BJJCompanion/*.swift ]] && dest=\"${f/\\\\/ios\\\\/BJJCompanion\\\\//\\\\/ios\\\\/BJJCompanion\\\\/BJJCompanion\\\\/BJJCompanion\\\\/}\" && echo \"Would copy to: $dest\" || echo \"No match\"')",
+      "Bash(bash -c 'f=$\\(jq -r '\\\\''.tool_input.file_path // \"\"'\\\\''\\); echo \"Got: $f\"; [[ \"$f\" == */ios/BJJCompanion/*.swift ]] && dest=\"${f/\\\\/ios\\\\/BJJCompanion\\\\//\\\\/ios\\\\/BJJCompanion\\\\/BJJCompanion\\\\/BJJCompanion\\\\/}\" && echo \"Would copy to: $dest\" || echo \"No match\"')",
+      "Bash(bash -c 'f=$\\(jq -r '\\\\''.tool_input.file_path // \"\"'\\\\''\\); [[ \"$f\" == */ios/BJJCompanion/*.swift ]] && dest=$\\(echo \"$f\" | sed '\\\\''s|/ios/BJJCompanion/|/ios/BJJCompanion/BJJCompanion/BJJCompanion/|'\\\\''\\) && echo \"Would copy to: $dest\" || echo \"No match\"')",
+      "Bash(python3 -c \"import json; e=json.load\\(open\\('/Users/adrienibarra/Desktop/Coding Projects/BJJ/events.json'\\)\\)['events'][0]; print\\('venue:', e.get\\('venue'\\)\\); print\\('address:', e.get\\('address'\\)\\)\")",
+      "Bash(curl -s \"https://monkeydadrien.github.io/BJJCompetitionApp/events.json\")",
+      "Bash(python3 -c \"import json,sys; e=json.load\\(sys.stdin\\)['events'][0]; print\\('venue:', e.get\\('venue'\\)\\); print\\('address:', e.get\\('address'\\)\\); print\\('name:', e.get\\('name'\\)\\)\")"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "f=$(jq -r '.tool_input.file_path // \"\"'); [[ \"$f\" == */ios/BJJCompanion/*.swift ]] && dest=$(echo \"$f\" | sed 's|/ios/BJJCompanion/|/ios/BJJCompanion/BJJCompanion/BJJCompanion/|') && mkdir -p \"$(dirname \"$dest\")\" && cp \"$f\" \"$dest\" 2>/dev/null || true"
+          }
+        ]
+      }
     ]
   }
 }

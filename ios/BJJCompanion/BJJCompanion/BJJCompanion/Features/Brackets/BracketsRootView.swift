@@ -27,7 +27,7 @@ struct BracketsRootView: View {
                         .pickerStyle(.navigationLink)
                         .onChange(of: selectedTournament) {
                             selectedCategory = nil
-                            repo.bracket = nil
+                            repo.clearBracket()
                             if let t = selectedTournament {
                                 Task { await repo.loadCategories(tournamentId: t.id, genderId: selectedGenderId) }
                             }
@@ -45,7 +45,7 @@ struct BracketsRootView: View {
                         .pickerStyle(.segmented)
                         .onChange(of: selectedGenderId) {
                             selectedCategory = nil
-                            repo.bracket = nil
+                            repo.clearBracket()
                             if let t = selectedTournament {
                                 Task { await repo.loadCategories(tournamentId: t.id, genderId: selectedGenderId) }
                             }
@@ -94,7 +94,12 @@ struct BracketsRootView: View {
                     }
                 }
             }
+            .tint(.gold)
             .navigationTitle("Brackets")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbarBackground(Color.appBackground, for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
+            .toolbarColorScheme(.dark, for: .navigationBar)
             .task { if repo.tournaments.isEmpty { await repo.loadTournaments() } }
         }
     }

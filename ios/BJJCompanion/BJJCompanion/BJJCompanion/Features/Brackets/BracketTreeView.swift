@@ -29,8 +29,12 @@ struct BracketTreeView: View {
             }
             .padding()
         }
+        .background(Color.appBackground)
         .navigationTitle(bracket.label)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(Color.appBackground, for: .navigationBar)
+        .toolbarBackground(.visible, for: .navigationBar)
+        .toolbarColorScheme(.dark, for: .navigationBar)
     }
 
     private func roundLabel(_ round: Int, total: Int) -> String {

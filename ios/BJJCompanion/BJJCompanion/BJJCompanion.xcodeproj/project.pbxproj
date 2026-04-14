@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		162E472D2F86D855003549B4 /* BJJCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BJJCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		162E47442F86D904003549B4 /* BJJCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BJJCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		162E472F2F86D855003549B4 /* BJJCompanion */ = {
+		162E47462F86D904003549B4 /* BJJCompanion */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BJJCompanion;
 			sourceTree = "<group>";
@@ -19,7 +19,7 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		162E472A2F86D855003549B4 /* Frameworks */ = {
+		162E47412F86D904003549B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,18 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		162E47242F86D855003549B4 = {
+		162E473B2F86D904003549B4 = {
 			isa = PBXGroup;
 			children = (
-				162E472F2F86D855003549B4 /* BJJCompanion */,
-				162E472E2F86D855003549B4 /* Products */,
+				162E47462F86D904003549B4 /* BJJCompanion */,
+				162E47452F86D904003549B4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		162E472E2F86D855003549B4 /* Products */ = {
+		162E47452F86D904003549B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				162E472D2F86D855003549B4 /* BJJCompanion.app */,
+				162E47442F86D904003549B4 /* BJJCompanion.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,64 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		162E472C2F86D855003549B4 /* BJJCompanion */ = {
+		162E47432F86D904003549B4 /* BJJCompanion */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 162E47382F86D856003549B4 /* Build configuration list for PBXNativeTarget "BJJCompanion" */;
+			buildConfigurationList = 162E474F2F86D906003549B4 /* Build configuration list for PBXNativeTarget "BJJCompanion" */;
 			buildPhases = (
-				162E47292F86D855003549B4 /* Sources */,
-				162E472A2F86D855003549B4 /* Frameworks */,
-				162E472B2F86D855003549B4 /* Resources */,
+				162E47402F86D904003549B4 /* Sources */,
+				162E47412F86D904003549B4 /* Frameworks */,
+				162E47422F86D904003549B4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				162E472F2F86D855003549B4 /* BJJCompanion */,
+				162E47462F86D904003549B4 /* BJJCompanion */,
 			);
 			name = BJJCompanion;
 			packageProductDependencies = (
 			);
 			productName = BJJCompanion;
-			productReference = 162E472D2F86D855003549B4 /* BJJCompanion.app */;
+			productReference = 162E47442F86D904003549B4 /* BJJCompanion.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		162E47252F86D855003549B4 /* Project object */ = {
+		162E473C2F86D904003549B4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2630;
 				LastUpgradeCheck = 2630;
 				TargetAttributes = {
-					162E472C2F86D855003549B4 = {
+					162E47432F86D904003549B4 = {
 						CreatedOnToolsVersion = 26.3;
 					};
 				};
 			};
-			buildConfigurationList = 162E47282F86D855003549B4 /* Build configuration list for PBXProject "BJJCompanion" */;
+			buildConfigurationList = 162E473F2F86D904003549B4 /* Build configuration list for PBXProject "BJJCompanion" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 162E47242F86D855003549B4;
+			mainGroup = 162E473B2F86D904003549B4;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 162E472E2F86D855003549B4 /* Products */;
+			productRefGroup = 162E47452F86D904003549B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				162E472C2F86D855003549B4 /* BJJCompanion */,
+				162E47432F86D904003549B4 /* BJJCompanion */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		162E472B2F86D855003549B4 /* Resources */ = {
+		162E47422F86D904003549B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		162E47292F86D855003549B4 /* Sources */ = {
+		162E47402F86D904003549B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		162E47362F86D856003549B4 /* Debug */ = {
+		162E474D2F86D906003549B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -188,7 +188,7 @@
 			};
 			name = Debug;
 		};
-		162E47372F86D856003549B4 /* Release */ = {
+		162E474E2F86D906003549B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -244,7 +244,7 @@
 			};
 			name = Release;
 		};
-		162E47392F86D856003549B4 /* Debug */ = {
+		162E47502F86D906003549B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -275,7 +275,7 @@
 			};
 			name = Debug;
 		};
-		162E473A2F86D856003549B4 /* Release */ = {
+		162E47512F86D906003549B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -309,25 +309,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		162E47282F86D855003549B4 /* Build configuration list for PBXProject "BJJCompanion" */ = {
+		162E473F2F86D904003549B4 /* Build configuration list for PBXProject "BJJCompanion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				162E47362F86D856003549B4 /* Debug */,
-				162E47372F86D856003549B4 /* Release */,
+				162E474D2F86D906003549B4 /* Debug */,
+				162E474E2F86D906003549B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		162E47382F86D856003549B4 /* Build configuration list for PBXNativeTarget "BJJCompanion" */ = {
+		162E474F2F86D906003549B4 /* Build configuration list for PBXNativeTarget "BJJCompanion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				162E47392F86D856003549B4 /* Debug */,
-				162E473A2F86D856003549B4 /* Release */,
+				162E47502F86D906003549B4 /* Debug */,
+				162E47512F86D906003549B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 162E47252F86D855003549B4 /* Project object */;
+	rootObject = 162E473C2F86D904003549B4 /* Project object */;
 }
