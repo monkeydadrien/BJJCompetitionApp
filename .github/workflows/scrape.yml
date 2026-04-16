@@ -50,6 +50,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add events.json
+          git add events.json backend/geocode_cache.json
           git diff --staged --quiet || git commit -m "chore: update events.json [skip ci]"
           git push

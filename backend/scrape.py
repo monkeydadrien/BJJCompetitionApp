@@ -17,6 +17,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from ibjjf_client import build_event, fetch_calendar, _make_client
+from geocode import geocode, load_cache, save_cache
 from models import EventsPayload
 
 OUTPUT_FILE = Path(__file__).parent.parent / "events.json"
@@ -39,6 +40,19 @@ def scrape_live(limit: int | None) -> EventsPayload:
         event = build_event(client, raw)
         if event:
             events.append(event)
+
+    # Geocode city/country → lat/lon. Cached in geocode_cache.json so repeat
+    # runs (CI nightly + local re-runs) hit Nominatim only for new cities.
+    print("\nGeocoding event locations...")
+    geo_cache = load_cache()
+    cache_size_before = len(geo_cache)
+    for ev in events:
+        ev.lat, ev.lon = geocode(ev.city, ev.country, geo_cache)
+    save_cache(geo_cache)
+    new_lookups = len(geo_cache) - cache_size_before
+    with_coords = sum(1 for e in events if e.lat is not None)
+    print(f"  Geocoded {with_coords}/{len(events)} events "
+          f"({new_lookups} new cache entries, {len(geo_cache)} total cached)")
 
     return EventsPayload(
         generatedAt=datetime.now(timezone.utc).isoformat(),

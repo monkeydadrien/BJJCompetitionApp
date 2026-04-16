@@ -14,6 +14,9 @@ struct ContentView: View {
 
             DivisionPickerView()
                 .tabItem { Label("My Divisions", systemImage: "person.fill") }
+
+            SettingsRootView()
+                .tabItem { Label("Settings", systemImage: "gearshape.fill") }
         }
         .tint(.gold)
         .background(Color.appBackground.ignoresSafeArea())

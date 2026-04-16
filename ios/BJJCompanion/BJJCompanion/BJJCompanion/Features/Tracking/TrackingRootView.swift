@@ -77,13 +77,6 @@ struct TrackingRootView: View {
             .toolbarBackground(Color.appBackground, for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbarColorScheme(.dark, for: .navigationBar)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button { showAdd = true } label: {
-                        Image(systemName: "plus").foregroundStyle(.gold)
-                    }
-                }
-            }
             .sheet(isPresented: $showAdd) {
                 AddTrackingSheet(initialMode: viewMode)
             }
@@ -115,14 +108,20 @@ struct TrackingRootView: View {
         VStack(alignment: .leading, spacing: 10) {
             AppSectionLabel("Tracked Teams")
             if store.trackedTeams.isEmpty {
-                AppCard {
-                    HStack(spacing: 10) {
-                        Image(systemName: "person.3.fill")
-                            .foregroundStyle(.white.opacity(0.2)).font(.title3)
-                        Text("No teams added yet — tap + to add one")
-                            .font(.subheadline).foregroundStyle(.white.opacity(0.35))
+                Button { showAdd = true } label: {
+                    AppCard {
+                        HStack(spacing: 10) {
+                            Image(systemName: "person.3.fill")
+                                .foregroundStyle(.gold.opacity(0.7)).font(.title3)
+                            Text("Tap to add a team")
+                                .font(.subheadline).foregroundStyle(.white.opacity(0.55))
+                            Spacer()
+                            Image(systemName: "plus.circle.fill")
+                                .font(.title3).foregroundStyle(.gold)
+                        }
                     }
                 }
+                .buttonStyle(.plain)
             } else {
                 AppCard {
                     VStack(spacing: 0) {
@@ -141,10 +140,20 @@ struct TrackingRootView: View {
                             }
                             .buttonStyle(.plain)
 
-                            if team.id != store.trackedTeams.last?.id {
-                                Rectangle().fill(Color.white.opacity(0.07)).frame(height: 1)
-                            }
+                            Rectangle().fill(Color.white.opacity(0.07)).frame(height: 1)
                         }
+
+                        Button { showAdd = true } label: {
+                            HStack(spacing: 12) {
+                                Image(systemName: "plus.circle.fill")
+                                    .font(.caption).foregroundStyle(.gold).frame(width: 20)
+                                Text("Add team")
+                                    .font(.subheadline).fontWeight(.medium).foregroundStyle(.gold)
+                                Spacer()
+                            }
+                            .padding(.vertical, 10)
+                        }
+                        .buttonStyle(.plain)
                     }
                 }
             }
@@ -157,14 +166,20 @@ struct TrackingRootView: View {
         VStack(alignment: .leading, spacing: 10) {
             AppSectionLabel("Tracked Athletes")
             if store.trackedAthletes.isEmpty {
-                AppCard {
-                    HStack(spacing: 10) {
-                        Image(systemName: "person.fill.badge.plus")
-                            .foregroundStyle(.white.opacity(0.2)).font(.title3)
-                        Text("No athletes added yet — tap + to add one")
-                            .font(.subheadline).foregroundStyle(.white.opacity(0.35))
+                Button { showAdd = true } label: {
+                    AppCard {
+                        HStack(spacing: 10) {
+                            Image(systemName: "person.fill.badge.plus")
+                                .foregroundStyle(.gold.opacity(0.7)).font(.title3)
+                            Text("Tap to add an athlete")
+                                .font(.subheadline).foregroundStyle(.white.opacity(0.55))
+                            Spacer()
+                            Image(systemName: "plus.circle.fill")
+                                .font(.title3).foregroundStyle(.gold)
+                        }
                     }
                 }
+                .buttonStyle(.plain)
             } else {
                 AppCard {
                     VStack(spacing: 0) {
@@ -188,10 +203,20 @@ struct TrackingRootView: View {
                             }
                             .buttonStyle(.plain)
 
-                            if athlete.id != store.trackedAthletes.last?.id {
-                                Rectangle().fill(Color.white.opacity(0.07)).frame(height: 1)
-                            }
+                            Rectangle().fill(Color.white.opacity(0.07)).frame(height: 1)
                         }
+
+                        Button { showAdd = true } label: {
+                            HStack(spacing: 12) {
+                                Image(systemName: "plus.circle.fill")
+                                    .font(.caption).foregroundStyle(.gold).frame(width: 20)
+                                Text("Add athlete")
+                                    .font(.subheadline).fontWeight(.medium).foregroundStyle(.gold)
+                                Spacer()
+                            }
+                            .padding(.vertical, 10)
+                        }
+                        .buttonStyle(.plain)
                     }
                 }
             }

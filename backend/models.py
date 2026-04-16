@@ -39,6 +39,8 @@ class Event(BaseModel):
     registrationUrl: str
     priceTiers: list[PriceTier]
     divisions: list[Division]
+    lat: float | None = None     # geocoded from "{city}, {country}"; nullable for back-compat
+    lon: float | None = None
 
 
 class EventsPayload(BaseModel):

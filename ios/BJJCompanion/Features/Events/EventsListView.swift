@@ -6,11 +6,29 @@ enum EventFilter: String, CaseIterable {
     case all    = "All"
 }
 
+/// Maximum distance from home city. `rawValue` is miles, `0` = no filter.
+enum DistanceFilter: Int, CaseIterable, Identifiable {
+    case all  = 0
+    case m50  = 50
+    case m100 = 100
+    case m250 = 250
+    case m500 = 500
+
+    var id: Int { rawValue }
+    var label: String { self == .all ? "All" : "\(rawValue) mi" }
+}
+
 struct EventsListView: View {
 
     @Environment(EventsRepository.self) private var repo
     @Environment(DivisionsStore.self)   private var divisions
+    @Environment(HomeCityStore.self)    private var homeCityStore
     @State private var filter: EventFilter = .adults
+    @AppStorage("eventsDistanceFilter") private var distanceFilterRaw: Int = DistanceFilter.all.rawValue
+
+    private var distanceFilter: DistanceFilter {
+        DistanceFilter(rawValue: distanceFilterRaw) ?? .all
+    }
 
     var body: some View {
         NavigationStack {
@@ -55,7 +73,7 @@ struct EventsListView: View {
 
     private var list: some View {
         ScrollView {
-            // Segmented filter
+            // Age-group filter
             Picker("Filter", selection: $filter) {
                 ForEach(EventFilter.allCases, id: \.self) { Text($0.rawValue) }
             }
@@ -63,10 +81,33 @@ struct EventsListView: View {
             .padding(.horizontal, 16)
             .padding(.top, 8)
 
+            // Distance filter (disabled until a home city is set)
+            VStack(alignment: .leading, spacing: 4) {
+                Picker("Distance", selection: $distanceFilterRaw) {
+                    ForEach(DistanceFilter.allCases) { df in
+                        Text(df.label).tag(df.rawValue)
+                    }
+                }
+                .pickerStyle(.segmented)
+                .disabled(homeCityStore.city == nil)
+
+                if homeCityStore.city == nil {
+                    Text("Set a home city in Settings to filter by distance.")
+                        .font(.caption2)
+                        .foregroundStyle(.white.opacity(0.4))
+                }
+            }
+            .padding(.horizontal, 16)
+            .padding(.top, 6)
+
             LazyVStack(spacing: 10) {
                 ForEach(filteredEvents) { event in
                     NavigationLink(destination: EventDetailView(event: event)) {
-                        EventRowView(event: event, myDivisions: divisions.myDivisions)
+                        EventRowView(
+                            event: event,
+                            myDivisions: divisions.myDivisions,
+                            homeCity: homeCityStore.city
+                        )
                     }
                     .buttonStyle(.plain)
                 }
@@ -80,14 +121,23 @@ struct EventsListView: View {
 
     private var filteredEvents: [BJJEvent] {
         let now = Date()
-        let upcoming = repo.events
+        var upcoming = repo.events
             .filter { ($0.endDateParsed ?? .distantPast) >= now }
             .sorted { ($0.startDateParsed ?? .distantFuture) < ($1.startDateParsed ?? .distantFuture) }
         switch filter {
-        case .all:    return upcoming
-        case .adults: return upcoming.filter { $0.hasAdultDivisions }
-        case .kids:   return upcoming.filter { $0.hasKidsDivisions }
+        case .all:    break
+        case .adults: upcoming = upcoming.filter { $0.hasAdultDivisions }
+        case .kids:   upcoming = upcoming.filter { $0.hasKidsDivisions }
         }
+
+        if distanceFilter != .all, let home = homeCityStore.city {
+            let limit = Double(distanceFilter.rawValue)
+            upcoming = upcoming.filter { ev in
+                guard let d = ev.milesFrom(home) else { return false }
+                return d <= limit
+            }
+        }
+        return upcoming
     }
 }
 
@@ -97,6 +147,7 @@ struct EventRowView: View {
 
     let event: BJJEvent
     let myDivisions: [MyDivision]
+    var homeCity: HomeCity? = nil
 
     var body: some View {
         VStack(alignment: .leading, spacing: 11) {
@@ -111,6 +162,11 @@ struct EventRowView: View {
                 Label(dateRange, systemImage: "calendar")
                 Spacer()
                 Label(event.city, systemImage: "mappin.circle.fill")
+                if let miles = event.milesFrom(homeCity) {
+                    Text("· \(Int(miles.rounded())) mi")
+                        .foregroundStyle(.gold.opacity(0.7))
+                        .fontWeight(.medium)
+                }
             }
             .font(.caption)
             .foregroundStyle(.white.opacity(0.4))

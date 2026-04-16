@@ -1,0 +1,106 @@
+{
+  "bedford park, us": {
+    "lat": 41.7690519,
+    "lon": -87.7770096
+  },
+  "boston, us": {
+    "lat": 42.3588336,
+    "lon": -71.0578303
+  },
+  "chesterfield, us": {
+    "lat": 38.6581764,
+    "lon": -90.5680617
+  },
+  "chicago, us": {
+    "lat": 41.8755616,
+    "lon": -87.6244212
+  },
+  "college park, us": {
+    "lat": 38.980666,
+    "lon": -76.9369189
+  },
+  "columbus, us": {
+    "lat": 39.9622601,
+    "lon": -83.0007065
+  },
+  "concord, us": {
+    "lat": 43.207178,
+    "lon": -71.537476
+  },
+  "dallas, us": {
+    "lat": 32.7762719,
+    "lon": -96.7968559
+  },
+  "dearborn heights, us": {
+    "lat": 42.3369816,
+    "lon": -83.2732627
+  },
+  "denver, us": {
+    "lat": 39.7392364,
+    "lon": -104.984862
+  },
+  "fort lauderdale, us": {
+    "lat": 26.1223084,
+    "lon": -80.1433786
+  },
+  "fredericksburg, us": {
+    "lat": 38.3031837,
+    "lon": -77.4605399
+  },
+  "hempstead, us": {
+    "lat": 40.6736812,
+    "lon": -73.6190736
+  },
+  "kissimmee, us": {
+    "lat": 28.2918995,
+    "lon": -81.4075838
+  },
+  "las vegas, us": {
+    "lat": 36.1674263,
+    "lon": -115.1484131
+  },
+  "long beach, us": {
+    "lat": 33.7690164,
+    "lon": -118.191604
+  },
+  "los angeles, us": {
+    "lat": 34.0536909,
+    "lon": -118.242766
+  },
+  "murfreesboro, us": {
+    "lat": 35.8460396,
+    "lon": -86.3921096
+  },
+  "portland, us": {
+    "lat": 45.5202471,
+    "lon": -122.674194
+  },
+  "round rock, us": {
+    "lat": 30.5085915,
+    "lon": -97.6788056
+  },
+  "sacramento, us": {
+    "lat": 38.5810606,
+    "lon": -121.493895
+  },
+  "san antonio, us": {
+    "lat": 29.4246002,
+    "lon": -98.4951405
+  },
+  "san diego, us": {
+    "lat": 32.7174202,
+    "lon": -117.162772
+  },
+  "santa cruz, us": {
+    "lat": 36.9743626,
+    "lon": -122.0294673
+  },
+  "secaucus, us": {
+    "lat": 40.7899291,
+    "lon": -74.0566735
+  },
+  "wahiawa, us": {
+    "lat": 21.5006241,
+    "lon": -158.016672
+  }
+}

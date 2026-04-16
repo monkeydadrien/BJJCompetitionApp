@@ -22,6 +22,8 @@ struct BJJEvent: Codable, Identifiable {
     let registrationUrl: String
     let priceTiers: [PriceTier]
     let divisions: [Division]
+    let lat: Double?        // optional — set by backend geocoding pass
+    let lon: Double?
 
     var startDateParsed: Date? { DateFormatter.isoDate.date(from: startDate) }
     var endDateParsed: Date?   { DateFormatter.isoDate.date(from: endDate) }
@@ -120,15 +122,15 @@ struct TrackedAthlete: Codable, Identifiable, Hashable {
 
 // MARK: - Registry athlete (from athletes.json)
 
-struct RegistryAthlete: Codable, Identifiable, Hashable {
-    let id: Int                       // bjjcompsystem athleteId
+struct RegistryAthlete: Codable, Identifiable, Hashable, Sendable {
+    let id: Int                       // bjjcompsystem athleteId (or sequential for IBJJF-sourced)
     let name: String
     let team: String
     let lastSeenTournamentId: Int
     let lastSeenDate: String?         // "YYYY-MM-DD" or nil if undateable
 }
 
-struct AthletesPayload: Codable {
+struct AthletesPayload: Codable, Sendable {
     let generatedAt: String
     let oldestTournamentDate: String?
     let count: Int
@@ -229,6 +231,32 @@ struct ScheduleMatch: Codable, Identifiable {
     enum CodingKeys: String, CodingKey {
         case athleteName, teamName, categoryLabel, categoryId, tournamentId,
              fight, mat, when, round, opponent
+    }
+}
+
+// MARK: - Home city (user setting)
+
+struct HomeCity: Codable, Equatable, Hashable {
+    let label: String     // "Houston, Texas, United States"
+    let lat: Double
+    let lon: Double
+}
+
+extension BJJEvent {
+    /// Great-circle distance from a home city, in miles. Returns nil if either
+    /// the home city is unset or the event has no geocoded coordinates.
+    func milesFrom(_ home: HomeCity?) -> Double? {
+        guard let home, let lat, let lon else { return nil }
+        let earthRadiusMiles = 3958.8
+        let dLat = (lat - home.lat) * .pi / 180
+        let dLon = (lon - home.lon) * .pi / 180
+        let homeLatRad = home.lat * .pi / 180
+        let evLatRad = lat * .pi / 180
+        let a = sin(dLat / 2) * sin(dLat / 2)
+              + cos(homeLatRad) * cos(evLatRad)
+              * sin(dLon / 2) * sin(dLon / 2)
+        let c = 2 * atan2(sqrt(a), sqrt(1 - a))
+        return earthRadiusMiles * c
     }
 }
 

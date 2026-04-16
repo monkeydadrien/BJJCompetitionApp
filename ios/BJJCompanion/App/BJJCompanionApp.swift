@@ -8,6 +8,7 @@ struct BJJCompanionApp: App {
     @State private var divisionsStore = DivisionsStore()
     @State private var trackingStore  = TrackingStore()
     @State private var athletesRepo   = AthletesRepository()
+    @State private var homeCityStore  = HomeCityStore()
 
     init() {
         configureNavigationBar()
@@ -23,6 +24,7 @@ struct BJJCompanionApp: App {
                 .environment(divisionsStore)
                 .environment(trackingStore)
                 .environment(athletesRepo)
+                .environment(homeCityStore)
                 .task { await eventsRepo.loadIfNeeded() }
                 .task { await athletesRepo.loadIfNeeded() }
         }
