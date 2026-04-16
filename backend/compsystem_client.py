@@ -169,7 +169,7 @@ def fetch_bracket(tournament_id: int, category_id: int) -> dict:
     label = heading.get_text(strip=True) if heading else ""
 
     matches = []
-    for round_idx, round_el in enumerate(soup.select("[class*='tournament-category__bracket']"), 1):
+    for round_idx, round_el in enumerate(soup.select(".tournament-category__bracket"), 1):
         for match_el in round_el.select(".tournament-category__match"):
             # Fight number and mat
             header = match_el.select_one(".bracket-match-header__fight")

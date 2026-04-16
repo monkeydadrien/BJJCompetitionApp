@@ -28,3 +28,6 @@ build/
 # Credentials / secrets
 .env
 *.secret
+
+# Backfill checkpoint
+backend/.athletes_backfill_state.json

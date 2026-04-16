@@ -1,14 +1,22 @@
 import Foundation
 import Observation
 
-/// Fetches and caches the IBJJF ranked athletes database (athletes.json from GitHub Pages).
+/// Fetches and caches the bjjcompsystem-derived athlete registry (`athletes.json`).
+/// Powers autocomplete in the Add Athlete sheet.
+///
+/// The JSON is a few MB — we cache to the Documents directory (not UserDefaults)
+/// and decode off the main actor to keep launch smooth.
 @Observable
 final class AthletesRepository {
 
-    private(set) var athletes: [RankedAthlete] = []
+    private(set) var athletes: [RegistryAthlete] = []
     private(set) var isLoading = false
     private(set) var lastUpdated: Date?
     private(set) var errorMessage: String?
+
+    /// Pre-computed (normalizedName, athlete) pairs for linear-scan search.
+    /// Rebuilt whenever `athletes` is replaced.
+    private var searchIndex: [(normalized: String, athlete: RegistryAthlete)] = []
 
     private let cacheURL: URL = {
         let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
@@ -18,11 +26,7 @@ final class AthletesRepository {
     // MARK: - Public
 
     func loadIfNeeded() async {
-        if let cached = loadFromDisk() {
-            apply(cached)
-            // Don't re-fetch if we loaded from disk — rankings update monthly
-            return
-        }
+        if await applyCachedIfFresh() { return }
         await refresh()
     }
 
@@ -34,46 +38,64 @@ final class AthletesRepository {
 
         do {
             let (data, _) = try await URLSession.shared.data(from: Config.athletesURL)
-            let payload = try JSONDecoder().decode(AthletesPayload.self, from: data)
-            apply(payload)
-            saveToDisk(data)
+            let payload = try await decodeOffMain(data)
+            await MainActor.run { self.apply(payload) }
+            try? data.write(to: cacheURL, options: .atomic)
         } catch {
             errorMessage = error.localizedDescription
-            if athletes.isEmpty, let cached = loadFromDisk() {
-                apply(cached)
+            // Fall back to cached data if we have none loaded yet
+            if athletes.isEmpty {
+                _ = await applyCachedIfFresh(ignoreStale: true)
             }
         }
     }
 
-    // MARK: - Search
-
-    /// Fast local search — substring match on name, returns up to `limit` results.
-    func search(name: String, limit: Int = 50) -> [RankedAthlete] {
-        let q = name.trimmingCharacters(in: .whitespaces).lowercased()
+    /// Top-N matches for a search query. Prefix match ranks above substring.
+    func search(query: String, limit: Int = 10) -> [RegistryAthlete] {
+        let q = normalizeAthleteName(query)
         guard !q.isEmpty else { return [] }
-        var results: [RankedAthlete] = []
-        for a in athletes {
-            if a.name.lowercased().contains(q) {
-                results.append(a)
-                if results.count >= limit { break }
+
+        var prefixHits: [RegistryAthlete] = []
+        var substringHits: [RegistryAthlete] = []
+
+        for entry in searchIndex {
+            if entry.normalized.hasPrefix(q) {
+                prefixHits.append(entry.athlete)
+                if prefixHits.count + substringHits.count >= limit * 3 { break }
+            } else if entry.normalized.contains(q) {
+                substringHits.append(entry.athlete)
             }
         }
-        return results
+
+        // The underlying array is already sorted by lastSeenDate desc, so order is preserved.
+        return Array((prefixHits + substringHits).prefix(limit))
     }
 
     // MARK: - Private
 
+    @discardableResult
+    private func applyCachedIfFresh(ignoreStale: Bool = false) async -> Bool {
+        guard let data = try? Data(contentsOf: cacheURL) else { return false }
+        guard let payload = try? await decodeOffMain(data) else { return false }
+        if !ignoreStale, isStale(payload.generatedAt) { return false }
+        await MainActor.run { self.apply(payload) }
+        return true
+    }
+
     private func apply(_ payload: AthletesPayload) {
         athletes = payload.athletes
+        searchIndex = payload.athletes.map { (normalizeAthleteName($0.name), $0) }
         lastUpdated = Date()
     }
 
-    private func saveToDisk(_ data: Data) {
-        try? data.write(to: cacheURL, options: .atomic)
+    private func isStale(_ generatedAt: String) -> Bool {
+        guard let date = ISO8601DateFormatter().date(from: generatedAt) else { return true }
+        return Date().timeIntervalSince(date) > Config.staleDuration
     }
 
-    private func loadFromDisk() -> AthletesPayload? {
-        guard let data = try? Data(contentsOf: cacheURL) else { return nil }
-        return try? JSONDecoder().decode(AthletesPayload.self, from: data)
+    private func decodeOffMain(_ data: Data) async throws -> AthletesPayload {
+        try await Task.detached(priority: .utility) {
+            try JSONDecoder().decode(AthletesPayload.self, from: data)
+        }.value
     }
 }

@@ -5,9 +5,9 @@ struct BJJCompanionApp: App {
 
     @State private var eventsRepo     = EventsRepository()
     @State private var bracketRepo    = BracketRepository()
-    @State private var athletesRepo   = AthletesRepository()
     @State private var divisionsStore = DivisionsStore()
     @State private var trackingStore  = TrackingStore()
+    @State private var athletesRepo   = AthletesRepository()
 
     init() {
         configureNavigationBar()
@@ -20,9 +20,9 @@ struct BJJCompanionApp: App {
                 .preferredColorScheme(.dark)
                 .environment(eventsRepo)
                 .environment(bracketRepo)
-                .environment(athletesRepo)
                 .environment(divisionsStore)
                 .environment(trackingStore)
+                .environment(athletesRepo)
                 .task { await eventsRepo.loadIfNeeded() }
                 .task { await athletesRepo.loadIfNeeded() }
         }

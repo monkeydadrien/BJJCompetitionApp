@@ -49,10 +49,10 @@ final class TrackingStore {
         trackedTeams.append(TrackedTeam(name: trimmed))
     }
 
-    func addAthlete(name: String, team: String?) {
+    func addAthlete(name: String, team: String?, bjjcsId: Int? = nil) {
         let trimmed = name.trimmingCharacters(in: .whitespaces)
         guard !trimmed.isEmpty, !isTrackingAthlete(name: trimmed) else { return }
-        trackedAthletes.append(TrackedAthlete(name: trimmed, team: team))
+        trackedAthletes.append(TrackedAthlete(name: trimmed, team: team, bjjcsId: bjjcsId))
     }
 
     func removeTeams(at offsets: IndexSet)    { trackedTeams.remove(atOffsets: offsets) }
@@ -88,13 +88,13 @@ final class TrackingStore {
         return results
     }
 
-    /// Only athletes whose name matches a tracked individual athlete.
+    /// Only athletes whose name exactly matches a tracked individual athlete.
     func athleteMatchingRegistrations(in event: BJJEvent) -> [(athlete: Athlete, division: Division)] {
         var results: [(Athlete, Division)] = []
         for division in event.divisions {
             for athlete in division.athletes {
                 let hit = trackedAthletes.contains {
-                    athlete.name.lowercased() == $0.name.lowercased()
+                    Self.nameMatch(tracked: $0.name, against: athlete.name)
                 }
                 if hit { results.append((athlete, division)) }
             }
@@ -103,16 +103,25 @@ final class TrackingStore {
     }
 
     func matchesAnyTracked(name: String, team: String) -> Bool {
-        let nameLower = name.lowercased()
         let teamLower = team.lowercased()
 
         let teamMatch = trackedTeams.contains {
             teamLower.contains($0.name.lowercased()) || $0.name.lowercased().contains(teamLower)
         }
         let athleteMatch = trackedAthletes.contains {
-            nameLower == $0.name.lowercased()
+            Self.nameMatch(tracked: $0.name, against: name)
         }
         return teamMatch || athleteMatch
+    }
+
+    /// Exact name match after normalizing case, diacritics, and whitespace.
+    /// The tracked name must equal the registered name (user enters the full
+    /// IBJJF registration name). "Rodrigo Martins" does NOT match
+    /// "Rodrigo Leite Martins da Silva".
+    static func nameMatch(tracked: String, against: String) -> Bool {
+        let a = normalizeAthleteName(tracked)
+        guard !a.isEmpty else { return false }
+        return a == normalizeAthleteName(against)
     }
 
     // MARK: - Persistence
@@ -141,4 +150,16 @@ final class TrackingStore {
             eventTournamentLinks = saved
         }
     }
+}
+
+// MARK: - Shared normalization
+
+/// Case / diacritic / punctuation-insensitive normalization.
+/// Single source of truth used by `TrackingStore.nameMatch` AND
+/// `AthletesRepository.search` so match and search can never drift.
+func normalizeAthleteName(_ s: String) -> String {
+    s.lowercased()
+        .folding(options: .diacriticInsensitive, locale: .current)  // "José" → "jose"
+        .split(whereSeparator: { !$0.isLetter && !$0.isNumber })
+        .joined(separator: " ")
 }

@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 // MARK: - View mode
 
@@ -84,11 +85,7 @@ struct TrackingRootView: View {
                 }
             }
             .sheet(isPresented: $showAdd) {
-                AddTrackingSheet(
-                    allTeams:    allTeamNames,
-                    allAthletes: allAthleteNames,
-                    initialMode: viewMode
-                )
+                AddTrackingSheet(initialMode: viewMode)
             }
             .confirmationDialog(
                 "Remove from tracking?",
@@ -179,7 +176,7 @@ struct TrackingRootView: View {
                                     VStack(alignment: .leading, spacing: 2) {
                                         Text(athlete.name)
                                             .font(.subheadline).foregroundStyle(.white.opacity(0.9))
-                                        if let team = athlete.team {
+                                        if let team = athlete.team, !team.isEmpty {
                                             Text(team).font(.caption).foregroundStyle(.white.opacity(0.4))
                                         }
                                     }
@@ -289,69 +286,33 @@ struct TrackingRootView: View {
     private var trackedNames: [String] {
         store.trackedAthletes.map { $0.name } + store.trackedTeams.map { $0.name }
     }
-
-    private var allTeamNames: [String] {
-        Array(Set(eventsRepo.events.flatMap { $0.divisions.flatMap { $0.athletes.map { $0.team } } })).sorted()
-    }
-
-    private var allAthleteNames: [(name: String, team: String)] {
-        var seen = Set<String>()
-        var result: [(String, String)] = []
-        for event in eventsRepo.events {
-            for division in event.divisions {
-                for athlete in division.athletes {
-                    let key = athlete.name.lowercased()
-                    if !seen.contains(key) { seen.insert(key); result.append((athlete.name, athlete.team)) }
-                }
-            }
-        }
-        return result.sorted { $0.0 < $1.0 }
-    }
 }
 
 // MARK: - Unified add sheet
 
 struct AddTrackingSheet: View {
 
-    let allTeams:    [String]
-    let allAthletes: [(name: String, team: String)]
     let initialMode: TrackingViewMode
 
-    @Environment(TrackingStore.self)       private var store
+    @Environment(TrackingStore.self)      private var store
     @Environment(AthletesRepository.self) private var athletesRepo
-    @Environment(\.dismiss)                private var dismiss
+    @Environment(\.dismiss)               private var dismiss
 
     @State private var mode:       TrackingViewMode = .teams
     @State private var searchText: String           = ""
 
-    // Local event-based results
-    private var localResults: [(name: String, team: String)] {
-        let q = searchText.trimmingCharacters(in: .whitespaces).lowercased()
-        guard !q.isEmpty else { return [] }
-        switch mode {
-        case .teams:
-            return allTeams
-                .filter { $0.lowercased().contains(q) && !store.isTrackingTeam($0) }
-                .map { ($0, "") }
-        case .athletes:
-            return allAthletes
-                .filter { $0.name.lowercased().contains(q) && !store.isTrackingAthlete(name: $0.name) }
-        }
-    }
-
-    // IBJJF ranked athlete results (instant local search)
-    private var rankedResults: [RankedAthlete] {
-        guard mode == .athletes else { return [] }
-        let q = searchText.trimmingCharacters(in: .whitespaces)
-        guard q.count >= 3 else { return [] } // need at least 3 chars for ranking search
-        return athletesRepo.search(name: q, limit: 30)
-            .filter { !store.isTrackingAthlete(name: $0.name) }
-    }
-
-    private var canAddCustom: Bool {
+    private var canAdd: Bool {
         let q = searchText.trimmingCharacters(in: .whitespaces)
         guard !q.isEmpty else { return false }
         return mode == .teams ? !store.isTrackingTeam(q) : !store.isTrackingAthlete(name: q)
+    }
+
+    private var athleteSuggestions: [RegistryAthlete] {
+        guard mode == .athletes else { return [] }
+        let q = searchText.trimmingCharacters(in: .whitespaces)
+        guard q.count >= 2 else { return [] }
+        return athletesRepo.search(query: q, limit: 10)
+            .filter { !store.isTrackingAthlete(name: $0.name) }
     }
 
     var body: some View {
@@ -368,12 +329,12 @@ struct AddTrackingSheet: View {
                     .padding(.vertical, 4)
                 }
 
-                // ── Search field ─────────────────────────────────────────
+                // ── Name field ───────────────────────────────────────────
                 Section {
                     HStack {
                         Image(systemName: "magnifyingglass").foregroundStyle(.secondary).font(.subheadline)
                         TextField(
-                            mode == .teams ? "Enter any team name" : "Search athlete name",
+                            mode == .teams ? "Team name" : "Athlete full name",
                             text: $searchText
                         )
                         .autocorrectionDisabled()
@@ -385,19 +346,46 @@ struct AddTrackingSheet: View {
                         }
                     }
                 } footer: {
-                    if mode == .athletes && !athletesRepo.athletes.isEmpty {
-                        Text("\(athletesRepo.athletes.count) ranked athletes available · results appear as you type")
-                            .font(.caption)
+                    Text(mode == .teams
+                        ? "Matches any athlete whose team name contains this text."
+                        : "Pick from suggestions below, or add a custom name if yours isn't listed.")
+                        .font(.caption)
+                }
+
+                // ── Suggestions from athlete registry ────────────────────
+                if !athleteSuggestions.isEmpty {
+                    Section("Suggestions") {
+                        ForEach(athleteSuggestions) { hit in
+                            Button {
+                                store.addAthlete(name: hit.name, team: hit.team, bjjcsId: hit.id)
+                                dismiss()
+                            } label: {
+                                HStack(spacing: 10) {
+                                    Image(systemName: "person.fill")
+                                        .font(.caption).foregroundStyle(.gold.opacity(0.7)).frame(width: 18)
+                                    VStack(alignment: .leading, spacing: 2) {
+                                        Text(hit.name).foregroundStyle(.primary)
+                                        if !hit.team.isEmpty {
+                                            Text(hit.team).font(.caption).foregroundStyle(.secondary)
+                                        }
+                                    }
+                                    Spacer()
+                                }
+                            }
+                        }
                     }
                 }
 
-                // ── Add custom name ──────────────────────────────────────
-                if canAddCustom {
+                // ── Add button ───────────────────────────────────────────
+                if canAdd {
                     Section {
                         Button {
                             let q = searchText.trimmingCharacters(in: .whitespaces)
-                            if mode == .teams { store.addTeam(q) }
-                            else              { store.addAthlete(name: q, team: nil) }
+                            if mode == .teams {
+                                store.addTeam(q)
+                            } else {
+                                store.addAthlete(name: q, team: nil)
+                            }
                             dismiss()
                         } label: {
                             HStack {
@@ -411,66 +399,6 @@ struct AddTrackingSheet: View {
                                     .padding(.horizontal, 6).padding(.vertical, 2)
                                     .background(Color.gold.opacity(0.1))
                                     .clipShape(Capsule())
-                            }
-                        }
-                    }
-                }
-
-                // ── IBJJF ranked athletes (instant) ─────────────────────
-                if !rankedResults.isEmpty {
-                    Section("IBJJF Ranked Athletes") {
-                        ForEach(rankedResults) { ranked in
-                            Button {
-                                store.addAthlete(name: ranked.name, team: ranked.team)
-                                dismiss()
-                            } label: {
-                                HStack(spacing: 10) {
-                                    VStack(alignment: .leading, spacing: 3) {
-                                        Text(ranked.name).foregroundStyle(.primary).fontWeight(.medium)
-                                        Text(ranked.team).font(.caption).foregroundStyle(.secondary)
-                                    }
-                                    Spacer()
-                                    VStack(alignment: .trailing, spacing: 2) {
-                                        Text(ranked.belt.capitalized)
-                                            .font(.system(size: 9, weight: .bold))
-                                            .foregroundStyle(.white.opacity(0.7))
-                                            .padding(.horizontal, 6).padding(.vertical, 2)
-                                            .background(Color.beltColor(ranked.belt).opacity(0.3))
-                                            .clipShape(Capsule())
-                                        if let rank = ranked.rank {
-                                            Text("#\(rank) · \(ranked.points) pts")
-                                                .font(.system(size: 9))
-                                                .foregroundStyle(.white.opacity(0.4))
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-                // ── Registered in upcoming events ────────────────────────
-                if !localResults.isEmpty {
-                    Section("Registered in upcoming events") {
-                        ForEach(localResults, id: \.name) { entry in
-                            Button {
-                                if mode == .teams { store.addTeam(entry.name) }
-                                else              { store.addAthlete(name: entry.name, team: entry.team) }
-                                dismiss()
-                            } label: {
-                                HStack(spacing: 10) {
-                                    Image(systemName: mode == .teams ? "person.3.fill" : "person.fill")
-                                        .font(.caption)
-                                        .foregroundStyle(mode == .teams ? .gold.opacity(0.8) : .white.opacity(0.5))
-                                        .frame(width: 18)
-                                    VStack(alignment: .leading, spacing: 2) {
-                                        Text(entry.name).foregroundStyle(.primary)
-                                        if !entry.team.isEmpty {
-                                            Text(entry.team).font(.caption).foregroundStyle(.secondary)
-                                        }
-                                    }
-                                    Spacer()
-                                }
                             }
                         }
                     }
@@ -639,6 +567,12 @@ struct TrackedAthleteRow: View {
     let division:       Division
     let scheduleMatches: [ScheduleMatch]
 
+    @Environment(TrackingStore.self) private var store
+
+    private var isTracked: Bool {
+        store.trackedAthletes.contains { TrackingStore.nameMatch(tracked: $0.name, against: athlete.name) }
+    }
+
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
             HStack(spacing: 12) {
@@ -653,6 +587,23 @@ struct TrackedAthleteRow: View {
                     .font(.system(size: 10, weight: .medium)).foregroundStyle(.white.opacity(0.4))
                     .padding(.horizontal, 7).padding(.vertical, 3)
                     .background(Color.white.opacity(0.07)).clipShape(Capsule())
+
+                if isTracked {
+                    Image(systemName: "star.fill")
+                        .font(.system(size: 11))
+                        .foregroundStyle(.gold.opacity(0.7))
+                } else {
+                    Button {
+                        withAnimation {
+                            store.addAthlete(name: athlete.name, team: athlete.team)
+                        }
+                    } label: {
+                        Image(systemName: "plus.circle.fill")
+                            .font(.system(size: 16))
+                            .foregroundStyle(.gold)
+                    }
+                    .buttonStyle(.plain)
+                }
             }
 
             if scheduleMatches.isEmpty {

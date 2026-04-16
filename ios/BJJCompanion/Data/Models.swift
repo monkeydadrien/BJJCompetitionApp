@@ -109,9 +109,30 @@ struct TrackedTeam: Codable, Identifiable, Hashable {
 }
 
 struct TrackedAthlete: Codable, Identifiable, Hashable {
-    var id: String { "\(name.lowercased())/\(team?.lowercased() ?? "")" }
+    var id: String {
+        if let bid = bjjcsId { return "bjjcs:\(bid)" }
+        return "\(name.lowercased())/\(team?.lowercased() ?? "")"
+    }
     let name: String
-    let team: String?   // optional — used to disambiguate athletes with same name
+    let team: String?    // optional — used to disambiguate athletes with same name
+    let bjjcsId: Int?    // optional — bjjcompsystem athlete id when picked from registry
+}
+
+// MARK: - Registry athlete (from athletes.json)
+
+struct RegistryAthlete: Codable, Identifiable, Hashable {
+    let id: Int                       // bjjcompsystem athleteId
+    let name: String
+    let team: String
+    let lastSeenTournamentId: Int
+    let lastSeenDate: String?         // "YYYY-MM-DD" or nil if undateable
+}
+
+struct AthletesPayload: Codable {
+    let generatedAt: String
+    let oldestTournamentDate: String?
+    let count: Int
+    let athletes: [RegistryAthlete]
 }
 
 /// A single match entry returned when searching brackets for a tracked name.
@@ -209,26 +230,6 @@ struct ScheduleMatch: Codable, Identifiable {
         case athleteName, teamName, categoryLabel, categoryId, tournamentId,
              fight, mat, when, round, opponent
     }
-}
-
-// MARK: - IBJJF Rankings (from athletes.json)
-
-struct AthletesPayload: Codable {
-    let generatedAt: String
-    let athleteCount: Int
-    let athletes: [RankedAthlete]
-}
-
-struct RankedAthlete: Codable, Identifiable {
-    var id: String { "\(name)-\(belt)-\(ageDiv)-\(gender)" }
-    let name: String
-    let team: String
-    let points: String
-    let athleteId: Int?
-    let rank: Int?
-    let belt: String
-    let ageDiv: String
-    let gender: String
 }
 
 // MARK: - Helpers
