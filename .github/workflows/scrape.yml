@@ -12,7 +12,14 @@ jobs:
     permissions:
       contents: write
 
+    env:
+      HC_PING_URL: ${{ secrets.HC_PING_URL }}
+
     steps:
+      - name: Ping Healthchecks — start
+        if: env.HC_PING_URL != ''
+        run: curl -fsS -m 10 --retry 3 "$HC_PING_URL/start" || true
+
       - name: Checkout repo
         uses: actions/checkout@v4
 
@@ -53,3 +60,11 @@ jobs:
           git add events.json backend/geocode_cache.json
           git diff --staged --quiet || git commit -m "chore: update events.json [skip ci]"
           git push
+
+      - name: Ping Healthchecks — success
+        if: success() && env.HC_PING_URL != ''
+        run: curl -fsS -m 10 --retry 3 "$HC_PING_URL" || true
+
+      - name: Ping Healthchecks — failure
+        if: failure() && env.HC_PING_URL != ''
+        run: curl -fsS -m 10 --retry 3 "$HC_PING_URL/fail" || true
