@@ -7,13 +7,13 @@ struct SettingsRootView: View {
     var body: some View {
         NavigationStack {
             List {
-                Section("Location") {
+                Section {
                     NavigationLink {
                         HomeCityEditView()
                     } label: {
-                        HStack(spacing: 12) {
+                        HStack(spacing: Spacing.md) {
                             Image(systemName: "house.fill")
-                                .foregroundStyle(.gold)
+                                .foregroundStyle(.accent)
                                 .frame(width: 22)
                             VStack(alignment: .leading, spacing: 2) {
                                 Text("Home City")
@@ -24,17 +24,19 @@ struct SettingsRootView: View {
                             }
                         }
                     }
+                } header: {
+                    Text("Location")
                 } footer: {
                     Text("Used to filter Events by distance from home.")
                         .font(.caption)
                 }
             }
-            .tint(.gold)
+            .scrollContentBackground(.hidden)
+            .background(Color.appBackground.ignoresSafeArea())
+            .tint(.accent)
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbarBackground(Color.appBackground, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
-            .toolbarColorScheme(.dark, for: .navigationBar)
+            .appNavigationBar()
         }
     }
 }

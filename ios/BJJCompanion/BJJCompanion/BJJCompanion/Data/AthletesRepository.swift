@@ -4,8 +4,11 @@ import Observation
 /// Fetches and caches the bjjcompsystem-derived athlete registry (`athletes.json`).
 /// Powers autocomplete in the Add Athlete sheet.
 ///
-/// The JSON is a few MB — we cache to the Documents directory (not UserDefaults)
-/// and decode off the main actor to keep launch smooth.
+/// The JSON is a few MB — we cache to the Documents directory (not UserDefaults).
+/// Decode runs on the same actor as the caller; under default-MainActor isolation,
+/// `AthletesPayload`'s synthesized `Decodable` conformance is MainActor-bound, so
+/// hopping to a detached task is illegal in Swift 6. The file is small enough that
+/// decoding inline during launch is not perceptible.
 @Observable
 final class AthletesRepository {
 
@@ -38,8 +41,8 @@ final class AthletesRepository {
 
         do {
             let (data, _) = try await URLSession.shared.data(from: Config.athletesURL)
-            let payload = try await decodeOffMain(data)
-            await MainActor.run { self.apply(payload) }
+            let payload = try JSONDecoder().decode(AthletesPayload.self, from: data)
+            apply(payload)
             try? data.write(to: cacheURL, options: .atomic)
         } catch {
             errorMessage = error.localizedDescription
@@ -76,9 +79,9 @@ final class AthletesRepository {
     @discardableResult
     private func applyCachedIfFresh(ignoreStale: Bool = false) async -> Bool {
         guard let data = try? Data(contentsOf: cacheURL) else { return false }
-        guard let payload = try? await decodeOffMain(data) else { return false }
+        guard let payload = try? JSONDecoder().decode(AthletesPayload.self, from: data) else { return false }
         if !ignoreStale, isStale(payload.generatedAt) { return false }
-        await MainActor.run { self.apply(payload) }
+        apply(payload)
         return true
     }
 
@@ -91,11 +94,5 @@ final class AthletesRepository {
     private func isStale(_ generatedAt: String) -> Bool {
         guard let date = ISO8601DateFormatter().date(from: generatedAt) else { return true }
         return Date().timeIntervalSince(date) > Config.staleDuration
-    }
-
-    private func decodeOffMain(_ data: Data) async throws -> AthletesPayload {
-        try await Task.detached(priority: .utility) {
-            try JSONDecoder().decode(AthletesPayload.self, from: data)
-        }.value
     }
 }

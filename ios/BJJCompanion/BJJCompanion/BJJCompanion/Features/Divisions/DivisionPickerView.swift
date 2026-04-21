@@ -9,11 +9,19 @@ struct DivisionPickerView: View {
         NavigationStack {
             List {
                 if store.myDivisions.isEmpty {
-                    ContentUnavailableView(
-                        "No Divisions Added",
-                        systemImage: "person.badge.plus",
-                        description: Text("Tap + to add your age, belt, and weight class")
-                    )
+                    ContentUnavailableView {
+                        Label("No Divisions Added", systemImage: "person.badge.plus")
+                    } description: {
+                        Text("Add your age group, belt, and weight class so events can highlight athletes in your division.")
+                    } actions: {
+                        Button {
+                            showingAdd = true
+                        } label: {
+                            Label("Add Division", systemImage: "plus")
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .tint(.accent)
+                    }
                 } else {
                     ForEach(store.myDivisions) { div in
                         VStack(alignment: .leading, spacing: 4) {
@@ -28,17 +36,18 @@ struct DivisionPickerView: View {
                     .onDelete { store.myDivisions.remove(atOffsets: $0) }
                 }
             }
-            .tint(.gold)
+            .scrollContentBackground(.hidden)
+            .background(Color.appBackground.ignoresSafeArea())
+            .tint(.accent)
             .navigationTitle("My Divisions")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbarBackground(Color.appBackground, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
-            .toolbarColorScheme(.dark, for: .navigationBar)
+            .appNavigationBar()
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button { showingAdd = true } label: {
                         Image(systemName: "plus")
                     }
+                    .accessibilityLabel("Add division")
                 }
                 if !store.myDivisions.isEmpty {
                     ToolbarItem(placement: .navigationBarLeading) {
@@ -83,9 +92,7 @@ struct AddDivisionSheet: View {
             }
             .navigationTitle("Add Division")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbarBackground(Color.appBackground, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
-            .toolbarColorScheme(.dark, for: .navigationBar)
+            .appNavigationBar()
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Cancel") { dismiss() }

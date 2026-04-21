@@ -13,28 +13,25 @@ struct BracketTreeView: View {
 
     var body: some View {
         ScrollView([.horizontal, .vertical]) {
-            HStack(alignment: .top, spacing: 24) {
+            HStack(alignment: .top, spacing: Spacing.xl) {
                 ForEach(Array(rounds.enumerated()), id: \.offset) { idx, matches in
-                    VStack(spacing: 16) {
-                        Text(roundLabel(idx + 1, total: rounds.count))
-                            .font(.caption)
-                            .foregroundStyle(.secondary)
-                            .padding(.bottom, 4)
+                    VStack(spacing: Spacing.lg) {
+                        AppSectionLabel(roundLabel(idx + 1, total: rounds.count))
+                            .padding(.bottom, Spacing.xs)
 
                         ForEach(matches) { match in
                             MatchCardView(match: match)
                         }
                     }
+                    .frame(width: 210)
                 }
             }
-            .padding()
+            .padding(Spacing.lg)
         }
         .background(Color.appBackground)
         .navigationTitle(bracket.label)
         .navigationBarTitleDisplayMode(.inline)
-        .toolbarBackground(Color.appBackground, for: .navigationBar)
-        .toolbarBackground(.visible, for: .navigationBar)
-        .toolbarColorScheme(.dark, for: .navigationBar)
+        .appNavigationBar()
     }
 
     private func roundLabel(_ round: Int, total: Int) -> String {
@@ -54,84 +51,99 @@ struct MatchCardView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            // Header
-            if match.fight != nil || match.mat != nil {
-                HStack {
-                    if let fight = match.fight {
-                        Text("Fight \(fight)")
-                            .font(.caption2)
-                            .fontWeight(.semibold)
-                    }
-                    Spacer()
-                    if let mat = match.mat {
-                        Text(mat)
-                            .font(.caption2)
-                            .foregroundStyle(.secondary)
-                    }
-                }
-                .padding(.horizontal, 8)
-                .padding(.vertical, 4)
-                .background(Color(.systemGray5))
 
-                if let when = match.when {
-                    Text(when)
-                        .font(.caption2)
-                        .foregroundStyle(.secondary)
-                        .padding(.horizontal, 8)
-                        .padding(.bottom, 4)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(Color(.systemGray5))
+            // Header — fight number + mat + time
+            if match.fight != nil || match.mat != nil || match.when != nil {
+                VStack(alignment: .leading, spacing: 2) {
+                    HStack {
+                        if let fight = match.fight {
+                            Text("Fight \(fight)")
+                                .font(.caption2)
+                                .fontWeight(.semibold)
+                                .foregroundStyle(.textSecondary)
+                        }
+                        Spacer()
+                        if let mat = match.mat {
+                            Text(mat)
+                                .font(.caption2)
+                                .foregroundStyle(.textTertiary)
+                        }
+                    }
+                    if let when = match.when {
+                        Text(when)
+                            .font(.caption2)
+                            .foregroundStyle(.textTertiary)
+                    }
                 }
+                .padding(.horizontal, Spacing.sm)
+                .padding(.vertical, Spacing.xs + 2)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background(Color.cardElevated)
+
+                AppHairline()
             }
-
-            Divider()
 
             // Competitors
             ForEach(Array(match.competitors.enumerated()), id: \.offset) { idx, comp in
                 CompetitorRow(competitor: comp)
                 if idx < match.competitors.count - 1 {
-                    Divider()
+                    AppHairline()
                 }
             }
 
             // Pad to 2 slots if only 1 competitor
             if match.competitors.count < 2 {
-                Divider()
-                CompetitorRow(competitor: Competitor(athleteId: nil, name: nil, club: nil, seed: nil, placeholder: "TBD"))
+                AppHairline()
+                CompetitorRow(
+                    competitor: Competitor(
+                        athleteId: nil,
+                        name: nil,
+                        club: nil,
+                        seed: nil,
+                        placeholder: "TBD"
+                    )
+                )
             }
         }
-        .background(Color(.secondarySystemBackground))
-        .clipShape(RoundedRectangle(cornerRadius: 8))
-        .frame(width: 200)
+        .background(Color.cardSurface)
+        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .overlay(
+            RoundedRectangle(cornerRadius: 10)
+                .strokeBorder(Color.cardBorder, lineWidth: 1)
+        )
     }
 }
+
+// MARK: - Competitor row
 
 struct CompetitorRow: View {
 
     let competitor: Competitor
 
+    private var isNamed: Bool { competitor.name != nil }
+
     var body: some View {
-        HStack(spacing: 6) {
+        HStack(spacing: Spacing.sm) {
             if let seed = competitor.seed {
                 Text("\(seed)")
-                    .font(.caption2)
-                    .foregroundStyle(.secondary)
-                    .frame(width: 16)
+                    .font(.system(size: 10, weight: .semibold, design: .rounded))
+                    .foregroundStyle(.textQuaternary)
+                    .frame(width: 14)
             }
             VStack(alignment: .leading, spacing: 1) {
                 Text(competitor.displayName)
                     .font(.caption)
-                    .fontWeight(competitor.name != nil ? .medium : .regular)
-                    .foregroundStyle(competitor.name != nil ? .primary : .secondary)
+                    .fontWeight(isNamed ? .semibold : .regular)
+                    .foregroundStyle(isNamed ? .textPrimary : .textTertiary)
                 if let club = competitor.club, !club.isEmpty {
                     Text(club)
                         .font(.caption2)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(.textTertiary)
                 }
             }
             Spacer()
         }
-        .padding(.horizontal, 8)
-        .padding(.vertical, 6)
+        .padding(.horizontal, Spacing.sm)
+        .padding(.vertical, Spacing.xs + 2)
     }
 }

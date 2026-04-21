@@ -94,12 +94,12 @@ struct BracketsRootView: View {
                     }
                 }
             }
-            .tint(.gold)
+            .scrollContentBackground(.hidden)
+            .background(Color.appBackground.ignoresSafeArea())
+            .tint(.accent)
             .navigationTitle("Brackets")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbarBackground(Color.appBackground, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
-            .toolbarColorScheme(.dark, for: .navigationBar)
+            .appNavigationBar()
             .task { if repo.tournaments.isEmpty { await repo.loadTournaments() } }
         }
     }

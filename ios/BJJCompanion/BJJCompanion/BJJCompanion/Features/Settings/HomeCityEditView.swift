@@ -34,9 +34,9 @@ struct HomeCityEditView: View {
 
             if let current = store.city {
                 Section("Current") {
-                    HStack(spacing: 12) {
+                    HStack(spacing: Spacing.md) {
                         Image(systemName: "mappin.and.ellipse")
-                            .foregroundStyle(.gold)
+                            .foregroundStyle(.accent)
                             .frame(width: 22)
                         VStack(alignment: .leading, spacing: 2) {
                             Text(current.label)
@@ -62,16 +62,14 @@ struct HomeCityEditView: View {
                 }
             }
         }
-        .tint(.gold)
+        .tint(.accent)
         .navigationTitle("Home City")
         .navigationBarTitleDisplayMode(.inline)
-        .toolbarBackground(Color.appBackground, for: .navigationBar)
-        .toolbarBackground(.visible, for: .navigationBar)
-        .toolbarColorScheme(.dark, for: .navigationBar)
+        .appNavigationBar()
         .toolbar {
             ToolbarItem(placement: .confirmationAction) {
                 if isGeocoding {
-                    ProgressView().tint(.gold)
+                    ProgressView().tint(.accent)
                 } else {
                     Button("Save") { Task { await save() } }
                         .disabled(!canSave)

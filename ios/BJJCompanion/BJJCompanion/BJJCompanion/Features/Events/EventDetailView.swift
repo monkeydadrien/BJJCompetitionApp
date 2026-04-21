@@ -8,33 +8,31 @@ struct EventDetailView: View {
 
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
+            VStack(alignment: .leading, spacing: Spacing.lg) {
                 heroCard
                 if !event.priceTiers.isEmpty { pricingSection }
                 if !divisions.myDivisions.isEmpty { myDivisionsSection }
                 allDivisionsSection
             }
-            .padding(16)
-            .padding(.bottom, 32)
+            .padding(Spacing.lg)
+            .padding(.bottom, Spacing.xxl)
         }
         .background(Color.appBackground.ignoresSafeArea())
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
-        .toolbarBackground(Color.appBackground, for: .navigationBar)
-        .toolbarBackground(.visible, for: .navigationBar)
-        .toolbarColorScheme(.dark, for: .navigationBar)
+        .appNavigationBar()
     }
 
     // MARK: - Hero
 
     private var heroCard: some View {
         AppCard {
-            VStack(alignment: .leading, spacing: 18) {
+            VStack(alignment: .leading, spacing: Spacing.lg) {
 
                 Text(event.name)
                     .font(.title3)
                     .fontWeight(.bold)
-                    .foregroundStyle(.white)
+                    .foregroundStyle(.textPrimary)
                     .fixedSize(horizontal: false, vertical: true)
 
                 HStack(spacing: 14) {
@@ -43,37 +41,36 @@ struct EventDetailView: View {
                     Label(event.city, systemImage: "mappin.circle.fill")
                 }
                 .font(.subheadline)
-                .foregroundStyle(.white.opacity(0.45))
+                .foregroundStyle(.textTertiary)
 
                 // Stats
                 HStack(spacing: 0) {
                     StatBlock(value: "\(event.divisions.count)", label: "Divisions")
-                    Divider().frame(height: 30).overlay(Color.white.opacity(0.1)).padding(.horizontal, 14)
+                    statDivider
                     StatBlock(value: "\(totalAthletes)", label: "Athletes")
                     if event.hasCombo {
-                        Divider().frame(height: 30).overlay(Color.white.opacity(0.1)).padding(.horizontal, 14)
+                        statDivider
                         VStack(spacing: 3) {
                             Text("GI + NO-GI")
-                                .font(.system(size: 10, weight: .black))
-                                .foregroundStyle(.white.opacity(0.9))
+                                .font(.appBadge)
+                                .foregroundStyle(.textPrimary.opacity(0.9))
                                 .kerning(0.8)
                             Text("Available")
-                                .font(.system(size: 10, weight: .regular))
-                                .foregroundStyle(.white.opacity(0.35))
+                                .font(.system(size: 10))
+                                .foregroundStyle(.textTertiary)
                         }
+                        .frame(maxWidth: .infinity)
                     }
                 }
 
                 if let venue = event.venue, !venue.isEmpty {
-                    Rectangle()
-                        .fill(Color.white.opacity(0.07))
-                        .frame(height: 1)
+                    AppHairline()
 
-                    VStack(alignment: .leading, spacing: 8) {
+                    VStack(alignment: .leading, spacing: Spacing.sm) {
                         Text(venue)
                             .font(.subheadline)
                             .fontWeight(.semibold)
-                            .foregroundStyle(.white.opacity(0.85))
+                            .foregroundStyle(.textPrimary.opacity(0.85))
 
                         if let address = event.address, !address.isEmpty {
                             Button {
@@ -84,51 +81,83 @@ struct EventDetailView: View {
                             } label: {
                                 HStack(spacing: 6) {
                                     Image(systemName: "mappin.circle.fill")
-                                        .foregroundStyle(.gold)
+                                        .foregroundStyle(.accent)
                                         .font(.subheadline)
                                     Text(address)
                                         .font(.caption)
-                                        .foregroundStyle(.white.opacity(0.55))
+                                        .foregroundStyle(.textSecondary)
                                         .multilineTextAlignment(.leading)
                                     Spacer()
                                     Image(systemName: "arrow.up.right")
                                         .font(.caption2)
-                                        .foregroundStyle(.white.opacity(0.25))
+                                        .foregroundStyle(.textQuaternary)
                                 }
-                                .padding(10)
+                                .padding(Spacing.md - 2)
                                 .background(Color.white.opacity(0.05))
                                 .clipShape(RoundedRectangle(cornerRadius: 8))
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 8)
-                                        .strokeBorder(Color.white.opacity(0.08), lineWidth: 1)
+                                        .strokeBorder(Color.cardBorder, lineWidth: 1)
                                 )
                             }
                             .buttonStyle(.plain)
+                            .accessibilityLabel("Open address in Maps")
                         }
                     }
                 }
 
-                // Primary CTA — the one place gold earns full attention
+                // Primary CTA — opens IBJJF event page where the real "Register Now" lives.
                 Button {
-                    if let url = URL(string: event.registrationUrl) {
+                    if let url = URL(string: "https://ibjjf.com/events/\(event.slug)") {
                         UIApplication.shared.open(url)
                     }
                 } label: {
-                    HStack(spacing: 8) {
+                    HStack(spacing: Spacing.sm) {
                         Image(systemName: "square.and.pencil")
-                        Text("Register / View Athletes")
+                        Text("Register Now")
                             .fontWeight(.semibold)
                     }
                     .font(.subheadline)
                     .foregroundStyle(.black)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 13)
-                    .background(Color.gold)
+                    .background(Color.accent)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
+                }
+                .buttonStyle(.plain)
+
+                // Secondary — opens the athlete/division registrations page.
+                Button {
+                    if let url = URL(string: event.registrationUrl) {
+                        UIApplication.shared.open(url)
+                    }
+                } label: {
+                    HStack(spacing: Spacing.sm) {
+                        Image(systemName: "person.2.fill")
+                        Text("View Registered Athletes")
+                            .fontWeight(.medium)
+                    }
+                    .font(.subheadline)
+                    .foregroundStyle(.accent)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 11)
+                    .background(Color.accentWashLight)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .strokeBorder(Color.accentBorder, lineWidth: 1)
+                    )
                 }
                 .buttonStyle(.plain)
             }
         }
+    }
+
+    private var statDivider: some View {
+        Divider()
+            .frame(height: 30)
+            .overlay(Color.white.opacity(0.10))
+            .padding(.horizontal, 14)
     }
 
     // MARK: - Pricing
@@ -140,12 +169,12 @@ struct EventDetailView: View {
         let nextGi     = giTiers.first    { ($0.deadlineParsed ?? .distantPast) > now }
         let nextCombo  = comboTiers.first { ($0.deadlineParsed ?? .distantPast) > now }
 
-        return VStack(alignment: .leading, spacing: 10) {
+        return VStack(alignment: .leading, spacing: Spacing.md - 2) {
             AppSectionLabel("Registration")
             if comboTiers.isEmpty {
                 PricingCard(title: nil, tiers: giTiers, nextDeadline: nextGi)
             } else {
-                HStack(alignment: .top, spacing: 10) {
+                HStack(alignment: .top, spacing: Spacing.md - 2) {
                     PricingCard(title: "Gi", tiers: giTiers, nextDeadline: nextGi)
                     PricingCard(title: "Gi + No-Gi", tiers: comboTiers, nextDeadline: nextCombo)
                 }
@@ -157,24 +186,24 @@ struct EventDetailView: View {
 
     private var myDivisionsSection: some View {
         let myDivs = myMatchingDivisions
-        return VStack(alignment: .leading, spacing: 10) {
+        return VStack(alignment: .leading, spacing: Spacing.md - 2) {
             AppSectionLabel("My Division\(myDivs.count == 1 ? "" : "s")")
-            AppCard(borderColor: myDivs.isEmpty ? .white.opacity(0.07) : .gold.opacity(0.45)) {
+            AppCard(borderColor: myDivs.isEmpty ? .cardBorder : .accent.opacity(0.45)) {
                 if myDivs.isEmpty {
-                    HStack(spacing: 10) {
+                    HStack(spacing: Spacing.md - 2) {
                         Image(systemName: "person.crop.circle.badge.questionmark")
-                            .foregroundStyle(.white.opacity(0.25))
+                            .foregroundStyle(.textQuaternary)
                             .font(.title3)
                         Text("No athletes registered in your divisions yet")
                             .font(.subheadline)
-                            .foregroundStyle(.white.opacity(0.35))
+                            .foregroundStyle(.textTertiary)
                     }
                 } else {
                     VStack(spacing: 0) {
                         ForEach(Array(myDivs.enumerated()), id: \.element.id) { i, div in
                             DivisionSection(division: div)
                             if i < myDivs.count - 1 {
-                                Rectangle().fill(Color.white.opacity(0.07)).frame(height: 1).padding(.vertical, 4)
+                                AppHairline().padding(.vertical, Spacing.xs)
                             }
                         }
                     }
@@ -186,14 +215,14 @@ struct EventDetailView: View {
     // MARK: - All Divisions
 
     private var allDivisionsSection: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: Spacing.md - 2) {
             AppSectionLabel("All Divisions · \(event.divisions.count)")
             AppCard {
                 VStack(spacing: 0) {
                     ForEach(Array(divisionsByBelt.enumerated()), id: \.element.belt) { i, group in
                         BeltGroup(belt: group.belt, divisions: group.divisions)
                         if i < divisionsByBelt.count - 1 {
-                            Rectangle().fill(Color.white.opacity(0.07)).frame(height: 1).padding(.vertical, 6)
+                            AppHairline().padding(.vertical, 6)
                         }
                     }
                 }
@@ -205,11 +234,12 @@ struct EventDetailView: View {
 
     private var totalAthletes: Int { event.divisions.reduce(0) { $0 + $1.athletes.count } }
 
-    private static let beltOrder = ["White", "Blue", "Purple", "Brown", "Black"]
+    // Top-to-bottom belt order for adult ranks (case-insensitive match).
+    private static let beltOrder = ["BLACK", "BROWN", "PURPLE", "BLUE", "WHITE"]
 
     private var divisionsByBelt: [(belt: String, divisions: [Division])] {
         var grouped: [String: [Division]] = [:]
-        for div in event.divisions { grouped[div.belt, default: []].append(div) }
+        for div in event.divisions { grouped[div.belt.uppercased(), default: []].append(div) }
         let known = Self.beltOrder.compactMap { belt -> (String, [Division])? in
             guard let divs = grouped[belt], !divs.isEmpty else { return nil }
             return (belt, divs)
@@ -233,40 +263,6 @@ struct EventDetailView: View {
     }
 }
 
-// MARK: - App card
-
-struct AppCard<Content: View>: View {
-    var borderColor: Color = .white.opacity(0.07)
-    @ViewBuilder let content: () -> Content
-
-    var body: some View {
-        content()
-            .padding(16)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .background(Color.cardSurface)
-            .clipShape(RoundedRectangle(cornerRadius: 16))
-            .overlay(
-                RoundedRectangle(cornerRadius: 16)
-                    .strokeBorder(borderColor, lineWidth: 1)
-            )
-    }
-}
-
-// MARK: - Section label
-
-struct AppSectionLabel: View {
-    let title: String
-    init(_ title: String) { self.title = title }
-
-    var body: some View {
-        Text(title.uppercased())
-            .font(.system(size: 10, weight: .semibold))
-            .foregroundStyle(.white.opacity(0.35))
-            .kerning(1.5)
-            .padding(.horizontal, 2)
-    }
-}
-
 // MARK: - Stat block
 
 struct StatBlock: View {
@@ -276,11 +272,11 @@ struct StatBlock: View {
     var body: some View {
         VStack(spacing: 3) {
             Text(value)
-                .font(.system(size: 26, weight: .bold, design: .rounded))
-                .foregroundStyle(.white)
+                .font(.appStat)
+                .foregroundStyle(.textPrimary)
             Text(label)
-                .font(.system(size: 10, weight: .regular))
-                .foregroundStyle(.white.opacity(0.35))
+                .font(.system(size: 10))
+                .foregroundStyle(.textTertiary)
                 .kerning(0.3)
         }
         .frame(maxWidth: .infinity)
@@ -295,16 +291,16 @@ struct PricingCard: View {
     let nextDeadline: PriceTier?
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: Spacing.md) {
             if let title {
                 Text(title.uppercased())
                     .font(.system(size: 9, weight: .bold))
-                    .foregroundStyle(.white.opacity(0.3))
+                    .foregroundStyle(.textTertiary)
                     .kerning(1.2)
             }
             ForEach(Array(tiers.enumerated()), id: \.offset) { index, tier in
                 if index > 0 {
-                    Rectangle().fill(Color.white.opacity(0.07)).frame(height: 1)
+                    AppHairline()
                 }
                 PriceTierRow(
                     tier: tier, index: index,
@@ -313,14 +309,7 @@ struct PricingCard: View {
                 )
             }
         }
-        .padding(14)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color.cardSurface)
-        .clipShape(RoundedRectangle(cornerRadius: 14))
-        .overlay(
-            RoundedRectangle(cornerRadius: 14)
-                .strokeBorder(Color.white.opacity(0.07), lineWidth: 1)
-        )
+        .appCardStyle(padding: 14)
     }
 }
 
@@ -334,7 +323,7 @@ struct PriceTierRow: View {
 
     var body: some View {
         HStack {
-            HStack(spacing: 8) {
+            HStack(spacing: Spacing.sm) {
                 Circle()
                     .fill(tierColor)
                     .frame(width: 7, height: 7)
@@ -342,18 +331,18 @@ struct PriceTierRow: View {
                     Text(tierLabel)
                         .font(.subheadline)
                         .fontWeight(isNext ? .semibold : .regular)
-                        .foregroundStyle(isNext ? tierColor : .white.opacity(0.85))
+                        .foregroundStyle(isNext ? tierColor : .textPrimary.opacity(0.85))
                     Text("Until \(tier.deadlineFormatted)")
                         .font(.caption)
-                        .foregroundStyle(isNext ? tierColor.opacity(0.75) : .white.opacity(0.3))
+                        .foregroundStyle(isNext ? tierColor.opacity(0.75) : .textTertiary)
                 }
             }
             Spacer()
             Text(tier.priceFormatted)
                 .font(.system(size: 17, weight: .bold, design: .rounded))
-                .foregroundStyle(isNext ? tierColor : .white.opacity(0.85))
+                .foregroundStyle(isNext ? tierColor : .textPrimary.opacity(0.85))
         }
-        .padding(isNext ? 8 : 0)
+        .padding(isNext ? Spacing.sm : 0)
         .background(isNext ? tierColor.opacity(0.08) : Color.clear)
         .clipShape(RoundedRectangle(cornerRadius: 8))
     }
@@ -366,9 +355,9 @@ struct PriceTierRow: View {
     }
 
     private var tierColor: Color {
-        if index == 0         { return Color(red: 0.25, green: 0.75, blue: 0.35) }
-        if index == count - 1 { return Color(red: 0.85, green: 0.25, blue: 0.20) }
-        return Color(red: 0.90, green: 0.65, blue: 0.10)
+        if index == 0         { return .pricingEarly }
+        if index == count - 1 { return .pricingLate }
+        return .pricingMid
     }
 }
 
@@ -384,32 +373,26 @@ struct BeltGroup: View {
             VStack(spacing: 0) {
                 ForEach(Array(divisions.enumerated()), id: \.element.id) { i, div in
                     DivisionSection(division: div)
-                        .padding(.top, i == 0 ? 8 : 0)
+                        .padding(.top, i == 0 ? Spacing.sm : 0)
                     if i < divisions.count - 1 {
-                        Rectangle().fill(Color.white.opacity(0.06)).frame(height: 1).padding(.vertical, 2)
+                        AppHairline(color: .white.opacity(0.06)).padding(.vertical, 2)
                     }
                 }
             }
         } label: {
-            HStack(spacing: 10) {
+            HStack(spacing: Spacing.md - 2) {
                 Circle()
                     .fill(Color.beltColor(belt))
                     .frame(width: 9, height: 9)
                 Text(belt.capitalized)
                     .font(.subheadline)
                     .fontWeight(.semibold)
-                    .foregroundStyle(.white.opacity(0.85))
+                    .foregroundStyle(.textPrimary.opacity(0.85))
                 Spacer()
-                Text("\(divisions.count)")
-                    .font(.system(size: 11, weight: .semibold))
-                    .foregroundStyle(.white.opacity(0.4))
-                    .padding(.horizontal, 8)
-                    .padding(.vertical, 3)
-                    .background(Color.white.opacity(0.07))
-                    .clipShape(Capsule())
+                AppBadge(text: "\(divisions.count)", style: .ghost)
             }
         }
-        .tint(.white.opacity(0.3))
+        .tint(.textTertiary)
     }
 }
 
@@ -428,10 +411,10 @@ struct DivisionSection: View {
                         VStack(alignment: .leading, spacing: 2) {
                             Text(athlete.name)
                                 .font(.subheadline)
-                                .foregroundStyle(.white.opacity(0.8))
+                                .foregroundStyle(.textPrimary.opacity(0.8))
                             Text(athlete.team)
                                 .font(.caption)
-                                .foregroundStyle(.white.opacity(0.35))
+                                .foregroundStyle(.textTertiary)
                         }
                         Spacer()
                         // Tracking indicator
@@ -439,7 +422,8 @@ struct DivisionSection: View {
                            trackingStore.matchesAnyTracked(name: athlete.name, team: athlete.team) {
                             Image(systemName: "star.fill")
                                 .font(.caption2)
-                                .foregroundStyle(.gold.opacity(0.7))
+                                .foregroundStyle(.accent.opacity(0.7))
+                                .accessibilityLabel("Tracked")
                         }
                     }
                     .padding(.vertical, 5)
@@ -482,7 +466,7 @@ struct DivisionSection: View {
                         }
                     }
                     if i < division.athletes.count - 1 {
-                        Rectangle().fill(Color.white.opacity(0.06)).frame(height: 1)
+                        AppHairline(color: .white.opacity(0.06))
                     }
                 }
             }
@@ -491,17 +475,11 @@ struct DivisionSection: View {
             HStack {
                 Text(division.id.split(separator: "/").dropFirst().joined(separator: " · "))
                     .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.7))
+                    .foregroundStyle(.textSecondary)
                 Spacer()
-                Text("\(division.count)")
-                    .font(.system(size: 11, weight: .medium))
-                    .foregroundStyle(.white.opacity(0.3))
-                    .padding(.horizontal, 7)
-                    .padding(.vertical, 3)
-                    .background(Color.white.opacity(0.07))
-                    .clipShape(Capsule())
+                AppBadge(text: "\(division.count)", style: .ghost)
             }
         }
-        .tint(.white.opacity(0.25))
+        .tint(.textQuaternary)
     }
 }

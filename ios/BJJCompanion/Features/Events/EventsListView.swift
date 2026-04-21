@@ -36,7 +36,7 @@ struct EventsListView: View {
                 if repo.isLoading && repo.events.isEmpty {
                     ZStack {
                         Color.appBackground.ignoresSafeArea()
-                        ProgressView("Loading events…").tint(.gold)
+                        ProgressView("Loading events…").tint(.accent)
                     }
                 } else if repo.events.isEmpty {
                     ZStack {
@@ -53,18 +53,17 @@ struct EventsListView: View {
             }
             .navigationTitle("IBJJF Events")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbarBackground(Color.appBackground, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
-            .toolbarColorScheme(.dark, for: .navigationBar)
+            .appNavigationBar()
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     if repo.isLoading {
-                        ProgressView().tint(.gold)
+                        ProgressView().tint(.accent)
                     } else {
                         Button { Task { await repo.refresh() } } label: {
                             Image(systemName: "arrow.clockwise")
-                                .foregroundStyle(.gold)
+                                .foregroundStyle(.accent)
                         }
+                        .accessibilityLabel("Refresh events")
                     }
                 }
             }
@@ -78,29 +77,28 @@ struct EventsListView: View {
                 ForEach(EventFilter.allCases, id: \.self) { Text($0.rawValue) }
             }
             .pickerStyle(.segmented)
-            .padding(.horizontal, 16)
-            .padding(.top, 8)
+            .padding(.horizontal, Spacing.lg)
+            .padding(.top, Spacing.sm)
 
-            // Distance filter (disabled until a home city is set)
-            VStack(alignment: .leading, spacing: 4) {
+            // Distance filter (no-op until a home city is set in Settings)
+            VStack(alignment: .leading, spacing: Spacing.xs) {
                 Picker("Distance", selection: $distanceFilterRaw) {
                     ForEach(DistanceFilter.allCases) { df in
                         Text(df.label).tag(df.rawValue)
                     }
                 }
                 .pickerStyle(.segmented)
-                .disabled(homeCityStore.city == nil)
 
-                if homeCityStore.city == nil {
+                if homeCityStore.city == nil && distanceFilter != .all {
                     Text("Set a home city in Settings to filter by distance.")
                         .font(.caption2)
-                        .foregroundStyle(.white.opacity(0.4))
+                        .foregroundStyle(.textTertiary)
                 }
             }
-            .padding(.horizontal, 16)
-            .padding(.top, 6)
+            .padding(.horizontal, Spacing.lg)
+            .padding(.top, Spacing.sm)
 
-            LazyVStack(spacing: 10) {
+            LazyVStack(spacing: Spacing.md) {
                 ForEach(filteredEvents) { event in
                     NavigationLink(destination: EventDetailView(event: event)) {
                         EventRowView(
@@ -112,8 +110,8 @@ struct EventsListView: View {
                     .buttonStyle(.plain)
                 }
             }
-            .padding(.horizontal, 16)
-            .padding(.vertical, 12)
+            .padding(.horizontal, Spacing.lg)
+            .padding(.vertical, Spacing.md)
         }
         .background(Color.appBackground.ignoresSafeArea())
         .refreshable { await repo.refresh() }
@@ -142,6 +140,13 @@ struct EventsListView: View {
 }
 
 // MARK: - Event card
+//
+// Hierarchy lessons applied (Erik Kennedy / Refactoring UI):
+//  - One dominant element: the event name (.headline, primary text).
+//  - Supporting metadata uses tertiary text + caption — clearly subordinate.
+//  - Pricing pill is the second visual focal point: tinted by tier urgency.
+//  - "GI + NO-GI" and division/athlete counts are de-emphasized so the card
+//    has a clear reading order: name → date/place → price → my-division.
 
 struct EventRowView: View {
 
@@ -150,28 +155,34 @@ struct EventRowView: View {
     var homeCity: HomeCity? = nil
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 11) {
+        VStack(alignment: .leading, spacing: Spacing.md) {
 
+            // Title — the dominant element on the card.
             Text(event.name)
-                .font(.system(size: 15, weight: .semibold))
-                .foregroundStyle(.white)
+                .font(.headline)
+                .foregroundStyle(.textPrimary)
                 .lineLimit(2)
                 .multilineTextAlignment(.leading)
+                .fixedSize(horizontal: false, vertical: true)
 
-            HStack {
+            // Date + place + (optional) distance — all on one muted row.
+            HStack(spacing: Spacing.sm) {
                 Label(dateRange, systemImage: "calendar")
-                Spacer()
+                    .labelStyle(.compactIcon)
+                Spacer(minLength: Spacing.sm)
                 Label(event.city, systemImage: "mappin.circle.fill")
+                    .labelStyle(.compactIcon)
                 if let miles = event.milesFrom(homeCity) {
                     Text("· \(Int(miles.rounded())) mi")
-                        .foregroundStyle(.gold.opacity(0.7))
+                        .foregroundStyle(.accent.opacity(0.75))
                         .fontWeight(.medium)
                 }
             }
             .font(.caption)
-            .foregroundStyle(.white.opacity(0.4))
+            .foregroundStyle(.textTertiary)
 
-            HStack(alignment: .center, spacing: 8) {
+            // Bottom row: pricing pill (focal) + flags + counts (subdued).
+            HStack(alignment: .center, spacing: Spacing.sm) {
                 if let next = event.nextDeadline {
                     HStack(spacing: 5) {
                         Circle()
@@ -182,7 +193,7 @@ struct EventRowView: View {
                     }
                     .font(.caption)
                     .fontWeight(.medium)
-                    .padding(.horizontal, 8)
+                    .padding(.horizontal, Spacing.sm)
                     .padding(.vertical, 4)
                     .background(pricingColor.opacity(0.12))
                     .clipShape(Capsule())
@@ -191,47 +202,47 @@ struct EventRowView: View {
                 Spacer()
                 if event.hasCombo {
                     Text("GI + NO-GI")
-                        .font(.system(size: 9, weight: .bold))
-                        .foregroundStyle(.white.opacity(0.5))
+                        .font(.appBadge)
+                        .foregroundStyle(.textTertiary)
                         .kerning(0.6)
-                        .padding(.horizontal, 6)
+                        .padding(.horizontal, Spacing.sm - 2)
                         .padding(.vertical, 3)
                         .background(Color.white.opacity(0.07))
                         .clipShape(Capsule())
                 }
                 VStack(alignment: .trailing, spacing: 1) {
                     Text("\(event.divisions.count) divisions")
-                        .font(.caption2)
-                        .foregroundStyle(.white.opacity(0.25))
                     Text("\(event.divisions.flatMap { $0.athletes }.count) athletes")
-                        .font(.caption2)
-                        .foregroundStyle(.white.opacity(0.25))
                 }
+                .font(.caption2)
+                .foregroundStyle(.textQuaternary)
             }
 
+            // "X in your divisions" callout when applicable.
             if myDivisionCount > 0 {
                 HStack(spacing: 5) {
-                    Circle().fill(Color.gold).frame(width: 5, height: 5)
+                    Circle().fill(Color.accent).frame(width: 5, height: 5)
                     Text("\(myDivisionCount) athlete\(myDivisionCount == 1 ? "" : "s") in your division\(myDivisions.count > 1 ? "s" : "")")
-                        .foregroundStyle(.gold)
+                        .foregroundStyle(.accent)
                 }
                 .font(.caption)
                 .fontWeight(.medium)
             }
         }
-        .padding(16)
+        .padding(Spacing.lg)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color.cardSurface)
         .clipShape(RoundedRectangle(cornerRadius: 14))
         .overlay(
             RoundedRectangle(cornerRadius: 14)
-                .strokeBorder(Color.white.opacity(0.07), lineWidth: 1)
+                .strokeBorder(Color.cardBorder, lineWidth: 1)
         )
         .overlay(alignment: .leading) {
+            // Pricing-tier urgency rail (3pt color stripe down the left edge).
             RoundedRectangle(cornerRadius: 2)
                 .fill(pricingColor)
                 .frame(width: 3)
-                .padding(.vertical, 16)
+                .padding(.vertical, Spacing.lg)
         }
     }
 
@@ -249,9 +260,9 @@ struct EventRowView: View {
               let idx = event.priceTiers.firstIndex(where: { $0.deadline == next.deadline })
         else { return .secondary }
         let count = event.priceTiers.count
-        if idx == 0              { return Color(red: 0.25, green: 0.75, blue: 0.35) } // green  – early
-        if idx == count - 1      { return Color(red: 0.85, green: 0.25, blue: 0.20) } // red    – late
-        return Color(red: 0.90, green: 0.65, blue: 0.10)                               // amber  – standard
+        if idx == 0              { return .pricingEarly }
+        if idx == count - 1      { return .pricingLate }
+        return .pricingMid
     }
 
     private var myDivisionCount: Int {
@@ -259,4 +270,22 @@ struct EventRowView: View {
             event.divisions.filter { $0.matches(div) }.flatMap { $0.athletes }
         }.count
     }
+}
+
+// MARK: - Compact icon label style
+//
+// Default `Label` puts a wide gap between the icon and the title. The
+// compact style halves it and matches the icon to the title color so the
+// pair reads as a single unit on a dense card.
+private struct CompactIconLabelStyle: LabelStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        HStack(spacing: 4) {
+            configuration.icon
+            configuration.title
+        }
+    }
+}
+
+private extension LabelStyle where Self == CompactIconLabelStyle {
+    static var compactIcon: CompactIconLabelStyle { CompactIconLabelStyle() }
 }

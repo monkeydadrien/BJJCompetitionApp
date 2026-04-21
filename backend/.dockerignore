@@ -1,0 +1,28 @@
+# Keep the image small and the build context fast.
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+.mypy_cache
+.venv
+venv
+
+# Data and fixtures are not used at runtime.
+fixtures/
+geocode_cache.json
+
+# Scripts that aren't part of the proxy.
+scrape.py
+backfill_athletes.py
+build_texas_athletes.py
+geocode.py
+ibjjf_client.py
+
+# Local Fly state.
+.fly/
+fly.toml
+
+# Editor / OS cruft.
+.DS_Store
+.vscode
+.idea

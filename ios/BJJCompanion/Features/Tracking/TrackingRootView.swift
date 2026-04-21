@@ -43,7 +43,7 @@ struct TrackingRootView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(alignment: .leading, spacing: 20) {
+                VStack(alignment: .leading, spacing: Spacing.xl - 4) {
 
                     // ── Segmented toggle ───────────────────────────────────
                     Picker("View", selection: $viewMode.animation()) {
@@ -68,15 +68,13 @@ struct TrackingRootView: View {
                         eventsSection
                     }
                 }
-                .padding(16)
-                .padding(.bottom, 32)
+                .padding(Spacing.lg)
+                .padding(.bottom, Spacing.xxl)
             }
             .background(Color.appBackground.ignoresSafeArea())
             .navigationTitle("My Team")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbarBackground(Color.appBackground, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
-            .toolbarColorScheme(.dark, for: .navigationBar)
+            .appNavigationBar()
             .sheet(isPresented: $showAdd) {
                 AddTrackingSheet(initialMode: viewMode)
             }
@@ -105,55 +103,25 @@ struct TrackingRootView: View {
     // MARK: - Tracked teams section
 
     private var trackedTeamsSection: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: Spacing.md - 2) {
             AppSectionLabel("Tracked Teams")
             if store.trackedTeams.isEmpty {
-                Button { showAdd = true } label: {
-                    AppCard {
-                        HStack(spacing: 10) {
-                            Image(systemName: "person.3.fill")
-                                .foregroundStyle(.gold.opacity(0.7)).font(.title3)
-                            Text("Tap to add a team")
-                                .font(.subheadline).foregroundStyle(.white.opacity(0.55))
-                            Spacer()
-                            Image(systemName: "plus.circle.fill")
-                                .font(.title3).foregroundStyle(.gold)
-                        }
-                    }
-                }
-                .buttonStyle(.plain)
+                emptyAddCard(
+                    title: "Tap to add a team",
+                    leadingIcon: "person.3.fill"
+                )
             } else {
                 AppCard {
                     VStack(spacing: 0) {
                         ForEach(store.trackedTeams) { team in
-                            Button { itemToRemove = .team(team) } label: {
-                                HStack(spacing: 12) {
-                                    Image(systemName: "person.3.fill")
-                                        .font(.caption).foregroundStyle(.gold.opacity(0.7)).frame(width: 20)
-                                    Text(team.name)
-                                        .font(.subheadline).foregroundStyle(.white.opacity(0.9))
-                                    Spacer()
-                                    Image(systemName: "minus.circle")
-                                        .font(.subheadline).foregroundStyle(.white.opacity(0.2))
-                                }
-                                .padding(.vertical, 10)
-                            }
-                            .buttonStyle(.plain)
-
-                            Rectangle().fill(Color.white.opacity(0.07)).frame(height: 1)
+                            trackedRow(
+                                icon: "person.3.fill",
+                                name: team.name,
+                                onTap: { itemToRemove = .team(team) }
+                            )
+                            AppHairline()
                         }
-
-                        Button { showAdd = true } label: {
-                            HStack(spacing: 12) {
-                                Image(systemName: "plus.circle.fill")
-                                    .font(.caption).foregroundStyle(.gold).frame(width: 20)
-                                Text("Add team")
-                                    .font(.subheadline).fontWeight(.medium).foregroundStyle(.gold)
-                                Spacer()
-                            }
-                            .padding(.vertical, 10)
-                        }
-                        .buttonStyle(.plain)
+                        addRow(label: "Add team")
                     }
                 }
             }
@@ -163,64 +131,112 @@ struct TrackingRootView: View {
     // MARK: - Tracked athletes section
 
     private var trackedAthletesSection: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: Spacing.md - 2) {
             AppSectionLabel("Tracked Athletes")
             if store.trackedAthletes.isEmpty {
-                Button { showAdd = true } label: {
-                    AppCard {
-                        HStack(spacing: 10) {
-                            Image(systemName: "person.fill.badge.plus")
-                                .foregroundStyle(.gold.opacity(0.7)).font(.title3)
-                            Text("Tap to add an athlete")
-                                .font(.subheadline).foregroundStyle(.white.opacity(0.55))
-                            Spacer()
-                            Image(systemName: "plus.circle.fill")
-                                .font(.title3).foregroundStyle(.gold)
-                        }
-                    }
-                }
-                .buttonStyle(.plain)
+                emptyAddCard(
+                    title: "Tap to add an athlete",
+                    leadingIcon: "person.fill.badge.plus"
+                )
             } else {
                 AppCard {
                     VStack(spacing: 0) {
                         ForEach(store.trackedAthletes) { athlete in
                             Button { itemToRemove = .athlete(athlete) } label: {
-                                HStack(spacing: 12) {
+                                HStack(spacing: Spacing.md) {
                                     Image(systemName: "person.fill")
-                                        .font(.caption).foregroundStyle(.gold.opacity(0.7)).frame(width: 20)
+                                        .font(.caption)
+                                        .foregroundStyle(.accent.opacity(0.7))
+                                        .frame(width: 20)
                                     VStack(alignment: .leading, spacing: 2) {
                                         Text(athlete.name)
-                                            .font(.subheadline).foregroundStyle(.white.opacity(0.9))
+                                            .font(.subheadline)
+                                            .foregroundStyle(.textPrimary.opacity(0.9))
                                         if let team = athlete.team, !team.isEmpty {
-                                            Text(team).font(.caption).foregroundStyle(.white.opacity(0.4))
+                                            Text(team)
+                                                .font(.caption)
+                                                .foregroundStyle(.textTertiary)
                                         }
                                     }
                                     Spacer()
                                     Image(systemName: "minus.circle")
-                                        .font(.subheadline).foregroundStyle(.white.opacity(0.2))
+                                        .font(.subheadline)
+                                        .foregroundStyle(.textQuaternary)
+                                        .accessibilityLabel("Remove")
                                 }
-                                .padding(.vertical, 10)
+                                .padding(.vertical, Spacing.md - 2)
                             }
                             .buttonStyle(.plain)
 
-                            Rectangle().fill(Color.white.opacity(0.07)).frame(height: 1)
+                            AppHairline()
                         }
-
-                        Button { showAdd = true } label: {
-                            HStack(spacing: 12) {
-                                Image(systemName: "plus.circle.fill")
-                                    .font(.caption).foregroundStyle(.gold).frame(width: 20)
-                                Text("Add athlete")
-                                    .font(.subheadline).fontWeight(.medium).foregroundStyle(.gold)
-                                Spacer()
-                            }
-                            .padding(.vertical, 10)
-                        }
-                        .buttonStyle(.plain)
+                        addRow(label: "Add athlete")
                     }
                 }
             }
         }
+    }
+
+    // MARK: - Reusable row builders
+
+    private func emptyAddCard(title: String, leadingIcon: String) -> some View {
+        Button { showAdd = true } label: {
+            AppCard {
+                HStack(spacing: Spacing.md - 2) {
+                    Image(systemName: leadingIcon)
+                        .foregroundStyle(.accent.opacity(0.7))
+                        .font(.title3)
+                    Text(title)
+                        .font(.subheadline)
+                        .foregroundStyle(.textSecondary)
+                    Spacer()
+                    Image(systemName: "plus.circle.fill")
+                        .font(.title3)
+                        .foregroundStyle(.accent)
+                }
+            }
+        }
+        .buttonStyle(.plain)
+        .accessibilityHint("Opens the Add panel")
+    }
+
+    private func trackedRow(icon: String, name: String, onTap: @escaping () -> Void) -> some View {
+        Button(action: onTap) {
+            HStack(spacing: Spacing.md) {
+                Image(systemName: icon)
+                    .font(.caption)
+                    .foregroundStyle(.accent.opacity(0.7))
+                    .frame(width: 20)
+                Text(name)
+                    .font(.subheadline)
+                    .foregroundStyle(.textPrimary.opacity(0.9))
+                Spacer()
+                Image(systemName: "minus.circle")
+                    .font(.subheadline)
+                    .foregroundStyle(.textQuaternary)
+                    .accessibilityLabel("Remove")
+            }
+            .padding(.vertical, Spacing.md - 2)
+        }
+        .buttonStyle(.plain)
+    }
+
+    private func addRow(label: String) -> some View {
+        Button { showAdd = true } label: {
+            HStack(spacing: Spacing.md) {
+                Image(systemName: "plus.circle.fill")
+                    .font(.caption)
+                    .foregroundStyle(.accent)
+                    .frame(width: 20)
+                Text(label)
+                    .font(.subheadline)
+                    .fontWeight(.medium)
+                    .foregroundStyle(.accent)
+                Spacer()
+            }
+            .padding(.vertical, Spacing.md - 2)
+        }
+        .buttonStyle(.plain)
     }
 
     // MARK: - Events section (filtered by mode)
@@ -228,17 +244,19 @@ struct TrackingRootView: View {
     private var eventsSection: some View {
         let matched = eventsWithRegistrations
         let modeLabel = viewMode == .teams ? "Team" : "Athlete"
-        return VStack(alignment: .leading, spacing: 20) {
+        return VStack(alignment: .leading, spacing: Spacing.xl - 4) {
             AppSectionLabel("\(modeLabel) Registrations · \(matched.count) event\(matched.count == 1 ? "" : "s")")
             if matched.isEmpty {
                 AppCard {
-                    HStack(spacing: 10) {
+                    HStack(spacing: Spacing.md - 2) {
                         Image(systemName: "calendar.badge.exclamationmark")
-                            .foregroundStyle(.white.opacity(0.2)).font(.title3)
+                            .foregroundStyle(.textQuaternary)
+                            .font(.title3)
                         Text(viewMode == .teams
                             ? "No tracked teams registered for upcoming events"
                             : "No tracked athletes registered for upcoming events")
-                            .font(.subheadline).foregroundStyle(.white.opacity(0.35))
+                            .font(.subheadline)
+                            .foregroundStyle(.textTertiary)
                             .fixedSize(horizontal: false, vertical: true)
                     }
                 }
@@ -274,19 +292,50 @@ struct TrackingRootView: View {
     }
 
     // MARK: - Empty state (mode-aware)
+    //
+    // Apple HIG: empty states should explain what the user can do AND offer
+    // the action. Adding the explicit CTA below the description converts
+    // "what is this screen for?" into "let me try it."
 
     private var emptyState: some View {
-        VStack(spacing: 16) {
+        VStack(spacing: Spacing.lg) {
             Image(systemName: viewMode == .teams ? "person.3.sequence.fill" : "person.fill.badge.plus")
-                .font(.system(size: 44)).foregroundStyle(.white.opacity(0.1))
+                .font(.system(size: 44))
+                .foregroundStyle(.accent.opacity(0.55))
+                .symbolRenderingMode(.hierarchical)
+                .padding(.bottom, Spacing.xs)
             Text(viewMode == .teams ? "Track your team" : "Track athletes")
-                .font(.title3).fontWeight(.semibold).foregroundStyle(.white.opacity(0.5))
+                .font(.title3)
+                .fontWeight(.semibold)
+                .foregroundStyle(.textPrimary)
             Text(viewMode == .teams
                 ? "Add a team to see all their athletes across upcoming events."
                 : "Add individual athletes to follow their registrations and mat assignments.")
-                .font(.subheadline).foregroundStyle(.white.opacity(0.3)).multilineTextAlignment(.center)
+                .font(.subheadline)
+                .foregroundStyle(.textTertiary)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, Spacing.lg)
+
+            Button {
+                showAdd = true
+            } label: {
+                HStack(spacing: 6) {
+                    Image(systemName: "plus.circle.fill")
+                    Text(viewMode == .teams ? "Add team" : "Add athlete")
+                        .fontWeight(.semibold)
+                }
+                .font(.subheadline)
+                .foregroundStyle(.black)
+                .padding(.horizontal, Spacing.lg)
+                .padding(.vertical, Spacing.md - 2)
+                .background(Color.accent)
+                .clipShape(Capsule())
+            }
+            .buttonStyle(.plain)
+            .padding(.top, Spacing.xs)
         }
-        .frame(maxWidth: .infinity).padding(.vertical, 40)
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 40)
     }
 
     // MARK: - Computed helpers
@@ -351,13 +400,15 @@ struct AddTrackingSheet: View {
                     .pickerStyle(.segmented)
                     .listRowBackground(Color.clear)
                     .listRowInsets(EdgeInsets())
-                    .padding(.vertical, 4)
+                    .padding(.vertical, Spacing.xs)
                 }
 
                 // ── Name field ───────────────────────────────────────────
                 Section {
                     HStack {
-                        Image(systemName: "magnifyingglass").foregroundStyle(.secondary).font(.subheadline)
+                        Image(systemName: "magnifyingglass")
+                            .foregroundStyle(.secondary)
+                            .font(.subheadline)
                         TextField(
                             mode == .teams ? "Team name" : "Athlete full name",
                             text: $searchText
@@ -366,8 +417,11 @@ struct AddTrackingSheet: View {
                         .textInputAutocapitalization(.words)
                         if !searchText.isEmpty {
                             Button { searchText = "" } label: {
-                                Image(systemName: "xmark.circle.fill").foregroundStyle(.secondary)
-                            }.buttonStyle(.plain)
+                                Image(systemName: "xmark.circle.fill")
+                                    .foregroundStyle(.secondary)
+                            }
+                            .buttonStyle(.plain)
+                            .accessibilityLabel("Clear search")
                         }
                     }
                 } footer: {
@@ -385,13 +439,17 @@ struct AddTrackingSheet: View {
                                 store.addAthlete(name: hit.name, team: hit.team, bjjcsId: hit.id)
                                 dismiss()
                             } label: {
-                                HStack(spacing: 10) {
+                                HStack(spacing: Spacing.md - 2) {
                                     Image(systemName: "person.fill")
-                                        .font(.caption).foregroundStyle(.gold.opacity(0.7)).frame(width: 18)
+                                        .font(.caption)
+                                        .foregroundStyle(.accent.opacity(0.7))
+                                        .frame(width: 18)
                                     VStack(alignment: .leading, spacing: 2) {
                                         Text(hit.name).foregroundStyle(.primary)
                                         if !hit.team.isEmpty {
-                                            Text(hit.team).font(.caption).foregroundStyle(.secondary)
+                                            Text(hit.team)
+                                                .font(.caption)
+                                                .foregroundStyle(.secondary)
                                         }
                                     }
                                     Spacer()
@@ -414,26 +472,22 @@ struct AddTrackingSheet: View {
                             dismiss()
                         } label: {
                             HStack {
-                                Image(systemName: "plus.circle.fill").foregroundStyle(.gold)
+                                Image(systemName: "plus.circle.fill").foregroundStyle(.accent)
                                 Text("Add \"\(searchText.trimmingCharacters(in: .whitespaces))\"")
-                                    .fontWeight(.medium).foregroundStyle(.primary)
+                                    .fontWeight(.medium)
+                                    .foregroundStyle(.primary)
                                 Spacer()
-                                Text(mode == .teams ? "TEAM" : "ATHLETE")
-                                    .font(.system(size: 9, weight: .bold))
-                                    .foregroundStyle(.gold.opacity(0.7))
-                                    .padding(.horizontal, 6).padding(.vertical, 2)
-                                    .background(Color.gold.opacity(0.1))
-                                    .clipShape(Capsule())
+                                AppBadge(text: mode == .teams ? "TEAM" : "ATHLETE")
                             }
                         }
                     }
                 }
             }
+            .scrollContentBackground(.hidden)
+            .background(Color.appBackground.ignoresSafeArea())
             .navigationTitle("Add \(mode == .teams ? "Team" : "Athlete")")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbarBackground(Color.appBackground, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
-            .toolbarColorScheme(.dark, for: .navigationBar)
+            .appNavigationBar()
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) { Button("Cancel") { dismiss() } }
             }
@@ -458,7 +512,7 @@ struct TrackedEventCard: View {
     let onRefreshSchedule: () -> Void
 
     @Environment(TrackingStore.self) private var store
-    @State private var expanded           = true
+    @State private var expanded             = true
     @State private var showTournamentPicker = false
 
     private var linkedTournamentId: Int? { store.linkedTournamentId(for: event.id) }
@@ -472,45 +526,49 @@ struct TrackedEventCard: View {
 
             // ── Header ───────────────────────────────────────────────────
             Button { withAnimation(.easeInOut(duration: 0.2)) { expanded.toggle() } } label: {
-                HStack(spacing: 10) {
-                    VStack(alignment: .leading, spacing: 4) {
+                HStack(spacing: Spacing.md - 2) {
+                    VStack(alignment: .leading, spacing: Spacing.xs) {
                         Text(event.name)
-                            .font(.system(size: 14, weight: .semibold))
-                            .foregroundStyle(.white).multilineTextAlignment(.leading)
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                            .foregroundStyle(.textPrimary)
+                            .multilineTextAlignment(.leading)
                         HStack(spacing: 6) {
-                            Text(dateLabel).font(.caption).foregroundStyle(.white.opacity(0.4))
-                            Text("·").foregroundStyle(.white.opacity(0.2))
-                            Text(event.city).font(.caption).foregroundStyle(.white.opacity(0.4))
+                            Text(dateLabel).font(.caption).foregroundStyle(.textTertiary)
+                            Text("·").foregroundStyle(.textQuaternary)
+                            Text(event.city).font(.caption).foregroundStyle(.textTertiary)
                         }
                     }
                     Spacer()
                     HStack(spacing: 6) {
-                        Text("\(registrations.count)")
-                            .font(.system(size: 12, weight: .semibold)).foregroundStyle(.gold)
-                            .padding(.horizontal, 8).padding(.vertical, 3)
-                            .background(Color.gold.opacity(0.12)).clipShape(Capsule())
-                            .overlay(Capsule().strokeBorder(Color.gold.opacity(0.25), lineWidth: 1))
+                        AppBadge(text: "\(registrations.count)")
                         Image(systemName: expanded ? "chevron.up" : "chevron.down")
-                            .font(.caption2).foregroundStyle(.white.opacity(0.3))
+                            .font(.caption2)
+                            .foregroundStyle(.textTertiary)
                     }
                 }
                 .padding(14)
             }
             .buttonStyle(.plain)
+            .accessibilityLabel("\(event.name), \(registrations.count) registrations. \(expanded ? "Collapse" : "Expand")")
 
             if expanded {
-                Rectangle().fill(Color.white.opacity(0.07)).frame(height: 1)
+                AppHairline()
                 tournamentLinkBar
-                Rectangle().fill(Color.white.opacity(0.05)).frame(height: 1)
+                AppHairline(color: .white.opacity(0.05))
 
                 VStack(spacing: 0) {
                     ForEach(Array(registrations.enumerated()), id: \.offset) { i, reg in
                         let matchesForAthlete = scheduleMatches.filter {
                             ($0.athleteName?.lowercased() ?? "") == reg.athlete.name.lowercased()
                         }
-                        TrackedAthleteRow(athlete: reg.athlete, division: reg.division, scheduleMatches: matchesForAthlete)
+                        TrackedAthleteRow(
+                            athlete: reg.athlete,
+                            division: reg.division,
+                            scheduleMatches: matchesForAthlete
+                        )
                         if i < registrations.count - 1 {
-                            Rectangle().fill(Color.white.opacity(0.05)).frame(height: 1).padding(.leading, 14)
+                            AppHairline(color: .white.opacity(0.05)).padding(.leading, 14)
                         }
                     }
                 }
@@ -518,7 +576,10 @@ struct TrackedEventCard: View {
         }
         .background(Color.cardSurface)
         .clipShape(RoundedRectangle(cornerRadius: 14))
-        .overlay(RoundedRectangle(cornerRadius: 14).strokeBorder(Color.gold.opacity(0.2), lineWidth: 1))
+        .overlay(
+            RoundedRectangle(cornerRadius: 14)
+                .strokeBorder(Color.accent.opacity(0.2), lineWidth: 1)
+        )
         .sheet(isPresented: $showTournamentPicker) {
             TournamentPickerSheet(
                 tournaments: tournaments,
@@ -530,50 +591,72 @@ struct TrackedEventCard: View {
 
     @ViewBuilder
     private var tournamentLinkBar: some View {
-        HStack(spacing: 10) {
+        HStack(spacing: Spacing.md - 2) {
             Image(systemName: "trophy.fill")
                 .font(.caption2)
-                .foregroundStyle(linkedTournamentId != nil ? .gold : .white.opacity(0.25))
+                .foregroundStyle(linkedTournamentId != nil ? .accent : .textQuaternary)
 
             if let name = linkedTournamentName {
-                Text(name).font(.caption).foregroundStyle(.white.opacity(0.6))
-                    .lineLimit(1).truncationMode(.tail)
+                Text(name)
+                    .font(.caption)
+                    .foregroundStyle(.textSecondary)
+                    .lineLimit(1)
+                    .truncationMode(.tail)
             } else {
                 Text(tournaments.isEmpty ? "Loading tournaments…" : "Link bracket tournament")
-                    .font(.caption).foregroundStyle(.white.opacity(0.35))
+                    .font(.caption)
+                    .foregroundStyle(.textTertiary)
             }
 
             Spacer()
 
             if linkedTournamentId != nil {
                 if isLoadingSchedule {
-                    ProgressView().tint(.gold).scaleEffect(0.7)
+                    ProgressView().tint(.accent).scaleEffect(0.7)
                 } else if scheduleMatches.isEmpty {
                     Button(action: onLoadSchedule) {
                         Text("Load Schedule")
-                            .font(.system(size: 11, weight: .semibold)).foregroundStyle(.gold)
-                            .padding(.horizontal, 8).padding(.vertical, 4)
-                            .background(Color.gold.opacity(0.12)).clipShape(Capsule())
-                            .overlay(Capsule().strokeBorder(Color.gold.opacity(0.3), lineWidth: 1))
-                    }.buttonStyle(.plain)
+                            .font(.system(size: 11, weight: .semibold))
+                            .foregroundStyle(.accent)
+                            .padding(.horizontal, Spacing.sm)
+                            .padding(.vertical, 4)
+                            .background(Color.accentWashLight)
+                            .clipShape(Capsule())
+                            .overlay(Capsule().strokeBorder(Color.accent.opacity(0.3), lineWidth: 1))
+                    }
+                    .buttonStyle(.plain)
                 } else {
                     Button(action: onRefreshSchedule) {
-                        Image(systemName: "arrow.clockwise").font(.caption2).foregroundStyle(.gold.opacity(0.7))
-                    }.buttonStyle(.plain)
+                        Image(systemName: "arrow.clockwise")
+                            .font(.caption2)
+                            .foregroundStyle(.accent.opacity(0.7))
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel("Refresh schedule")
                 }
-                Button(action: { showTournamentPicker = true }) {
-                    Image(systemName: "pencil").font(.caption2).foregroundStyle(.white.opacity(0.3))
-                }.buttonStyle(.plain)
+                Button { showTournamentPicker = true } label: {
+                    Image(systemName: "pencil")
+                        .font(.caption2)
+                        .foregroundStyle(.textTertiary)
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Change linked tournament")
             } else {
-                Button(action: { showTournamentPicker = true }) {
+                Button { showTournamentPicker = true } label: {
                     Text("Link")
-                        .font(.system(size: 11, weight: .semibold)).foregroundStyle(.white.opacity(0.6))
-                        .padding(.horizontal, 8).padding(.vertical, 4)
-                        .background(Color.white.opacity(0.07)).clipShape(Capsule())
-                }.buttonStyle(.plain).disabled(tournaments.isEmpty)
+                        .font(.system(size: 11, weight: .semibold))
+                        .foregroundStyle(.textSecondary)
+                        .padding(.horizontal, Spacing.sm)
+                        .padding(.vertical, 4)
+                        .background(Color.white.opacity(0.07))
+                        .clipShape(Capsule())
+                }
+                .buttonStyle(.plain)
+                .disabled(tournaments.isEmpty)
             }
         }
-        .padding(.horizontal, 14).padding(.vertical, 10)
+        .padding(.horizontal, 14)
+        .padding(.vertical, Spacing.md - 2)
     }
 
     private var dateLabel: String {
@@ -600,23 +683,25 @@ struct TrackedAthleteRow: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
-            HStack(spacing: 12) {
+            HStack(spacing: Spacing.md) {
                 Circle().fill(Color.beltColor(division.belt)).frame(width: 8, height: 8)
                 VStack(alignment: .leading, spacing: 2) {
                     Text(athlete.name)
-                        .font(.subheadline).fontWeight(.medium).foregroundStyle(.white.opacity(0.9))
-                    Text(athlete.team).font(.caption).foregroundStyle(.white.opacity(0.4))
+                        .font(.subheadline)
+                        .fontWeight(.medium)
+                        .foregroundStyle(.textPrimary.opacity(0.9))
+                    Text(athlete.team)
+                        .font(.caption)
+                        .foregroundStyle(.textTertiary)
                 }
                 Spacer()
-                Text(divisionShort)
-                    .font(.system(size: 10, weight: .medium)).foregroundStyle(.white.opacity(0.4))
-                    .padding(.horizontal, 7).padding(.vertical, 3)
-                    .background(Color.white.opacity(0.07)).clipShape(Capsule())
+                AppBadge(text: divisionShort, style: .ghost)
 
                 if isTracked {
                     Image(systemName: "star.fill")
                         .font(.system(size: 11))
-                        .foregroundStyle(.gold.opacity(0.7))
+                        .foregroundStyle(.accent.opacity(0.7))
+                        .accessibilityLabel("Tracked")
                 } else {
                     Button {
                         withAnimation {
@@ -625,24 +710,30 @@ struct TrackedAthleteRow: View {
                     } label: {
                         Image(systemName: "plus.circle.fill")
                             .font(.system(size: 16))
-                            .foregroundStyle(.gold)
+                            .foregroundStyle(.accent)
                     }
                     .buttonStyle(.plain)
+                    .accessibilityLabel("Track \(athlete.name)")
                 }
             }
 
             if scheduleMatches.isEmpty {
                 HStack(spacing: 4) {
                     Circle().fill(Color.white.opacity(0.15)).frame(width: 5, height: 5)
-                    Text("No bracket assigned yet").font(.system(size: 10)).foregroundStyle(.white.opacity(0.3))
-                }.padding(.leading, 20)
+                    Text("No bracket assigned yet")
+                        .font(.system(size: 10))
+                        .foregroundStyle(.textTertiary)
+                }
+                .padding(.leading, 20)
             } else {
-                VStack(alignment: .leading, spacing: 4) {
+                VStack(alignment: .leading, spacing: Spacing.xs) {
                     ForEach(scheduleMatches) { match in ScheduleMatchRow(match: match) }
-                }.padding(.leading, 20)
+                }
+                .padding(.leading, 20)
             }
         }
-        .padding(.horizontal, 14).padding(.vertical, 10)
+        .padding(.horizontal, 14)
+        .padding(.vertical, Spacing.md - 2)
     }
 
     private var divisionShort: String { "\(division.belt.capitalized) · \(division.weightClass)" }
@@ -654,38 +745,50 @@ struct ScheduleMatchRow: View {
     let match: ScheduleMatch
 
     var body: some View {
-        HStack(spacing: 8) {
+        HStack(spacing: Spacing.sm) {
             HStack(spacing: 4) {
                 if let mat = match.mat, !mat.isEmpty {
-                    Text(mat).font(.system(size: 10, weight: .bold)).foregroundStyle(.gold)
+                    Text(mat)
+                        .font(.system(size: 10, weight: .bold))
+                        .foregroundStyle(.accent)
                 }
                 if let fight = match.fight {
-                    Text("Fight \(fight)").font(.system(size: 10, weight: .medium)).foregroundStyle(.white.opacity(0.6))
+                    Text("Fight \(fight)")
+                        .font(.system(size: 10, weight: .medium))
+                        .foregroundStyle(.textSecondary)
                 }
             }
-            .padding(.horizontal, 7).padding(.vertical, 3)
-            .background(Color.gold.opacity(0.08)).clipShape(Capsule())
-            .overlay(Capsule().strokeBorder(Color.gold.opacity(0.2), lineWidth: 1))
+            .padding(.horizontal, 7)
+            .padding(.vertical, 3)
+            .background(Color.accentWashFaint)
+            .clipShape(Capsule())
+            .overlay(Capsule().strokeBorder(Color.accent.opacity(0.2), lineWidth: 1))
 
             if let when = match.when, !when.isEmpty {
                 HStack(spacing: 3) {
                     Image(systemName: "clock").font(.system(size: 9))
                     Text(when).font(.system(size: 10))
-                }.foregroundStyle(.white.opacity(0.45))
+                }
+                .foregroundStyle(.textTertiary)
             }
 
             if let opponent = match.opponent, !opponent.isEmpty {
                 Text("vs \(opponent)")
-                    .font(.system(size: 10)).foregroundStyle(.white.opacity(0.35))
-                    .lineLimit(1).truncationMode(.tail)
+                    .font(.system(size: 10))
+                    .foregroundStyle(.textTertiary)
+                    .lineLimit(1)
+                    .truncationMode(.tail)
             }
 
             Spacer()
 
             Text(roundLabel)
-                .font(.system(size: 9, weight: .medium)).foregroundStyle(.white.opacity(0.3))
-                .padding(.horizontal, 5).padding(.vertical, 2)
-                .background(Color.white.opacity(0.05)).clipShape(Capsule())
+                .font(.system(size: 9, weight: .medium))
+                .foregroundStyle(.textTertiary)
+                .padding(.horizontal, 5)
+                .padding(.vertical, 2)
+                .background(Color.white.opacity(0.05))
+                .clipShape(Capsule())
         }
     }
 
@@ -723,17 +826,19 @@ struct TournamentPickerSheet: View {
                         Text(t.name).foregroundStyle(.primary)
                         Spacer()
                         if t.id == currentId {
-                            Image(systemName: "checkmark").foregroundStyle(.gold).font(.caption)
+                            Image(systemName: "checkmark")
+                                .foregroundStyle(.accent)
+                                .font(.caption)
                         }
                     }
                 }
             }
+            .scrollContentBackground(.hidden)
+            .background(Color.appBackground.ignoresSafeArea())
             .searchable(text: $search, prompt: "Search tournaments")
             .navigationTitle("Select Tournament")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbarBackground(Color.appBackground, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
-            .toolbarColorScheme(.dark, for: .navigationBar)
+            .appNavigationBar()
             .toolbar { ToolbarItem(placement: .cancellationAction) { Button("Cancel") { dismiss() } } }
         }
     }
