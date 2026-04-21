@@ -20,8 +20,11 @@ import time
 from functools import lru_cache
 from typing import Optional
 
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
+from slowapi import Limiter, _rate_limit_exceeded_handler
+from slowapi.errors import RateLimitExceeded
+from slowapi.util import get_remote_address
 
 from compsystem_client import (
     fetch_bracket,
@@ -31,6 +34,12 @@ from compsystem_client import (
 )
 
 app = FastAPI(title="BJJ Companion Proxy", version="1.0.0")
+
+# Rate limiter — keyed by client IP. Fly is configured to forward real IPs
+# via --proxy-headers / --forwarded-allow-ips in the Dockerfile CMD.
+limiter = Limiter(key_func=get_remote_address, default_limits=["60/minute"])
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
 app.add_middleware(
     CORSMiddleware,
@@ -67,7 +76,8 @@ def _cached(key: str, ttl: float, fn):
 # ---------------------------------------------------------------------------
 
 @app.get("/tournaments")
-def get_tournaments():
+@limiter.limit("60/minute")
+def get_tournaments(request: Request):
     """Return list of all tournaments."""
     try:
         return _cached("tournaments", TOURNAMENTS_TTL, fetch_tournaments)
@@ -76,7 +86,8 @@ def get_tournaments():
 
 
 @app.get("/tournaments/{tournament_id}/categories")
-def get_categories(tournament_id: int, gender_id: int = Query(default=1, ge=1, le=2)):
+@limiter.limit("60/minute")
+def get_categories(request: Request, tournament_id: int, gender_id: int = Query(default=1, ge=1, le=2)):
     """Return bracket categories for a tournament filtered by gender (1=Male, 2=Female)."""
     key = f"categories:{tournament_id}:{gender_id}"
     try:
@@ -86,7 +97,9 @@ def get_categories(tournament_id: int, gender_id: int = Query(default=1, ge=1, l
 
 
 @app.get("/bracket")
+@limiter.limit("60/minute")
 def get_bracket(
+    request: Request,
     tournament: int = Query(..., description="Tournament ID"),
     category: int = Query(..., description="Category ID"),
 ):
@@ -99,7 +112,9 @@ def get_bracket(
 
 
 @app.get("/schedule")
+@limiter.limit("5/minute")
 def get_schedule(
+    request: Request,
     tournament: int = Query(..., description="Tournament ID"),
     names: str = Query(..., description="Comma-separated athlete names and/or team names to search for"),
 ):
