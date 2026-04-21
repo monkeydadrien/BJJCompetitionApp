@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1684AFB22F97CC14009F8938 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 1684AFB12F97CC14009F8938 /* Sentry */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		162E47442F86D904003549B4 /* BJJCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BJJCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1684AFB22F97CC14009F8938 /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = BJJCompanion;
 			packageProductDependencies = (
+				1684AFB12F97CC14009F8938 /* Sentry */,
 			);
 			productName = BJJCompanion;
 			productReference = 162E47442F86D904003549B4 /* BJJCompanion.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 162E473B2F86D904003549B4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1684AFB02F97CC14009F8938 /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 162E47452F86D904003549B4 /* Products */;
 			projectDirPath = "";
@@ -330,6 +339,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1684AFB02F97CC14009F8938 /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getsentry/sentry-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1684AFB12F97CC14009F8938 /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1684AFB02F97CC14009F8938 /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = Sentry;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 162E473C2F86D904003549B4 /* Project object */;
 }

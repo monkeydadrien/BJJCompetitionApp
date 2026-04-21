@@ -1,4 +1,7 @@
 import SwiftUI
+#if canImport(Sentry)
+import Sentry
+#endif
 
 @main
 struct BJJCompanionApp: App {
@@ -13,6 +16,34 @@ struct BJJCompanionApp: App {
     init() {
         configureNavigationBar()
         configureTabBar()
+        configureSentry()
+    }
+
+    // MARK: - Sentry
+
+    private func configureSentry() {
+        #if canImport(Sentry) && !DEBUG
+        SentrySDK.start { options in
+            options.dsn = Config.sentryDSN
+
+            // Release + environment metadata
+            let info = Bundle.main.infoDictionary ?? [:]
+            let version = info["CFBundleShortVersionString"] as? String ?? "0.0.0"
+            let build   = info["CFBundleVersion"] as? String ?? "0"
+            options.releaseName = "bjjcompanion@\(version)+\(build)"
+            options.environment = "production"
+
+            // Attach a stack trace to every event, including captured messages
+            options.attachStacktrace = true
+
+            // 10% sampling for performance traces — well inside free-tier budget
+            options.tracesSampleRate = 0.1
+            options.enableAutoPerformanceTracing = true
+
+            // Strip device identifiers we don't need; keep reasonable defaults otherwise
+            options.sendDefaultPii = false
+        }
+        #endif
     }
 
     var body: some Scene {

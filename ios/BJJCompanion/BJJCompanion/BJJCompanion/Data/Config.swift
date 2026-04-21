@@ -25,4 +25,8 @@ enum Config {
 
     /// Refresh if cached data is older than this
     static let staleDuration: TimeInterval = 20 * 60 * 60  // 20 hours
+
+    /// Sentry DSN (write-only client telemetry key — safe to commit).
+    /// Crash reporting is gated to release builds only; debug builds stay silent.
+    static let sentryDSN = "https://949b2d2da956630dbb940ff9f200afc5@o4511258629636096.ingest.us.sentry.io/4511258632650757"
 }
