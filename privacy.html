@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — BJJ Companion</title>
+<style>
+  :root {
+    --fg: #1a1a1a;
+    --muted: #555;
+    --accent: #b8892a;
+    --bg: #fafafa;
+    --card: #fff;
+    --border: #e5e5e5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fg: #eee;
+      --muted: #aaa;
+      --accent: #d4a84a;
+      --bg: #1a1a1a;
+      --card: #222;
+      --border: #333;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 4px;
+  }
+  h2 {
+    font-size: 18px;
+    margin: 32px 0 8px;
+    color: var(--accent);
+  }
+  p, ul { margin: 8px 0; }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  .muted { color: var(--muted); font-size: 14px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="muted">BJJ Companion · Pinnacle AppDev LLC · Last updated April 21, 2026</p>
+  </header>
+
+  <p>BJJ Companion (the "App") is published by Pinnacle AppDev LLC ("we", "us"). We designed the App to collect as little as possible. This policy explains exactly what is and isn't collected.</p>
+
+  <h2>What we don't collect</h2>
+  <ul>
+    <li>No user accounts — the App has no login, signup, or profile system.</li>
+    <li>No advertising identifiers, no ad networks, no marketing trackers.</li>
+    <li>No third-party analytics (no Google Analytics, Firebase, Facebook SDK, Mixpanel, etc.).</li>
+    <li>No contacts, photos, microphone, camera, health data, or location data are accessed.</li>
+    <li>No personal information is sold, shared, or used for marketing.</li>
+  </ul>
+
+  <h2>What stays on your device</h2>
+  <p>Your preferences and tracked content are stored locally in iOS <code>UserDefaults</code> on your device and never leave it. This includes:</p>
+  <ul>
+    <li>Home city (plus its geocoded coordinates) — used to compute event distances.</li>
+    <li>Tracked athletes and teams.</li>
+    <li>Selected divisions and filter preferences.</li>
+  </ul>
+  <p>Uninstalling the App deletes this data.</p>
+
+  <h2>What the App fetches from the internet</h2>
+  <ul>
+    <li><strong>Public event data</strong> — static JSON hosted on GitHub Pages containing tournaments, athletes, and teams scraped from public IBJJF and AGF sources.</li>
+    <li><strong>Bracket data</strong> — requested through a lightweight proxy we operate at <code>api.pinnacleapp.dev</code>. The proxy forwards your request to public tournament bracket sources and returns the response. Standard web server logs (IP address, timestamp, URL) are retained for up to 30 days for abuse prevention and then discarded.</li>
+  </ul>
+
+  <h2>Crash and performance reporting</h2>
+  <p>Release builds of the App include Sentry (<a href="https://sentry.io/privacy/">sentry.io</a>) to capture crashes and performance issues so we can fix bugs. Sentry is configured conservatively:</p>
+  <ul>
+    <li><code>sendDefaultPii = false</code> — personally identifiable information is not attached to events.</li>
+    <li>Performance traces sampled at 10%.</li>
+    <li>No user identifier, email, or username is ever sent.</li>
+    <li>Sentry receives: crash stack traces, device model, iOS version, App version, breadcrumbs of recent in-app actions, and the IP address of the request (standard for any network request).</li>
+  </ul>
+  <p>Sentry data is retained per Sentry's default retention (90 days for errors) and then deleted.</p>
+
+  <h2>Children's privacy</h2>
+  <p>The App is not directed to children under 13 and does not knowingly collect information from them.</p>
+
+  <h2>Your rights</h2>
+  <p>Because we do not maintain user accounts or a database of App users, there is no personal profile to access, export, or delete. To remove all local data, uninstall the App. To request deletion of any Sentry event that may contain your device's IP address, email us below with the approximate timestamp.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes materially, we will update the "Last updated" date above and, where appropriate, surface a notice in the App.</p>
+
+  <h2>Contact</h2>
+  <p>Questions? Email <a href="mailto:support@pinnacleapp.dev">support@pinnacleapp.dev</a>.</p>
+
+  <footer>
+    Pinnacle AppDev LLC · Texas, USA · <a href="support.html">Support</a>
+  </footer>
+</main>
+</body>
+</html>

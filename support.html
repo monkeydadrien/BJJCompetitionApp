@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — BJJ Companion</title>
+<style>
+  :root {
+    --fg: #1a1a1a;
+    --muted: #555;
+    --accent: #b8892a;
+    --bg: #fafafa;
+    --card: #fff;
+    --border: #e5e5e5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fg: #eee;
+      --muted: #aaa;
+      --accent: #d4a84a;
+      --bg: #1a1a1a;
+      --card: #222;
+      --border: #333;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+  }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 {
+    font-size: 18px;
+    margin: 32px 0 8px;
+    color: var(--accent);
+  }
+  h3 {
+    font-size: 15px;
+    margin: 20px 0 4px;
+  }
+  p { margin: 8px 0; }
+  .muted { color: var(--muted); font-size: 14px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 12px 0;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Support</h1>
+    <p class="muted">BJJ Companion · Pinnacle AppDev LLC</p>
+  </header>
+
+  <p>Need help, found a bug, or have a feature request? We'd love to hear from you.</p>
+
+  <div class="card contact">
+    <div><strong>Email:</strong> <a href="mailto:support@pinnacleapp.dev">support@pinnacleapp.dev</a></div>
+    <div><strong>Bug reports &amp; feature requests:</strong> <a href="https://github.com/monkeydadrien/BJJCompetitionApp/issues">GitHub Issues</a></div>
+    <div><strong>Response time:</strong> usually within 2 business days</div>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+
+  <h3>Where does the event data come from?</h3>
+  <p>Tournament, athlete, and team data is aggregated from public IBJJF and AGF sources and refreshed daily. Because the underlying sites sometimes change structure, there may be occasional gaps — please report anything that looks wrong.</p>
+
+  <h3>Why don't I see brackets for a tournament?</h3>
+  <p>Brackets are fetched live from the tournament organizer's public bracket system. They typically appear 24–72 hours before the event and disappear shortly after. If a tournament has started but brackets aren't loading, the organizer's system may be down — try again in a few minutes.</p>
+
+  <h3>How do I set a home city for distance filtering?</h3>
+  <p>Open the <strong>Settings</strong> tab → <strong>Home City</strong>, type a city and tap Save. The Events tab will then let you filter by distance (50 / 100 / 250 / 500 mi).</p>
+
+  <h3>Does the App work offline?</h3>
+  <p>Previously loaded data remains viewable, but fetching new events or brackets requires an internet connection.</p>
+
+  <h3>How do I delete my data?</h3>
+  <p>All data is stored locally on your device. Uninstalling the App removes everything. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+
+  <h3>Is the App free?</h3>
+  <p>Yes. No ads, no subscriptions, no in-app purchases.</p>
+
+  <h3>Who builds this?</h3>
+  <p>BJJ Companion is built by Pinnacle AppDev LLC, a Texas-registered studio. It's a labor of love by a practitioner who got tired of wrangling bracket PDFs on tournament morning.</p>
+
+  <footer>
+    Pinnacle AppDev LLC · Texas, USA · <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</main>
+</body>
+</html>
