@@ -114,14 +114,22 @@ final class TrackingStore {
         return teamMatch || athleteMatch
     }
 
-    /// Exact name match after normalizing case, diacritics, and whitespace.
-    /// The tracked name must equal the registered name (user enters the full
-    /// IBJJF registration name). "Rodrigo Martins" does NOT match
-    /// "Rodrigo Leite Martins da Silva".
+    /// Token-subset match after normalizing case, diacritics, and whitespace.
+    /// Every token in the tracked name must appear in the registered name —
+    /// so "Pedro Ottonello" matches "Pedro Henrique Ottonello dos Santos"
+    /// (IBJJF uses full legal names, users rarely type them in full).
+    /// A 2-token minimum on the tracked side prevents single-name false
+    /// positives ("Pedro" matching every Pedro in the bracket).
     static func nameMatch(tracked: String, against: String) -> Bool {
-        let a = normalizeAthleteName(tracked)
-        guard !a.isEmpty else { return false }
-        return a == normalizeAthleteName(against)
+        let trackedTokens = Set(normalizeAthleteName(tracked).split(separator: " ").map(String.init))
+        guard trackedTokens.count >= 2 else {
+            // Single-token tracked name → require exact normalized match.
+            let a = normalizeAthleteName(tracked)
+            guard !a.isEmpty else { return false }
+            return a == normalizeAthleteName(against)
+        }
+        let againstTokens = Set(normalizeAthleteName(against).split(separator: " ").map(String.init))
+        return trackedTokens.isSubset(of: againstTokens)
     }
 
     // MARK: - Persistence

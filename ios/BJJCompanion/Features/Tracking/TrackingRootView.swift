@@ -262,26 +262,16 @@ struct TrackingRootView: View {
                 }
             } else {
                 ForEach(matched, id: \.event.id) { item in
+                    let tid = autoMatchedTournamentId(for: item.event)
                     TrackedEventCard(
-                        event:             item.event,
-                        registrations:     item.registrations,
-                        tournaments:       bracketRepo.tournaments,
-                        scheduleMatches:   bracketRepo.schedules[store.linkedTournamentId(for: item.event.id) ?? -1] ?? [],
-                        isLoadingSchedule: bracketRepo.loadingSchedules.contains(store.linkedTournamentId(for: item.event.id) ?? -1),
-                        scheduleError:     bracketRepo.scheduleErrors[store.linkedTournamentId(for: item.event.id) ?? -1],
-                        onLinkTournament:  { tid in store.linkTournament(tid, to: item.event.id) },
-                        onUnlink: {
-                            if let tid = store.linkedTournamentId(for: item.event.id) { bracketRepo.clearSchedule(for: tid) }
-                            store.unlinkTournament(from: item.event.id)
-                        },
+                        event:                  item.event,
+                        registrations:          item.registrations,
+                        autoLinkedTournamentId: tid,
+                        isImminent:             isImminent(item.event),
+                        scheduleMatches:        bracketRepo.schedules[tid ?? -1] ?? [],
+                        isLoadingSchedule:      bracketRepo.loadingSchedules.contains(tid ?? -1),
                         onLoadSchedule: {
-                            guard let tid = store.linkedTournamentId(for: item.event.id) else { return }
-                            let names = trackedNames
-                            Task { await bracketRepo.loadSchedule(tournamentId: tid, names: names) }
-                        },
-                        onRefreshSchedule: {
-                            guard let tid = store.linkedTournamentId(for: item.event.id) else { return }
-                            bracketRepo.clearSchedule(for: tid)
+                            guard let tid else { return }
                             let names = trackedNames
                             Task { await bracketRepo.loadSchedule(tournamentId: tid, names: names) }
                         }
@@ -359,6 +349,51 @@ struct TrackingRootView: View {
 
     private var trackedNames: [String] {
         store.trackedAthletes.map { $0.name } + store.trackedTeams.map { $0.name }
+    }
+
+    /// Brackets and mat assignments are only published a few days before an
+    /// event. Outside this window an auto-load just hammers compsystem walking
+    /// every category for nothing, so we suppress the fetch and keep the
+    /// "Schedule available day-of-event" copy until the event is close.
+    private func isImminent(_ event: BJJEvent) -> Bool {
+        guard let start = event.startDateParsed else { return false }
+        let daysUntil = Calendar.current.dateComponents([.day], from: Date(), to: start).day ?? .max
+        return daysUntil <= 3
+    }
+
+    /// Auto-match an IBJJF event to a compsystem tournament by token overlap.
+    /// Stopwords like "ibjjf"/"jiu"/"jitsu"/"championship" are dropped to focus
+    /// on distinctive tokens (city / region / year). Requires ≥0.5 Jaccard
+    /// overlap and at least 2 shared tokens to avoid false positives.
+    private func autoMatchedTournamentId(for event: BJJEvent) -> Int? {
+        let stopwords: Set<String> = [
+            "ibjjf", "jiu", "jitsu", "jiu-jitsu", "championship", "championships",
+            "open", "international", "the", "of", "and", "&", "gi", "no-gi",
+            "nogi", "tournament", "by", "presented",
+        ]
+        func tokens(_ s: String) -> Set<String> {
+            Set(normalizeAthleteName(s)
+                .split(separator: " ")
+                .map(String.init)
+                .filter { !stopwords.contains($0) && $0.count >= 2 })
+        }
+        let eventTokens = tokens(event.name)
+        guard !eventTokens.isEmpty else { return nil }
+
+        var best: (id: Int, score: Double, shared: Int)?
+        for t in bracketRepo.tournaments {
+            let tTokens = tokens(t.name)
+            guard !tTokens.isEmpty else { continue }
+            let shared = eventTokens.intersection(tTokens).count
+            let smaller = min(eventTokens.count, tTokens.count)
+            let score = smaller > 0 ? Double(shared) / Double(smaller) : 0
+            if shared >= 2 && score >= 0.5 {
+                if best == nil || score > best!.score {
+                    best = (t.id, score, shared)
+                }
+            }
+        }
+        return best?.id
     }
 }
 
@@ -529,26 +564,15 @@ struct AddTrackingSheet: View {
 
 struct TrackedEventCard: View {
 
-    let event:             BJJEvent
-    let registrations:     [(athlete: Athlete, division: Division)]
-    let tournaments:       [Tournament]
-    let scheduleMatches:   [ScheduleMatch]
-    let isLoadingSchedule: Bool
-    let scheduleError:     String?
-    let onLinkTournament:  (Int) -> Void
-    let onUnlink:          () -> Void
-    let onLoadSchedule:    () -> Void
-    let onRefreshSchedule: () -> Void
+    let event:                  BJJEvent
+    let registrations:          [(athlete: Athlete, division: Division)]
+    let autoLinkedTournamentId: Int?
+    let isImminent:             Bool
+    let scheduleMatches:        [ScheduleMatch]
+    let isLoadingSchedule:      Bool
+    let onLoadSchedule:         () -> Void
 
-    @Environment(TrackingStore.self) private var store
-    @State private var expanded             = true
-    @State private var showTournamentPicker = false
-
-    private var linkedTournamentId: Int? { store.linkedTournamentId(for: event.id) }
-    private var linkedTournamentName: String? {
-        guard let tid = linkedTournamentId else { return nil }
-        return tournaments.first { $0.id == tid }?.name
-    }
+    @State private var expanded = true
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -583,7 +607,7 @@ struct TrackedEventCard: View {
 
             if expanded {
                 AppHairline()
-                tournamentLinkBar
+                scheduleStatusBar
                 AppHairline(color: .white.opacity(0.05))
 
                 VStack(spacing: 0) {
@@ -601,6 +625,17 @@ struct TrackedEventCard: View {
                         }
                     }
                 }
+                .onAppear {
+                    // Only auto-fetch when the event is imminent — outside the
+                    // 3-day window brackets aren't drawn yet and the schedule
+                    // walk on the proxy is wastefully slow.
+                    if isImminent
+                        && autoLinkedTournamentId != nil
+                        && scheduleMatches.isEmpty
+                        && !isLoadingSchedule {
+                        onLoadSchedule()
+                    }
+                }
             }
         }
         .background(Color.cardSurface)
@@ -609,79 +644,33 @@ struct TrackedEventCard: View {
             RoundedRectangle(cornerRadius: 14)
                 .strokeBorder(Color.accent.opacity(0.2), lineWidth: 1)
         )
-        .sheet(isPresented: $showTournamentPicker) {
-            TournamentPickerSheet(
-                tournaments: tournaments,
-                currentId:   linkedTournamentId,
-                onSelect:    { id in onLinkTournament(id); showTournamentPicker = false }
-            )
-        }
     }
 
     @ViewBuilder
-    private var tournamentLinkBar: some View {
+    private var scheduleStatusBar: some View {
         HStack(spacing: Spacing.md - 2) {
             Image(systemName: "trophy.fill")
                 .font(.caption2)
-                .foregroundStyle(linkedTournamentId != nil ? .accent : .textQuaternary)
+                .foregroundStyle((autoLinkedTournamentId != nil && isImminent) ? .accent : .textQuaternary)
 
-            if let name = linkedTournamentName {
-                Text(name)
-                    .font(.caption)
-                    .foregroundStyle(.textSecondary)
-                    .lineLimit(1)
-                    .truncationMode(.tail)
-            } else {
-                Text(tournaments.isEmpty ? "Loading tournaments…" : "Link bracket tournament")
-                    .font(.caption)
-                    .foregroundStyle(.textTertiary)
+            Group {
+                if isLoadingSchedule {
+                    Text("Loading day-of schedule…")
+                } else if !isImminent || autoLinkedTournamentId == nil {
+                    Text("Schedule available day-of-event")
+                } else if scheduleMatches.isEmpty {
+                    Text("No mat assignments yet")
+                } else {
+                    Text("Mat assignments below")
+                }
             }
+            .font(.caption)
+            .foregroundStyle(.textTertiary)
 
             Spacer()
 
-            if linkedTournamentId != nil {
-                if isLoadingSchedule {
-                    ProgressView().tint(.accent).scaleEffect(0.7)
-                } else if scheduleMatches.isEmpty {
-                    Button(action: onLoadSchedule) {
-                        Text("Load Schedule")
-                            .font(.system(size: 11, weight: .semibold))
-                            .foregroundStyle(.accent)
-                            .padding(.horizontal, Spacing.sm)
-                            .padding(.vertical, 4)
-                            .background(Color.accentWashLight)
-                            .clipShape(Capsule())
-                            .overlay(Capsule().strokeBorder(Color.accent.opacity(0.3), lineWidth: 1))
-                    }
-                    .buttonStyle(.plain)
-                } else {
-                    Button(action: onRefreshSchedule) {
-                        Image(systemName: "arrow.clockwise")
-                            .font(.caption2)
-                            .foregroundStyle(.accent.opacity(0.7))
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityLabel("Refresh schedule")
-                }
-                Button { showTournamentPicker = true } label: {
-                    Image(systemName: "pencil")
-                        .font(.caption2)
-                        .foregroundStyle(.textTertiary)
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel("Change linked tournament")
-            } else {
-                Button { showTournamentPicker = true } label: {
-                    Text("Link")
-                        .font(.system(size: 11, weight: .semibold))
-                        .foregroundStyle(.textSecondary)
-                        .padding(.horizontal, Spacing.sm)
-                        .padding(.vertical, 4)
-                        .background(Color.white.opacity(0.07))
-                        .clipShape(Capsule())
-                }
-                .buttonStyle(.plain)
-                .disabled(tournaments.isEmpty)
+            if isLoadingSchedule {
+                ProgressView().tint(.accent).scaleEffect(0.7)
             }
         }
         .padding(.horizontal, 14)
@@ -833,42 +822,3 @@ struct ScheduleMatchRow: View {
     }
 }
 
-// MARK: - Tournament picker sheet
-
-struct TournamentPickerSheet: View {
-    let tournaments: [Tournament]
-    let currentId:   Int?
-    let onSelect:    (Int) -> Void
-
-    @Environment(\.dismiss) private var dismiss
-    @State private var search = ""
-
-    private var filtered: [Tournament] {
-        search.isEmpty ? tournaments : tournaments.filter { $0.name.localizedCaseInsensitiveContains(search) }
-    }
-
-    var body: some View {
-        NavigationStack {
-            List(filtered) { t in
-                Button { onSelect(t.id) } label: {
-                    HStack {
-                        Text(t.name).foregroundStyle(.primary)
-                        Spacer()
-                        if t.id == currentId {
-                            Image(systemName: "checkmark")
-                                .foregroundStyle(.accent)
-                                .font(.caption)
-                        }
-                    }
-                }
-            }
-            .scrollContentBackground(.hidden)
-            .background(Color.appBackground.ignoresSafeArea())
-            .searchable(text: $search, prompt: "Search tournaments")
-            .navigationTitle("Select Tournament")
-            .navigationBarTitleDisplayMode(.inline)
-            .appNavigationBar()
-            .toolbar { ToolbarItem(placement: .cancellationAction) { Button("Cancel") { dismiss() } } }
-        }
-    }
-}

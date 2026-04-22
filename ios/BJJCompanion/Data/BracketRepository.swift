@@ -59,6 +59,60 @@ final class BracketRepository {
         }
     }
 
+    // MARK: - Tournament days (mat queues)
+
+    /// Days for the currently-selected tournament, keyed by tournament id so we
+    /// don't re-fetch when the user toggles back and forth between tournaments.
+    private(set) var tournamentDays: [Int: [TournamentDay]] = [:]
+    /// Latest fetched mat queues, keyed by "tid:did".
+    private(set) var tournamentDay: [String: TournamentDayPayload] = [:]
+    private(set) var loadingTournamentDay: Set<String> = []
+    private(set) var tournamentDayErrors: [String: String] = [:]
+
+    func loadTournamentDays(tournamentId: Int) async {
+        var comps = URLComponents(
+            url: Config.proxyBaseURL.appendingPathComponent("tournament_days"),
+            resolvingAgainstBaseURL: false
+        )!
+        comps.queryItems = [URLQueryItem(name: "tournament", value: "\(tournamentId)")]
+        guard let url = comps.url else { return }
+        do {
+            let (data, _) = try await URLSession.shared.data(from: url)
+            let days = try JSONDecoder().decode([TournamentDay].self, from: data)
+            tournamentDays[tournamentId] = days
+        } catch {
+            errorMessage = error.localizedDescription
+        }
+    }
+
+    /// Fetch a single tournament day's mat queues. Always hits the network — the
+    /// proxy applies its own short TTL (45s) so polling is cheap on compsystem.
+    func loadTournamentDay(tournamentId: Int, dayId: Int) async {
+        let key = "\(tournamentId):\(dayId)"
+        guard !loadingTournamentDay.contains(key) else { return }
+        loadingTournamentDay.insert(key)
+        tournamentDayErrors.removeValue(forKey: key)
+        defer { loadingTournamentDay.remove(key) }
+
+        var comps = URLComponents(
+            url: Config.proxyBaseURL.appendingPathComponent("tournament_day"),
+            resolvingAgainstBaseURL: false
+        )!
+        comps.queryItems = [
+            URLQueryItem(name: "tournament", value: "\(tournamentId)"),
+            URLQueryItem(name: "day",        value: "\(dayId)"),
+        ]
+        guard let url = comps.url else { return }
+
+        do {
+            let (data, _) = try await URLSession.shared.data(from: url)
+            let payload   = try JSONDecoder().decode(TournamentDayPayload.self, from: data)
+            tournamentDay[key] = payload
+        } catch {
+            tournamentDayErrors[key] = error.localizedDescription
+        }
+    }
+
     // MARK: - Schedule
 
     func loadSchedule(tournamentId: Int, names: [String]) async {

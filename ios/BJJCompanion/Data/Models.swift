@@ -184,7 +184,7 @@ struct BracketMatch: Codable, Identifiable {
     let nextFight: Int?
 }
 
-struct Competitor: Codable {
+struct Competitor: Codable, Hashable {
     let athleteId: Int?
     let name: String?
     let club: String?
@@ -232,6 +232,50 @@ struct ScheduleMatch: Codable, Identifiable {
         case athleteName, teamName, categoryLabel, categoryId, tournamentId,
              fight, mat, when, round, opponent
     }
+}
+
+// MARK: - Tournament days (mat queues)
+
+struct TournamentDay: Codable, Identifiable, Hashable {
+    let dayId: Int
+    let tournamentId: Int
+    let label: String
+    let weekday: String?
+    let startTime: String?
+
+    var id: Int { dayId }
+
+    /// Short label for a segmented picker: "Fri", "Sat", "Sun".
+    var shortLabel: String {
+        guard let wd = weekday else { return "Day \(dayId)" }
+        return String(wd.prefix(3))
+    }
+}
+
+struct TournamentDayPayload: Codable {
+    let tournamentId: Int
+    let dayId: Int
+    let mats: [MatQueue]
+}
+
+struct MatQueue: Codable, Identifiable, Hashable {
+    var id: String { matName }
+    let matName: String
+    let matches: [MatMatch]
+}
+
+struct MatMatch: Codable, Identifiable, Hashable {
+    let fight: Int?
+    let when: String?
+    let phase: String?
+    let category: String?
+    let status: String?   // "fa-circle" = upcoming, "fa-check" = done, etc.
+    let competitors: [Competitor]
+
+    var id: String { "\(fight ?? 0)-\(category ?? "")" }
+
+    var isComplete: Bool { status?.contains("check") == true }
+    var isInProgress: Bool { status?.contains("play") == true || status?.contains("clock") == true }
 }
 
 // MARK: - Home city (user setting)

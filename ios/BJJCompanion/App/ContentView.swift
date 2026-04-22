@@ -11,8 +11,8 @@ struct ContentView: View {
                 EventsListView()
             }
 
-            Tab("Brackets", systemImage: "trophy") {
-                BracketsRootView()
+            Tab("Matches", systemImage: "rectangle.split.3x1.fill") {
+                MatchesRootView()
             }
 
             Tab("My Team", systemImage: "person.3.fill") {

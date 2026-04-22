@@ -14,7 +14,11 @@ enum Config {
     ///
     /// Release builds hit the Fly.io-hosted proxy via the Pinnacle AppDev
     /// custom domain (TLS via Let's Encrypt, backed by `bjj-companion-proxy`).
-    #if DEBUG
+    /// Both DEBUG and release builds target the Fly-hosted proxy by default so
+    /// on-device DEBUG runs work without LAN juggling. Flip `USE_LOCAL_PROXY`
+    /// (Xcode → Target → Build Settings → Swift Compiler - Custom Flags) to
+    /// route DEBUG builds at a local uvicorn on port 8000 instead.
+    #if USE_LOCAL_PROXY
     static let proxyBaseURL = URL(string: "http://localhost:8000")!
     #else
     static let proxyBaseURL = URL(string: "https://api.pinnacleapp.dev")!
