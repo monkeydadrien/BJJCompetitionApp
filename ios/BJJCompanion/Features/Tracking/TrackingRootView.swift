@@ -625,7 +625,13 @@ struct TrackedEventCard: View {
                         }
                     }
                 }
-                .onAppear {
+                .task(id: autoLinkedTournamentId) {
+                    // `.task(id:)` re-fires whenever the auto-matched tid
+                    // changes — including the common nil → matched transition
+                    // when bracketRepo.tournaments finishes loading after the
+                    // card has already appeared. A plain .onAppear would miss
+                    // that and the schedule would never auto-load.
+                    //
                     // Only auto-fetch when the event is imminent — outside the
                     // 3-day window brackets aren't drawn yet and the schedule
                     // walk on the proxy is wastefully slow.
