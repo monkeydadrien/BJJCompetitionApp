@@ -37,16 +37,6 @@ HEADERS = {
     "Accept-Language": "en-US,en;q=0.9",
 }
 
-# North America region name as it appears in the calendar API
-NA_REGION = "North America"
-
-# Cities that are in Canada or Mexico — used to exclude non-US events
-# (IBJJF lumps the whole continent under "North America")
-NON_US_CITIES = {
-    "toronto", "montreal", "vancouver", "calgary", "ottawa",
-    "mexico city", "guadalajara", "monterrey", "tijuana",
-}
-
 POLITE_DELAY = 1.0  # seconds between requests
 
 
@@ -68,7 +58,9 @@ def _make_client() -> httpx.Client:
 
 @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=2, max=10))
 def fetch_calendar(client: httpx.Client) -> list[dict]:
-    """Return upcoming US events from the IBJJF calendar JSON endpoint."""
+    """Return all upcoming events worldwide from the IBJJF calendar JSON
+    endpoint. Skips finished events and entries without a public page URL
+    (we need that URL to fetch detail/registrations)."""
     resp = client.get(
         f"{IBJJF_BASE}/api/v1/events/calendar.json",
         headers={
@@ -81,19 +73,15 @@ def fetch_calendar(client: httpx.Client) -> list[dict]:
     resp.raise_for_status()
     events = resp.json().get("infosite_events", [])
 
-    upcoming_us = []
+    upcoming = []
     for e in events:
-        if e.get("region") != NA_REGION:
-            continue
         if e.get("status") == "finished":
-            continue
-        if e.get("city", "").lower() in NON_US_CITIES:
             continue
         if not e.get("pageUrl"):
             continue
-        upcoming_us.append(e)
+        upcoming.append(e)
 
-    return upcoming_us
+    return upcoming
 
 
 # ---------------------------------------------------------------------------
@@ -266,7 +254,10 @@ def build_event(client: httpx.Client, raw: dict) -> Optional[Event]:
         startDate=start,
         endDate=end,
         city=raw.get("city", ""),
-        country="US",
+        # IBJJF's calendar API leaves `country` null for non-US events, so fall
+        # back to the region label (Europe/Asia/etc.) as a coarse country
+        # placeholder. The geocoder is forgiving with "City, " keys.
+        country=(raw.get("country") or raw.get("region") or ""),
         venue=venue,
         address=address,
         registrationUrl=f"{IBJJFDB_BASE}/ChampionshipResults/{champ_id}/PublicRegistrations?lang=en-US",

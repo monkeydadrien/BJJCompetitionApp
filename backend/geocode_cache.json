@@ -1,4 +1,12 @@
 {
+  "barcelona, europe": {
+    "lat": 41.3118577,
+    "lon": 2.146859
+  },
+  "barueri, south america": {
+    "lat": null,
+    "lon": null
+  },
   "bedford park, us": {
     "lat": 41.7690519,
     "lon": -87.7770096
@@ -10,6 +18,10 @@
   "chesterfield, us": {
     "lat": 38.6581764,
     "lon": -90.5680617
+  },
+  "chiba, asia": {
+    "lat": 35.8238622,
+    "lon": 139.9196738
   },
   "chicago, us": {
     "lat": 41.8755616,
@@ -27,6 +39,10 @@
     "lat": 43.207178,
     "lon": -71.537476
   },
+  "cyberjaya, asia": {
+    "lat": null,
+    "lon": null
+  },
   "dallas, us": {
     "lat": 32.7762719,
     "lon": -96.7968559
@@ -39,9 +55,21 @@
     "lat": 39.7392364,
     "lon": -104.984862
   },
+  "dublin, europe": {
+    "lat": 48.8807069,
+    "lon": 2.3247427
+  },
+  "florian\u00f3polis, south america": {
+    "lat": -23.466183,
+    "lon": -52.0471826
+  },
   "fort lauderdale, us": {
     "lat": 26.1223084,
     "lon": -80.1433786
+  },
+  "fortaleza, south america": {
+    "lat": 33.0048553,
+    "lon": -112.7597709
   },
   "fredericksburg, us": {
     "lat": 38.3031837,
@@ -59,6 +87,18 @@
     "lat": 36.1674263,
     "lon": -115.1484131
   },
+  "lido di jesolo, europe": {
+    "lat": null,
+    "lon": null
+  },
+  "lisbon, europe": {
+    "lat": 38.7076287,
+    "lon": -9.1655069
+  },
+  "london, europe": {
+    "lat": 51.5022348,
+    "lon": -0.1779189
+  },
   "long beach, us": {
     "lat": 33.7690164,
     "lon": -118.191604
@@ -67,13 +107,29 @@
     "lat": 34.0536909,
     "lon": -118.242766
   },
+  "montreal, north america": {
+    "lat": 45.5977445,
+    "lon": -73.5842072
+  },
   "murfreesboro, us": {
     "lat": 35.8460396,
     "lon": -86.3921096
   },
+  "paris, europe": {
+    "lat": 48.8787706,
+    "lon": 2.3222823
+  },
+  "petit-lancy, europe": {
+    "lat": null,
+    "lon": null
+  },
   "portland, us": {
     "lat": 45.5202471,
     "lon": -122.674194
+  },
+  "rio de janeiro, south america": {
+    "lat": -22.9835392,
+    "lon": -43.1932506
   },
   "round rock, us": {
     "lat": 30.5085915,
@@ -98,6 +154,10 @@
   "secaucus, us": {
     "lat": 40.7899291,
     "lon": -74.0566735
+  },
+  "suwon, asia": {
+    "lat": 37.2589781,
+    "lon": 127.0045787
   },
   "wahiawa, us": {
     "lat": 21.5006241,

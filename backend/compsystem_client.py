@@ -237,6 +237,194 @@ def _fetch_bracket_safe(tournament_id: int, category_id: int) -> dict | None:
             return None
 
 
+# ---------------------------------------------------------------------------
+# Tournament days (mat-schedule view)
+# ---------------------------------------------------------------------------
+
+@retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=2, max=10))
+def fetch_tournament_days(tournament_id: int) -> list[dict]:
+    """
+    Return the list of tournament days for a tournament.
+
+    Source: /tournaments/{tid}/schedule has `<a href="#day{did}">Friday Start Time: 09:30 AM</a>`
+    anchors that point to `<div id="day{did}">...</div>` sections. We harvest those plus
+    the mat count from any visible tournament_day link.
+    """
+    time.sleep(POLITE_DELAY)
+    url = f"{COMPSYS_BASE}/tournaments/{tournament_id}/schedule"
+    resp = httpx.get(url, headers=HEADERS, timeout=20, follow_redirects=True)
+    resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "lxml")
+
+    days: list[dict] = []
+    seen: set[int] = set()
+
+    # Anchor labels: <a href="#day4674">Friday Start Time: 09:30 AM</a>
+    for a in soup.select("a[href^='#day']"):
+        href = a.get("href", "")
+        m = re.match(r"^#day(\d+)$", href)
+        if not m:
+            continue
+        day_id = int(m.group(1))
+        if day_id in seen:
+            continue
+        seen.add(day_id)
+
+        label = a.get_text(" ", strip=True)
+        wd_m = re.match(
+            r"^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\b",
+            label,
+            re.IGNORECASE,
+        )
+        time_m = re.search(r"(\d{1,2}:\d{2}\s*(?:AM|PM))", label, re.IGNORECASE)
+
+        days.append({
+            "dayId": day_id,
+            "tournamentId": tournament_id,
+            "label": label,
+            "weekday": wd_m.group(1) if wd_m else None,
+            "startTime": time_m.group(1) if time_m else None,
+        })
+
+    # Stable order by day_id (smaller = earlier day)
+    days.sort(key=lambda d: d["dayId"])
+    return days
+
+
+def _parse_tday_competitor(comp_el) -> dict:
+    """Parse a competitor from the tournament_days match card (same structure as brackets)."""
+    athlete_id_match = re.search(r"competitor-(\d+)", comp_el.get("id", ""))
+    name_el = comp_el.select_one(".match-card__competitor-name")
+    club_el = comp_el.select_one(".match-card__club-name")
+    seed_el = comp_el.select_one(".match-card__competitor-n")
+
+    name = name_el.get_text(strip=True) if name_el else ""
+    if not name:
+        placeholder = comp_el.get_text(" ", strip=True)
+        return {"placeholder": placeholder or "TBD"}
+
+    return {
+        "athleteId": int(athlete_id_match.group(1)) if athlete_id_match else None,
+        "name": name,
+        "club": club_el.get_text(strip=True) if club_el else "",
+        "seed": int(seed_el.get_text(strip=True)) if seed_el and seed_el.get_text(strip=True).isdigit() else None,
+    }
+
+
+def _parse_tday_page(soup) -> tuple[list[dict], int]:
+    """
+    Parse one tournament_days page into (mats, max_page).
+    Returns a list of {matName, matches: [...]}.
+    """
+    mats: list[dict] = []
+    for col in soup.select("li.sliding-columns__column"):
+        header = col.select_one(".grid-column__header")
+        mat_name = header.get_text(" ", strip=True) if header else ""
+        ul = col.select_one("ul.tournament-day__mats")
+        matches: list[dict] = []
+        if ul:
+            for li in ul.select(":scope > li"):
+                when_el = li.select_one(".match-header__when")
+                fight_el = li.select_one(".match-header__fight")
+                phase_el = li.select_one(".match-header__phase")
+                cat_el = li.select_one(".match-header__category-name")
+                status_el = li.select_one(".match-header__fight-status")
+
+                when_text = when_el.get_text(" ", strip=True) if when_el else ""
+                # when text often looks like "09:30 AM: FIGHT 1" — strip trailing "FIGHT N"
+                when_text = re.sub(r"\s*FIGHT\s+\d+\s*$", "", when_text, flags=re.IGNORECASE).rstrip(": ").strip()
+
+                fight_num = None
+                if fight_el:
+                    fm = re.search(r"FIGHT\s+(\d+)", fight_el.get_text(), re.IGNORECASE)
+                    if fm:
+                        fight_num = int(fm.group(1))
+
+                phase = phase_el.get_text(" ", strip=True).strip("()") if phase_el else None
+                category = cat_el.get_text(" ", strip=True) if cat_el else ""
+
+                # Status: the class includes fa-circle/fa-check/fa-play (etc). We surface the icon class.
+                status = None
+                if status_el:
+                    classes = status_el.get("class", [])
+                    for c in classes:
+                        if c.startswith("fa-") and c != "fa-circle":
+                            status = c
+                            break
+                    if not status and "fa-circle" in classes:
+                        status = "fa-circle"
+
+                competitors = [_parse_tday_competitor(c) for c in li.select(".match-card__competitor")]
+
+                matches.append({
+                    "fight": fight_num,
+                    "when": when_text or None,
+                    "phase": phase,
+                    "category": category or None,
+                    "status": status,
+                    "competitors": competitors,
+                })
+
+        mats.append({"matName": mat_name, "matches": matches})
+
+    # Determine max page from pagination links
+    max_page = 1
+    for a in soup.select("a[href*='page=']"):
+        m = re.search(r"page=(\d+)", a.get("href", ""))
+        if m:
+            max_page = max(max_page, int(m.group(1)))
+
+    return mats, max_page
+
+
+@retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=2, max=10))
+def _fetch_tday_page(tournament_id: int, day_id: int, page: int) -> tuple[list[dict], int]:
+    time.sleep(POLITE_DELAY)
+    url = f"{COMPSYS_BASE}/tournaments/{tournament_id}/tournament_days/{day_id}"
+    params = {"page": page} if page > 1 else None
+    resp = httpx.get(url, headers=HEADERS, params=params, timeout=25, follow_redirects=True)
+    resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "lxml")
+    return _parse_tday_page(soup)
+
+
+def fetch_tournament_day(tournament_id: int, day_id: int) -> dict:
+    """
+    Fetch every mat column across all pages for a given day.
+    Returns {tournamentId, dayId, mats: [{matName, matches: [...]}, ...]}.
+
+    Pages on compsystem show 4 mats each; we walk ?page=1, ?page=2, ... until we've
+    read the max page advertised by the pagination links.
+    """
+    first_mats, max_page = _fetch_tday_page(tournament_id, day_id, 1)
+    all_mats = list(first_mats)
+
+    page = 2
+    while page <= max_page:
+        try:
+            mats, next_max = _fetch_tday_page(tournament_id, day_id, page)
+        except Exception:
+            page += 1
+            continue
+        if not mats:
+            break
+        all_mats.extend(mats)
+        # Pagination link set may widen as we advance through pages
+        if next_max > max_page:
+            max_page = next_max
+        page += 1
+
+    return {
+        "tournamentId": tournament_id,
+        "dayId": day_id,
+        "mats": all_mats,
+    }
+
+
+# ---------------------------------------------------------------------------
+# Full tournament scan (used by the /schedule endpoint)
+# ---------------------------------------------------------------------------
+
 def fetch_all_tournament_matches(tournament_id: int) -> list[dict]:
     """
     Fetch ALL matches across ALL categories for a tournament (both genders).

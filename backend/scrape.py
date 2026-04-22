@@ -3,7 +3,7 @@
 Daily scraper entrypoint.
 
 Usage:
-  python scrape.py              # Scrape all upcoming US events → events.json
+  python scrape.py              # Scrape all upcoming events worldwide → events.json
   python scrape.py --dry-run    # Use fixture data only (no network calls)
   python scrape.py --limit N    # Only process first N events (for testing)
 """
@@ -18,24 +18,44 @@ from pathlib import Path
 
 from ibjjf_client import build_event, fetch_calendar, _make_client
 from geocode import geocode, load_cache, save_cache
-from models import EventsPayload
+from models import Event, EventsPayload
 
 OUTPUT_FILE = Path(__file__).parent.parent / "events.json"
 FIXTURES_DIR = Path(__file__).parent / "fixtures"
 
 
-def scrape_live(limit: int | None) -> EventsPayload:
+def _load_existing_events() -> dict[int, Event]:
+    """Load existing events.json keyed by id. Used by --skip-existing."""
+    if not OUTPUT_FILE.exists():
+        return {}
+    try:
+        raw = json.loads(OUTPUT_FILE.read_text())
+        return {e["id"]: Event(**e) for e in raw.get("events", [])}
+    except Exception as e:
+        print(f"  [WARN] Could not reuse existing events.json: {e}")
+        return {}
+
+
+def scrape_live(limit: int | None, skip_existing: bool) -> EventsPayload:
     print("Fetching IBJJF calendar...")
     client = _make_client()
     raw_events = fetch_calendar(client)
-    print(f"  Found {len(raw_events)} upcoming US events")
+    print(f"  Found {len(raw_events)} upcoming events")
 
     if limit:
         raw_events = raw_events[:limit]
         print(f"  Limited to {limit} for this run")
 
+    existing = _load_existing_events() if skip_existing else {}
+    if skip_existing:
+        reusable = sum(1 for r in raw_events if r["id"] in existing)
+        print(f"  Skip-existing: reusing {reusable} cached events, fetching {len(raw_events) - reusable} new")
+
     events = []
     for i, raw in enumerate(raw_events, 1):
+        if skip_existing and raw["id"] in existing:
+            events.append(existing[raw["id"]])
+            continue
         print(f"  [{i}/{len(raw_events)}] {raw['name']} (id={raw['id']})")
         event = build_event(client, raw)
         if event:
@@ -136,12 +156,14 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="IBJJF event scraper")
     parser.add_argument("--dry-run", action="store_true", help="Use fixture data, no network")
     parser.add_argument("--limit", type=int, default=None, help="Max events to process")
+    parser.add_argument("--skip-existing", action="store_true",
+                        help="Reuse event detail/registrations from the current events.json when the id matches (fast refresh for newly-added regions)")
     args = parser.parse_args()
 
     if args.dry_run:
         payload = scrape_dry_run()
     else:
-        payload = scrape_live(args.limit)
+        payload = scrape_live(args.limit, skip_existing=args.skip_existing)
 
     out = OUTPUT_FILE
     out.write_text(json.dumps(payload.model_dump(), indent=2))

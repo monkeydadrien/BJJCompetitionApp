@@ -31,6 +31,8 @@ from compsystem_client import (
     fetch_categories,
     fetch_tournaments,
     fetch_all_tournament_matches,
+    fetch_tournament_days,
+    fetch_tournament_day,
 )
 
 app = FastAPI(title="BJJ Companion Proxy", version="1.0.0")
@@ -58,6 +60,8 @@ TOURNAMENTS_TTL  = 60 * 60 * 24  # 24 hours — tournament list changes rarely
 CATEGORIES_TTL   = 60 * 60 * 24  # 24 hours
 BRACKET_TTL      = 60             # 60 seconds — matches update during event
 SCHEDULE_TTL     = 5 * 60         # 5 minutes — full tournament scan cache
+TOURNAMENT_DAYS_TTL = 60 * 60 * 6 # 6 hours — day list for a tournament changes rarely
+TOURNAMENT_DAY_TTL  = 45          # 45 seconds — live mat queue during event
 
 
 def _cached(key: str, ttl: float, fn):
@@ -185,6 +189,38 @@ def get_schedule(
     results.sort(key=lambda m: (m.get("when") or "99:99", m.get("fight") or 9999))
 
     return {"tournamentId": tournament, "matches": results}
+
+
+@app.get("/tournament_days")
+@limiter.limit("60/minute")
+def get_tournament_days(
+    request: Request,
+    tournament: int = Query(..., description="Tournament ID"),
+):
+    """Return the list of days (Friday, Saturday, Sunday, ...) for a tournament."""
+    key = f"tournament_days:{tournament}"
+    try:
+        return _cached(key, TOURNAMENT_DAYS_TTL, lambda: fetch_tournament_days(tournament))
+    except Exception as e:
+        raise HTTPException(status_code=502, detail=str(e))
+
+
+@app.get("/tournament_day")
+@limiter.limit("30/minute")
+def get_tournament_day(
+    request: Request,
+    tournament: int = Query(..., description="Tournament ID"),
+    day: int = Query(..., description="Day ID (tournament_day id)"),
+):
+    """
+    Return every mat's current match queue for a given tournament day.
+    Short-TTL cache so the client can poll every ~60s without pounding compsystem.
+    """
+    key = f"tournament_day:{tournament}:{day}"
+    try:
+        return _cached(key, TOURNAMENT_DAY_TTL, lambda: fetch_tournament_day(tournament, day))
+    except Exception as e:
+        raise HTTPException(status_code=502, detail=str(e))
 
 
 @app.get("/health")
