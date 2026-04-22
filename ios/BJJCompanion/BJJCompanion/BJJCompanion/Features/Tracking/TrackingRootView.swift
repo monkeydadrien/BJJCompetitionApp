@@ -389,6 +389,14 @@ struct AddTrackingSheet: View {
             .filter { !store.isTrackingAthlete(name: $0.name) }
     }
 
+    private var teamSuggestions: [String] {
+        guard mode == .teams else { return [] }
+        let q = searchText.trimmingCharacters(in: .whitespaces)
+        guard q.count >= 1 else { return [] }
+        return athletesRepo.searchTeams(query: q, limit: 10)
+            .filter { !store.isTrackingTeam($0) }
+    }
+
     var body: some View {
         NavigationStack {
             List {
@@ -452,6 +460,27 @@ struct AddTrackingSheet: View {
                                                 .foregroundStyle(.secondary)
                                         }
                                     }
+                                    Spacer()
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // ── Team suggestions derived from athlete registry ───────
+                if !teamSuggestions.isEmpty {
+                    Section("Suggestions") {
+                        ForEach(teamSuggestions, id: \.self) { team in
+                            Button {
+                                store.addTeam(team)
+                                dismiss()
+                            } label: {
+                                HStack(spacing: Spacing.md - 2) {
+                                    Image(systemName: "person.3.fill")
+                                        .font(.caption)
+                                        .foregroundStyle(.accent.opacity(0.7))
+                                        .frame(width: 18)
+                                    Text(team).foregroundStyle(.primary)
                                     Spacer()
                                 }
                             }
