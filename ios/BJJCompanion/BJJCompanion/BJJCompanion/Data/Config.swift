@@ -12,15 +12,12 @@ enum Config {
     /// DEBUG builds target a local uvicorn instance for fast iteration:
     ///     cd backend && uvicorn proxy:app --reload --port 8000
     ///
-    /// Release builds hit the Fly.io-hosted proxy. Replace the URL below with
-    /// your deployed app's URL (from `fly deploy` output) — e.g.
-    ///     https://bjj-companion-proxy.fly.dev
-    /// Later, swap to a custom domain once certs are issued:
-    ///     https://api.yourdomain.com
+    /// Release builds hit the Fly.io-hosted proxy via the Pinnacle AppDev
+    /// custom domain (TLS via Let's Encrypt, backed by `bjj-companion-proxy`).
     #if DEBUG
     static let proxyBaseURL = URL(string: "http://localhost:8000")!
     #else
-    static let proxyBaseURL = URL(string: "https://bjj-companion-proxy.fly.dev")!
+    static let proxyBaseURL = URL(string: "https://api.pinnacleapp.dev")!
     #endif
 
     /// Refresh if cached data is older than this
