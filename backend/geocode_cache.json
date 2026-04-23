@@ -7,13 +7,25 @@
     "lat": null,
     "lon": null
   },
+  "bedford park, north america": {
+    "lat": 42.446867,
+    "lon": -83.4851153
+  },
   "bedford park, us": {
     "lat": 41.7690519,
     "lon": -87.7770096
   },
+  "boston, north america": {
+    "lat": 42.3977629,
+    "lon": -71.1468613
+  },
   "boston, us": {
     "lat": 42.3588336,
     "lon": -71.0578303
+  },
+  "chesterfield, north america": {
+    "lat": 35.8101298,
+    "lon": -81.660931
   },
   "chesterfield, us": {
     "lat": 38.6581764,
@@ -27,13 +39,25 @@
     "lat": 41.8755616,
     "lon": -87.6244212
   },
+  "college park, north america": {
+    "lat": 35.7815615,
+    "lon": -78.6185623
+  },
   "college park, us": {
     "lat": 38.980666,
     "lon": -76.9369189
   },
+  "columbus, north america": {
+    "lat": 34.2814497,
+    "lon": -78.666593
+  },
   "columbus, us": {
     "lat": 39.9622601,
     "lon": -83.0007065
+  },
+  "concord, north america": {
+    "lat": 35.4094178,
+    "lon": -80.5800049
   },
   "concord, us": {
     "lat": 43.207178,
@@ -43,13 +67,25 @@
     "lat": null,
     "lon": null
   },
+  "dallas, north america": {
+    "lat": 35.3160401,
+    "lon": -81.1764865
+  },
   "dallas, us": {
     "lat": 32.7762719,
     "lon": -96.7968559
   },
+  "dearborn heights, north america": {
+    "lat": 42.3553633,
+    "lon": -83.2840348
+  },
   "dearborn heights, us": {
     "lat": 42.3369816,
     "lon": -83.2732627
+  },
+  "denver, north america": {
+    "lat": 35.5312452,
+    "lon": -81.0297994
   },
   "denver, us": {
     "lat": 39.7392364,
@@ -63,6 +99,10 @@
     "lat": -23.466183,
     "lon": -52.0471826
   },
+  "fort lauderdale, north america": {
+    "lat": 26.1308181,
+    "lon": -80.1040988
+  },
   "fort lauderdale, us": {
     "lat": 26.1223084,
     "lon": -80.1433786
@@ -71,17 +111,33 @@
     "lat": 33.0048553,
     "lon": -112.7597709
   },
+  "fredericksburg, north america": {
+    "lat": 38.2762641,
+    "lon": -77.4480954
+  },
   "fredericksburg, us": {
     "lat": 38.3031837,
     "lon": -77.4605399
+  },
+  "hempstead, north america": {
+    "lat": 40.8632807,
+    "lon": -73.7008358
   },
   "hempstead, us": {
     "lat": 40.6736812,
     "lon": -73.6190736
   },
+  "kissimmee, north america": {
+    "lat": 35.8905528,
+    "lon": -78.5508505
+  },
   "kissimmee, us": {
     "lat": 28.2918995,
     "lon": -81.4075838
+  },
+  "las vegas, north america": {
+    "lat": 36.2711872,
+    "lon": -115.0094164
   },
   "las vegas, us": {
     "lat": 36.1674263,
@@ -99,9 +155,17 @@
     "lat": 51.5022348,
     "lon": -0.1779189
   },
+  "long beach, north america": {
+    "lat": 33.9140624,
+    "lon": -78.1549947
+  },
   "long beach, us": {
     "lat": 33.7690164,
     "lon": -118.191604
+  },
+  "los angeles, north america": {
+    "lat": 34.2013928,
+    "lon": -118.4166991
   },
   "los angeles, us": {
     "lat": 34.0536909,
@@ -110,6 +174,10 @@
   "montreal, north america": {
     "lat": 45.5977445,
     "lon": -73.5842072
+  },
+  "murfreesboro, north america": {
+    "lat": 36.4423754,
+    "lon": -77.0985753
   },
   "murfreesboro, us": {
     "lat": 35.8460396,
@@ -123,6 +191,10 @@
     "lat": null,
     "lon": null
   },
+  "portland, north america": {
+    "lat": 47.4983191,
+    "lon": -97.3703689
+  },
   "portland, us": {
     "lat": 45.5202471,
     "lon": -122.674194
@@ -131,25 +203,49 @@
     "lat": -22.9835392,
     "lon": -43.1932506
   },
+  "round rock, north america": {
+    "lat": 30.5048697,
+    "lon": -97.6823422
+  },
   "round rock, us": {
     "lat": 30.5085915,
     "lon": -97.6788056
+  },
+  "sacramento, north america": {
+    "lat": 38.4628968,
+    "lon": -121.4163613
   },
   "sacramento, us": {
     "lat": 38.5810606,
     "lon": -121.493895
   },
+  "san antonio, north america": {
+    "lat": 29.6381608,
+    "lon": -98.4545506
+  },
   "san antonio, us": {
     "lat": 29.4246002,
     "lon": -98.4951405
+  },
+  "san diego, north america": {
+    "lat": 32.8847635,
+    "lon": -117.2434968
   },
   "san diego, us": {
     "lat": 32.7174202,
     "lon": -117.162772
   },
+  "santa cruz, north america": {
+    "lat": 38.5505758,
+    "lon": -121.4603174
+  },
   "santa cruz, us": {
     "lat": 36.9743626,
     "lon": -122.0294673
+  },
+  "secaucus, north america": {
+    "lat": 40.7905945,
+    "lon": -74.0661789
   },
   "secaucus, us": {
     "lat": 40.7899291,
@@ -158,6 +254,10 @@
   "suwon, asia": {
     "lat": 37.2589781,
     "lon": 127.0045787
+  },
+  "wahiawa, north america": {
+    "lat": 21.5023499,
+    "lon": -158.0257631
   },
   "wahiawa, us": {
     "lat": 21.5006241,
