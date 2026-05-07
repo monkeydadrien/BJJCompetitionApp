@@ -23,6 +23,7 @@ primary_region = 'dfw'
     method = 'GET'
     path = '/health'
 
+
 [[vm]]
   size = 'shared-cpu-1x'
   memory = '256mb'

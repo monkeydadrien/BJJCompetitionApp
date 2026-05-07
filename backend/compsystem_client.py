@@ -241,6 +241,37 @@ def _fetch_bracket_safe(tournament_id: int, category_id: int) -> dict | None:
 # Tournament days (mat-schedule view)
 # ---------------------------------------------------------------------------
 
+_WEEKDAY_LOCALES: dict[str, str] = {
+    # English
+    "monday": "Monday", "tuesday": "Tuesday", "wednesday": "Wednesday",
+    "thursday": "Thursday", "friday": "Friday", "saturday": "Saturday", "sunday": "Sunday",
+    # Portuguese (Brasileiro / São Paulo events). Strip "-feira" before lookup.
+    "segunda": "Monday", "terca": "Tuesday", "terça": "Tuesday",
+    "quarta": "Wednesday", "quinta": "Thursday", "sexta": "Friday",
+    "sabado": "Saturday", "sábado": "Saturday", "domingo": "Sunday",
+    # Spanish (LATAM / Iberia opens)
+    "lunes": "Monday", "martes": "Tuesday", "miercoles": "Wednesday",
+    "miércoles": "Wednesday", "jueves": "Thursday", "viernes": "Friday",
+    # French (Paris Open)
+    "lundi": "Monday", "mardi": "Tuesday", "mercredi": "Wednesday",
+    "jeudi": "Thursday", "vendredi": "Friday", "samedi": "Saturday",
+    "dimanche": "Sunday",
+}
+
+
+def _parse_weekday(label: str) -> str | None:
+    """Translate the leading weekday in a tournament-day label to English.
+    Compsystem returns labels in the host country's language ("Domingo Início: 09:30",
+    "Vendredi Heure de Début: 10:00"). We map known locales back to English so the iOS
+    `TournamentDay.weekday` field stays consistent regardless of venue."""
+    head = re.split(r"[\s,]+", label.strip(), maxsplit=1)[0] if label else ""
+    if not head:
+        return None
+    # Drop Portuguese "-feira" suffix: "Segunda-feira" -> "Segunda"
+    head = head.split("-")[0].lower()
+    return _WEEKDAY_LOCALES.get(head)
+
+
 @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=2, max=10))
 def fetch_tournament_days(tournament_id: int) -> list[dict]:
     """
@@ -271,23 +302,20 @@ def fetch_tournament_days(tournament_id: int) -> list[dict]:
         seen.add(day_id)
 
         label = a.get_text(" ", strip=True)
-        wd_m = re.match(
-            r"^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\b",
-            label,
-            re.IGNORECASE,
-        )
+        weekday = _parse_weekday(label)
         time_m = re.search(r"(\d{1,2}:\d{2}\s*(?:AM|PM))", label, re.IGNORECASE)
 
         days.append({
             "dayId": day_id,
             "tournamentId": tournament_id,
             "label": label,
-            "weekday": wd_m.group(1) if wd_m else None,
+            "weekday": weekday,
             "startTime": time_m.group(1) if time_m else None,
         })
 
-    # Stable order by day_id (smaller = earlier day)
-    days.sort(key=lambda d: d["dayId"])
+    # Preserve DOM order — compsystem renders the schedule chronologically,
+    # but `dayId` is NOT a reliable proxy for date order. For Brasileiro the
+    # IDs were assigned in reverse so sorting by id flips the calendar.
     return days
 
 

@@ -153,8 +153,21 @@ def get_schedule(
             comp_name = (comp.get("name") or "").lower()
             comp_club = (comp.get("club") or "").lower()
 
+            # Athlete name matching is one-way (tracked-as-substring-of-comp)
+            # — avoids false positives where a competitor's first name
+            # matches a tracked full name. Club matching is bidirectional
+            # because team names vary in specificity across iBJJF feeds and
+            # compsystem (e.g. tracked "Inicio Jiu-Jitsu Texas" should still
+            # find a competitor whose club is just "Inicio Jiu-Jitsu", and
+            # vice versa). The iOS Teams view does the same bidirectional
+            # club match when populating registrations, so this keeps the
+            # proxy's schedule filter consistent with what the UI shows.
             hit = any(
-                tracked and (tracked in comp_name or tracked in comp_club)
+                tracked and (
+                    tracked in comp_name
+                    or tracked in comp_club
+                    or (comp_club and comp_club in tracked)
+                )
                 for tracked in name_list
             )
             if not hit:

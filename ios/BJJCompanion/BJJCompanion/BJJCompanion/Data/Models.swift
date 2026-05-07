@@ -246,10 +246,42 @@ struct TournamentDay: Codable, Identifiable, Hashable {
     var id: Int { dayId }
 
     /// Short label for a segmented picker: "Fri", "Sat", "Sun".
+    /// Uses `weekday` when the proxy parsed it, otherwise derives from the
+    /// label's leading word so Brazilian/French/Spanish events still read
+    /// nicely instead of falling back to "Day {id}".
     var shortLabel: String {
-        guard let wd = weekday else { return "Day \(dayId)" }
-        return String(wd.prefix(3))
+        if let wd = displayWeekday {
+            return String(wd.prefix(3))
+        }
+        return "Day \(dayId)"
     }
+
+    /// Best-effort English weekday. Translates the label's leading word from
+    /// known locales (Portuguese / Spanish / French) so an unparsed proxy
+    /// response still shows "Sunday" instead of a numeric fallback.
+    var displayWeekday: String? {
+        if let wd = weekday, !wd.isEmpty { return wd }
+        // Take the first word of the label, drop any "-feira" suffix used in
+        // Portuguese ("Quarta-feira" → "quarta"), then look up in the locale
+        // table.
+        let firstWord = label.split(whereSeparator: { $0.isWhitespace || $0 == "," }).first
+        guard let firstWord else { return nil }
+        let key = String(firstWord.split(separator: "-").first ?? firstWord).lowercased()
+        return Self.weekdayLocales[key]
+    }
+
+    private static let weekdayLocales: [String: String] = [
+        "monday": "Monday", "tuesday": "Tuesday", "wednesday": "Wednesday",
+        "thursday": "Thursday", "friday": "Friday", "saturday": "Saturday", "sunday": "Sunday",
+        "segunda": "Monday", "terca": "Tuesday", "terça": "Tuesday",
+        "quarta": "Wednesday", "quinta": "Thursday", "sexta": "Friday",
+        "sabado": "Saturday", "sábado": "Saturday", "domingo": "Sunday",
+        "lunes": "Monday", "martes": "Tuesday", "miercoles": "Wednesday",
+        "miércoles": "Wednesday", "jueves": "Thursday", "viernes": "Friday",
+        "lundi": "Monday", "mardi": "Tuesday", "mercredi": "Wednesday",
+        "jeudi": "Thursday", "vendredi": "Friday", "samedi": "Saturday",
+        "dimanche": "Sunday",
+    ]
 }
 
 struct TournamentDayPayload: Codable {

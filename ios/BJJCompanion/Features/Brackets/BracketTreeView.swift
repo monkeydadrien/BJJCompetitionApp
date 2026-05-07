@@ -64,7 +64,7 @@ struct MatchCardView: View {
                         }
                         Spacer()
                         if let mat = match.mat {
-                            Text(mat)
+                            Text(mat.displayMatName)
                                 .font(.caption2)
                                 .foregroundStyle(.textTertiary)
                         }

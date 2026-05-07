@@ -7,7 +7,7 @@ struct DivisionPickerView: View {
 
     var body: some View {
         NavigationStack {
-            List {
+            Group {
                 if store.myDivisions.isEmpty {
                     ContentUnavailableView {
                         Label("No Divisions Added", systemImage: "person.badge.plus")
@@ -23,20 +23,22 @@ struct DivisionPickerView: View {
                         .tint(.accent)
                     }
                 } else {
-                    ForEach(store.myDivisions) { div in
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text(div.belt)
-                                .font(.headline)
-                            Text("\(div.ageDivision) · \(div.gender) · \(div.weightClass)")
-                                .font(.subheadline)
-                                .foregroundStyle(.secondary)
+                    List {
+                        ForEach(store.myDivisions) { div in
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text(div.belt)
+                                    .font(.headline)
+                                Text("\(div.ageDivision) · \(div.gender) · \(div.weightClass)")
+                                    .font(.subheadline)
+                                    .foregroundStyle(.secondary)
+                            }
+                            .padding(.vertical, 4)
                         }
-                        .padding(.vertical, 4)
+                        .onDelete { store.myDivisions.remove(atOffsets: $0) }
                     }
-                    .onDelete { store.myDivisions.remove(atOffsets: $0) }
+                    .scrollContentBackground(.hidden)
                 }
             }
-            .scrollContentBackground(.hidden)
             .background(Color.appBackground.ignoresSafeArea())
             .tint(.accent)
             .navigationTitle("My Divisions")

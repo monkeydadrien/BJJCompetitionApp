@@ -43,11 +43,12 @@ struct MatchesRootView: View {
             tournamentSection
 
             if let tournament = selectedTournament {
-                if let days = repo.tournamentDays[tournament.id], !days.isEmpty {
+                if let rawDays = repo.tournamentDays[tournament.id], !rawDays.isEmpty {
+                    let days = chronologicallyOrdered(rawDays)
                     daySection(days: days, tournament: tournament)
 
                     if let dayId = selectedDayId, let payload = currentDayPayload(tournament: tournament, dayId: dayId) {
-                        yourFightsSection(payload: payload)
+                        yourFightsSection(tournament: tournament, days: days)
                         matSection(payload: payload)
                         matchesSection(payload: payload)
                     } else if repo.loadingTournamentDay.contains("\(tournament.id):\(selectedDayId ?? 0)") {
@@ -119,11 +120,23 @@ struct MatchesRootView: View {
                     guard let t = new else { return }
                     Task {
                         await repo.loadTournamentDays(tournamentId: t.id)
-                        // Auto-select the first day so the user lands on data
-                        if let first = repo.tournamentDays[t.id]?.first {
-                            selectedDayId = first.dayId
-                            startPolling(tournamentId: t.id, dayId: first.dayId)
+                        guard let raw = repo.tournamentDays[t.id], !raw.isEmpty else { return }
+                        let days = chronologicallyOrdered(raw)
+                        // Pre-fetch every day so "Your fights" can aggregate
+                        // across the whole tournament (a tracked athlete might
+                        // not fight today). Cheap — proxy caches per-day.
+                        await withTaskGroup(of: Void.self) { group in
+                            for d in days {
+                                group.addTask { await repo.loadTournamentDay(tournamentId: t.id, dayId: d.dayId) }
+                            }
                         }
+                        // Auto-select the day where the user's next tracked
+                        // fight lives; falls back to the chronologically
+                        // earliest day if no tracked athletes / nothing matched.
+                        let preferred = dayWithNextTrackedFight(tournamentId: t.id, days: days)
+                            ?? days.first!.dayId
+                        selectedDayId = preferred
+                        startPolling(tournamentId: t.id, dayId: preferred)
                     }
                 }
             }
@@ -131,32 +144,105 @@ struct MatchesRootView: View {
     }
 
     private func daySection(days: [TournamentDay], tournament: Tournament) -> some View {
-        Section("Day") {
-            Picker("Day", selection: Binding(
-                get: { selectedDayId ?? days.first?.dayId ?? 0 },
-                set: { newValue in
-                    selectedDayId = newValue
-                    selectedMatName = nil
-                    startPolling(tournamentId: tournament.id, dayId: newValue)
-                }
-            )) {
-                ForEach(days) { d in
-                    Text(d.shortLabel).tag(d.dayId)
-                }
+        let binding = Binding(
+            get: { selectedDayId ?? days.first?.dayId ?? 0 },
+            set: { newValue in
+                selectedDayId = newValue
+                selectedMatName = nil
+                startPolling(tournamentId: tournament.id, dayId: newValue)
             }
-            .pickerStyle(.segmented)
+        )
+        // Segmented picker fits ≤3 chips cleanly. Worlds/Brasileiro run
+        // 7–10 days, so beyond that we switch to a single-row menu picker —
+        // taps reveal the full list as a dropdown without taking up vertical
+        // space in the form. The "Day" section header is omitted because
+        // the picker label already conveys it.
+        return Section {
+            if days.count <= 3 {
+                Picker("Day", selection: binding) {
+                    ForEach(days) { d in
+                        Text(d.shortLabel).tag(d.dayId)
+                    }
+                }
+                .pickerStyle(.segmented)
+            } else {
+                Picker("Day", selection: binding) {
+                    ForEach(days) { d in
+                        Text(dayMenuLabel(d)).tag(d.dayId)
+                    }
+                }
+                .pickerStyle(.menu)
+                .tint(.accent)
+            }
         }
     }
 
+    /// Returns days in true chronological order. The proxy preserves DOM
+    /// order going forward, but compsystem occasionally assigned dayIds in
+    /// reverse so older cache entries (and any lingering ascending-id sort)
+    /// can show the calendar backwards. We detect reversed weekday sequences
+    /// and flip the array so the picker always reads earliest → latest.
+    private func chronologicallyOrdered(_ days: [TournamentDay]) -> [TournamentDay] {
+        guard days.count >= 2 else { return days }
+        let nums = days.map { weekdayNumber($0.displayWeekday) }
+        guard nums.allSatisfy({ $0 != nil }) else { return days }
+
+        // Vote on direction by looking at consecutive deltas mod 7.
+        // +1 = forward chronological, +6 (-1 mod 7) = reversed.
+        var forward = 0, reverse = 0
+        for i in 0..<(nums.count - 1) {
+            let delta = ((nums[i + 1]! - nums[i]!) % 7 + 7) % 7
+            if delta == 1 { forward += 1 }
+            else if delta == 6 { reverse += 1 }
+        }
+        return reverse > forward ? Array(days.reversed()) : days
+    }
+
+    /// Mon=1 ... Sun=7, matching ISO weekday numbering. Returns nil for
+    /// labels we can't translate.
+    private func weekdayNumber(_ wd: String?) -> Int? {
+        switch (wd ?? "").lowercased() {
+        case "monday":    return 1
+        case "tuesday":   return 2
+        case "wednesday": return 3
+        case "thursday":  return 4
+        case "friday":    return 5
+        case "saturday":  return 6
+        case "sunday":    return 7
+        default:          return nil
+        }
+    }
+
+    /// Full-day label for the menu picker — "Sunday · 09:30 AM" or just the
+    /// weekday when start time is missing. Falls back to the raw label so
+    /// nothing renders blank for unknown locales.
+    private func dayMenuLabel(_ d: TournamentDay) -> String {
+        let weekday = d.displayWeekday ?? d.label.split(separator: " ").first.map(String.init) ?? "Day \(d.dayId)"
+        if let st = d.startTime, !st.isEmpty {
+            return "\(weekday) · \(st)"
+        }
+        return weekday
+    }
+
     @ViewBuilder
-    private func yourFightsSection(payload: TournamentDayPayload) -> some View {
-        let groups = trackedGroups(in: payload)
+    private func yourFightsSection(tournament: Tournament, days: [TournamentDay]) -> some View {
+        // Aggregate across every loaded day so the user sees Saturday's
+        // fight on Friday — without having to discover the day picker.
+        let payloads = days.compactMap { repo.tournamentDay["\(tournament.id):\($0.dayId)"] }
+        let groups = trackedGroups(in: payloads, days: days)
         if !groups.isEmpty {
-            Section("Your fights today") {
+            Section("Your fights") {
                 ForEach(groups) { group in
                     TrackedGroupCard(
                         group: group,
-                        onTapFight: { fight in selectedMatName = fight.matName }
+                        onTapFight: { fight in
+                            // Jump to the fight's day + mat in one tap.
+                            if selectedDayId != fight.dayId {
+                                selectedDayId = fight.dayId
+                                startPolling(tournamentId: tournament.id, dayId: fight.dayId)
+                            }
+                            selectedMatName = fight.matName
+                        }
                     )
                 }
             }
@@ -169,7 +255,7 @@ struct MatchesRootView: View {
                 HStack(spacing: Spacing.sm) {
                     ForEach(payload.mats) { mat in
                         MatChip(
-                            name: mat.matName,
+                            name: mat.matName.displayMatName,
                             selected: (selectedMatName ?? payload.mats.first?.matName) == mat.matName
                         ) {
                             selectedMatName = mat.matName
@@ -186,7 +272,7 @@ struct MatchesRootView: View {
     private func matchesSection(payload: TournamentDayPayload) -> some View {
         let matName = selectedMatName ?? payload.mats.first?.matName
         if let matName, let mat = payload.mats.first(where: { $0.matName == matName }) {
-            Section(matName) {
+            Section(matName.displayMatName) {
                 if mat.matches.isEmpty {
                     Text("No fights scheduled.").foregroundStyle(.textSecondary)
                 } else {
@@ -233,50 +319,69 @@ struct MatchesRootView: View {
     /// Group upcoming fights by the tracked entity (athlete or team) that matched them.
     /// Each group is a collapsible card; an athlete + team tracked simultaneously may
     /// appear under both groups, which is fine — the user explicitly tracked both.
-    private func trackedGroups(in payload: TournamentDayPayload) -> [TrackedGroup] {
+    /// Scans every loaded tournament day so a Saturday fight shows up on Friday.
+    private func trackedGroups(in payloads: [TournamentDayPayload], days: [TournamentDay]) -> [TrackedGroup] {
         var byKey: [String: TrackedGroup] = [:]
 
         // Index tracked teams by lowercased name for fast lookup
         let trackedTeamLowers = tracking.trackedTeams.map { ($0.name, $0.name.lowercased()) }
 
-        for mat in payload.mats {
-            for m in mat.matches {
-                guard !m.isComplete else { continue }
-                let fight = TrackedFight(matName: mat.matName, match: m)
+        // Day weekday lookup so the row badge can read "Sat · Mat 7 · F4".
+        let weekdayByDayId: [Int: String] = Dictionary(
+            uniqueKeysWithValues: days.map { ($0.dayId, ($0.displayWeekday ?? "").prefix(3).description) }
+        )
+        // Map dayId to its chronological index so fights sort earliest-first
+        // even when compsystem assigned dayIds in reverse order.
+        let chronoIndexByDayId: [Int: Int] = Dictionary(
+            uniqueKeysWithValues: days.enumerated().map { ($0.element.dayId, $0.offset) }
+        )
 
-                for c in m.competitors {
-                    guard let cName = c.name else { continue }
-                    let cClubLower = (c.club ?? "").lowercased()
+        for payload in payloads {
+            let dayWeekday = weekdayByDayId[payload.dayId] ?? ""
+            for mat in payload.mats {
+                for m in mat.matches {
+                    guard !m.isComplete else { continue }
+                    let fight = TrackedFight(
+                        dayId:      payload.dayId,
+                        dayWeekday: dayWeekday,
+                        matName:    mat.matName,
+                        match:      m
+                    )
 
-                    // 1. Athlete match — group key is the tracked athlete's display name
-                    for ta in tracking.trackedAthletes
-                    where TrackingStore.nameMatch(tracked: ta.name, against: cName) {
-                        let key = "athlete:\(ta.name.lowercased())"
-                        var g = byKey[key] ?? TrackedGroup(
-                            id: key,
-                            kind: .athlete,
-                            title: ta.name,
-                            subtitle: ta.team,
-                            fights: []
-                        )
-                        if !g.fights.contains(fight) { g.fights.append(fight) }
-                        byKey[key] = g
-                    }
+                    for c in m.competitors {
+                        guard let cName = c.name else { continue }
+                        let cClubLower = (c.club ?? "").lowercased()
 
-                    // 2. Team match — group key is the tracked team
-                    for (display, lower) in trackedTeamLowers
-                    where !lower.isEmpty &&
-                          (cClubLower.contains(lower) || lower.contains(cClubLower)) {
-                        let key = "team:\(lower)"
-                        var g = byKey[key] ?? TrackedGroup(
-                            id: key,
-                            kind: .team,
-                            title: display,
-                            subtitle: nil,
-                            fights: []
-                        )
-                        if !g.fights.contains(fight) { g.fights.append(fight) }
-                        byKey[key] = g
+                        // 1. Athlete match — group key is the tracked athlete's display name
+                        for ta in tracking.trackedAthletes
+                        where TrackingStore.nameMatch(tracked: ta.name, against: cName) {
+                            let key = "athlete:\(ta.name.lowercased())"
+                            var g = byKey[key] ?? TrackedGroup(
+                                id: key,
+                                kind: .athlete,
+                                title: ta.name,
+                                subtitle: ta.team,
+                                fights: []
+                            )
+                            if !g.fights.contains(fight) { g.fights.append(fight) }
+                            byKey[key] = g
+                        }
+
+                        // 2. Team match — group key is the tracked team
+                        for (display, lower) in trackedTeamLowers
+                        where !lower.isEmpty &&
+                              (cClubLower.contains(lower) || lower.contains(cClubLower)) {
+                            let key = "team:\(lower)"
+                            var g = byKey[key] ?? TrackedGroup(
+                                id: key,
+                                kind: .team,
+                                title: display,
+                                subtitle: nil,
+                                fights: []
+                            )
+                            if !g.fights.contains(fight) { g.fights.append(fight) }
+                            byKey[key] = g
+                        }
                     }
                 }
             }
@@ -286,7 +391,10 @@ struct MatchesRootView: View {
             .map { g -> TrackedGroup in
                 var sorted = g
                 sorted.fights.sort {
-                    ($0.matName, $0.match.fight ?? 0) < ($1.matName, $1.match.fight ?? 0)
+                    let li = chronoIndexByDayId[$0.dayId] ?? .max
+                    let ri = chronoIndexByDayId[$1.dayId] ?? .max
+                    return (li, $0.matName, $0.match.fight ?? 0)
+                        < (ri, $1.matName, $1.match.fight ?? 0)
                 }
                 return sorted
             }
@@ -296,11 +404,46 @@ struct MatchesRootView: View {
                 return lhs.title.localizedCaseInsensitiveCompare(rhs.title) == .orderedAscending
             }
     }
+
+    /// Day id with the earliest tracked-athlete fight, or nil if no tracked
+    /// athlete/team appears on any loaded day. Used to default-select the day
+    /// where the user's first fight lives instead of the calendar's first day.
+    private func dayWithNextTrackedFight(tournamentId: Int, days: [TournamentDay]) -> Int? {
+        let payloads = days.compactMap { repo.tournamentDay["\(tournamentId):\($0.dayId)"] }
+        guard !payloads.isEmpty else { return nil }
+        let groups = trackedGroups(in: payloads, days: days)
+        return groups.first?.fights.first?.dayId
+    }
 }
 
 // MARK: - Subviews
 
+// MARK: - Mat name display
+//
+// Compsystem returns mat labels in the venue's local language. Brazilian
+// events show "Área 1", French shows "Tapis", etc. Normalize to "Mat N" for
+// display so the section header / chip / fight row read consistently — the
+// raw `matName` remains the canonical id we filter by.
+
+extension String {
+    /// Returns this mat label rewritten to "Mat N" if the prefix matches a
+    /// known foreign synonym; otherwise returns the original string unchanged.
+    var displayMatName: String {
+        let synonyms = ["área", "area", "tatame", "tapis", "aire", "tappeto", "matte", "マット"]
+        let trimmed = trimmingCharacters(in: .whitespaces)
+        let lower = trimmed.lowercased()
+        for syn in synonyms where lower.hasPrefix(syn) {
+            // Pull whatever digits / suffix follow the prefix.
+            let rest = trimmed.dropFirst(syn.count).trimmingCharacters(in: .whitespaces)
+            return rest.isEmpty ? "Mat" : "Mat \(rest)"
+        }
+        return trimmed
+    }
+}
+
 private struct TrackedFight: Hashable {
+    let dayId: Int
+    let dayWeekday: String   // "Fri" / "Sat" / "Sun" — empty when unknown
     let matName: String
     let match: MatMatch
 }
@@ -387,7 +530,12 @@ private struct TrackedGroupCard: View {
     private func fightRow(_ f: TrackedFight) -> some View {
         HStack(alignment: .top, spacing: Spacing.md) {
             VStack(alignment: .leading, spacing: 2) {
-                Text(f.matName).font(.appBadge).foregroundStyle(.accent)
+                if !f.dayWeekday.isEmpty {
+                    Text(f.dayWeekday.uppercased())
+                        .font(.system(size: 9, weight: .bold))
+                        .foregroundStyle(.textTertiary)
+                }
+                Text(f.matName.displayMatName).font(.appBadge).foregroundStyle(.accent)
                 Text("F\(f.match.fight.map(String.init) ?? "—")")
                     .font(.caption2).foregroundStyle(.textTertiary)
             }
@@ -417,8 +565,9 @@ private struct TrackedGroupCard: View {
 
     private func nextSummary(_ f: TrackedFight) -> String {
         var parts: [String] = []
+        if !f.dayWeekday.isEmpty { parts.append(f.dayWeekday) }
         if let when = f.match.when { parts.append(when) }
-        parts.append(f.matName)
+        parts.append(f.matName.displayMatName)
         if let fight = f.match.fight { parts.append("Fight \(fight)") }
         return parts.joined(separator: " · ")
     }

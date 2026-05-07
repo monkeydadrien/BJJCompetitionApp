@@ -270,6 +270,7 @@ struct TrackingRootView: View {
                         isImminent:             isImminent(item.event),
                         scheduleMatches:        bracketRepo.schedules[tid ?? -1] ?? [],
                         isLoadingSchedule:      bracketRepo.loadingSchedules.contains(tid ?? -1),
+                        scheduleError:          bracketRepo.scheduleErrors[tid ?? -1],
                         onLoadSchedule: {
                             guard let tid else { return }
                             let names = trackedNames
@@ -570,6 +571,7 @@ struct TrackedEventCard: View {
     let isImminent:             Bool
     let scheduleMatches:        [ScheduleMatch]
     let isLoadingSchedule:      Bool
+    let scheduleError:          String?
     let onLoadSchedule:         () -> Void
 
     @State private var expanded = true
@@ -612,8 +614,13 @@ struct TrackedEventCard: View {
 
                 VStack(spacing: 0) {
                     ForEach(Array(registrations.enumerated()), id: \.offset) { i, reg in
-                        let matchesForAthlete = scheduleMatches.filter {
-                            ($0.athleteName?.lowercased() ?? "") == reg.athlete.name.lowercased()
+                        // Use the same token-subset matcher we use for tracking
+                        // so a registered "Pedro Ottonello" still binds to a
+                        // schedule entry returned as "Pedro Henrique Ottonello".
+                        let matchesForAthlete = scheduleMatches.filter { sm in
+                            guard let name = sm.athleteName, !name.isEmpty else { return false }
+                            return TrackingStore.nameMatch(tracked: reg.athlete.name, against: name)
+                                || TrackingStore.nameMatch(tracked: name, against: reg.athlete.name)
                         }
                         TrackedAthleteRow(
                             athlete: reg.athlete,
@@ -655,13 +662,20 @@ struct TrackedEventCard: View {
     @ViewBuilder
     private var scheduleStatusBar: some View {
         HStack(spacing: Spacing.md - 2) {
-            Image(systemName: "trophy.fill")
+            Image(systemName: scheduleError != nil
+                  ? "exclamationmark.triangle.fill"
+                  : "trophy.fill")
                 .font(.caption2)
-                .foregroundStyle((autoLinkedTournamentId != nil && isImminent) ? .accent : .textQuaternary)
+                .foregroundStyle(scheduleError != nil
+                    ? Color.orange
+                    : ((autoLinkedTournamentId != nil && isImminent) ? .accent : .textQuaternary))
 
             Group {
                 if isLoadingSchedule {
                     Text("Loading day-of schedule…")
+                } else if let err = scheduleError {
+                    Text("Couldn't load schedule: \(err)")
+                        .lineLimit(2)
                 } else if !isImminent || autoLinkedTournamentId == nil {
                     Text("Schedule available day-of-event")
                 } else if scheduleMatches.isEmpty {
@@ -677,6 +691,19 @@ struct TrackedEventCard: View {
 
             if isLoadingSchedule {
                 ProgressView().tint(.accent).scaleEffect(0.7)
+            } else if autoLinkedTournamentId != nil {
+                // Manual refresh — useful both when the auto-load misses and
+                // mid-event when matches are getting drawn live.
+                Button(action: onLoadSchedule) {
+                    Image(systemName: "arrow.clockwise")
+                        .font(.system(size: 11, weight: .semibold))
+                        .foregroundStyle(.accent)
+                        .padding(6)
+                        .background(Color.accentWashFaint)
+                        .clipShape(Circle())
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Reload schedule")
             }
         }
         .padding(.horizontal, 14)
@@ -772,7 +799,7 @@ struct ScheduleMatchRow: View {
         HStack(spacing: Spacing.sm) {
             HStack(spacing: 4) {
                 if let mat = match.mat, !mat.isEmpty {
-                    Text(mat)
+                    Text(mat.displayMatName)
                         .font(.system(size: 10, weight: .bold))
                         .foregroundStyle(.accent)
                 }

@@ -6,6 +6,12 @@ enum EventFilter: String, CaseIterable {
     case all    = "All"
 }
 
+/// List vs month-grid calendar. Persisted via `@AppStorage("eventsViewMode")`.
+enum EventsViewMode: String, CaseIterable {
+    case list     = "list"
+    case calendar = "calendar"
+}
+
 /// Maximum distance from home city. `rawValue` is miles, `0` = no filter.
 enum DistanceFilter: Int, CaseIterable, Identifiable {
     case all  = 0
@@ -25,9 +31,14 @@ struct EventsListView: View {
     @Environment(HomeCityStore.self)    private var homeCityStore
     @State private var filter: EventFilter = .adults
     @AppStorage("eventsDistanceFilter") private var distanceFilterRaw: Int = DistanceFilter.all.rawValue
+    @AppStorage("eventsViewMode") private var viewModeRaw: String = EventsViewMode.list.rawValue
 
     private var distanceFilter: DistanceFilter {
         DistanceFilter(rawValue: distanceFilterRaw) ?? .all
+    }
+
+    private var viewMode: EventsViewMode {
+        EventsViewMode(rawValue: viewModeRaw) ?? .list
     }
 
     var body: some View {
@@ -48,13 +59,42 @@ struct EventsListView: View {
                         )
                     }
                 } else {
-                    list
+                    switch viewMode {
+                    case .list:
+                        EventsListContent(
+                            events:      filteredEvents,
+                            myDivisions: divisions.myDivisions,
+                            homeCity:    homeCityStore.city,
+                            filter:      $filter
+                        )
+                        .refreshable { await repo.refresh() }
+                    case .calendar:
+                        EventsCalendarView(
+                            events:      filteredEvents,
+                            myDivisions: divisions.myDivisions,
+                            homeCity:    homeCityStore.city,
+                            filter:      $filter
+                        )
+                    }
                 }
             }
             .navigationTitle("IBJJF Events")
             .navigationBarTitleDisplayMode(.inline)
             .appNavigationBar()
             .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        withAnimation(.easeInOut(duration: 0.15)) {
+                            viewModeRaw = (viewMode == .list
+                                           ? EventsViewMode.calendar
+                                           : EventsViewMode.list).rawValue
+                        }
+                    } label: {
+                        Image(systemName: viewMode == .list ? "calendar" : "list.bullet")
+                            .foregroundStyle(.accent)
+                    }
+                    .accessibilityLabel(viewMode == .list ? "Switch to calendar view" : "Switch to list view")
+                }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     if repo.isLoading {
                         ProgressView().tint(.accent)
@@ -68,53 +108,6 @@ struct EventsListView: View {
                 }
             }
         }
-    }
-
-    private var list: some View {
-        ScrollView {
-            // Age-group filter
-            Picker("Filter", selection: $filter) {
-                ForEach(EventFilter.allCases, id: \.self) { Text($0.rawValue) }
-            }
-            .pickerStyle(.segmented)
-            .padding(.horizontal, Spacing.lg)
-            .padding(.top, Spacing.sm)
-
-            // Distance filter (no-op until a home city is set in Settings)
-            VStack(alignment: .leading, spacing: Spacing.xs) {
-                Picker("Distance", selection: $distanceFilterRaw) {
-                    ForEach(DistanceFilter.allCases) { df in
-                        Text(df.label).tag(df.rawValue)
-                    }
-                }
-                .pickerStyle(.segmented)
-
-                if homeCityStore.city == nil && distanceFilter != .all {
-                    Text("Set a home city in Settings to filter by distance.")
-                        .font(.caption2)
-                        .foregroundStyle(.textTertiary)
-                }
-            }
-            .padding(.horizontal, Spacing.lg)
-            .padding(.top, Spacing.sm)
-
-            LazyVStack(spacing: Spacing.md) {
-                ForEach(filteredEvents) { event in
-                    NavigationLink(destination: EventDetailView(event: event)) {
-                        EventRowView(
-                            event: event,
-                            myDivisions: divisions.myDivisions,
-                            homeCity: homeCityStore.city
-                        )
-                    }
-                    .buttonStyle(.plain)
-                }
-            }
-            .padding(.horizontal, Spacing.lg)
-            .padding(.vertical, Spacing.md)
-        }
-        .background(Color.appBackground.ignoresSafeArea())
-        .refreshable { await repo.refresh() }
     }
 
     private var filteredEvents: [BJJEvent] {
@@ -136,6 +129,71 @@ struct EventsListView: View {
             }
         }
         return upcoming
+    }
+}
+
+// MARK: - List content
+//
+// The original Events-tab scroll, extracted so the calendar view can share
+// the same filter controls and filtered event set.
+
+private struct EventsListContent: View {
+
+    let events:      [BJJEvent]
+    let myDivisions: [MyDivision]
+    let homeCity:    HomeCity?
+
+    @Binding var filter: EventFilter
+    @AppStorage("eventsDistanceFilter") private var distanceFilterRaw: Int = DistanceFilter.all.rawValue
+
+    @Environment(HomeCityStore.self) private var homeCityStore
+
+    private var distanceFilter: DistanceFilter {
+        DistanceFilter(rawValue: distanceFilterRaw) ?? .all
+    }
+
+    var body: some View {
+        ScrollView {
+            Picker("Filter", selection: $filter) {
+                ForEach(EventFilter.allCases, id: \.self) { Text($0.rawValue) }
+            }
+            .pickerStyle(.segmented)
+            .padding(.horizontal, Spacing.lg)
+            .padding(.top, Spacing.sm)
+
+            VStack(alignment: .leading, spacing: Spacing.xs) {
+                Picker("Distance", selection: $distanceFilterRaw) {
+                    ForEach(DistanceFilter.allCases) { df in
+                        Text(df.label).tag(df.rawValue)
+                    }
+                }
+                .pickerStyle(.segmented)
+
+                if homeCityStore.city == nil && distanceFilter != .all {
+                    Text("Set a home city in Settings to filter by distance.")
+                        .font(.caption2)
+                        .foregroundStyle(.textTertiary)
+                }
+            }
+            .padding(.horizontal, Spacing.lg)
+            .padding(.top, Spacing.sm)
+
+            LazyVStack(spacing: Spacing.md) {
+                ForEach(events) { event in
+                    NavigationLink(destination: EventDetailView(event: event)) {
+                        EventRowView(
+                            event: event,
+                            myDivisions: myDivisions,
+                            homeCity: homeCity
+                        )
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+            .padding(.horizontal, Spacing.lg)
+            .padding(.vertical, Spacing.md)
+        }
+        .background(Color.appBackground.ignoresSafeArea())
     }
 }
 

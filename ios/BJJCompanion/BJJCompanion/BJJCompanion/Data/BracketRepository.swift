@@ -131,8 +131,17 @@ final class BracketRepository {
         ]
         guard let url = comps.url else { return }
 
+        // First /schedule call walks every bracket on compsystem (60–90s
+        // before the 5-min cache fills). URLSession.shared's default 60s
+        // timeout fires before that response returns, surfacing as "request
+        // timed out" until someone has warmed the cache. Long-timeout
+        // request rides out the cold call; cached responses come back
+        // instantly anyway.
+        var request = URLRequest(url: url)
+        request.timeoutInterval = 120
+
         do {
-            let (data, _) = try await URLSession.shared.data(from: url)
+            let (data, _) = try await URLSession.shared.data(for: request)
             let response  = try JSONDecoder().decode(ScheduleResponse.self, from: data)
             schedules[tournamentId] = response.matches
         } catch {
