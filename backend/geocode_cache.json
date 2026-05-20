@@ -63,6 +63,10 @@
     "lat": 43.207178,
     "lon": -71.537476
   },
+  "costa mesa, north america": {
+    "lat": null,
+    "lon": null
+  },
   "curitiba, south america": {
     "lat": -23.4628495,
     "lon": -52.0411623
@@ -131,6 +135,10 @@
     "lat": 40.6736812,
     "lon": -73.6190736
   },
+  "houston, north america": {
+    "lat": 34.9573719,
+    "lon": -80.6281232
+  },
   "kansas city, north america": {
     "lat": 38.9361571,
     "lon": -94.5415117
@@ -152,6 +160,10 @@
     "lon": -115.1484131
   },
   "lido di jesolo, europe": {
+    "lat": null,
+    "lon": null
+  },
+  "lido di ostia, europe": {
     "lat": null,
     "lon": null
   },
