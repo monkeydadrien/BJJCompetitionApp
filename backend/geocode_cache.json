@@ -143,6 +143,10 @@
     "lat": 34.9573719,
     "lon": -80.6281232
   },
+  "juiz de fora, south america": {
+    "lat": null,
+    "lon": null
+  },
   "kansas city, north america": {
     "lat": 38.9361571,
     "lon": -94.5415117
@@ -194,6 +198,10 @@
   "los angeles, us": {
     "lat": 34.0536909,
     "lon": -118.242766
+  },
+  "manaus, south america": {
+    "lat": -23.4685063,
+    "lon": -52.0463914
   },
   "melbourne, oceania": {
     "lat": -37.8505195,
