@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T13:22:38.476157+00:00",
+  "generatedAt": "2026-07-08T12:23:12.891182+00:00",
   "events": [
     {
       "id": 2482,
@@ -241,43 +241,6 @@
       "lon": -97.6823422
     },
     {
-      "id": 3225,
-      "name": "Austin Summer International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "austin-summer-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-07-11",
-      "endDate": "2026-07-12",
-      "city": "Round Rock",
-      "country": "North America",
-      "venue": "Round Rock Sports Center",
-      "address": "2400 Chisholm Trail Rd, Round Rock, TX 78681",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3225/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-06-12"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-07-04"
-        },
-        {
-          "name": "Austin Summer International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-06-12"
-        },
-        {
-          "name": "Austin Summer International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-07-04"
-        }
-      ],
-      "divisions": [],
-      "lat": 30.5048697,
-      "lon": -97.6823422
-    },
-    {
       "id": 3228,
       "name": "Los Angeles Summer International Open IBJJF Jiu-Jitsu Championship 2026",
       "slug": "los-angeles-summer-international-open-ibjjf-jiu-jitsu-championship-2026",
@@ -315,16 +278,16 @@
       "lon": -118.4166991
     },
     {
-      "id": 3229,
-      "name": "Los Angeles Summer International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "los-angeles-summer-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-07-11",
+      "id": 3225,
+      "name": "Austin Summer International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "slug": "austin-summer-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "startDate": "2026-07-12",
       "endDate": "2026-07-12",
-      "city": "Los Angeles",
+      "city": "Round Rock",
       "country": "North America",
-      "venue": "Los Angeles Convention Center - South Hall J",
-      "address": "1201 S Figueroa St, Los Angeles, CA 90015",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3229/PublicRegistrations?lang=en-US",
+      "venue": "Round Rock Sports Center",
+      "address": "2400 Chisholm Trail Rd, Round Rock, TX 78681",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3225/PublicRegistrations?lang=en-US",
       "priceTiers": [
         {
           "name": "Standard",
@@ -337,19 +300,19 @@
           "deadline": "2026-07-04"
         },
         {
-          "name": "Los Angeles Summer International Open IBJJF 2026 - Combo",
+          "name": "Austin Summer International Open IBJJF 2026 - Combo",
           "price": 236.0,
           "deadline": "2026-06-12"
         },
         {
-          "name": "Los Angeles Summer International Open IBJJF 2026 - Combo",
+          "name": "Austin Summer International Open IBJJF 2026 - Combo",
           "price": 284.0,
           "deadline": "2026-07-04"
         }
       ],
       "divisions": [],
-      "lat": 34.2013928,
-      "lon": -118.4166991
+      "lat": 30.5048697,
+      "lon": -97.6823422
     },
     {
       "id": 3226,
@@ -424,6 +387,43 @@
       "divisions": [],
       "lat": 30.5048697,
       "lon": -97.6823422
+    },
+    {
+      "id": 3229,
+      "name": "Los Angeles Summer International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "slug": "los-angeles-summer-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-12",
+      "city": "Los Angeles",
+      "country": "North America",
+      "venue": "Los Angeles Convention Center - South Hall J",
+      "address": "1201 S Figueroa St, Los Angeles, CA 90015",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3229/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2026-06-12"
+        },
+        {
+          "name": "Standard",
+          "price": 167.0,
+          "deadline": "2026-07-04"
+        },
+        {
+          "name": "Los Angeles Summer International Open IBJJF 2026 - Combo",
+          "price": 236.0,
+          "deadline": "2026-06-12"
+        },
+        {
+          "name": "Los Angeles Summer International Open IBJJF 2026 - Combo",
+          "price": 284.0,
+          "deadline": "2026-07-04"
+        }
+      ],
+      "divisions": [],
+      "lat": 34.2013928,
+      "lon": -118.4166991
     },
     {
       "id": 3230,
