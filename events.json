@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T12:23:12.891182+00:00",
+  "generatedAt": "2026-07-09T13:58:12.427570+00:00",
   "events": [
     {
       "id": 2482,
@@ -566,7 +566,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-07-08"
+          "deadline": "2026-07-09"
         },
         {
           "name": "Honolulu International Open IBJJF 2026 - Combo",
@@ -576,7 +576,7 @@
         {
           "name": "Honolulu International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-07-08"
+          "deadline": "2026-07-09"
         }
       ],
       "divisions": [],
@@ -603,7 +603,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-07-08"
+          "deadline": "2026-07-09"
         },
         {
           "name": "Honolulu International Open IBJJF 2026 - Combo",
@@ -613,7 +613,7 @@
         {
           "name": "Honolulu International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-07-08"
+          "deadline": "2026-07-09"
         }
       ],
       "divisions": [],
@@ -815,7 +815,7 @@
         {
           "name": "Standard",
           "price": 133.0,
-          "deadline": "2026-07-08"
+          "deadline": "2026-07-09"
         }
       ],
       "divisions": [],
@@ -3119,6 +3119,80 @@
       "lon": -52.0411623
     },
     {
+      "id": 3374,
+      "name": "Toronto International Open IBJJF Jiu-Jitsu Championship 2026",
+      "slug": "oronto-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-11",
+      "city": "Scarborough",
+      "country": "North America",
+      "venue": "Toronto Pan Am Sports Centre",
+      "address": "875 Morningside Ave, Scarborough, ON M1C 0C7",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3374/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2026-09-11"
+        },
+        {
+          "name": "Standard",
+          "price": 167.0,
+          "deadline": "2026-10-02"
+        },
+        {
+          "name": "Toronto International Open IBJJF 2026 - Combo",
+          "price": 236.0,
+          "deadline": "2026-09-11"
+        },
+        {
+          "name": "Toronto International Open IBJJF 2026 - Combo",
+          "price": 284.0,
+          "deadline": "2026-10-02"
+        }
+      ],
+      "divisions": [],
+      "lat": 35.5800516,
+      "lon": -77.3434998
+    },
+    {
+      "id": 3375,
+      "name": "Toronto International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "slug": "oronto-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-11",
+      "city": "Scarborough",
+      "country": "North America",
+      "venue": "Toronto Pan Am Sports Centre",
+      "address": "875 Morningside Ave, Scarborough, ON M1C 0C7",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3375/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2026-09-11"
+        },
+        {
+          "name": "Standard",
+          "price": 167.0,
+          "deadline": "2026-10-02"
+        },
+        {
+          "name": "Toronto International Open IBJJF 2026 - Combo",
+          "price": 236.0,
+          "deadline": "2026-09-11"
+        },
+        {
+          "name": "Toronto International Open IBJJF 2026 - Combo",
+          "price": 284.0,
+          "deadline": "2026-10-02"
+        }
+      ],
+      "divisions": [],
+      "lat": 35.5800516,
+      "lon": -77.3434998
+    },
+    {
       "id": 3247,
       "name": "Charlotte Fall Kids International Open IBJJF Jiu-Jitsu Championship 2026",
       "slug": "charlotte-fall-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
@@ -3203,6 +3277,33 @@
       "divisions": [],
       "lat": -23.4628495,
       "lon": -52.0411623
+    },
+    {
+      "id": 3376,
+      "name": "Toronto Kids International Open IBJJF Jiu-Jitsu Championship 2026",
+      "slug": "oronto-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "city": "Scarborough",
+      "country": "North America",
+      "venue": "Toronto Pan Am Sports Centre",
+      "address": "875 Morningside Ave, Scarborough, ON M1C 0C7",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3376/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 119.0,
+          "deadline": "2026-09-11"
+        },
+        {
+          "name": "Standard",
+          "price": 133.0,
+          "deadline": "2026-10-02"
+        }
+      ],
+      "divisions": [],
+      "lat": 35.5800516,
+      "lon": -77.3434998
     },
     {
       "id": 3303,
