@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T13:58:12.427570+00:00",
+  "generatedAt": "2026-07-10T13:16:50.302740+00:00",
   "events": [
     {
       "id": 2482,
@@ -4423,6 +4423,132 @@
       "lon": -74.0661789
     },
     {
+      "id": 3164,
+      "name": "Japanese National IBJJF Jiu-Jitsu Championship 2026",
+      "slug": "japanese-national-ibjjf-jiu-jitsu-championship-2026",
+      "startDate": "2026-12-03",
+      "endDate": "2026-12-04",
+      "city": "Nagoya",
+      "country": "Asia",
+      "venue": "Aichi-ken Budokan",
+      "address": "1-1-4 Maruikecho, Minatoku, Nagoya, Aichi 455 0078",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3164/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 112.0,
+          "deadline": "2026-08-28"
+        },
+        {
+          "name": "Standard",
+          "price": 119.0,
+          "deadline": "2026-10-31"
+        },
+        {
+          "name": "Standard",
+          "price": 125.0,
+          "deadline": "2026-11-25"
+        },
+        {
+          "name": "Japanese National IBJJF 2026 - Combo",
+          "price": 190.0,
+          "deadline": "2026-08-28"
+        },
+        {
+          "name": "Japanese National IBJJF 2026 - Combo",
+          "price": 202.0,
+          "deadline": "2026-10-31"
+        },
+        {
+          "name": "Japanese National IBJJF 2026 - Combo",
+          "price": 213.0,
+          "deadline": "2026-11-25"
+        }
+      ],
+      "divisions": [],
+      "lat": 1.1448263,
+      "lon": 104.0189468
+    },
+    {
+      "id": 3165,
+      "name": "Japanese National IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "slug": "japanese-national-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "startDate": "2026-12-03",
+      "endDate": "2026-12-04",
+      "city": "Nagoya",
+      "country": "Asia",
+      "venue": "Aichi-ken Budokan",
+      "address": "1-1-4 Maruikecho, Minatoku, Nagoya, Aichi 455 0078",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3165/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 112.0,
+          "deadline": "2026-08-28"
+        },
+        {
+          "name": "Standard",
+          "price": 119.0,
+          "deadline": "2026-10-31"
+        },
+        {
+          "name": "Standard",
+          "price": 125.0,
+          "deadline": "2026-11-25"
+        },
+        {
+          "name": "Japanese National IBJJF 2026 - Combo",
+          "price": 190.0,
+          "deadline": "2026-08-28"
+        },
+        {
+          "name": "Japanese National IBJJF 2026 - Combo",
+          "price": 202.0,
+          "deadline": "2026-10-31"
+        },
+        {
+          "name": "Japanese National IBJJF 2026 - Combo",
+          "price": 213.0,
+          "deadline": "2026-11-25"
+        }
+      ],
+      "divisions": [],
+      "lat": 1.1448263,
+      "lon": 104.0189468
+    },
+    {
+      "id": 3166,
+      "name": "Master International Jiu-Jitsu Championship - Asia 2026",
+      "slug": "master-international-jiu-jitsu-championship-asia-2026",
+      "startDate": "2026-12-04",
+      "endDate": "2026-12-06",
+      "city": "Nagoya",
+      "country": "Asia",
+      "venue": "Aichi-ken Budokan",
+      "address": "1-1-4 Maruikecho, Minatoku, Nagoya, Aichi 455 0078",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3166/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 112.0,
+          "deadline": "2026-08-28"
+        },
+        {
+          "name": "Standard",
+          "price": 119.0,
+          "deadline": "2026-10-31"
+        },
+        {
+          "name": "Standard",
+          "price": 125.0,
+          "deadline": "2026-11-25"
+        }
+      ],
+      "divisions": [],
+      "lat": 1.1448263,
+      "lon": 104.0189468
+    },
+    {
       "id": 3269,
       "name": "Waco International Open IBJJF Jiu-Jitsu Championship 2026",
       "slug": "waco-international-open-ibjjf-jiu-jitsu-championship-2026",
@@ -4589,6 +4715,38 @@
       "divisions": [],
       "lat": 48.8807069,
       "lon": 2.3247427
+    },
+    {
+      "id": 3167,
+      "name": "Asian Kids IBJJF Jiu-Jitsu Championship 2026",
+      "slug": "asian-kids-ibjjf-jiu-jitsu-championship-2026",
+      "startDate": "2026-12-06",
+      "endDate": "2026-12-06",
+      "city": "Nagoya",
+      "country": "Asia",
+      "venue": "Aichi-ken Budokan",
+      "address": "1-1-4 Maruikecho, Minatoku, Nagoya, Aichi 455 0078",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3167/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 98.0,
+          "deadline": "2026-08-28"
+        },
+        {
+          "name": "Standard",
+          "price": 110.0,
+          "deadline": "2026-10-31"
+        },
+        {
+          "name": "Standard",
+          "price": 125.0,
+          "deadline": "2026-11-25"
+        }
+      ],
+      "divisions": [],
+      "lat": 1.1448263,
+      "lon": 104.0189468
     },
     {
       "id": 3271,
