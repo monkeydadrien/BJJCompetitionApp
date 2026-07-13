@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T12:04:33.183037+00:00",
+  "generatedAt": "2026-07-13T13:26:22.032615+00:00",
   "events": [
     {
       "id": 2482,
@@ -96,38 +96,6 @@
       "divisions": [],
       "lat": 40.8632807,
       "lon": -73.7008358
-    },
-    {
-      "id": 3108,
-      "name": "Asian Jiu-Jitsu IBJJF Championship 2026",
-      "slug": "asian-jiu-jitsu-ibjjf-championship-2026",
-      "startDate": "2026-07-08",
-      "endDate": "2026-07-12",
-      "city": "Chiba",
-      "country": "Asia",
-      "venue": "Chiba Port Arena",
-      "address": "1-20 Tonyacho, Chuo Ward, Chiba,  260 0025",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3108/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 112.0,
-          "deadline": "2026-04-12"
-        },
-        {
-          "name": "Standard",
-          "price": 119.0,
-          "deadline": "2026-05-24"
-        },
-        {
-          "name": "Standard",
-          "price": 125.0,
-          "deadline": "2026-06-28"
-        }
-      ],
-      "divisions": [],
-      "lat": 35.8238622,
-      "lon": 139.9196738
     },
     {
       "id": 3322,
