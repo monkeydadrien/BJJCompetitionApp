@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T12:17:55.808997+00:00",
+  "generatedAt": "2026-07-16T12:26:05.170033+00:00",
   "events": [
     {
       "id": 2482,
@@ -310,43 +310,6 @@
       "lon": -77.4480954
     },
     {
-      "id": 3232,
-      "name": "Virginia International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "irginia-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-07-18",
-      "endDate": "2026-07-19",
-      "city": "Fredericksburg",
-      "country": "North America",
-      "venue": "Fredericksburg Convention Center - Hall A + B",
-      "address": "2371 Carl D Silver Pkwy, Fredericksburg, VA 22401",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3232/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-06-19"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-07-11"
-        },
-        {
-          "name": "Virginia International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-06-19"
-        },
-        {
-          "name": "Virginia International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-07-11"
-        }
-      ],
-      "divisions": [],
-      "lat": 38.2762641,
-      "lon": -77.4480954
-    },
-    {
       "id": 3261,
       "name": "Honolulu International Open IBJJF Jiu-Jitsu Championship 2026",
       "slug": "honolulu-international-open-ibjjf-jiu-jitsu-championship-2026",
@@ -382,6 +345,43 @@
       "divisions": [],
       "lat": 21.5023499,
       "lon": -158.0257631
+    },
+    {
+      "id": 3232,
+      "name": "Virginia International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "slug": "irginia-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "startDate": "2026-07-19",
+      "endDate": "2026-07-19",
+      "city": "Fredericksburg",
+      "country": "North America",
+      "venue": "Fredericksburg Convention Center - Hall A + B",
+      "address": "2371 Carl D Silver Pkwy, Fredericksburg, VA 22401",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3232/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2026-06-19"
+        },
+        {
+          "name": "Standard",
+          "price": 167.0,
+          "deadline": "2026-07-11"
+        },
+        {
+          "name": "Virginia International Open IBJJF 2026 - Combo",
+          "price": 236.0,
+          "deadline": "2026-06-19"
+        },
+        {
+          "name": "Virginia International Open IBJJF 2026 - Combo",
+          "price": 284.0,
+          "deadline": "2026-07-11"
+        }
+      ],
+      "divisions": [],
+      "lat": 38.2762641,
+      "lon": -77.4480954
     },
     {
       "id": 3233,
@@ -662,7 +662,7 @@
         {
           "name": "Standard",
           "price": 133.0,
-          "deadline": "2026-07-15"
+          "deadline": "2026-07-16"
         }
       ],
       "divisions": [],
@@ -763,7 +763,7 @@
         {
           "name": "Standard",
           "price": 298.0,
-          "deadline": "2026-07-17"
+          "deadline": "2026-07-18"
         }
       ],
       "divisions": [],
