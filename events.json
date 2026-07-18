@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T12:12:13.462935+00:00",
+  "generatedAt": "2026-07-18T11:55:45.659607+00:00",
   "events": [
     {
       "id": 2482,
@@ -96,107 +96,6 @@
       "divisions": [],
       "lat": 40.8632807,
       "lon": -73.7008358
-    },
-    {
-      "id": 3228,
-      "name": "Los Angeles Summer International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "los-angeles-summer-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-07-11",
-      "endDate": "2026-07-12",
-      "city": "Los Angeles",
-      "country": "North America",
-      "venue": "Los Angeles Convention Center - South Hall J",
-      "address": "1201 S Figueroa St, Los Angeles, CA 90015",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3228/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-06-12"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-07-04"
-        },
-        {
-          "name": "Los Angeles Summer International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-06-12"
-        },
-        {
-          "name": "Los Angeles Summer International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-07-04"
-        }
-      ],
-      "divisions": [],
-      "lat": 34.2013928,
-      "lon": -118.4166991
-    },
-    {
-      "id": 3229,
-      "name": "Los Angeles Summer International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "los-angeles-summer-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-07-12",
-      "endDate": "2026-07-12",
-      "city": "Los Angeles",
-      "country": "North America",
-      "venue": "Los Angeles Convention Center - South Hall J",
-      "address": "1201 S Figueroa St, Los Angeles, CA 90015",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3229/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-06-12"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-07-04"
-        },
-        {
-          "name": "Los Angeles Summer International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-06-12"
-        },
-        {
-          "name": "Los Angeles Summer International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-07-04"
-        }
-      ],
-      "divisions": [],
-      "lat": 34.2013928,
-      "lon": -118.4166991
-    },
-    {
-      "id": 3230,
-      "name": "Los Angeles Summer Kids International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "los-angeles-summer-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-07-12",
-      "endDate": "2026-07-12",
-      "city": "Los Angeles",
-      "country": "North America",
-      "venue": "Los Angeles Convention Center - South Hall J",
-      "address": "1201 S Figueroa St, Los Angeles, CA 90015",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3230/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 119.0,
-          "deadline": "2026-06-12"
-        },
-        {
-          "name": "Standard",
-          "price": 133.0,
-          "deadline": "2026-07-04"
-        }
-      ],
-      "divisions": [],
-      "lat": 34.2013928,
-      "lon": -118.4166991
     },
     {
       "id": 3318,
