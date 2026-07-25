@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-24T12:21:52.020591+00:00",
+  "generatedAt": "2026-07-25T12:08:16.803516+00:00",
   "events": [
     {
       "id": 2482,
@@ -319,7 +319,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-07-24"
+          "deadline": "2026-07-25"
         },
         {
           "name": "Dallas Summer International Open IBJJF 2026 - Combo",
@@ -329,7 +329,7 @@
         {
           "name": "Dallas Summer International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-07-24"
+          "deadline": "2026-07-25"
         }
       ],
       "divisions": [],
@@ -356,7 +356,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-07-24"
+          "deadline": "2026-07-25"
         },
         {
           "name": "Dallas Summer International Open IBJJF 2026 - Combo",
@@ -366,7 +366,7 @@
         {
           "name": "Dallas Summer International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-07-24"
+          "deadline": "2026-07-25"
         }
       ],
       "divisions": [],
@@ -467,7 +467,7 @@
         {
           "name": "Standard",
           "price": 133.0,
-          "deadline": "2026-07-24"
+          "deadline": "2026-07-25"
         }
       ],
       "divisions": [],
