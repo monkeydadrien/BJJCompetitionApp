@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-26T12:07:00.277420+00:00",
+  "generatedAt": "2026-07-27T13:42:04.102905+00:00",
   "events": [
     {
       "id": 2482,
@@ -4056,6 +4056,38 @@
       "divisions": [],
       "lat": 48.8807069,
       "lon": 2.3247427
+    },
+    {
+      "id": 3033,
+      "name": "World IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "slug": "world-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "startDate": "2026-12-10",
+      "endDate": "2026-12-12",
+      "city": "Las Vegas",
+      "country": "North America",
+      "venue": "Las Vegas Convention Center - Hall N3 / N4",
+      "address": "300 Convention Center Dr, Las Vegas, NV 89109",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3033/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 153.0,
+          "deadline": "2026-08-23"
+        },
+        {
+          "name": "Standard",
+          "price": 186.0,
+          "deadline": "2026-10-04"
+        },
+        {
+          "name": "Standard",
+          "price": 204.0,
+          "deadline": "2026-11-29"
+        }
+      ],
+      "divisions": [],
+      "lat": 36.2711872,
+      "lon": -115.0094164
     }
   ]
 }
