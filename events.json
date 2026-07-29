@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T12:57:11.613381+00:00",
+  "generatedAt": "2026-07-29T13:04:10.849128+00:00",
   "events": [
     {
       "id": 2482,
@@ -135,43 +135,6 @@
       "lon": -81.1764865
     },
     {
-      "id": 3265,
-      "name": "Dallas Summer International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "dallas-summer-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-02",
-      "city": "Dallas",
-      "country": "North America",
-      "venue": "Dallas Market Hall - North Hall",
-      "address": "2200 N Stemmons Fwy, Dallas, TX 75207",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3265/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-07-03"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-07-25"
-        },
-        {
-          "name": "Dallas Summer International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-07-03"
-        },
-        {
-          "name": "Dallas Summer International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-07-25"
-        }
-      ],
-      "divisions": [],
-      "lat": 35.3160401,
-      "lon": -81.1764865
-    },
-    {
       "id": 3329,
       "name": "Vit\u00f3ria International Open IBJJF Jiu-Jitsu Championship 2026",
       "slug": "itoria-international-open-ibjjf-jiu-jitsu-championship-2026",
@@ -207,6 +170,43 @@
       "divisions": [],
       "lat": 32.9705914,
       "lon": -80.0142554
+    },
+    {
+      "id": 3265,
+      "name": "Dallas Summer International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "slug": "dallas-summer-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "startDate": "2026-08-02",
+      "endDate": "2026-08-02",
+      "city": "Dallas",
+      "country": "North America",
+      "venue": "Dallas Market Hall - North Hall",
+      "address": "2200 N Stemmons Fwy, Dallas, TX 75207",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3265/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2026-07-03"
+        },
+        {
+          "name": "Standard",
+          "price": 167.0,
+          "deadline": "2026-07-25"
+        },
+        {
+          "name": "Dallas Summer International Open IBJJF 2026 - Combo",
+          "price": 236.0,
+          "deadline": "2026-07-03"
+        },
+        {
+          "name": "Dallas Summer International Open IBJJF 2026 - Combo",
+          "price": 284.0,
+          "deadline": "2026-07-25"
+        }
+      ],
+      "divisions": [],
+      "lat": 35.3160401,
+      "lon": -81.1764865
     },
     {
       "id": 3266,
