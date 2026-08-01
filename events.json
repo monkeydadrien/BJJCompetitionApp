@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T12:59:10.964075+00:00",
+  "generatedAt": "2026-08-01T12:07:16.006881+00:00",
   "events": [
     {
       "id": 2482,
@@ -324,7 +324,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-07-31"
+          "deadline": "2026-08-01"
         },
         {
           "name": "San Diego Summer International Open IBJJF 2026 - Combo",
@@ -334,7 +334,7 @@
         {
           "name": "San Diego Summer International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-07-31"
+          "deadline": "2026-08-01"
         }
       ],
       "divisions": [],
@@ -361,7 +361,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-07-31"
+          "deadline": "2026-08-01"
         },
         {
           "name": "San Diego Summer International Open IBJJF 2026 - Combo",
@@ -371,7 +371,7 @@
         {
           "name": "San Diego Summer International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-07-31"
+          "deadline": "2026-08-01"
         }
       ],
       "divisions": [],
@@ -398,7 +398,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-07-31"
+          "deadline": "2026-08-01"
         },
         {
           "name": "Chicago Summer International Open IBJJF 2026 - Combo",
@@ -408,7 +408,7 @@
         {
           "name": "Chicago Summer International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-07-31"
+          "deadline": "2026-08-01"
         }
       ],
       "divisions": [],
@@ -435,7 +435,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-07-31"
+          "deadline": "2026-08-01"
         },
         {
           "name": "Chicago Summer International Open IBJJF 2026 - Combo",
@@ -445,7 +445,7 @@
         {
           "name": "Chicago Summer International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-07-31"
+          "deadline": "2026-08-01"
         }
       ],
       "divisions": [],
@@ -546,7 +546,7 @@
         {
           "name": "Standard",
           "price": 133.0,
-          "deadline": "2026-07-31"
+          "deadline": "2026-08-01"
         }
       ],
       "divisions": [],
@@ -573,7 +573,7 @@
         {
           "name": "Standard",
           "price": 133.0,
-          "deadline": "2026-07-31"
+          "deadline": "2026-08-01"
         }
       ],
       "divisions": [],
