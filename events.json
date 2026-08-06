@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T12:54:46.383499+00:00",
+  "generatedAt": "2026-08-06T12:59:04.639699+00:00",
   "events": [
     {
       "id": 2482,
@@ -3262,6 +3262,80 @@
       "lon": -78.6185623
     },
     {
+      "id": 3398,
+      "name": "Madre de Deus International Open IBJJF Jiu-Jitsu Championship 2026",
+      "slug": "madre-de-deus-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-15",
+      "city": "Madre de Deus",
+      "country": "South America",
+      "venue": "Gin\u00e1sio Poliesportivo de Madre de Deus",
+      "address": "R. Ern\u00e2ni Rocha, Madre de Deus, BA 42600 000",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3398/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 258.0,
+          "deadline": "2026-10-16"
+        },
+        {
+          "name": "Standard",
+          "price": 281.0,
+          "deadline": "2026-11-06"
+        },
+        {
+          "name": "Madre de Deus International Open IBJJF 2026 - Combo",
+          "price": 455.0,
+          "deadline": "2026-10-16"
+        },
+        {
+          "name": "Madre de Deus International Open IBJJF 2026 - Combo",
+          "price": 487.0,
+          "deadline": "2026-11-06"
+        }
+      ],
+      "divisions": [],
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": 3399,
+      "name": "Madre de Deus International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "slug": "madre-de-deus-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-15",
+      "city": "Madre de Deus",
+      "country": "South America",
+      "venue": "Gin\u00e1sio Poliesportivo de Madre de Deus",
+      "address": "R. Ern\u00e2ni Rocha, Madre de Deus, BA 42600 000",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3399/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 258.0,
+          "deadline": "2026-10-16"
+        },
+        {
+          "name": "Standard",
+          "price": 281.0,
+          "deadline": "2026-11-06"
+        },
+        {
+          "name": "Madre de Deus International Open IBJJF 2026 - Combo",
+          "price": 455.0,
+          "deadline": "2026-10-16"
+        },
+        {
+          "name": "Madre de Deus International Open IBJJF 2026 - Combo",
+          "price": 487.0,
+          "deadline": "2026-11-06"
+        }
+      ],
+      "divisions": [],
+      "lat": null,
+      "lon": null
+    },
+    {
       "id": 3366,
       "name": "Atlanta Fall Kids International Open IBJJF Jiu-Jitsu Championship 2026",
       "slug": "atlanta-fall-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
@@ -3287,6 +3361,38 @@
       "divisions": [],
       "lat": 35.7815615,
       "lon": -78.6185623
+    },
+    {
+      "id": 3400,
+      "name": "Madre de Deus Kids International Open IBJJF Jiu-Jitsu Championship 2026",
+      "slug": "madre-de-deus-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-15",
+      "city": "Madre de Deus",
+      "country": "South America",
+      "venue": "Gin\u00e1sio Poliesportivo de Madre de Deus",
+      "address": "R. Ern\u00e2ni Rocha, Madre de Deus, BA 42600 000",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3400/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 187.0,
+          "deadline": "2026-09-04"
+        },
+        {
+          "name": "Standard",
+          "price": 213.0,
+          "deadline": "2026-10-16"
+        },
+        {
+          "name": "Standard",
+          "price": 239.0,
+          "deadline": "2026-11-06"
+        }
+      ],
+      "divisions": [],
+      "lat": null,
+      "lon": null
     },
     {
       "id": 3256,
