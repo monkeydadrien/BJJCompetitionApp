@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06T12:59:04.639699+00:00",
+  "generatedAt": "2026-08-07T11:49:26.424977+00:00",
   "events": [
     {
       "id": 2482,
@@ -620,7 +620,7 @@
         {
           "name": "Standard",
           "price": 281.0,
-          "deadline": "2026-08-07"
+          "deadline": "2026-08-08"
         },
         {
           "name": "Juiz de Fora International Open IBJJF 2026 - Combo",
@@ -630,7 +630,7 @@
         {
           "name": "Juiz de Fora International Open IBJJF 2026 - Combo",
           "price": 487.0,
-          "deadline": "2026-08-07"
+          "deadline": "2026-08-08"
         }
       ],
       "divisions": [],
@@ -657,7 +657,7 @@
         {
           "name": "Standard",
           "price": 281.0,
-          "deadline": "2026-08-07"
+          "deadline": "2026-08-08"
         },
         {
           "name": "Juiz de Fora International Open IBJJF 2026 - Combo",
@@ -667,7 +667,7 @@
         {
           "name": "Juiz de Fora International Open IBJJF 2026 - Combo",
           "price": 487.0,
-          "deadline": "2026-08-07"
+          "deadline": "2026-08-08"
         }
       ],
       "divisions": [],
@@ -726,7 +726,7 @@
         {
           "name": "Standard",
           "price": 239.0,
-          "deadline": "2026-08-07"
+          "deadline": "2026-08-08"
         }
       ],
       "divisions": [],
@@ -2944,6 +2944,174 @@
       "divisions": [],
       "lat": null,
       "lon": null
+    },
+    {
+      "id": 3401,
+      "name": "Recife Spring International Open IBJJF Jiu-Jitsu Championship 2026",
+      "slug": "recife-spring-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-31",
+      "city": "Recife",
+      "country": "South America",
+      "venue": "Gin\u00e1sio Gerald\u00e3o",
+      "address": "Av. Mal. Mascarenhas de Morais, 7787, Imbiribeira, Recife, PE 51210 001",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3401/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 258.0,
+          "deadline": "2026-09-25"
+        },
+        {
+          "name": "Standard",
+          "price": 281.0,
+          "deadline": "2026-10-21"
+        },
+        {
+          "name": "Recife Spring International Open IBJJF 2026 - Combo",
+          "price": 455.0,
+          "deadline": "2026-09-25"
+        },
+        {
+          "name": "Recife Spring International Open IBJJF 2026 - Combo",
+          "price": 487.0,
+          "deadline": "2026-10-21"
+        }
+      ],
+      "divisions": [],
+      "lat": -26.2842403,
+      "lon": -48.8606198
+    },
+    {
+      "id": 3402,
+      "name": "Recife Spring International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "slug": "recife-spring-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-31",
+      "city": "Recife",
+      "country": "South America",
+      "venue": "Gin\u00e1sio Gerald\u00e3o",
+      "address": "Av. Mal. Mascarenhas de Morais, 7787, Imbiribeira, Recife, PE 51210 001",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3402/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 258.0,
+          "deadline": "2026-09-25"
+        },
+        {
+          "name": "Standard",
+          "price": 281.0,
+          "deadline": "2026-10-21"
+        },
+        {
+          "name": "Recife Spring International Open IBJJF 2026 - Combo",
+          "price": 455.0,
+          "deadline": "2026-09-25"
+        },
+        {
+          "name": "Recife Spring International Open IBJJF 2026 - Combo",
+          "price": 487.0,
+          "deadline": "2026-10-21"
+        }
+      ],
+      "divisions": [],
+      "lat": -26.2842403,
+      "lon": -48.8606198
+    },
+    {
+      "id": 3403,
+      "name": "Recife Spring Kids International Open IBJJF Jiu-Jitsu Championship 2026",
+      "slug": "recife-spring-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-01",
+      "city": "Recife",
+      "country": "South America",
+      "venue": "Gin\u00e1sio Gerald\u00e3o",
+      "address": "Av. Mal. Mascarenhas de Morais, 7787, Imbiribeira, Recife, PE 51210 001",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3403/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 187.0,
+          "deadline": "2026-09-11"
+        },
+        {
+          "name": "Standard",
+          "price": 213.0,
+          "deadline": "2026-10-09"
+        },
+        {
+          "name": "Standard",
+          "price": 239.0,
+          "deadline": "2026-10-21"
+        },
+        {
+          "name": "Recife Spring Kids International Open IBJJF 2026 - Combo",
+          "price": 318.0,
+          "deadline": "2026-09-11"
+        },
+        {
+          "name": "Recife Spring Kids International Open IBJJF 2026 - Combo",
+          "price": 362.0,
+          "deadline": "2026-10-09"
+        },
+        {
+          "name": "Recife Spring Kids International Open IBJJF 2026 - Combo",
+          "price": 408.0,
+          "deadline": "2026-10-21"
+        }
+      ],
+      "divisions": [],
+      "lat": -26.2842403,
+      "lon": -48.8606198
+    },
+    {
+      "id": 3404,
+      "name": "Recife Spring Kids International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "slug": "recife-spring-kids-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-01",
+      "city": "Recife",
+      "country": "South America",
+      "venue": "Gin\u00e1sio Gerald\u00e3o",
+      "address": "Av. Mal. Mascarenhas de Morais, 7787, Imbiribeira, Recife, PE 51210 001",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3404/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 187.0,
+          "deadline": "2026-09-11"
+        },
+        {
+          "name": "Standard",
+          "price": 213.0,
+          "deadline": "2026-10-09"
+        },
+        {
+          "name": "Standard",
+          "price": 239.0,
+          "deadline": "2026-10-21"
+        },
+        {
+          "name": "Recife Spring Kids International Open IBJJF 2026 - Combo",
+          "price": 318.0,
+          "deadline": "2026-09-11"
+        },
+        {
+          "name": "Recife Spring Kids International Open IBJJF 2026 - Combo",
+          "price": 362.0,
+          "deadline": "2026-10-09"
+        },
+        {
+          "name": "Recife Spring Kids International Open IBJJF 2026 - Combo",
+          "price": 408.0,
+          "deadline": "2026-10-21"
+        }
+      ],
+      "divisions": [],
+      "lat": -26.2842403,
+      "lon": -48.8606198
     },
     {
       "id": 3386,
