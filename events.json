@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T11:49:26.424977+00:00",
+  "generatedAt": "2026-08-08T11:29:54.937868+00:00",
   "events": [
     {
       "id": 2482,
@@ -546,7 +546,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-08-07"
+          "deadline": "2026-08-08"
         },
         {
           "name": "New York Summer International Open IBJJF 2026 - Combo",
@@ -556,7 +556,7 @@
         {
           "name": "New York Summer International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-08-07"
+          "deadline": "2026-08-08"
         }
       ],
       "divisions": [],
@@ -583,7 +583,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-08-07"
+          "deadline": "2026-08-08"
         },
         {
           "name": "New York Summer International Open IBJJF 2026 - Combo",
@@ -593,7 +593,7 @@
         {
           "name": "New York Summer International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-08-07"
+          "deadline": "2026-08-08"
         }
       ],
       "divisions": [],
@@ -694,7 +694,7 @@
         {
           "name": "Standard",
           "price": 133.0,
-          "deadline": "2026-08-07"
+          "deadline": "2026-08-08"
         }
       ],
       "divisions": [],
