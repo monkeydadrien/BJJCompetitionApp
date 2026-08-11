@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T11:49:32.007358+00:00",
+  "generatedAt": "2026-08-11T11:45:41.003395+00:00",
   "events": [
     {
       "id": 2482,
@@ -125,314 +125,6 @@
       "lon": -81.1764865
     },
     {
-      "id": 3236,
-      "name": "San Diego Summer International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "an-diego-summer-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-08-08",
-      "endDate": "2026-08-09",
-      "city": "San Diego",
-      "country": "North America",
-      "venue": "Harry West Gymnasium",
-      "address": "1313 Park Blvd, San Diego, CA 92101",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3236/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-07-10"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-08-01"
-        },
-        {
-          "name": "San Diego Summer International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-07-10"
-        },
-        {
-          "name": "San Diego Summer International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-08-01"
-        }
-      ],
-      "divisions": [],
-      "lat": 32.8847635,
-      "lon": -117.2434968
-    },
-    {
-      "id": 3248,
-      "name": "Chicago Summer International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "chicago-summer-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-08-08",
-      "endDate": "2026-08-09",
-      "city": "Bedford Park",
-      "country": "North America",
-      "venue": "Wintrust Sports Complex",
-      "address": "5499 W 65th St, Bedford Park, IL 60638, USA, Bedford Park, IL 60638",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3248/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-07-10"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-08-01"
-        },
-        {
-          "name": "Chicago Summer International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-07-10"
-        },
-        {
-          "name": "Chicago Summer International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-08-01"
-        }
-      ],
-      "divisions": [],
-      "lat": 42.446867,
-      "lon": -83.4851153
-    },
-    {
-      "id": 3332,
-      "name": "Floripa Winter International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "floripa-winter-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-08-08",
-      "endDate": "2026-08-09",
-      "city": "S\u00e3o Jos\u00e9",
-      "country": "South America",
-      "venue": "Arena Centro Multiuso de S\u00e3o Jos\u00e9",
-      "address": "Av. Acioni Souza Filho, S\u00e3o Jos\u00e9, SC 88103 790",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3332/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 258.0,
-          "deadline": "2026-07-10"
-        },
-        {
-          "name": "Standard",
-          "price": 281.0,
-          "deadline": "2026-07-31"
-        },
-        {
-          "name": "Floripa Winter International Open IBJJF 2026 - Combo",
-          "price": 455.0,
-          "deadline": "2026-07-10"
-        },
-        {
-          "name": "Floripa Winter International Open IBJJF 2026 - Combo",
-          "price": 487.0,
-          "deadline": "2026-07-31"
-        }
-      ],
-      "divisions": [],
-      "lat": -29.1552995,
-      "lon": -51.165914
-    },
-    {
-      "id": 3237,
-      "name": "San Diego Summer International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "an-diego-summer-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-08-09",
-      "endDate": "2026-08-09",
-      "city": "San Diego",
-      "country": "North America",
-      "venue": "Harry West Gymnasium",
-      "address": "1313 Park Blvd, San Diego, CA 92101",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3237/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-07-10"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-08-01"
-        },
-        {
-          "name": "San Diego Summer International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-07-10"
-        },
-        {
-          "name": "San Diego Summer International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-08-01"
-        }
-      ],
-      "divisions": [],
-      "lat": 32.8847635,
-      "lon": -117.2434968
-    },
-    {
-      "id": 3238,
-      "name": "San Diego Summer Kids International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "an-diego-summer-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-08-09",
-      "endDate": "2026-08-09",
-      "city": "San Diego",
-      "country": "North America",
-      "venue": "Harry West Gymnasium",
-      "address": "1313 Park Blvd, San Diego, CA 92101",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3238/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 119.0,
-          "deadline": "2026-07-10"
-        },
-        {
-          "name": "Standard",
-          "price": 133.0,
-          "deadline": "2026-08-01"
-        }
-      ],
-      "divisions": [],
-      "lat": 32.8847635,
-      "lon": -117.2434968
-    },
-    {
-      "id": 3249,
-      "name": "Chicago Summer International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "chicago-summer-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-08-09",
-      "endDate": "2026-08-09",
-      "city": "Bedford Park",
-      "country": "North America",
-      "venue": "Wintrust Sports Complex",
-      "address": "5499 W 65th St, Bedford Park, IL 60638",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3249/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-07-10"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-08-01"
-        },
-        {
-          "name": "Chicago Summer International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-07-10"
-        },
-        {
-          "name": "Chicago Summer International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-08-01"
-        }
-      ],
-      "divisions": [],
-      "lat": 42.446867,
-      "lon": -83.4851153
-    },
-    {
-      "id": 3250,
-      "name": "Chicago Summer Kids International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "chicago-summer-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-08-09",
-      "endDate": "2026-08-09",
-      "city": "Bedford Park",
-      "country": "North America",
-      "venue": "Wintrust Sports Complex",
-      "address": "5499 W 65th St, Bedford Park, IL 60638",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3250/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 119.0,
-          "deadline": "2026-07-10"
-        },
-        {
-          "name": "Standard",
-          "price": 133.0,
-          "deadline": "2026-08-01"
-        }
-      ],
-      "divisions": [],
-      "lat": 42.446867,
-      "lon": -83.4851153
-    },
-    {
-      "id": 3333,
-      "name": "Floripa Winter International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "floripa-winter-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-08-09",
-      "endDate": "2026-08-09",
-      "city": "S\u00e3o Jos\u00e9",
-      "country": "South America",
-      "venue": "Arena Centro Multiuso de S\u00e3o Jos\u00e9",
-      "address": "Av. Acioni Souza Filho, S\u00e3o Jos\u00e9, SC 88103 790",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3333/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 258.0,
-          "deadline": "2026-07-10"
-        },
-        {
-          "name": "Standard",
-          "price": 281.0,
-          "deadline": "2026-07-31"
-        },
-        {
-          "name": "Floripa Winter International Open IBJJF 2026 - Combo",
-          "price": 455.0,
-          "deadline": "2026-07-10"
-        },
-        {
-          "name": "Floripa Winter International Open IBJJF 2026 - Combo",
-          "price": 487.0,
-          "deadline": "2026-07-31"
-        }
-      ],
-      "divisions": [],
-      "lat": -29.1552995,
-      "lon": -51.165914
-    },
-    {
-      "id": 3334,
-      "name": "Floripa Winter Kids International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "floripa-winter-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-08-09",
-      "endDate": "2026-08-09",
-      "city": "S\u00e3o Jos\u00e9",
-      "country": "South America",
-      "venue": "Arena Centro Multiuso de S\u00e3o Jos\u00e9",
-      "address": "Av. Acioni Souza Filho, S\u00e3o Jos\u00e9, SC 88103 790",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3334/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 187.0,
-          "deadline": "2026-06-26"
-        },
-        {
-          "name": "Standard",
-          "price": 213.0,
-          "deadline": "2026-07-17"
-        },
-        {
-          "name": "Standard",
-          "price": 239.0,
-          "deadline": "2026-07-31"
-        }
-      ],
-      "divisions": [],
-      "lat": -29.1552995,
-      "lon": -51.165914
-    },
-    {
       "id": 3275,
       "name": "Seoul International Open IBJJF Jiu-Jitsu Championship 2026",
       "slug": "oul-international-open-ibjjf-jiu-jitsu-championship-2026",
@@ -443,53 +135,6 @@
       "venue": "Seosuwon Chilbo Gymnasium",
       "address": "171 Seosuwon-ro 577beon-gil, Gwonseon-gu, Suwon, Gyeonggi do ",
       "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3275/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 112.0,
-          "deadline": "2026-05-01"
-        },
-        {
-          "name": "Standard",
-          "price": 119.0,
-          "deadline": "2026-07-17"
-        },
-        {
-          "name": "Standard",
-          "price": 125.0,
-          "deadline": "2026-08-07"
-        },
-        {
-          "name": "Seoul International Open IBJJF 2026 - Combo",
-          "price": 191.0,
-          "deadline": "2026-05-01"
-        },
-        {
-          "name": "Seoul International Open IBJJF 2026 - Combo",
-          "price": 203.0,
-          "deadline": "2026-07-17"
-        },
-        {
-          "name": "Seoul International Open IBJJF 2026 - Combo",
-          "price": 213.0,
-          "deadline": "2026-08-07"
-        }
-      ],
-      "divisions": [],
-      "lat": 37.2589781,
-      "lon": 127.0045787
-    },
-    {
-      "id": 3276,
-      "name": "Seoul International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "oul-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-08-15",
-      "endDate": "2026-08-16",
-      "city": "Suwon",
-      "country": "Asia",
-      "venue": "Seosuwon Chilbo Gymnasium",
-      "address": "171 Seosuwon-ro 577beon-gil, Gwonseon-gu, Suwon, Gyeonggi do ",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3276/PublicRegistrations?lang=en-US",
       "priceTiers": [
         {
           "name": "Standard",
@@ -638,10 +283,84 @@
       "lon": null
     },
     {
+      "id": 3276,
+      "name": "Seoul International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "slug": "oul-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "startDate": "2026-08-16",
+      "endDate": "2026-08-16",
+      "city": "Suwon",
+      "country": "Asia",
+      "venue": "Seosuwon Chilbo Gymnasium",
+      "address": "171 Seosuwon-ro 577beon-gil, Gwonseon-gu, Suwon, Gyeonggi do ",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3276/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 112.0,
+          "deadline": "2026-05-01"
+        },
+        {
+          "name": "Standard",
+          "price": 119.0,
+          "deadline": "2026-07-17"
+        },
+        {
+          "name": "Standard",
+          "price": 125.0,
+          "deadline": "2026-08-07"
+        },
+        {
+          "name": "Seoul International Open IBJJF 2026 - Combo",
+          "price": 191.0,
+          "deadline": "2026-05-01"
+        },
+        {
+          "name": "Seoul International Open IBJJF 2026 - Combo",
+          "price": 203.0,
+          "deadline": "2026-07-17"
+        },
+        {
+          "name": "Seoul International Open IBJJF 2026 - Combo",
+          "price": 213.0,
+          "deadline": "2026-08-07"
+        }
+      ],
+      "divisions": [],
+      "lat": 37.2589781,
+      "lon": 127.0045787
+    },
+    {
+      "id": 3289,
+      "name": "New York Summer Kids International Open IBJJF Jiu-Jitsu Championship 2026",
+      "slug": "w-york-summer-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "startDate": "2026-08-16",
+      "endDate": "2026-08-16",
+      "city": "Hempstead",
+      "country": "North America",
+      "venue": "David S. Mack Sports and Exhibition Complex",
+      "address": "245 Hofstra Univ, Hempstead, NY 11550",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3289/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 119.0,
+          "deadline": "2026-07-17"
+        },
+        {
+          "name": "Standard",
+          "price": 133.0,
+          "deadline": "2026-08-08"
+        }
+      ],
+      "divisions": [],
+      "lat": 40.8632807,
+      "lon": -73.7008358
+    },
+    {
       "id": 3342,
       "name": "Juiz de Fora International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
       "slug": "juiz-de-fora-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-08-15",
+      "startDate": "2026-08-16",
       "endDate": "2026-08-16",
       "city": "Juiz de Fora",
       "country": "South America",
@@ -673,33 +392,6 @@
       "divisions": [],
       "lat": null,
       "lon": null
-    },
-    {
-      "id": 3289,
-      "name": "New York Summer Kids International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "w-york-summer-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-08-16",
-      "endDate": "2026-08-16",
-      "city": "Hempstead",
-      "country": "North America",
-      "venue": "David S. Mack Sports and Exhibition Complex",
-      "address": "245 Hofstra Univ, Hempstead, NY 11550",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3289/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 119.0,
-          "deadline": "2026-07-17"
-        },
-        {
-          "name": "Standard",
-          "price": 133.0,
-          "deadline": "2026-08-08"
-        }
-      ],
-      "divisions": [],
-      "lat": 40.8632807,
-      "lon": -73.7008358
     },
     {
       "id": 3343,
@@ -3734,8 +3426,8 @@
     },
     {
       "id": 3383,
-      "name": "Balne\u00e1rio Camburi\u00fa International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "balneario-camburiu-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "name": "Balne\u00e1rio Cambori\u00fa International Open IBJJF Jiu-Jitsu Championship 2026",
+      "slug": "balneario-camboriu-international-open-ibjjf-jiu-jitsu-championship-2026",
       "startDate": "2026-11-28",
       "endDate": "2026-11-29",
       "city": "Balne\u00e1rio Camburi\u00fa",
@@ -3771,8 +3463,8 @@
     },
     {
       "id": 3384,
-      "name": "Balne\u00e1rio Camburi\u00fa International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "balneario-camburiu-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "name": "Balne\u00e1rio Cambori\u00fa International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "slug": "balneario-camboriu-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
       "startDate": "2026-11-28",
       "endDate": "2026-11-29",
       "city": "Balne\u00e1rio Camburi\u00fa",
@@ -3808,8 +3500,8 @@
     },
     {
       "id": 3385,
-      "name": "Balne\u00e1rio Camburi\u00fa Kids International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "balneario-camburiu-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "name": "Balne\u00e1rio Cambori\u00fa Kids International Open IBJJF Jiu-Jitsu Championship 2026",
+      "slug": "balneario-camboriu-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
       "startDate": "2026-11-29",
       "endDate": "2026-11-29",
       "city": "Balne\u00e1rio Camburi\u00fa",
