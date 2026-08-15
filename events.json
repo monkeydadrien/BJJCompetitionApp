@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T11:46:24.424515+00:00",
+  "generatedAt": "2026-08-15T11:23:18.368887+00:00",
   "events": [
     {
       "id": 2482,
@@ -445,7 +445,7 @@
         {
           "name": "Standard",
           "price": 281.0,
-          "deadline": "2026-08-14"
+          "deadline": "2026-08-15"
         },
         {
           "name": "Fortaleza Winter International Open IBJJF 2026 - Combo",
@@ -455,7 +455,7 @@
         {
           "name": "Fortaleza Winter International Open IBJJF 2026 - Combo",
           "price": 487.0,
-          "deadline": "2026-08-14"
+          "deadline": "2026-08-15"
         }
       ],
       "divisions": [],
@@ -482,7 +482,7 @@
         {
           "name": "Standard",
           "price": 281.0,
-          "deadline": "2026-08-14"
+          "deadline": "2026-08-15"
         },
         {
           "name": "Fortaleza Winter International Open IBJJF 2026 - Combo",
@@ -492,7 +492,7 @@
         {
           "name": "Fortaleza Winter International Open IBJJF 2026 - Combo",
           "price": 487.0,
-          "deadline": "2026-08-14"
+          "deadline": "2026-08-15"
         }
       ],
       "divisions": [],
@@ -524,7 +524,7 @@
         {
           "name": "Standard",
           "price": 239.0,
-          "deadline": "2026-08-14"
+          "deadline": "2026-08-15"
         }
       ],
       "divisions": [],
