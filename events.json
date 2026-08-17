@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T11:21:24.762369+00:00",
+  "generatedAt": "2026-08-17T11:27:02.511893+00:00",
   "events": [
     {
       "id": 2482,
@@ -125,53 +125,6 @@
       "lon": -81.1764865
     },
     {
-      "id": 3275,
-      "name": "Seoul International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "oul-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-08-15",
-      "endDate": "2026-08-16",
-      "city": "Suwon",
-      "country": "Asia",
-      "venue": "Seosuwon Chilbo Gymnasium",
-      "address": "171 Seosuwon-ro 577beon-gil, Gwonseon-gu, Suwon, Gyeonggi do ",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3275/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 112.0,
-          "deadline": "2026-05-01"
-        },
-        {
-          "name": "Standard",
-          "price": 119.0,
-          "deadline": "2026-07-17"
-        },
-        {
-          "name": "Standard",
-          "price": 125.0,
-          "deadline": "2026-08-07"
-        },
-        {
-          "name": "Seoul International Open IBJJF 2026 - Combo",
-          "price": 191.0,
-          "deadline": "2026-05-01"
-        },
-        {
-          "name": "Seoul International Open IBJJF 2026 - Combo",
-          "price": 203.0,
-          "deadline": "2026-07-17"
-        },
-        {
-          "name": "Seoul International Open IBJJF 2026 - Combo",
-          "price": 213.0,
-          "deadline": "2026-08-07"
-        }
-      ],
-      "divisions": [],
-      "lat": 37.2589781,
-      "lon": 127.0045787
-    },
-    {
       "id": 3287,
       "name": "New York Summer International Open IBJJF Jiu-Jitsu Championship 2026",
       "slug": "w-york-summer-international-open-ibjjf-jiu-jitsu-championship-2026",
@@ -244,53 +197,6 @@
       "divisions": [],
       "lat": null,
       "lon": null
-    },
-    {
-      "id": 3276,
-      "name": "Seoul International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "oul-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-08-16",
-      "endDate": "2026-08-16",
-      "city": "Suwon",
-      "country": "Asia",
-      "venue": "Seosuwon Chilbo Gymnasium",
-      "address": "171 Seosuwon-ro 577beon-gil, Gwonseon-gu, Suwon, Gyeonggi do ",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3276/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 112.0,
-          "deadline": "2026-05-01"
-        },
-        {
-          "name": "Standard",
-          "price": 119.0,
-          "deadline": "2026-07-17"
-        },
-        {
-          "name": "Standard",
-          "price": 125.0,
-          "deadline": "2026-08-07"
-        },
-        {
-          "name": "Seoul International Open IBJJF 2026 - Combo",
-          "price": 191.0,
-          "deadline": "2026-05-01"
-        },
-        {
-          "name": "Seoul International Open IBJJF 2026 - Combo",
-          "price": 203.0,
-          "deadline": "2026-07-17"
-        },
-        {
-          "name": "Seoul International Open IBJJF 2026 - Combo",
-          "price": 213.0,
-          "deadline": "2026-08-07"
-        }
-      ],
-      "divisions": [],
-      "lat": 37.2589781,
-      "lon": 127.0045787
     },
     {
       "id": 3288,
@@ -466,7 +372,7 @@
       "id": 3339,
       "name": "Fortaleza Winter International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
       "slug": "fortaleza-winter-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-08-22",
+      "startDate": "2026-08-23",
       "endDate": "2026-08-23",
       "city": "Fortaleza",
       "country": "South America",
