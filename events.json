@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T11:28:01.803004+00:00",
+  "generatedAt": "2026-08-20T11:29:23.077225+00:00",
   "events": [
     {
       "id": 2482,
@@ -310,10 +310,42 @@
       "lon": -115.0094164
     },
     {
+      "id": 3030,
+      "name": "Jiu-Jitsu CON Novice International 2026",
+      "slug": "jiu-jitsu-con-novice-international-2026",
+      "startDate": "2026-09-03",
+      "endDate": "2026-09-04",
+      "city": "Las Vegas",
+      "country": "North America",
+      "venue": "Las Vegas Convention Center - Hall W1 - W3",
+      "address": "300 Convention Center Dr, Las Vegas, NV 89109",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3030/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 139.0,
+          "deadline": "2026-04-04"
+        },
+        {
+          "name": "Standard",
+          "price": 173.0,
+          "deadline": "2026-06-20"
+        },
+        {
+          "name": "Standard",
+          "price": 182.0,
+          "deadline": "2026-08-23"
+        }
+      ],
+      "divisions": [],
+      "lat": 36.2711872,
+      "lon": -115.0094164
+    },
+    {
       "id": 3029,
       "name": "Jiu-Jitsu CON No-Gi International 2026",
       "slug": "jiu-jitsu-con-no-gi-international-2026",
-      "startDate": "2026-09-03",
+      "startDate": "2026-09-04",
       "endDate": "2026-09-05",
       "city": "Las Vegas",
       "country": "North America",
@@ -349,38 +381,6 @@
         {
           "name": "Jiu-Jitsu CON 2026 - Combo",
           "price": 309.0,
-          "deadline": "2026-08-23"
-        }
-      ],
-      "divisions": [],
-      "lat": 36.2711872,
-      "lon": -115.0094164
-    },
-    {
-      "id": 3030,
-      "name": "Jiu-Jitsu CON Novice International 2026",
-      "slug": "jiu-jitsu-con-novice-international-2026",
-      "startDate": "2026-09-03",
-      "endDate": "2026-09-04",
-      "city": "Las Vegas",
-      "country": "North America",
-      "venue": "Las Vegas Convention Center - Hall W1 - W3",
-      "address": "300 Convention Center Dr, Las Vegas, NV 89109",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3030/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 139.0,
-          "deadline": "2026-04-04"
-        },
-        {
-          "name": "Standard",
-          "price": 173.0,
-          "deadline": "2026-06-20"
-        },
-        {
-          "name": "Standard",
-          "price": 182.0,
           "deadline": "2026-08-23"
         }
       ],
