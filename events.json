@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T11:29:23.077225+00:00",
+  "generatedAt": "2026-08-21T11:28:03.083942+00:00",
   "events": [
     {
       "id": 2482,
@@ -3196,6 +3196,100 @@
       "divisions": [],
       "lat": null,
       "lon": null
+    },
+    {
+      "id": 3405,
+      "name": "Paris Fall International Open IBJJF Jiu-Jitsu Championship 2026",
+      "slug": "paris-fall-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "startDate": "2026-11-28",
+      "endDate": "2026-11-29",
+      "city": "Paris",
+      "country": "Europe",
+      "venue": "Salle Charpy - Stade Charl\u00e9ty",
+      "address": "17 Av. Pierre de Coubertin, Paris, Ile de France 75013",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3405/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 99.0,
+          "deadline": "2026-09-04"
+        },
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2026-10-30"
+        },
+        {
+          "name": "Standard",
+          "price": 167.0,
+          "deadline": "2026-11-20"
+        },
+        {
+          "name": "Paris Fall International Open IBJJF 2026 - Combo",
+          "price": 168.0,
+          "deadline": "2026-09-04"
+        },
+        {
+          "name": "Paris Fall International Open IBJJF 2026 - Combo",
+          "price": 236.0,
+          "deadline": "2026-10-30"
+        },
+        {
+          "name": "Paris Fall International Open IBJJF 2026 - Combo",
+          "price": 284.0,
+          "deadline": "2026-11-20"
+        }
+      ],
+      "divisions": [],
+      "lat": 48.8787706,
+      "lon": 2.3222823
+    },
+    {
+      "id": 3406,
+      "name": "Paris Fall International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "slug": "paris-fall-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "startDate": "2026-11-28",
+      "endDate": "2026-11-29",
+      "city": "Paris",
+      "country": "Europe",
+      "venue": "Salle Charpy - Stade Charl\u00e9ty",
+      "address": "17 Av. Pierre de Coubertin, Paris, Ile de France 75013",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3406/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 99.0,
+          "deadline": "2026-09-04"
+        },
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2026-10-30"
+        },
+        {
+          "name": "Standard",
+          "price": 167.0,
+          "deadline": "2026-11-20"
+        },
+        {
+          "name": "Paris Fall International Open IBJJF 2026 - Combo",
+          "price": 168.0,
+          "deadline": "2026-09-04"
+        },
+        {
+          "name": "Paris Fall International Open IBJJF 2026 - Combo",
+          "price": 236.0,
+          "deadline": "2026-10-30"
+        },
+        {
+          "name": "Paris Fall International Open IBJJF 2026 - Combo",
+          "price": 284.0,
+          "deadline": "2026-11-20"
+        }
+      ],
+      "divisions": [],
+      "lat": 48.8787706,
+      "lon": 2.3222823
     },
     {
       "id": 3385,
