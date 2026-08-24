@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T11:22:36.469485+00:00",
+  "generatedAt": "2026-08-24T11:30:42.102016+00:00",
   "events": [
     {
       "id": 2482,
@@ -255,7 +255,7 @@
         {
           "name": "Standard",
           "price": 184.0,
-          "deadline": "2026-08-23"
+          "deadline": "2026-08-24"
         }
       ],
       "divisions": [],
@@ -287,7 +287,7 @@
         {
           "name": "Standard",
           "price": 182.0,
-          "deadline": "2026-08-23"
+          "deadline": "2026-08-24"
         },
         {
           "name": "Jiu-Jitsu CON 2026 - Combo",
@@ -302,7 +302,7 @@
         {
           "name": "Jiu-Jitsu CON 2026 - Combo",
           "price": 309.0,
-          "deadline": "2026-08-23"
+          "deadline": "2026-08-24"
         }
       ],
       "divisions": [],
@@ -334,7 +334,7 @@
         {
           "name": "Standard",
           "price": 182.0,
-          "deadline": "2026-08-23"
+          "deadline": "2026-08-24"
         }
       ],
       "divisions": [],
@@ -366,7 +366,7 @@
         {
           "name": "Standard",
           "price": 182.0,
-          "deadline": "2026-08-23"
+          "deadline": "2026-08-24"
         },
         {
           "name": "Jiu-Jitsu CON 2026 - Combo",
@@ -381,7 +381,7 @@
         {
           "name": "Jiu-Jitsu CON 2026 - Combo",
           "price": 309.0,
-          "deadline": "2026-08-23"
+          "deadline": "2026-08-24"
         }
       ],
       "divisions": [],
@@ -408,7 +408,7 @@
         {
           "name": "Standard",
           "price": 133.0,
-          "deadline": "2026-08-23"
+          "deadline": "2026-08-24"
         },
         {
           "name": "Jiu-Jitsu CON Kids 2026 - Combo",
@@ -418,7 +418,7 @@
         {
           "name": "Jiu-Jitsu CON Kids 2026 - Combo",
           "price": 227.0,
-          "deadline": "2026-08-23"
+          "deadline": "2026-08-24"
         }
       ],
       "divisions": [],
@@ -445,7 +445,7 @@
         {
           "name": "Standard",
           "price": 133.0,
-          "deadline": "2026-08-23"
+          "deadline": "2026-08-24"
         },
         {
           "name": "Jiu-Jitsu CON Kids 2026 - Combo",
@@ -455,7 +455,7 @@
         {
           "name": "Jiu-Jitsu CON Kids 2026 - Combo",
           "price": 227.0,
-          "deadline": "2026-08-23"
+          "deadline": "2026-08-24"
         }
       ],
       "divisions": [],
