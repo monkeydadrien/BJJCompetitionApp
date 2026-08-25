@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T11:30:42.102016+00:00",
+  "generatedAt": "2026-08-25T11:29:31.982757+00:00",
   "events": [
     {
       "id": 2482,
@@ -123,112 +123,6 @@
       "divisions": [],
       "lat": 35.3160401,
       "lon": -81.1764865
-    },
-    {
-      "id": 3338,
-      "name": "Fortaleza Winter International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "fortaleza-winter-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-08-22",
-      "endDate": "2026-08-23",
-      "city": "Fortaleza",
-      "country": "South America",
-      "venue": "Gin\u00e1sio Paulo Sarasate",
-      "address": "R. Ildefonso Albano, 2050, Dion\u00edsio Torres, Fortaleza, CE 60115 125",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3338/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 258.0,
-          "deadline": "2026-07-24"
-        },
-        {
-          "name": "Standard",
-          "price": 281.0,
-          "deadline": "2026-08-15"
-        },
-        {
-          "name": "Fortaleza Winter International Open IBJJF 2026 - Combo",
-          "price": 455.0,
-          "deadline": "2026-07-24"
-        },
-        {
-          "name": "Fortaleza Winter International Open IBJJF 2026 - Combo",
-          "price": 487.0,
-          "deadline": "2026-08-15"
-        }
-      ],
-      "divisions": [],
-      "lat": 33.0048553,
-      "lon": -112.7597709
-    },
-    {
-      "id": 3339,
-      "name": "Fortaleza Winter International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "fortaleza-winter-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-08-23",
-      "endDate": "2026-08-23",
-      "city": "Fortaleza",
-      "country": "South America",
-      "venue": "Gin\u00e1sio Paulo Sarasate",
-      "address": "R. Ildefonso Albano, 2050, Dion\u00edsio Torres, Fortaleza, CE 60115 125",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3339/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 258.0,
-          "deadline": "2026-07-24"
-        },
-        {
-          "name": "Standard",
-          "price": 281.0,
-          "deadline": "2026-08-15"
-        },
-        {
-          "name": "Fortaleza Winter International Open IBJJF 2026 - Combo",
-          "price": 455.0,
-          "deadline": "2026-07-24"
-        },
-        {
-          "name": "Fortaleza Winter International Open IBJJF 2026 - Combo",
-          "price": 487.0,
-          "deadline": "2026-08-15"
-        }
-      ],
-      "divisions": [],
-      "lat": 33.0048553,
-      "lon": -112.7597709
-    },
-    {
-      "id": 3340,
-      "name": "Fortaleza Winter Kids International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "fortaleza-winter-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-08-23",
-      "endDate": "2026-08-23",
-      "city": "Fortaleza",
-      "country": "South America",
-      "venue": "Gin\u00e1sio Paulo Sarasate",
-      "address": "R. Ildefonso Albano, 2050, Dion\u00edsio Torres, Fortaleza, CE 60115 125",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3340/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 187.0,
-          "deadline": "2026-07-03"
-        },
-        {
-          "name": "Standard",
-          "price": 213.0,
-          "deadline": "2026-07-24"
-        },
-        {
-          "name": "Standard",
-          "price": 239.0,
-          "deadline": "2026-08-15"
-        }
-      ],
-      "divisions": [],
-      "lat": 33.0048553,
-      "lon": -112.7597709
     },
     {
       "id": 3027,
