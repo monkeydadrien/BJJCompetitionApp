@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T11:29:31.982757+00:00",
+  "generatedAt": "2026-08-26T11:30:11.020968+00:00",
   "events": [
     {
       "id": 2482,
@@ -161,7 +161,7 @@
       "name": "Jiu-Jitsu CON International 2026",
       "slug": "jiu-jitsu-con-international-2026",
       "startDate": "2026-09-03",
-      "endDate": "2026-09-04",
+      "endDate": "2026-09-03",
       "city": "Las Vegas",
       "country": "North America",
       "venue": "Las Vegas Convention Center - Hall W1 - W3",
@@ -208,7 +208,7 @@
       "name": "Jiu-Jitsu CON Novice International 2026",
       "slug": "jiu-jitsu-con-novice-international-2026",
       "startDate": "2026-09-03",
-      "endDate": "2026-09-04",
+      "endDate": "2026-09-03",
       "city": "Las Vegas",
       "country": "North America",
       "venue": "Las Vegas Convention Center - Hall W1 - W3",
@@ -240,7 +240,7 @@
       "name": "Jiu-Jitsu CON No-Gi International 2026",
       "slug": "jiu-jitsu-con-no-gi-international-2026",
       "startDate": "2026-09-04",
-      "endDate": "2026-09-05",
+      "endDate": "2026-09-04",
       "city": "Las Vegas",
       "country": "North America",
       "venue": "Las Vegas Convention Center - Hall W1 - W3",
@@ -283,16 +283,16 @@
       "lon": -115.0094164
     },
     {
-      "id": 3031,
-      "name": "Jiu-Jitsu CON Kids International 2026",
-      "slug": "jiu-jitsu-con-kids-international-2026",
+      "id": 3032,
+      "name": "Jiu-Jitsu CON Kids No-Gi International 2026",
+      "slug": "jiu-jitsu-con-kids-no-gi-international-2026",
       "startDate": "2026-09-04",
-      "endDate": "2026-09-05",
+      "endDate": "2026-09-04",
       "city": "Las Vegas",
       "country": "North America",
       "venue": "Las Vegas Convention Center - Hall W1 - W3",
       "address": "300 Convention Center Dr, Las Vegas, NV 89109",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3031/PublicRegistrations?lang=en-US",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3032/PublicRegistrations?lang=en-US",
       "priceTiers": [
         {
           "name": "Standard",
@@ -320,16 +320,16 @@
       "lon": -115.0094164
     },
     {
-      "id": 3032,
-      "name": "Jiu-Jitsu CON Kids No-Gi International 2026",
-      "slug": "jiu-jitsu-con-kids-no-gi-international-2026",
-      "startDate": "2026-09-04",
+      "id": 3031,
+      "name": "Jiu-Jitsu CON Kids International 2026",
+      "slug": "jiu-jitsu-con-kids-international-2026",
+      "startDate": "2026-09-05",
       "endDate": "2026-09-05",
       "city": "Las Vegas",
       "country": "North America",
       "venue": "Las Vegas Convention Center - Hall W1 - W3",
       "address": "300 Convention Center Dr, Las Vegas, NV 89109",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3032/PublicRegistrations?lang=en-US",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3031/PublicRegistrations?lang=en-US",
       "priceTiers": [
         {
           "name": "Standard",
