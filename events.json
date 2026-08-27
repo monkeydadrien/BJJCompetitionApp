@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T11:30:11.020968+00:00",
+  "generatedAt": "2026-08-27T20:58:54.427746+00:00",
   "events": [
     {
       "id": 2482,
@@ -3707,6 +3707,38 @@
       "divisions": [],
       "lat": 36.2711872,
       "lon": -115.0094164
+    },
+    {
+      "id": 3409,
+      "name": "European IBJJF Jiu-Jitsu Championship 2027",
+      "slug": "uropean-ibjjf-jiu-jitsu-championship-2027",
+      "startDate": "2027-01-13",
+      "endDate": "2027-01-23",
+      "city": "Odivelas",
+      "country": "Europe",
+      "venue": "Pavilh\u00e3o Multiusos de Odivelas",
+      "address": "Alameda do Porto Pinheiro, Odivelas, Lisboa 2675 668",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3409/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 140.0,
+          "deadline": "2026-10-04"
+        },
+        {
+          "name": "Standard",
+          "price": 173.0,
+          "deadline": "2026-11-15"
+        },
+        {
+          "name": "Standard",
+          "price": 186.0,
+          "deadline": "2027-01-03"
+        }
+      ],
+      "divisions": [],
+      "lat": null,
+      "lon": null
     }
   ]
 }
