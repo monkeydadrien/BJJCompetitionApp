@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T14:51:58.068715+00:00",
+  "generatedAt": "2026-09-11T14:54:41.945195+00:00",
   "events": [
     {
       "id": 2482,
@@ -329,7 +329,7 @@
         {
           "name": "Standard",
           "price": 281.0,
-          "deadline": "2026-09-11"
+          "deadline": "2026-09-12"
         },
         {
           "name": "Manaus International Open IBJJF 2026 - Combo",
@@ -339,7 +339,7 @@
         {
           "name": "Manaus International Open IBJJF 2026 - Combo",
           "price": 487.0,
-          "deadline": "2026-09-11"
+          "deadline": "2026-09-12"
         }
       ],
       "divisions": [],
@@ -366,7 +366,7 @@
         {
           "name": "Standard",
           "price": 281.0,
-          "deadline": "2026-09-11"
+          "deadline": "2026-09-12"
         },
         {
           "name": "Manaus International Open IBJJF 2026 - Combo",
@@ -376,7 +376,7 @@
         {
           "name": "Manaus International Open IBJJF 2026 - Combo",
           "price": 487.0,
-          "deadline": "2026-09-11"
+          "deadline": "2026-09-12"
         }
       ],
       "divisions": [],
@@ -408,7 +408,7 @@
         {
           "name": "Standard",
           "price": 239.0,
-          "deadline": "2026-09-11"
+          "deadline": "2026-09-12"
         }
       ],
       "divisions": [],
