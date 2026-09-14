@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T14:51:30.988826+00:00",
+  "generatedAt": "2026-09-14T16:51:20.998876+00:00",
   "events": [
     {
       "id": 2482,
@@ -123,65 +123,6 @@
       "divisions": [],
       "lat": 35.3160401,
       "lon": -81.1764865
-    },
-    {
-      "id": 3367,
-      "name": "Campeonato Sul-Americano de Jiu-Jitsu No-Gi 2026",
-      "slug": "campeonato-sul-americano-de-jiu-jitsu-no-gi-2026",
-      "startDate": "2026-09-11",
-      "endDate": "2026-09-12",
-      "city": "Rio de Janeiro",
-      "country": "South America",
-      "venue": "Centro Esportivo Mi\u00e9cimo da Silva",
-      "address": "Rua Olinda Ellis, 470, Campo Grande, Rio de Janeiro, RJ 23045 160",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3367/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 279.0,
-          "deadline": "2026-07-31"
-        },
-        {
-          "name": "Standard",
-          "price": 301.0,
-          "deadline": "2026-09-02"
-        }
-      ],
-      "divisions": [],
-      "lat": -22.9835392,
-      "lon": -43.1932506
-    },
-    {
-      "id": 3368,
-      "name": "Campeonato Brasileiro de Jiu-Jitsu Sem Kimono (idade 04 a 15 anos) 2026",
-      "slug": "campeonato-brasileiro-de-jiu-jitsu-sem-kimono-idade-04-a-15-anos-2026",
-      "startDate": "2026-09-13",
-      "endDate": "2026-09-13",
-      "city": "Rio de Janeiro",
-      "country": "South America",
-      "venue": "Centro Esportivo Mi\u00e9cimo da Silva",
-      "address": "Rua Olinda Ellis, 470, Campo Grande, Rio de Janeiro, RJ 23045 160",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3368/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 195.0,
-          "deadline": "2026-07-17"
-        },
-        {
-          "name": "Standard",
-          "price": 220.0,
-          "deadline": "2026-08-07"
-        },
-        {
-          "name": "Standard",
-          "price": 248.0,
-          "deadline": "2026-09-02"
-        }
-      ],
-      "divisions": [],
-      "lat": -22.9835392,
-      "lon": -43.1932506
     },
     {
       "id": 3216,
@@ -350,7 +291,7 @@
       "id": 3345,
       "name": "Manaus International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
       "slug": "manaus-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-09-19",
+      "startDate": "2026-09-20",
       "endDate": "2026-09-20",
       "city": "Manaus",
       "country": "South America",
