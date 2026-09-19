@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T14:50:09.598877+00:00",
+  "generatedAt": "2026-09-19T14:13:29.016455+00:00",
   "events": [
     {
       "id": 2482,
@@ -497,7 +497,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-09-18"
+          "deadline": "2026-09-19"
         }
       ],
       "divisions": [],
@@ -524,7 +524,7 @@
         {
           "name": "Standard",
           "price": 133.0,
-          "deadline": "2026-09-18"
+          "deadline": "2026-09-19"
         }
       ],
       "divisions": [],
