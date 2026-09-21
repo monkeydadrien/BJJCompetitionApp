@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T14:32:34.298236+00:00",
+  "generatedAt": "2026-09-21T16:51:28.031791+00:00",
   "events": [
     {
       "id": 2482,
@@ -123,238 +123,6 @@
       "divisions": [],
       "lat": 35.3160401,
       "lon": -81.1764865
-    },
-    {
-      "id": 3216,
-      "name": "Kuala Lumpur International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "kuala-lumpur-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-09-19",
-      "endDate": "2026-09-19",
-      "city": "Cyberjaya",
-      "country": "Asia",
-      "venue": "Multimedia University - MMU Cyberjaya",
-      "address": "63000 Cyberjaya, Dewan Tun Canselor building, Cyberjaya, Selangor ",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3216/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 93.0,
-          "deadline": "2026-04-17"
-        },
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-08-21"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-09-11"
-        },
-        {
-          "name": "Kuala Lumpur International Open IBJJF 2026 - Combo",
-          "price": 158.0,
-          "deadline": "2026-04-17"
-        },
-        {
-          "name": "Kuala Lumpur International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-08-21"
-        },
-        {
-          "name": "Kuala Lumpur International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-09-11"
-        }
-      ],
-      "divisions": [],
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": 3217,
-      "name": "Kuala Lumpur International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "kuala-lumpur-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-09-19",
-      "endDate": "2026-09-19",
-      "city": "Cyberjaya",
-      "country": "Asia",
-      "venue": "Multimedia University - MMU Cyberjaya",
-      "address": "63000 Cyberjaya, Dewan Tun Canselor building, Cyberjaya, Selangor ",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3217/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 93.0,
-          "deadline": "2026-04-17"
-        },
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-08-21"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-09-11"
-        },
-        {
-          "name": "Kuala Lumpur International Open IBJJF 2026 - Combo",
-          "price": 158.0,
-          "deadline": "2026-04-17"
-        },
-        {
-          "name": "Kuala Lumpur International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-08-21"
-        },
-        {
-          "name": "Kuala Lumpur International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-09-11"
-        }
-      ],
-      "divisions": [],
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": 3218,
-      "name": "Kuala Lumpur Kids International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "kuala-lumpur-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-09-19",
-      "endDate": "2026-09-19",
-      "city": "Cyberjaya",
-      "country": "Asia",
-      "venue": "Multimedia University - MMU Cyberjaya",
-      "address": "63000 Cyberjaya, Dewan Tun Canselor building, Cyberjaya, Selangor ",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3218/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 92.0,
-          "deadline": "2026-04-17"
-        },
-        {
-          "name": "Standard",
-          "price": 119.0,
-          "deadline": "2026-08-21"
-        },
-        {
-          "name": "Standard",
-          "price": 133.0,
-          "deadline": "2026-09-11"
-        }
-      ],
-      "divisions": [],
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": 3344,
-      "name": "Manaus International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "manaus-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-09-19",
-      "endDate": "2026-09-20",
-      "city": "Manaus",
-      "country": "South America",
-      "venue": "Arena Poliesportiva Amadeu Teixeira",
-      "address": "Av. Constantino Nery, Flores, Manaus, AM 69040 001",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3344/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 258.0,
-          "deadline": "2026-07-31"
-        },
-        {
-          "name": "Standard",
-          "price": 281.0,
-          "deadline": "2026-09-12"
-        },
-        {
-          "name": "Manaus International Open IBJJF 2026 - Combo",
-          "price": 455.0,
-          "deadline": "2026-07-31"
-        },
-        {
-          "name": "Manaus International Open IBJJF 2026 - Combo",
-          "price": 487.0,
-          "deadline": "2026-09-12"
-        }
-      ],
-      "divisions": [],
-      "lat": -23.4685063,
-      "lon": -52.0463914
-    },
-    {
-      "id": 3345,
-      "name": "Manaus International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "manaus-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-09-20",
-      "endDate": "2026-09-20",
-      "city": "Manaus",
-      "country": "South America",
-      "venue": "Arena Poliesportiva Amadeu Teixeira",
-      "address": "Av. Constantino Nery, Flores, Manaus, AM 69040 001",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3345/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 258.0,
-          "deadline": "2026-07-31"
-        },
-        {
-          "name": "Standard",
-          "price": 281.0,
-          "deadline": "2026-09-12"
-        },
-        {
-          "name": "Manaus International Open IBJJF 2026 - Combo",
-          "price": 455.0,
-          "deadline": "2026-07-31"
-        },
-        {
-          "name": "Manaus International Open IBJJF 2026 - Combo",
-          "price": 487.0,
-          "deadline": "2026-09-12"
-        }
-      ],
-      "divisions": [],
-      "lat": -23.4685063,
-      "lon": -52.0463914
-    },
-    {
-      "id": 3346,
-      "name": "Manaus Kids International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "manaus-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-09-20",
-      "endDate": "2026-09-20",
-      "city": "Manaus",
-      "country": "South America",
-      "venue": "Arena Poliesportiva Amadeu Teixeira",
-      "address": "Av. Constantino Nery, Flores, Manaus, AM 69040 001",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3346/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 187.0,
-          "deadline": "2026-07-17"
-        },
-        {
-          "name": "Standard",
-          "price": 213.0,
-          "deadline": "2026-08-14"
-        },
-        {
-          "name": "Standard",
-          "price": 239.0,
-          "deadline": "2026-09-12"
-        }
-      ],
-      "divisions": [],
-      "lat": -23.4685063,
-      "lon": -52.0463914
     },
     {
       "id": 3347,
@@ -3448,6 +3216,107 @@
       "divisions": [],
       "lat": null,
       "lon": null
+    },
+    {
+      "id": 3425,
+      "name": "Dallas Winter International Open IBJJF Jiu-Jitsu Championship 2027",
+      "slug": "dallas-winter-international-open-ibjjf-jiu-jitsu-championship-2027",
+      "startDate": "2027-01-16",
+      "endDate": "2027-01-17",
+      "city": "Dallas",
+      "country": "North America",
+      "venue": "Fair Park - Automobile Building",
+      "address": "1010 1st Ave, Dallas, TX 75210",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3425/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 143.0,
+          "deadline": "2026-12-18"
+        },
+        {
+          "name": "Standard",
+          "price": 174.0,
+          "deadline": "2027-01-08"
+        },
+        {
+          "name": "Dallas Winter International Open IBJJF 2027 - Combo",
+          "price": 245.0,
+          "deadline": "2026-12-18"
+        },
+        {
+          "name": "Dallas Winter International Open IBJJF 2027 - Combo",
+          "price": 295.0,
+          "deadline": "2027-01-08"
+        }
+      ],
+      "divisions": [],
+      "lat": 35.3160401,
+      "lon": -81.1764865
+    },
+    {
+      "id": 3426,
+      "name": "Dallas Winter International Open IBJJF Jiu-Jitsu No-Gi Championship 2027",
+      "slug": "dallas-winter-international-open-ibjjf-jiu-jitsu-no-gi-championship-2027",
+      "startDate": "2027-01-16",
+      "endDate": "2027-01-17",
+      "city": "Dallas",
+      "country": "North America",
+      "venue": "Fair Park - Automobile Building",
+      "address": "1010 1st Ave, Dallas, TX 75210",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3426/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 143.0,
+          "deadline": "2026-12-18"
+        },
+        {
+          "name": "Standard",
+          "price": 174.0,
+          "deadline": "2027-01-08"
+        },
+        {
+          "name": "Dallas Winter International Open IBJJF 2027 - Combo",
+          "price": 245.0,
+          "deadline": "2026-12-18"
+        },
+        {
+          "name": "Dallas Winter International Open IBJJF 2027 - Combo",
+          "price": 295.0,
+          "deadline": "2027-01-08"
+        }
+      ],
+      "divisions": [],
+      "lat": 35.3160401,
+      "lon": -81.1764865
+    },
+    {
+      "id": 3427,
+      "name": "Dallas Winter Kids International Open IBJJF Jiu-Jitsu Championship 2027",
+      "slug": "dallas-winter-kids-international-open-ibjjf-jiu-jitsu-championship-2027",
+      "startDate": "2027-01-17",
+      "endDate": "2027-01-17",
+      "city": "Dallas",
+      "country": "North America",
+      "venue": "Fair Park - Automobile Building",
+      "address": "1010 1st Ave, Dallas, TX 75210",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3427/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 124.0,
+          "deadline": "2026-12-18"
+        },
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2027-01-08"
+        }
+      ],
+      "divisions": [],
+      "lat": 35.3160401,
+      "lon": -81.1764865
     }
   ]
 }
