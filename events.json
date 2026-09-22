@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T16:51:28.031791+00:00",
+  "generatedAt": "2026-09-22T15:29:10.260427+00:00",
   "events": [
     {
       "id": 2482,
@@ -3292,6 +3292,80 @@
       "lon": -81.1764865
     },
     {
+      "id": 3432,
+      "name": "San Jose Winter International Open IBJJF Jiu-Jitsu Championship 2027",
+      "slug": "an-jose-winter-international-open-ibjjf-jiu-jitsu-championship-2027",
+      "startDate": "2027-01-16",
+      "endDate": "2027-01-17",
+      "city": "San Jose",
+      "country": "North America",
+      "venue": "Santa Clara County Fairgrounds - Exposition Hall",
+      "address": "344 Tully Rd, San Jose, CA 95111",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3432/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 143.0,
+          "deadline": "2026-12-18"
+        },
+        {
+          "name": "Standard",
+          "price": 174.0,
+          "deadline": "2027-01-08"
+        },
+        {
+          "name": "San Jose Winter International Open IBJJF 2027 -- Combo",
+          "price": 245.0,
+          "deadline": "2026-12-18"
+        },
+        {
+          "name": "San Jose Winter International Open IBJJF 2027 -- Combo",
+          "price": 295.0,
+          "deadline": "2027-01-08"
+        }
+      ],
+      "divisions": [],
+      "lat": 37.3775968,
+      "lon": -121.9189094
+    },
+    {
+      "id": 3433,
+      "name": "San Jose Winter International Open IBJJF Jiu-Jitsu No-Gi Championship 2027",
+      "slug": "an-jose-winter-international-open-ibjjf-jiu-jitsu-no-gi-championship-2027",
+      "startDate": "2027-01-16",
+      "endDate": "2027-01-17",
+      "city": "San Jose",
+      "country": "North America",
+      "venue": "Santa Clara County Fairgrounds - Exposition Hall",
+      "address": "344 Tully Rd, San Jose, CA 95111",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3433/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 143.0,
+          "deadline": "2026-12-18"
+        },
+        {
+          "name": "Standard",
+          "price": 174.0,
+          "deadline": "2027-01-08"
+        },
+        {
+          "name": "San Jose Winter International Open IBJJF 2027 -- Combo",
+          "price": 245.0,
+          "deadline": "2026-12-18"
+        },
+        {
+          "name": "San Jose Winter International Open IBJJF 2027 -- Combo",
+          "price": 295.0,
+          "deadline": "2027-01-08"
+        }
+      ],
+      "divisions": [],
+      "lat": 37.3775968,
+      "lon": -121.9189094
+    },
+    {
       "id": 3427,
       "name": "Dallas Winter Kids International Open IBJJF Jiu-Jitsu Championship 2027",
       "slug": "dallas-winter-kids-international-open-ibjjf-jiu-jitsu-championship-2027",
@@ -3317,6 +3391,181 @@
       "divisions": [],
       "lat": 35.3160401,
       "lon": -81.1764865
+    },
+    {
+      "id": 3434,
+      "name": "San Jose Winter Kids International Open IBJJF Jiu-Jitsu Championship 2027",
+      "slug": "an-jose-winter-kids-international-open-ibjjf-jiu-jitsu-championship-2027",
+      "startDate": "2027-01-17",
+      "endDate": "2027-01-17",
+      "city": "San Jose",
+      "country": "North America",
+      "venue": "Santa Clara County Fairgrounds - Exposition Hall",
+      "address": "344 Tully Rd, San Jose, CA 95111",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3434/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 124.0,
+          "deadline": "2026-12-18"
+        },
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2027-01-08"
+        }
+      ],
+      "divisions": [],
+      "lat": 37.3775968,
+      "lon": -121.9189094
+    },
+    {
+      "id": 3435,
+      "name": "Los Angeles Winter International Open IBJJF Jiu-Jitsu Championship 2027",
+      "slug": "los-angeles-winter-international-open-ibjjf-jiu-jitsu-championship-2027",
+      "startDate": "2027-01-30",
+      "endDate": "2027-01-31",
+      "city": "Los Angeles",
+      "country": "North America",
+      "venue": "Los Angeles Convention Center - Hall H",
+      "address": "1201 S Figueroa St, Los Angeles, CA 90015",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3435/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 143.0,
+          "deadline": "2027-01-01"
+        },
+        {
+          "name": "Standard",
+          "price": 174.0,
+          "deadline": "2027-01-22"
+        },
+        {
+          "name": "Los Angeles Winter International Open IBJJF 2027 - Combo",
+          "price": 245.0,
+          "deadline": "2027-01-01"
+        },
+        {
+          "name": "Los Angeles Winter International Open IBJJF 2027 - Combo",
+          "price": 295.0,
+          "deadline": "2027-01-22"
+        }
+      ],
+      "divisions": [],
+      "lat": 34.2013928,
+      "lon": -118.4166991
+    },
+    {
+      "id": 3436,
+      "name": "Los Angeles Winter International Open IBJJF Jiu-Jitsu No-Gi Championship 2027",
+      "slug": "los-angeles-winter-international-open-ibjjf-jiu-jitsu-no-gi-championship-2027",
+      "startDate": "2027-01-30",
+      "endDate": "2027-01-31",
+      "city": "Los Angeles",
+      "country": "North America",
+      "venue": "Los Angeles Convention Center - Hall H",
+      "address": "1201 S Figueroa St, Los Angeles, CA 90015",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3436/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 143.0,
+          "deadline": "2027-01-01"
+        },
+        {
+          "name": "Standard",
+          "price": 174.0,
+          "deadline": "2027-01-22"
+        },
+        {
+          "name": "Los Angeles Winter International Open IBJJF 2027 - Combo",
+          "price": 245.0,
+          "deadline": "2027-01-01"
+        },
+        {
+          "name": "Los Angeles Winter International Open IBJJF 2027 - Combo",
+          "price": 295.0,
+          "deadline": "2027-01-22"
+        }
+      ],
+      "divisions": [],
+      "lat": 34.2013928,
+      "lon": -118.4166991
+    },
+    {
+      "id": 3437,
+      "name": "Los Angeles Winter Kids International Open IBJJF Jiu-Jitsu Championship 2027",
+      "slug": "los-angeles-winter-kids-international-open-ibjjf-jiu-jitsu-championship-2027",
+      "startDate": "2027-01-31",
+      "endDate": "2027-01-31",
+      "city": "Los Angeles",
+      "country": "North America",
+      "venue": "Los Angeles Convention Center - Hall H",
+      "address": "1201 S Figueroa St, Los Angeles, CA 90015",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3437/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 124.0,
+          "deadline": "2027-01-01"
+        },
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2027-01-22"
+        },
+        {
+          "name": "Los Angeles Winter Kids International Open IBJJF 2027 - Combo",
+          "price": 212.0,
+          "deadline": "2027-01-01"
+        },
+        {
+          "name": "Los Angeles Winter Kids International Open IBJJF 2027 - Combo",
+          "price": 235.0,
+          "deadline": "2027-01-22"
+        }
+      ],
+      "divisions": [],
+      "lat": 34.2013928,
+      "lon": -118.4166991
+    },
+    {
+      "id": 3438,
+      "name": "Los Angeles Winter Kids International Open IBJJF Jiu-Jitsu No-Gi Championship 2027",
+      "slug": "los-angeles-winter-kids-international-open-ibjjf-jiu-jitsu-no-gi-championship-2027",
+      "startDate": "2027-01-31",
+      "endDate": "2027-01-31",
+      "city": "Los Angeles",
+      "country": "North America",
+      "venue": "Los Angeles Convention Center - Hall H",
+      "address": "1201 S Figueroa St, Los Angeles, CA 90015",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3438/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 124.0,
+          "deadline": "2027-01-01"
+        },
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2027-01-22"
+        },
+        {
+          "name": "Los Angeles Winter Kids International Open IBJJF 2027 - Combo",
+          "price": 212.0,
+          "deadline": "2027-01-01"
+        },
+        {
+          "name": "Los Angeles Winter Kids International Open IBJJF 2027 - Combo",
+          "price": 235.0,
+          "deadline": "2027-01-22"
+        }
+      ],
+      "divisions": [],
+      "lat": 34.2013928,
+      "lon": -118.4166991
     }
   ]
 }
