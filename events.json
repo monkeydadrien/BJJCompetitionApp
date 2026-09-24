@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T15:22:17.232047+00:00",
+  "generatedAt": "2026-09-24T15:46:48.402866+00:00",
   "events": [
     {
       "id": 2482,
@@ -3420,6 +3420,154 @@
       "lon": -121.9189094
     },
     {
+      "id": 3428,
+      "name": "Atlanta Winter International Open IBJJF Jiu-Jitsu Championship 2027",
+      "slug": "atlanta-winter-international-open-ibjjf-jiu-jitsu-championship-2027",
+      "startDate": "2027-01-23",
+      "endDate": "2027-01-24",
+      "city": "College Park",
+      "country": "North America",
+      "venue": "Georgia International Convention Center - Hall D",
+      "address": "2000 Convention Center Concourse, College Park, GA 30337",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3428/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 143.0,
+          "deadline": "2026-12-25"
+        },
+        {
+          "name": "Standard",
+          "price": 174.0,
+          "deadline": "2027-01-15"
+        },
+        {
+          "name": "Atlanta Winter International Open IBJJF 2027 - Combo",
+          "price": 245.0,
+          "deadline": "2026-12-25"
+        },
+        {
+          "name": "Atlanta Winter International Open IBJJF 2027 - Combo",
+          "price": 295.0,
+          "deadline": "2027-01-15"
+        }
+      ],
+      "divisions": [],
+      "lat": 35.7815615,
+      "lon": -78.6185623
+    },
+    {
+      "id": 3429,
+      "name": "Atlanta Winter International Open IBJJF Jiu-Jitsu No-Gi Championship 2027",
+      "slug": "atlanta-winter-international-open-ibjjf-jiu-jitsu-no-gi-championship-2027",
+      "startDate": "2027-01-23",
+      "endDate": "2027-01-24",
+      "city": "College Park",
+      "country": "North America",
+      "venue": "Georgia International Convention Center - Hall D",
+      "address": "2000 Convention Center Concourse, College Park, GA 30337",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3429/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 143.0,
+          "deadline": "2026-12-25"
+        },
+        {
+          "name": "Standard",
+          "price": 174.0,
+          "deadline": "2027-01-15"
+        },
+        {
+          "name": "Atlanta Winter International Open IBJJF 2027 - Combo",
+          "price": 245.0,
+          "deadline": "2026-12-25"
+        },
+        {
+          "name": "Atlanta Winter International Open IBJJF 2027 - Combo",
+          "price": 295.0,
+          "deadline": "2027-01-15"
+        }
+      ],
+      "divisions": [],
+      "lat": 35.7815615,
+      "lon": -78.6185623
+    },
+    {
+      "id": 3430,
+      "name": "Atlanta Winter Kids International Open IBJJF Jiu-Jitsu Championship 2027",
+      "slug": "atlanta-winter-kids-international-open-ibjjf-jiu-jitsu-championship-2027",
+      "startDate": "2027-01-24",
+      "endDate": "2027-01-24",
+      "city": "College Park",
+      "country": "North America",
+      "venue": "Georgia International Convention Center - Hall D",
+      "address": "2000 Convention Center Concourse, College Park, GA 30337",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3430/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 124.0,
+          "deadline": "2026-12-25"
+        },
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2027-01-15"
+        },
+        {
+          "name": "Atlanta Winter Kids International Open IBJJF 2027 - Combo",
+          "price": 212.0,
+          "deadline": "2026-12-25"
+        },
+        {
+          "name": "Atlanta Winter Kids International Open IBJJF 2027 - Combo",
+          "price": 235.0,
+          "deadline": "2027-01-15"
+        }
+      ],
+      "divisions": [],
+      "lat": 35.7815615,
+      "lon": -78.6185623
+    },
+    {
+      "id": 3431,
+      "name": "Atlanta Winter Kids International Open IBJJF Jiu-Jitsu No-Gi Championship 2027",
+      "slug": "atlanta-winter-kids-international-open-ibjjf-jiu-jitsu-no-gi-championship-2027",
+      "startDate": "2027-01-24",
+      "endDate": "2027-01-24",
+      "city": "College Park",
+      "country": "North America",
+      "venue": "Georgia International Convention Center - Hall D",
+      "address": "2000 Convention Center Concourse, College Park, GA 30337",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3431/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 124.0,
+          "deadline": "2026-12-25"
+        },
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2027-01-15"
+        },
+        {
+          "name": "Atlanta Winter Kids International Open IBJJF 2027 - Combo",
+          "price": 212.0,
+          "deadline": "2026-12-25"
+        },
+        {
+          "name": "Atlanta Winter Kids International Open IBJJF 2027 - Combo",
+          "price": 235.0,
+          "deadline": "2027-01-15"
+        }
+      ],
+      "divisions": [],
+      "lat": 35.7815615,
+      "lon": -78.6185623
+    },
+    {
       "id": 3435,
       "name": "Los Angeles Winter International Open IBJJF Jiu-Jitsu Championship 2027",
       "slug": "los-angeles-winter-international-open-ibjjf-jiu-jitsu-championship-2027",
@@ -3566,6 +3714,80 @@
       "divisions": [],
       "lat": 34.2013928,
       "lon": -118.4166991
+    },
+    {
+      "id": 3440,
+      "name": "Memphis International Open IBJJF Jiu-Jitsu Championship 2027",
+      "slug": "memphis-international-open-ibjjf-jiu-jitsu-championship-2027",
+      "startDate": "2027-02-06",
+      "endDate": "2027-02-06",
+      "city": "Memphis",
+      "country": "North America",
+      "venue": "Memphis Sports & Events Center",
+      "address": "995 Early Maxwell Blvd, Memphis, TN 38104",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3440/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 143.0,
+          "deadline": "2027-01-08"
+        },
+        {
+          "name": "Standard",
+          "price": 174.0,
+          "deadline": "2027-01-29"
+        },
+        {
+          "name": "Memphis International Open IBJJF 2027 - Combo",
+          "price": 245.0,
+          "deadline": "2027-01-08"
+        },
+        {
+          "name": "Memphis International Open IBJJF 2027 - Combo",
+          "price": 295.0,
+          "deadline": "2027-01-29"
+        }
+      ],
+      "divisions": [],
+      "lat": 34.9964116,
+      "lon": -89.9399399
+    },
+    {
+      "id": 3441,
+      "name": "Memphis International Open IBJJF Jiu-Jitsu No-Gi Championship 2027",
+      "slug": "memphis-international-open-ibjjf-jiu-jitsu-no-gi-championship-2027",
+      "startDate": "2027-02-06",
+      "endDate": "2027-02-06",
+      "city": "Memphis",
+      "country": "North America",
+      "venue": "Memphis Sports & Events Center",
+      "address": "995 Early Maxwell Blvd, Memphis, TN 38104",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3441/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 143.0,
+          "deadline": "2027-01-08"
+        },
+        {
+          "name": "Standard",
+          "price": 174.0,
+          "deadline": "2027-01-29"
+        },
+        {
+          "name": "Memphis International Open IBJJF 2027 - Combo",
+          "price": 245.0,
+          "deadline": "2027-01-08"
+        },
+        {
+          "name": "Memphis International Open IBJJF 2027 - Combo",
+          "price": 295.0,
+          "deadline": "2027-01-29"
+        }
+      ],
+      "divisions": [],
+      "lat": 34.9964116,
+      "lon": -89.9399399
     }
   ]
 }
