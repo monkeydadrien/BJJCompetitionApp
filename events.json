@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T15:49:24.792846+00:00",
+  "generatedAt": "2026-09-26T14:58:15.349125+00:00",
   "events": [
     {
       "id": 2482,
@@ -96,33 +96,6 @@
       "divisions": [],
       "lat": 40.8632807,
       "lon": -73.7008358
-    },
-    {
-      "id": 3266,
-      "name": "Dallas Summer Kids International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "dallas-summer-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-08-02",
-      "endDate": "2026-08-02",
-      "city": "Dallas",
-      "country": "North America",
-      "venue": "Dallas Market Hall - North Hall",
-      "address": "2200 N Stemmons Fwy, Dallas, TX 75207",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3266/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 119.0,
-          "deadline": "2026-07-03"
-        },
-        {
-          "name": "Standard",
-          "price": 133.0,
-          "deadline": "2026-07-25"
-        }
-      ],
-      "divisions": [],
-      "lat": 35.3160401,
-      "lon": -81.1764865
     },
     {
       "id": 3347,
