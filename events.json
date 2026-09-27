@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T14:58:15.349125+00:00",
+  "generatedAt": "2026-09-27T15:36:28.824091+00:00",
   "events": [
     {
       "id": 2482,
@@ -3761,6 +3761,154 @@
       "divisions": [],
       "lat": 34.9964116,
       "lon": -89.9399399
+    },
+    {
+      "id": 3442,
+      "name": "Austin Winter International Open IBJJF Jiu-Jitsu Championship 2027",
+      "slug": "austin-winter-international-open-ibjjf-jiu-jitsu-championship-2027",
+      "startDate": "2027-02-20",
+      "endDate": "2027-02-21",
+      "city": "Round Rock,",
+      "country": "North America",
+      "venue": "Round Rock Sports Center",
+      "address": "2400 Chisholm Trail Rd, Round Rock,, TX 78681",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3442/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 143.0,
+          "deadline": "2027-01-22"
+        },
+        {
+          "name": "Standard",
+          "price": 174.0,
+          "deadline": "2027-02-12"
+        },
+        {
+          "name": "Austin Winter International Open IBJJF 2027 - Combo",
+          "price": 245.0,
+          "deadline": "2027-01-22"
+        },
+        {
+          "name": "Austin Winter International Open IBJJF 2027 - Combo",
+          "price": 295.0,
+          "deadline": "2027-02-12"
+        }
+      ],
+      "divisions": [],
+      "lat": 30.5048698,
+      "lon": -97.6823422
+    },
+    {
+      "id": 3443,
+      "name": "Austin Winter International Open IBJJF Jiu-Jitsu No-Gi Championship 2027",
+      "slug": "austin-winter-international-open-ibjjf-jiu-jitsu-no-gi-championship-2027",
+      "startDate": "2027-02-20",
+      "endDate": "2027-02-21",
+      "city": "Round Rock,",
+      "country": "North America",
+      "venue": "Round Rock Sports Center",
+      "address": "2400 Chisholm Trail Rd, Round Rock,, TX 78681",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3443/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 143.0,
+          "deadline": "2027-01-22"
+        },
+        {
+          "name": "Standard",
+          "price": 174.0,
+          "deadline": "2027-02-12"
+        },
+        {
+          "name": "Austin Winter International Open IBJJF 2027 - Combo",
+          "price": 245.0,
+          "deadline": "2027-01-22"
+        },
+        {
+          "name": "Austin Winter International Open IBJJF 2027 - Combo",
+          "price": 295.0,
+          "deadline": "2027-02-12"
+        }
+      ],
+      "divisions": [],
+      "lat": 30.5048698,
+      "lon": -97.6823422
+    },
+    {
+      "id": 3444,
+      "name": "Austin Winter Kids International Open IBJJF Jiu-Jitsu Championship 2027",
+      "slug": "austin-winter-kids-international-open-ibjjf-jiu-jitsu-championship-2027",
+      "startDate": "2027-02-21",
+      "endDate": "2027-02-21",
+      "city": "Round Rock",
+      "country": "North America",
+      "venue": "Round Rock Sports Center",
+      "address": "2400 Chisholm Trail Rd, Round Rock, TX 78681",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3444/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 124.0,
+          "deadline": "2027-01-22"
+        },
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2027-02-12"
+        },
+        {
+          "name": "Austin Winter Kids International Open IBJJF 2027 - Combo",
+          "price": 212.0,
+          "deadline": "2027-01-22"
+        },
+        {
+          "name": "Austin Winter Kids International Open IBJJF 2027 - Combo",
+          "price": 235.0,
+          "deadline": "2027-02-12"
+        }
+      ],
+      "divisions": [],
+      "lat": 30.5048697,
+      "lon": -97.6823422
+    },
+    {
+      "id": 3445,
+      "name": "Austin Winter Kids International Open IBJJF Jiu-Jitsu No-Gi Championship 2027",
+      "slug": "austin-winter-kids-international-open-ibjjf-jiu-jitsu-no-gi-championship-2027",
+      "startDate": "2027-02-21",
+      "endDate": "2027-02-21",
+      "city": "Round Rock",
+      "country": "North America",
+      "venue": "Round Rock Sports Center",
+      "address": "2400 Chisholm Trail Rd, Round Rock, TX 78681",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3445/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 124.0,
+          "deadline": "2027-01-22"
+        },
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2027-02-12"
+        },
+        {
+          "name": "Austin Winter Kids International Open IBJJF 2027 - Combo",
+          "price": 212.0,
+          "deadline": "2027-01-22"
+        },
+        {
+          "name": "Austin Winter Kids International Open IBJJF 2027 - Combo",
+          "price": 235.0,
+          "deadline": "2027-02-12"
+        }
+      ],
+      "divisions": [],
+      "lat": 30.5048697,
+      "lon": -97.6823422
     }
   ]
 }
