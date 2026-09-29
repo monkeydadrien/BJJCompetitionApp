@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T18:29:54.036212+00:00",
+  "generatedAt": "2026-09-29T16:51:07.417954+00:00",
   "events": [
     {
       "id": 2482,
@@ -96,33 +96,6 @@
       "divisions": [],
       "lat": 40.8632807,
       "lon": -73.7008358
-    },
-    {
-      "id": 3241,
-      "name": "San Antonio Fall Kids International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "an-antonio-fall-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-09-27",
-      "endDate": "2026-09-27",
-      "city": "San Antonio",
-      "country": "North America",
-      "venue": "Mission Concepcion Sports Park",
-      "address": "714 E Theo Ave, San Antonio, TX 78210",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3241/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 119.0,
-          "deadline": "2026-08-28"
-        },
-        {
-          "name": "Standard",
-          "price": 133.0,
-          "deadline": "2026-09-19"
-        }
-      ],
-      "divisions": [],
-      "lat": 29.6381608,
-      "lon": -98.4545506
     },
     {
       "id": 3239,
