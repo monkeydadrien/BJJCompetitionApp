@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T15:43:45.825989+00:00",
+  "generatedAt": "2026-10-06T17:07:12.287386+00:00",
   "events": [
     {
       "id": 2482,
@@ -98,38 +98,6 @@
       "lon": -73.7008358
     },
     {
-      "id": 3239,
-      "name": "Pan IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "pan-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-10-02",
-      "endDate": "2026-10-04",
-      "city": "Secaucus",
-      "country": "North America",
-      "venue": "Meadowlands Exposition Center",
-      "address": "355 Plaza Dr, Secaucus, NJ 07094",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3239/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 139.0,
-          "deadline": "2026-05-06"
-        },
-        {
-          "name": "Standard",
-          "price": 173.0,
-          "deadline": "2026-07-29"
-        },
-        {
-          "name": "Standard",
-          "price": 182.0,
-          "deadline": "2026-09-24"
-        }
-      ],
-      "divisions": [],
-      "lat": 40.7905945,
-      "lon": -74.0661789
-    },
-    {
       "id": 3277,
       "name": "Lisbon International Open IBJJF Jiu-Jitsu Championship 2026",
       "slug": "lisbon-international-open-ibjjf-jiu-jitsu-championship-2026",
@@ -187,43 +155,6 @@
       "venue": "Cabarrus Arena & Events Center",
       "address": "4751 State Hwy 49, Concord, NC 28025",
       "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3245/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-09-11"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-10-03"
-        },
-        {
-          "name": "Charlotte Fall International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-09-11"
-        },
-        {
-          "name": "Charlotte Fall International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-10-03"
-        }
-      ],
-      "divisions": [],
-      "lat": 35.4094178,
-      "lon": -80.5800049
-    },
-    {
-      "id": 3246,
-      "name": "Charlotte Fall International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "charlotte-fall-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-10-10",
-      "endDate": "2026-10-11",
-      "city": "Concord",
-      "country": "North America",
-      "venue": "Cabarrus Arena & Events Center",
-      "address": "4751 State Hwy 49, Concord, NC 28025",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3246/PublicRegistrations?lang=en-US",
       "priceTiers": [
         {
           "name": "Standard",
@@ -330,80 +261,6 @@
       "lon": -9.1655069
     },
     {
-      "id": 3306,
-      "name": "Houston Fall International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "houston-fall-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-10-10",
-      "endDate": "2026-10-11",
-      "city": "Houston",
-      "country": "North America",
-      "venue": "Reliant Center, Hall D",
-      "address": "8600 Kirby Dr, Houston, TX 77054",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3306/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-09-11"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-10-03"
-        },
-        {
-          "name": "Houston Fall International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-09-11"
-        },
-        {
-          "name": "Houston Fall International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-10-03"
-        }
-      ],
-      "divisions": [],
-      "lat": 34.9573719,
-      "lon": -80.6281232
-    },
-    {
-      "id": 3307,
-      "name": "Houston Fall International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "houston-fall-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-10-10",
-      "endDate": "2026-10-11",
-      "city": "Houston",
-      "country": "North America",
-      "venue": "Reliant Center, Hall D",
-      "address": "8600 Kirby Dr, Houston, TX 77054",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3307/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-09-11"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-10-03"
-        },
-        {
-          "name": "Houston Fall International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-09-11"
-        },
-        {
-          "name": "Houston Fall International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-10-03"
-        }
-      ],
-      "divisions": [],
-      "lat": 34.9573719,
-      "lon": -80.6281232
-    },
-    {
       "id": 3361,
       "name": "Curitiba Spring International Open IBJJF Jiu-Jitsu Championship 2026",
       "slug": "curitiba-spring-international-open-ibjjf-jiu-jitsu-championship-2026",
@@ -441,10 +298,175 @@
       "lon": -52.0411623
     },
     {
+      "id": 3246,
+      "name": "Charlotte Fall International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "slug": "charlotte-fall-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "city": "Concord",
+      "country": "North America",
+      "venue": "Cabarrus Arena & Events Center",
+      "address": "4751 State Hwy 49, Concord, NC 28025",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3246/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2026-09-11"
+        },
+        {
+          "name": "Standard",
+          "price": 167.0,
+          "deadline": "2026-10-03"
+        },
+        {
+          "name": "Charlotte Fall International Open IBJJF 2026 - Combo",
+          "price": 236.0,
+          "deadline": "2026-09-11"
+        },
+        {
+          "name": "Charlotte Fall International Open IBJJF 2026 - Combo",
+          "price": 284.0,
+          "deadline": "2026-10-03"
+        }
+      ],
+      "divisions": [],
+      "lat": 35.4094178,
+      "lon": -80.5800049
+    },
+    {
+      "id": 3247,
+      "name": "Charlotte Fall Kids International Open IBJJF Jiu-Jitsu Championship 2026",
+      "slug": "charlotte-fall-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "city": "Concord",
+      "country": "North America",
+      "venue": "Cabarrus Arena & Events Center",
+      "address": "4751 State Hwy 49, Concord, NC 28025",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3247/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 119.0,
+          "deadline": "2026-09-11"
+        },
+        {
+          "name": "Standard",
+          "price": 133.0,
+          "deadline": "2026-10-03"
+        }
+      ],
+      "divisions": [],
+      "lat": 35.4094178,
+      "lon": -80.5800049
+    },
+    {
+      "id": 3306,
+      "name": "Houston Fall International Open IBJJF Jiu-Jitsu Championship 2026",
+      "slug": "houston-fall-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "city": "Houston",
+      "country": "North America",
+      "venue": "Reliant Center, Hall D",
+      "address": "8600 Kirby Dr, Houston, TX 77054",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3306/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2026-09-11"
+        },
+        {
+          "name": "Standard",
+          "price": 167.0,
+          "deadline": "2026-10-03"
+        },
+        {
+          "name": "Houston Fall International Open IBJJF 2026 - Combo",
+          "price": 236.0,
+          "deadline": "2026-09-11"
+        },
+        {
+          "name": "Houston Fall International Open IBJJF 2026 - Combo",
+          "price": 284.0,
+          "deadline": "2026-10-03"
+        }
+      ],
+      "divisions": [],
+      "lat": 34.9573719,
+      "lon": -80.6281232
+    },
+    {
+      "id": 3307,
+      "name": "Houston Fall International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "slug": "houston-fall-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "city": "Houston",
+      "country": "North America",
+      "venue": "Reliant Center, Hall D",
+      "address": "8600 Kirby Dr, Houston, TX 77054",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3307/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2026-09-11"
+        },
+        {
+          "name": "Standard",
+          "price": 167.0,
+          "deadline": "2026-10-03"
+        },
+        {
+          "name": "Houston Fall International Open IBJJF 2026 - Combo",
+          "price": 236.0,
+          "deadline": "2026-09-11"
+        },
+        {
+          "name": "Houston Fall International Open IBJJF 2026 - Combo",
+          "price": 284.0,
+          "deadline": "2026-10-03"
+        }
+      ],
+      "divisions": [],
+      "lat": 34.9573719,
+      "lon": -80.6281232
+    },
+    {
+      "id": 3308,
+      "name": "Houston Fall Kids International Open IBJJF Jiu-Jitsu Championship 2026",
+      "slug": "houston-fall-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "city": "Houston",
+      "country": "North America",
+      "venue": "Reliant Center, Hall D",
+      "address": "8600 Kirby Dr, Houston, TX 77054",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3308/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 119.0,
+          "deadline": "2026-09-11"
+        },
+        {
+          "name": "Standard",
+          "price": 133.0,
+          "deadline": "2026-10-03"
+        }
+      ],
+      "divisions": [],
+      "lat": 34.9573719,
+      "lon": -80.6281232
+    },
+    {
       "id": 3362,
       "name": "Curitiba Spring International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
       "slug": "curitiba-spring-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-10-10",
+      "startDate": "2026-10-11",
       "endDate": "2026-10-11",
       "city": "Curitiba",
       "country": "South America",
@@ -478,10 +500,42 @@
       "lon": -52.0411623
     },
     {
+      "id": 3363,
+      "name": "Curitiba Spring Kids International Open IBJJF Jiu-Jitsu Championship 2026",
+      "slug": "curitiba-spring-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "city": "Curitiba",
+      "country": "South America",
+      "venue": "Gin\u00e1sio do Tarum\u00e3",
+      "address": "Av. Victor Ferreira do Amaral, 1649, Tarum\u00e3, Curitiba, PR 82800 000",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3363/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 187.0,
+          "deadline": "2026-07-24"
+        },
+        {
+          "name": "Standard",
+          "price": 213.0,
+          "deadline": "2026-08-28"
+        },
+        {
+          "name": "Standard",
+          "price": 239.0,
+          "deadline": "2026-10-03"
+        }
+      ],
+      "divisions": [],
+      "lat": -23.4628495,
+      "lon": -52.0411623
+    },
+    {
       "id": 3374,
       "name": "Toronto International Open IBJJF Jiu-Jitsu Championship 2026",
       "slug": "oronto-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-10-10",
+      "startDate": "2026-10-11",
       "endDate": "2026-10-11",
       "city": "Scarborough",
       "country": "North America",
@@ -518,7 +572,7 @@
       "id": 3375,
       "name": "Toronto International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
       "slug": "oronto-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-10-10",
+      "startDate": "2026-10-11",
       "endDate": "2026-10-11",
       "city": "Scarborough",
       "country": "North America",
@@ -550,92 +604,6 @@
       "divisions": [],
       "lat": 35.5800516,
       "lon": -77.3434998
-    },
-    {
-      "id": 3247,
-      "name": "Charlotte Fall Kids International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "charlotte-fall-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-10-11",
-      "endDate": "2026-10-11",
-      "city": "Concord",
-      "country": "North America",
-      "venue": "Cabarrus Arena & Events Center",
-      "address": "4751 State Hwy 49, Concord, NC 28025",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3247/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 119.0,
-          "deadline": "2026-09-11"
-        },
-        {
-          "name": "Standard",
-          "price": 133.0,
-          "deadline": "2026-10-03"
-        }
-      ],
-      "divisions": [],
-      "lat": 35.4094178,
-      "lon": -80.5800049
-    },
-    {
-      "id": 3308,
-      "name": "Houston Fall Kids International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "houston-fall-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-10-11",
-      "endDate": "2026-10-11",
-      "city": "Houston",
-      "country": "North America",
-      "venue": "Reliant Center, Hall D",
-      "address": "8600 Kirby Dr, Houston, TX 77054",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3308/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 119.0,
-          "deadline": "2026-09-11"
-        },
-        {
-          "name": "Standard",
-          "price": 133.0,
-          "deadline": "2026-10-03"
-        }
-      ],
-      "divisions": [],
-      "lat": 34.9573719,
-      "lon": -80.6281232
-    },
-    {
-      "id": 3363,
-      "name": "Curitiba Spring Kids International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "curitiba-spring-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-10-11",
-      "endDate": "2026-10-11",
-      "city": "Curitiba",
-      "country": "South America",
-      "venue": "Gin\u00e1sio do Tarum\u00e3",
-      "address": "Av. Victor Ferreira do Amaral, 1649, Tarum\u00e3, Curitiba, PR 82800 000",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3363/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 187.0,
-          "deadline": "2026-07-24"
-        },
-        {
-          "name": "Standard",
-          "price": 213.0,
-          "deadline": "2026-08-28"
-        },
-        {
-          "name": "Standard",
-          "price": 239.0,
-          "deadline": "2026-10-03"
-        }
-      ],
-      "divisions": [],
-      "lat": -23.4628495,
-      "lon": -52.0411623
     },
     {
       "id": 3376,
