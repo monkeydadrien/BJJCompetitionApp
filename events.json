@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T17:07:12.287386+00:00",
+  "generatedAt": "2026-10-07T17:45:45.735317+00:00",
   "events": [
     {
       "id": 2482,
@@ -689,7 +689,7 @@
         {
           "name": "Standard",
           "price": 281.0,
-          "deadline": "2026-10-07"
+          "deadline": "2026-10-08"
         },
         {
           "name": "Rio Spring International Open IBJJF 2026 - Combo",
@@ -699,7 +699,7 @@
         {
           "name": "Rio Spring International Open IBJJF 2026 - Combo",
           "price": 487.0,
-          "deadline": "2026-10-07"
+          "deadline": "2026-10-08"
         }
       ],
       "divisions": [],
@@ -726,7 +726,7 @@
         {
           "name": "Standard",
           "price": 281.0,
-          "deadline": "2026-10-07"
+          "deadline": "2026-10-08"
         },
         {
           "name": "Rio Spring International Open IBJJF 2026 - Combo",
@@ -736,7 +736,7 @@
         {
           "name": "Rio Spring International Open IBJJF 2026 - Combo",
           "price": 487.0,
-          "deadline": "2026-10-07"
+          "deadline": "2026-10-08"
         }
       ],
       "divisions": [],
@@ -1007,7 +1007,7 @@
         {
           "name": "Standard",
           "price": 239.0,
-          "deadline": "2026-10-07"
+          "deadline": "2026-10-08"
         },
         {
           "name": "Rio Spring Kids International Open IBJJF 2026 - Combo",
@@ -1022,7 +1022,7 @@
         {
           "name": "Rio Spring Kids International Open IBJJF 2026 - Combo",
           "price": 408.0,
-          "deadline": "2026-10-07"
+          "deadline": "2026-10-08"
         }
       ],
       "divisions": [],
@@ -1054,7 +1054,7 @@
         {
           "name": "Standard",
           "price": 239.0,
-          "deadline": "2026-10-07"
+          "deadline": "2026-10-08"
         },
         {
           "name": "Rio Spring Kids International Open IBJJF 2026 - Combo",
@@ -1069,7 +1069,7 @@
         {
           "name": "Rio Spring Kids International Open IBJJF 2026 - Combo",
           "price": 408.0,
-          "deadline": "2026-10-07"
+          "deadline": "2026-10-08"
         }
       ],
       "divisions": [],
