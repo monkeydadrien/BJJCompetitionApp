@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T17:22:21.316977+00:00",
+  "generatedAt": "2026-10-10T16:11:28.523490+00:00",
   "events": [
     {
       "id": 2482,
@@ -763,7 +763,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-10-09"
+          "deadline": "2026-10-10"
         },
         {
           "name": "Sacramento Fall International Open IBJJF 2026 - Combo",
@@ -773,7 +773,7 @@
         {
           "name": "Sacramento Fall International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-10-09"
+          "deadline": "2026-10-10"
         }
       ],
       "divisions": [],
@@ -800,7 +800,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-10-09"
+          "deadline": "2026-10-10"
         },
         {
           "name": "Sacramento Fall International Open IBJJF 2026 - Combo",
@@ -810,7 +810,7 @@
         {
           "name": "Sacramento Fall International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-10-09"
+          "deadline": "2026-10-10"
         }
       ],
       "divisions": [],
@@ -819,8 +819,8 @@
     },
     {
       "id": 3281,
-      "name": "Fort Lauderdale International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "fort-lauderdale-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "name": "Ft. Lauderdale International Open IBJJF Jiu-Jitsu Championship 2026",
+      "slug": "ft-lauderdale-international-open-ibjjf-jiu-jitsu-championship-2026",
       "startDate": "2026-10-17",
       "endDate": "2026-10-17",
       "city": "Fort Lauderdale",
@@ -837,7 +837,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-10-09"
+          "deadline": "2026-10-10"
         },
         {
           "name": "Fort Lauderdale International Open IBJJF 2026 - Combo",
@@ -847,7 +847,7 @@
         {
           "name": "Fort Lauderdale International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-10-09"
+          "deadline": "2026-10-10"
         }
       ],
       "divisions": [],
@@ -856,8 +856,8 @@
     },
     {
       "id": 3282,
-      "name": "Fort Lauderdale International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "fort-lauderdale-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "name": "Ft. Lauderdale International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "slug": "ft-lauderdale-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
       "startDate": "2026-10-17",
       "endDate": "2026-10-17",
       "city": "Fort Lauderdale",
@@ -874,7 +874,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-10-09"
+          "deadline": "2026-10-10"
         },
         {
           "name": "Fort Lauderdale International Open IBJJF 2026 - Combo",
@@ -884,7 +884,7 @@
         {
           "name": "Fort Lauderdale International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-10-09"
+          "deadline": "2026-10-10"
         }
       ],
       "divisions": [],
@@ -948,7 +948,7 @@
         {
           "name": "Standard",
           "price": 133.0,
-          "deadline": "2026-10-09"
+          "deadline": "2026-10-10"
         }
       ],
       "divisions": [],
