@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T16:11:28.523490+00:00",
+  "generatedAt": "2026-10-11T16:36:16.672725+00:00",
   "events": [
     {
       "id": 2482,
@@ -369,8 +369,8 @@
       "endDate": "2026-10-11",
       "city": "Houston",
       "country": "North America",
-      "venue": "Reliant Center, Hall D",
-      "address": "8600 Kirby Dr, Houston, TX 77054",
+      "venue": "Reliant Center (Hall D)",
+      "address": "1 Fannin St, Houston, TX 77054",
       "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3306/PublicRegistrations?lang=en-US",
       "priceTiers": [
         {
@@ -406,8 +406,8 @@
       "endDate": "2026-10-11",
       "city": "Houston",
       "country": "North America",
-      "venue": "Reliant Center, Hall D",
-      "address": "8600 Kirby Dr, Houston, TX 77054",
+      "venue": "Reliant Center (Hall D)",
+      "address": "1 Fannin St, Houston, TX 77054",
       "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3307/PublicRegistrations?lang=en-US",
       "priceTiers": [
         {
@@ -443,8 +443,8 @@
       "endDate": "2026-10-11",
       "city": "Houston",
       "country": "North America",
-      "venue": "Reliant Center, Hall D",
-      "address": "8600 Kirby Dr, Houston, TX 77054",
+      "venue": "Reliant Center (Hall D)",
+      "address": "1 Fannin St, Houston, TX 77054",
       "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3308/PublicRegistrations?lang=en-US",
       "priceTiers": [
         {
@@ -711,7 +711,7 @@
       "name": "Rio Spring International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
       "slug": "rio-spring-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
       "startDate": "2026-10-16",
-      "endDate": "2026-10-17",
+      "endDate": "2026-10-16",
       "city": "Rio de Janeiro",
       "country": "South America",
       "venue": "Centro Esportivo Mi\u00e9cimo da Silva",
