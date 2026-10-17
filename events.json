@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T15:14:24.281131+00:00",
+  "generatedAt": "2026-10-17T14:07:23.889177+00:00",
   "events": [
     {
       "id": 2482,
@@ -290,7 +290,7 @@
       "endDate": "2026-10-17",
       "city": "Fort Lauderdale",
       "country": "North America",
-      "venue": "Broward County Convention Center - Hall C",
+      "venue": "Broward County Convention Center - Hall A",
       "address": "1950 Eisenhower Blvd, Fort Lauderdale, FL 33316",
       "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3281/PublicRegistrations?lang=en-US",
       "priceTiers": [
@@ -327,7 +327,7 @@
       "endDate": "2026-10-17",
       "city": "Fort Lauderdale",
       "country": "North America",
-      "venue": "Broward County Convention Center - Hall C",
+      "venue": "Broward County Convention Center - Hall A",
       "address": "1950 Eisenhower Blvd, Fort Lauderdale, FL 33316",
       "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3282/PublicRegistrations?lang=en-US",
       "priceTiers": [
@@ -401,7 +401,7 @@
       "endDate": "2026-10-18",
       "city": "Fort Lauderdale",
       "country": "North America",
-      "venue": "Broward County Convention Center - Hall C",
+      "venue": "Broward County Convention Center - Hall A",
       "address": "1950 Eisenhower Blvd, Fort Lauderdale, FL 33316",
       "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3280/PublicRegistrations?lang=en-US",
       "priceTiers": [
@@ -561,7 +561,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-10-16"
+          "deadline": "2026-10-17"
         },
         {
           "name": "Boston Fall International Open IBJJF 2026 - Combo",
@@ -571,7 +571,7 @@
         {
           "name": "Boston Fall International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-10-16"
+          "deadline": "2026-10-17"
         }
       ],
       "divisions": [],
@@ -598,7 +598,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-10-16"
+          "deadline": "2026-10-17"
         },
         {
           "name": "Boston Fall International Open IBJJF 2026 - Combo",
@@ -608,7 +608,7 @@
         {
           "name": "Boston Fall International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-10-16"
+          "deadline": "2026-10-17"
         }
       ],
       "divisions": [],
@@ -635,7 +635,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-10-16"
+          "deadline": "2026-10-17"
         },
         {
           "name": "Orange County Fall International Open IBJJF 2026 - Combo",
@@ -645,7 +645,7 @@
         {
           "name": "Orange County Fall International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-10-16"
+          "deadline": "2026-10-17"
         }
       ],
       "divisions": [],
@@ -672,7 +672,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-10-16"
+          "deadline": "2026-10-17"
         },
         {
           "name": "Orange County Fall International Open IBJJF 2026 - Combo",
@@ -682,7 +682,7 @@
         {
           "name": "Orange County Fall International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-10-16"
+          "deadline": "2026-10-17"
         }
       ],
       "divisions": [],
@@ -709,7 +709,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-10-16"
+          "deadline": "2026-10-17"
         },
         {
           "name": "Nashville Fall International Open IBJJF 2026 - Combo",
@@ -719,7 +719,7 @@
         {
           "name": "Nashville Fall International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-10-16"
+          "deadline": "2026-10-17"
         }
       ],
       "divisions": [],
@@ -746,7 +746,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-10-16"
+          "deadline": "2026-10-17"
         },
         {
           "name": "Nashville Fall International Open IBJJF 2026 - Combo",
@@ -756,7 +756,7 @@
         {
           "name": "Nashville Fall International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-10-16"
+          "deadline": "2026-10-17"
         }
       ],
       "divisions": [],
@@ -783,7 +783,7 @@
         {
           "name": "Standard",
           "price": 133.0,
-          "deadline": "2026-10-16"
+          "deadline": "2026-10-17"
         }
       ],
       "divisions": [],
@@ -810,7 +810,7 @@
         {
           "name": "Standard",
           "price": 133.0,
-          "deadline": "2026-10-16"
+          "deadline": "2026-10-17"
         }
       ],
       "divisions": [],
@@ -837,7 +837,7 @@
         {
           "name": "Standard",
           "price": 133.0,
-          "deadline": "2026-10-16"
+          "deadline": "2026-10-17"
         }
       ],
       "divisions": [],
