@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T17:22:32.722585+00:00",
+  "generatedAt": "2026-10-20T15:36:23.611844+00:00",
   "events": [
     {
       "id": 2482,
@@ -98,80 +98,6 @@
       "lon": -73.7008358
     },
     {
-      "id": 3251,
-      "name": "Sacramento Fall International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "acramento-fall-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-10-17",
-      "endDate": "2026-10-17",
-      "city": "Sacramento",
-      "country": "North America",
-      "venue": "SAFE Credit Union Convention Center - Hall A",
-      "address": "1401 K St, Sacramento, CA 95814",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3251/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-09-18"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-10-10"
-        },
-        {
-          "name": "Sacramento Fall International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-09-18"
-        },
-        {
-          "name": "Sacramento Fall International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-10-10"
-        }
-      ],
-      "divisions": [],
-      "lat": 38.4628968,
-      "lon": -121.4163613
-    },
-    {
-      "id": 3252,
-      "name": "Sacramento Fall International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "acramento-fall-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-10-17",
-      "endDate": "2026-10-17",
-      "city": "Sacramento",
-      "country": "North America",
-      "venue": "SAFE Credit Union Convention Center - Hall A",
-      "address": "1401 K St, Sacramento, CA 95814",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3252/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-09-18"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-10-10"
-        },
-        {
-          "name": "Sacramento Fall International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-09-18"
-        },
-        {
-          "name": "Sacramento Fall International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-10-10"
-        }
-      ],
-      "divisions": [],
-      "lat": 38.4628968,
-      "lon": -121.4163613
-    },
-    {
       "id": 3253,
       "name": "Boston Fall International Open IBJJF Jiu-Jitsu Championship 2026",
       "slug": "boston-fall-international-open-ibjjf-jiu-jitsu-championship-2026",
@@ -182,43 +108,6 @@
       "venue": "Reggie Lewis Track and Athletic Center",
       "address": "1350 Tremont St, Boston, MA 02120",
       "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3253/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-09-25"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-10-17"
-        },
-        {
-          "name": "Boston Fall International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-09-25"
-        },
-        {
-          "name": "Boston Fall International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-10-17"
-        }
-      ],
-      "divisions": [],
-      "lat": 42.3977629,
-      "lon": -71.1468613
-    },
-    {
-      "id": 3254,
-      "name": "Boston Fall International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "boston-fall-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-10-24",
-      "endDate": "2026-10-25",
-      "city": "Boston",
-      "country": "North America",
-      "venue": "Reggie Lewis Track and Athletic Center",
-      "address": "1350 Tremont St, Boston, MA 02120",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3254/PublicRegistrations?lang=en-US",
       "priceTiers": [
         {
           "name": "Standard",
@@ -283,43 +172,6 @@
       "lon": null
     },
     {
-      "id": 3310,
-      "name": "Orange County Fall International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "orange-county-fall-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-10-24",
-      "endDate": "2026-10-25",
-      "city": "Costa Mesa",
-      "country": "North America",
-      "venue": "OC Fair & Event Center -  Costa Mesa Building",
-      "address": "88 Fair Dr, Costa Mesa, CA 92626",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3310/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-09-25"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-10-17"
-        },
-        {
-          "name": "Orange County Fall International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-09-25"
-        },
-        {
-          "name": "Orange County Fall International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-10-17"
-        }
-      ],
-      "divisions": [],
-      "lat": null,
-      "lon": null
-    },
-    {
       "id": 3315,
       "name": "Nashville Fall International Open IBJJF Jiu-Jitsu Championship 2026",
       "slug": "ashville-fall-international-open-ibjjf-jiu-jitsu-championship-2026",
@@ -357,10 +209,138 @@
       "lon": -78.2787229
     },
     {
+      "id": 3254,
+      "name": "Boston Fall International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "slug": "boston-fall-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-25",
+      "city": "Boston",
+      "country": "North America",
+      "venue": "Reggie Lewis Track and Athletic Center",
+      "address": "1350 Tremont St, Boston, MA 02120",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3254/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2026-09-25"
+        },
+        {
+          "name": "Standard",
+          "price": 167.0,
+          "deadline": "2026-10-17"
+        },
+        {
+          "name": "Boston Fall International Open IBJJF 2026 - Combo",
+          "price": 236.0,
+          "deadline": "2026-09-25"
+        },
+        {
+          "name": "Boston Fall International Open IBJJF 2026 - Combo",
+          "price": 284.0,
+          "deadline": "2026-10-17"
+        }
+      ],
+      "divisions": [],
+      "lat": 42.3977629,
+      "lon": -71.1468613
+    },
+    {
+      "id": 3255,
+      "name": "Boston Fall Kids International Open IBJJF Jiu-Jitsu Championship 2026",
+      "slug": "boston-fall-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-25",
+      "city": "Boston",
+      "country": "North America",
+      "venue": "Reggie Lewis Track and Athletic Center",
+      "address": "1350 Tremont St, Boston, MA 02120",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3255/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 119.0,
+          "deadline": "2026-09-25"
+        },
+        {
+          "name": "Standard",
+          "price": 133.0,
+          "deadline": "2026-10-17"
+        }
+      ],
+      "divisions": [],
+      "lat": 42.3977629,
+      "lon": -71.1468613
+    },
+    {
+      "id": 3310,
+      "name": "Orange County Fall International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "slug": "orange-county-fall-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-25",
+      "city": "Costa Mesa",
+      "country": "North America",
+      "venue": "OC Fair & Event Center -  Costa Mesa Building",
+      "address": "88 Fair Dr, Costa Mesa, CA 92626",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3310/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2026-09-25"
+        },
+        {
+          "name": "Standard",
+          "price": 167.0,
+          "deadline": "2026-10-17"
+        },
+        {
+          "name": "Orange County Fall International Open IBJJF 2026 - Combo",
+          "price": 236.0,
+          "deadline": "2026-09-25"
+        },
+        {
+          "name": "Orange County Fall International Open IBJJF 2026 - Combo",
+          "price": 284.0,
+          "deadline": "2026-10-17"
+        }
+      ],
+      "divisions": [],
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": 3311,
+      "name": "Orange County Fall Kids International Open IBJJF Jiu-Jitsu Championship 2026",
+      "slug": "orange-county-fall-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-25",
+      "city": "Costa Mesa",
+      "country": "North America",
+      "venue": "OC Fair & Event Center -  Costa Mesa Building",
+      "address": "88 Fair Dr, Costa Mesa, CA 92626",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3311/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 119.0,
+          "deadline": "2026-09-25"
+        },
+        {
+          "name": "Standard",
+          "price": 133.0,
+          "deadline": "2026-10-17"
+        }
+      ],
+      "divisions": [],
+      "lat": null,
+      "lon": null
+    },
+    {
       "id": 3316,
       "name": "Nashville Fall International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
       "slug": "ashville-fall-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-10-24",
+      "startDate": "2026-10-25",
       "endDate": "2026-10-25",
       "city": "Franklin",
       "country": "North America",
@@ -392,60 +372,6 @@
       "divisions": [],
       "lat": 36.1028596,
       "lon": -78.2787229
-    },
-    {
-      "id": 3255,
-      "name": "Boston Fall Kids International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "boston-fall-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-10-25",
-      "endDate": "2026-10-25",
-      "city": "Boston",
-      "country": "North America",
-      "venue": "Reggie Lewis Track and Athletic Center",
-      "address": "1350 Tremont St, Boston, MA 02120",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3255/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 119.0,
-          "deadline": "2026-09-25"
-        },
-        {
-          "name": "Standard",
-          "price": 133.0,
-          "deadline": "2026-10-17"
-        }
-      ],
-      "divisions": [],
-      "lat": 42.3977629,
-      "lon": -71.1468613
-    },
-    {
-      "id": 3311,
-      "name": "Orange County Fall Kids International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "orange-county-fall-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-10-25",
-      "endDate": "2026-10-25",
-      "city": "Costa Mesa",
-      "country": "North America",
-      "venue": "OC Fair & Event Center -  Costa Mesa Building",
-      "address": "88 Fair Dr, Costa Mesa, CA 92626",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3311/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 119.0,
-          "deadline": "2026-09-25"
-        },
-        {
-          "name": "Standard",
-          "price": 133.0,
-          "deadline": "2026-10-17"
-        }
-      ],
-      "divisions": [],
-      "lat": null,
-      "lon": null
     },
     {
       "id": 3317,
