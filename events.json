@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T15:51:58.499791+00:00",
+  "generatedAt": "2026-10-22T15:50:17.508175+00:00",
   "events": [
     {
       "id": 2482,
@@ -514,7 +514,7 @@
         {
           "name": "Standard",
           "price": 281.0,
-          "deadline": "2026-10-21"
+          "deadline": "2026-10-22"
         },
         {
           "name": "Recife Spring International Open IBJJF 2026 - Combo",
@@ -524,7 +524,7 @@
         {
           "name": "Recife Spring International Open IBJJF 2026 - Combo",
           "price": 487.0,
-          "deadline": "2026-10-21"
+          "deadline": "2026-10-22"
         }
       ],
       "divisions": [],
@@ -551,7 +551,7 @@
         {
           "name": "Standard",
           "price": 281.0,
-          "deadline": "2026-10-21"
+          "deadline": "2026-10-22"
         },
         {
           "name": "Recife Spring International Open IBJJF 2026 - Combo",
@@ -561,7 +561,7 @@
         {
           "name": "Recife Spring International Open IBJJF 2026 - Combo",
           "price": 487.0,
-          "deadline": "2026-10-21"
+          "deadline": "2026-10-22"
         }
       ],
       "divisions": [],
@@ -593,7 +593,7 @@
         {
           "name": "Standard",
           "price": 239.0,
-          "deadline": "2026-10-21"
+          "deadline": "2026-10-22"
         },
         {
           "name": "Recife Spring Kids International Open IBJJF 2026 - Combo",
@@ -608,7 +608,7 @@
         {
           "name": "Recife Spring Kids International Open IBJJF 2026 - Combo",
           "price": 408.0,
-          "deadline": "2026-10-21"
+          "deadline": "2026-10-22"
         }
       ],
       "divisions": [],
@@ -640,7 +640,7 @@
         {
           "name": "Standard",
           "price": 239.0,
-          "deadline": "2026-10-21"
+          "deadline": "2026-10-22"
         },
         {
           "name": "Recife Spring Kids International Open IBJJF 2026 - Combo",
@@ -655,7 +655,7 @@
         {
           "name": "Recife Spring Kids International Open IBJJF 2026 - Combo",
           "price": 408.0,
-          "deadline": "2026-10-21"
+          "deadline": "2026-10-22"
         }
       ],
       "divisions": [],
