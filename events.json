@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T17:02:10.055261+00:00",
+  "generatedAt": "2026-10-29T17:22:13.732737+00:00",
   "events": [
     {
       "id": 2482,
@@ -1201,10 +1201,42 @@
       "lon": 2.3222823
     },
     {
+      "id": 3385,
+      "name": "Balne\u00e1rio Cambori\u00fa Kids International Open IBJJF Jiu-Jitsu Championship 2026",
+      "slug": "balneario-camboriu-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "startDate": "2026-11-29",
+      "endDate": "2026-11-29",
+      "city": "Balne\u00e1rio Camburi\u00fa",
+      "country": "South America",
+      "venue": "Gin\u00e1sio Hamilton Linhares Cruz",
+      "address": "R. Jardim da Saudade, 315, Barra, Balne\u00e1rio Camburi\u00fa, SC 88332 055",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3385/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 187.0,
+          "deadline": "2026-08-28"
+        },
+        {
+          "name": "Standard",
+          "price": 213.0,
+          "deadline": "2026-10-02"
+        },
+        {
+          "name": "Standard",
+          "price": 239.0,
+          "deadline": "2026-11-20"
+        }
+      ],
+      "divisions": [],
+      "lat": null,
+      "lon": null
+    },
+    {
       "id": 3406,
       "name": "Paris Fall International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
       "slug": "paris-fall-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-11-28",
+      "startDate": "2026-11-29",
       "endDate": "2026-11-29",
       "city": "Paris",
       "country": "Europe",
@@ -1246,38 +1278,6 @@
       "divisions": [],
       "lat": 48.8787706,
       "lon": 2.3222823
-    },
-    {
-      "id": 3385,
-      "name": "Balne\u00e1rio Cambori\u00fa Kids International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "balneario-camboriu-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-11-29",
-      "endDate": "2026-11-29",
-      "city": "Balne\u00e1rio Camburi\u00fa",
-      "country": "South America",
-      "venue": "Gin\u00e1sio Hamilton Linhares Cruz",
-      "address": "R. Jardim da Saudade, 315, Barra, Balne\u00e1rio Camburi\u00fa, SC 88332 055",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3385/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 187.0,
-          "deadline": "2026-08-28"
-        },
-        {
-          "name": "Standard",
-          "price": 213.0,
-          "deadline": "2026-10-02"
-        },
-        {
-          "name": "Standard",
-          "price": 239.0,
-          "deadline": "2026-11-20"
-        }
-      ],
-      "divisions": [],
-      "lat": null,
-      "lon": null
     },
     {
       "id": 3164,
