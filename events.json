@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T18:17:05.332304+00:00",
+  "generatedAt": "2026-11-04T18:29:23.155891+00:00",
   "events": [
     {
       "id": 2482,
@@ -2427,6 +2427,38 @@
       "divisions": [],
       "lat": 30.5048697,
       "lon": -97.6823422
+    },
+    {
+      "id": 3452,
+      "name": "Pan IBJJF Jiu-Jitsu Championship 2027",
+      "slug": "pan-ibjjf-jiu-jitsu-championship-2027",
+      "startDate": "2027-03-16",
+      "endDate": "2027-03-21",
+      "city": "Kissimmee",
+      "country": "North America",
+      "venue": "Silver Spurs Arena - Osceola Heritage Park",
+      "address": "1875 Silver Spur Ln, Kissimmee, FL 34744",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3452/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 140.0,
+          "deadline": "2026-12-11"
+        },
+        {
+          "name": "Standard",
+          "price": 179.0,
+          "deadline": "2027-02-05"
+        },
+        {
+          "name": "Standard",
+          "price": 189.0,
+          "deadline": "2027-03-07"
+        }
+      ],
+      "divisions": [],
+      "lat": 35.8905528,
+      "lon": -78.5508505
     }
   ]
 }
