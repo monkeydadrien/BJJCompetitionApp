@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T18:29:23.155891+00:00",
+  "generatedAt": "2026-11-05T18:34:10.280540+00:00",
   "events": [
     {
       "id": 2482,
@@ -1026,7 +1026,7 @@
       "city": "Nagoya",
       "country": "Asia",
       "venue": "Aichi-ken Budokan",
-      "address": "1-1-4 Maruikecho, Minatoku, Nagoya, Aichi 455 0078",
+      "address": "1-1-4 Maruikecho, Minato Ward, Nagoya, Aichi 455 0078",
       "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3164/PublicRegistrations?lang=en-US",
       "priceTiers": [
         {
@@ -1073,7 +1073,7 @@
       "city": "Nagoya",
       "country": "Asia",
       "venue": "Aichi-ken Budokan",
-      "address": "1-1-4 Maruikecho, Minatoku, Nagoya, Aichi 455 0078",
+      "address": "1-1-4 Maruikecho, Minato Ward, Nagoya, Aichi 455 0078",
       "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3165/PublicRegistrations?lang=en-US",
       "priceTiers": [
         {
@@ -1120,7 +1120,7 @@
       "city": "Nagoya",
       "country": "Asia",
       "venue": "Aichi-ken Budokan",
-      "address": "1-1-4 Maruikecho, Minatoku, Nagoya, Aichi 455 0078",
+      "address": "1-1-4 Maruikecho, Minato Ward, Nagoya, Aichi 455 0078",
       "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3166/PublicRegistrations?lang=en-US",
       "priceTiers": [
         {
@@ -1320,7 +1320,7 @@
       "city": "Nagoya",
       "country": "Asia",
       "venue": "Aichi-ken Budokan",
-      "address": "1-1-4 Maruikecho, Minatoku, Nagoya, Aichi 455 0078",
+      "address": "1-1-4 Maruikecho, Minato Ward, Nagoya, Aichi 455 0078",
       "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3167/PublicRegistrations?lang=en-US",
       "priceTiers": [
         {
@@ -2279,6 +2279,107 @@
       "divisions": [],
       "lat": 34.9964116,
       "lon": -89.9399399
+    },
+    {
+      "id": 3474,
+      "name": "Albuquerque International Open IBJJF Jiu-Jitsu Championship 2027",
+      "slug": "albuquerque-international-open-ibjjf-jiu-jitsu-championship-2027",
+      "startDate": "2027-02-13",
+      "endDate": "2027-02-14",
+      "city": "Albuquerque",
+      "country": "North America",
+      "venue": "Albuquerque Convention Center - West Hall 4",
+      "address": "401 2nd St NW, Albuquerque, NM 87102",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3474/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 143.0,
+          "deadline": "2027-01-15"
+        },
+        {
+          "name": "Standard",
+          "price": 174.0,
+          "deadline": "2027-02-05"
+        },
+        {
+          "name": "Albuquerque International Open Championship 2027 - Combo",
+          "price": 245.0,
+          "deadline": "2027-01-15"
+        },
+        {
+          "name": "Albuquerque International Open Championship 2027 - Combo",
+          "price": 295.0,
+          "deadline": "2027-02-05"
+        }
+      ],
+      "divisions": [],
+      "lat": 35.2048229,
+      "lon": -106.6132169
+    },
+    {
+      "id": 3475,
+      "name": "Albuquerque International Open IBJJF Jiu-Jitsu No-Gi Championship 2027",
+      "slug": "albuquerque-international-open-ibjjf-jiu-jitsu-no-gi-championship-2027",
+      "startDate": "2027-02-13",
+      "endDate": "2027-02-14",
+      "city": "Albuquerque",
+      "country": "North America",
+      "venue": "Albuquerque Convention Center - West Hall 4",
+      "address": "401 2nd St NW, Albuquerque, NM 87102",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3475/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 143.0,
+          "deadline": "2027-01-15"
+        },
+        {
+          "name": "Standard",
+          "price": 174.0,
+          "deadline": "2027-02-05"
+        },
+        {
+          "name": "Albuquerque International Open Championship 2027 - Combo",
+          "price": 245.0,
+          "deadline": "2027-01-15"
+        },
+        {
+          "name": "Albuquerque International Open Championship 2027 - Combo",
+          "price": 295.0,
+          "deadline": "2027-02-05"
+        }
+      ],
+      "divisions": [],
+      "lat": 35.2048229,
+      "lon": -106.6132169
+    },
+    {
+      "id": 3476,
+      "name": "Albuquerque Kids International Open IBJJF Jiu-Jitsu Championship 2027",
+      "slug": "albuquerque-kids-international-open-ibjjf-jiu-jitsu-championship-2027",
+      "startDate": "2027-02-14",
+      "endDate": "2027-02-14",
+      "city": "Albuquerque",
+      "country": "North America",
+      "venue": "Albuquerque Convention Center - West Hall 4",
+      "address": "401 2nd St NW, Albuquerque, NM 87102",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3476/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 124.0,
+          "deadline": "2027-01-15"
+        },
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2027-02-05"
+        }
+      ],
+      "divisions": [],
+      "lat": 35.2048229,
+      "lon": -106.6132169
     },
     {
       "id": 3442,
