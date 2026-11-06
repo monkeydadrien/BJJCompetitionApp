@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T18:34:10.280540+00:00",
+  "generatedAt": "2026-11-06T17:52:38.825637+00:00",
   "events": [
     {
       "id": 2482,
@@ -2528,6 +2528,100 @@
       "divisions": [],
       "lat": 30.5048697,
       "lon": -97.6823422
+    },
+    {
+      "id": 3477,
+      "name": "Geneva International Open IBJJF Jiu-Jitsu Championship 2027",
+      "slug": "geneva-international-open-ibjjf-jiu-jitsu-championship-2027",
+      "startDate": "2027-03-13",
+      "endDate": "2027-03-14",
+      "city": "Gen\u00e8ve",
+      "country": "Europe",
+      "venue": "Salle Omnisports du Petit-Lancy",
+      "address": "Av. Louis-Bertrand 7, Petit-lancy, Gen\u00e8ve,  1213",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3477/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 99.0,
+          "deadline": "2026-11-20"
+        },
+        {
+          "name": "Standard",
+          "price": 143.0,
+          "deadline": "2027-02-12"
+        },
+        {
+          "name": "Standard",
+          "price": 174.0,
+          "deadline": "2027-03-05"
+        },
+        {
+          "name": "Geneva International Open Championship 2027 - Combo",
+          "price": 168.0,
+          "deadline": "2026-11-20"
+        },
+        {
+          "name": "Geneva International Open Championship 2027 - Combo",
+          "price": 245.0,
+          "deadline": "2027-02-12"
+        },
+        {
+          "name": "Geneva International Open Championship 2027 - Combo",
+          "price": 295.0,
+          "deadline": "2027-03-05"
+        }
+      ],
+      "divisions": [],
+      "lat": 48.5171427,
+      "lon": -2.7414372
+    },
+    {
+      "id": 3478,
+      "name": "Geneva International Open IBJJF Jiu-Jitsu No-Gi Championship 2027",
+      "slug": "geneva-international-open-ibjjf-jiu-jitsu-no-gi-championship-2027",
+      "startDate": "2027-03-13",
+      "endDate": "2027-03-14",
+      "city": "Gen\u00e8ve",
+      "country": "Europe",
+      "venue": "Salle Omnisports du Petit-Lancy",
+      "address": "Av. Louis-Bertrand 7, Petit-lancy, Gen\u00e8ve,  1213",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3478/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 99.0,
+          "deadline": "2026-11-20"
+        },
+        {
+          "name": "Standard",
+          "price": 143.0,
+          "deadline": "2027-02-12"
+        },
+        {
+          "name": "Standard",
+          "price": 174.0,
+          "deadline": "2027-03-05"
+        },
+        {
+          "name": "Geneva International Open Championship 2027 - Combo",
+          "price": 168.0,
+          "deadline": "2026-11-20"
+        },
+        {
+          "name": "Geneva International Open Championship 2027 - Combo",
+          "price": 245.0,
+          "deadline": "2027-02-12"
+        },
+        {
+          "name": "Geneva International Open Championship 2027 - Combo",
+          "price": 295.0,
+          "deadline": "2027-03-05"
+        }
+      ],
+      "divisions": [],
+      "lat": 48.5171427,
+      "lon": -2.7414372
     },
     {
       "id": 3452,
