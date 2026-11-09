@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T16:58:38.118708+00:00",
+  "generatedAt": "2026-11-09T21:20:41.330865+00:00",
   "events": [
     {
       "id": 2482,
@@ -199,248 +199,6 @@
       "lon": -71.1468613
     },
     {
-      "id": 3386,
-      "name": "Bras\u00edlia International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "brasilia-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-11-06",
-      "endDate": "2026-11-07",
-      "city": "Cruzeiro Novo",
-      "country": "South America",
-      "venue": "Gin\u00e1sio Poliesportivo do Cruzeiro",
-      "address": "Cruzeiro / Sudoeste / Octogonal, Cruzeiro Novo, DF 70650 402",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3386/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 258.0,
-          "deadline": "2026-10-07"
-        },
-        {
-          "name": "Standard",
-          "price": 281.0,
-          "deadline": "2026-10-28"
-        },
-        {
-          "name": "Bras\u00edlia International Open IBJJF 2026 - Combo",
-          "price": 455.0,
-          "deadline": "2026-10-07"
-        },
-        {
-          "name": "Bras\u00edlia International Open IBJJF 2026 - Combo",
-          "price": 487.0,
-          "deadline": "2026-10-28"
-        }
-      ],
-      "divisions": [],
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": 3387,
-      "name": "Bras\u00edlia International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "brasilia-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-11-06",
-      "endDate": "2026-11-06",
-      "city": "Cruzeiro Novo",
-      "country": "South America",
-      "venue": "Gin\u00e1sio Poliesportivo do Cruzeiro",
-      "address": "Cruzeiro / Sudoeste / Octogonal, Cruzeiro Novo, DF 70650 402",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3387/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 258.0,
-          "deadline": "2026-10-07"
-        },
-        {
-          "name": "Standard",
-          "price": 281.0,
-          "deadline": "2026-10-28"
-        },
-        {
-          "name": "Bras\u00edlia International Open IBJJF 2026 - Combo",
-          "price": 455.0,
-          "deadline": "2026-10-07"
-        },
-        {
-          "name": "Bras\u00edlia International Open IBJJF 2026 - Combo",
-          "price": 487.0,
-          "deadline": "2026-10-28"
-        }
-      ],
-      "divisions": [],
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": 3267,
-      "name": "Kansas City International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "kansas-city-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-11-07",
-      "endDate": "2026-11-07",
-      "city": "Kansas City",
-      "country": "North America",
-      "venue": "Hy Vee Arena",
-      "address": "1800 Genessee St, Kansas City, MO 64102",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3267/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-10-09"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-10-30"
-        },
-        {
-          "name": "Kansas City International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-10-09"
-        },
-        {
-          "name": "Kansas City International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-10-30"
-        }
-      ],
-      "divisions": [],
-      "lat": 38.9361571,
-      "lon": -94.5415117
-    },
-    {
-      "id": 3268,
-      "name": "Kansas City International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "kansas-city-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-11-07",
-      "endDate": "2026-11-07",
-      "city": "Kansas City",
-      "country": "North America",
-      "venue": "Hy Vee Arena",
-      "address": "1800 Genessee St, Kansas City, MO 64102",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3268/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-10-09"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-10-30"
-        },
-        {
-          "name": "Kansas City International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-10-09"
-        },
-        {
-          "name": "Kansas City International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-10-30"
-        }
-      ],
-      "divisions": [],
-      "lat": 38.9361571,
-      "lon": -94.5415117
-    },
-    {
-      "id": 3388,
-      "name": "Bras\u00edlia Kids International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "brasilia-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-11-08",
-      "endDate": "2026-11-08",
-      "city": "Cruzeiro Novo",
-      "country": "South America",
-      "venue": "Gin\u00e1sio Poliesportivo do Cruzeiro",
-      "address": "Cruzeiro / Sudoeste / Octogonal, Cruzeiro Novo, DF 70650 402",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3388/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 187.0,
-          "deadline": "2026-09-04"
-        },
-        {
-          "name": "Standard",
-          "price": 213.0,
-          "deadline": "2026-10-09"
-        },
-        {
-          "name": "Standard",
-          "price": 239.0,
-          "deadline": "2026-10-28"
-        },
-        {
-          "name": "Bras\u00edlia Kids International Open IBJJF 2026 - Combo",
-          "price": 318.0,
-          "deadline": "2026-09-04"
-        },
-        {
-          "name": "Bras\u00edlia Kids International Open IBJJF 2026 - Combo",
-          "price": 362.0,
-          "deadline": "2026-10-09"
-        },
-        {
-          "name": "Bras\u00edlia Kids International Open IBJJF 2026 - Combo",
-          "price": 408.0,
-          "deadline": "2026-10-28"
-        }
-      ],
-      "divisions": [],
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": 3389,
-      "name": "Bras\u00edlia Kids International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "brasilia-kids-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-11-08",
-      "endDate": "2026-11-08",
-      "city": "Cruzeiro Novo",
-      "country": "South America",
-      "venue": "Gin\u00e1sio Poliesportivo do Cruzeiro",
-      "address": "Cruzeiro / Sudoeste / Octogonal, Cruzeiro Novo, DF 70650 402",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3389/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 187.0,
-          "deadline": "2026-09-04"
-        },
-        {
-          "name": "Standard",
-          "price": 213.0,
-          "deadline": "2026-10-09"
-        },
-        {
-          "name": "Standard",
-          "price": 239.0,
-          "deadline": "2026-10-28"
-        },
-        {
-          "name": "Bras\u00edlia Kids International Open IBJJF 2026 - Combo",
-          "price": 318.0,
-          "deadline": "2026-09-04"
-        },
-        {
-          "name": "Bras\u00edlia Kids International Open IBJJF 2026 - Combo",
-          "price": 362.0,
-          "deadline": "2026-10-09"
-        },
-        {
-          "name": "Bras\u00edlia Kids International Open IBJJF 2026 - Combo",
-          "price": 408.0,
-          "deadline": "2026-10-28"
-        }
-      ],
-      "divisions": [],
-      "lat": null,
-      "lon": null
-    },
-    {
       "id": 3364,
       "name": "Atlanta Fall International Open IBJJF Jiu-Jitsu Championship 2026",
       "slug": "atlanta-fall-international-open-ibjjf-jiu-jitsu-championship-2026",
@@ -552,10 +310,37 @@
       "lon": null
     },
     {
+      "id": 3366,
+      "name": "Atlanta Fall Kids International Open IBJJF Jiu-Jitsu Championship 2026",
+      "slug": "atlanta-fall-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-15",
+      "city": "College Park",
+      "country": "North America",
+      "venue": "Georgia International Convention Center - Hall D",
+      "address": "2000 Convention Center Concourse, College Park, GA 30337",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3366/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 119.0,
+          "deadline": "2026-10-16"
+        },
+        {
+          "name": "Standard",
+          "price": 133.0,
+          "deadline": "2026-11-06"
+        }
+      ],
+      "divisions": [],
+      "lat": 35.7815615,
+      "lon": -78.6185623
+    },
+    {
       "id": 3399,
       "name": "Madre de Deus International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
       "slug": "madre-de-deus-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-11-14",
+      "startDate": "2026-11-15",
       "endDate": "2026-11-15",
       "city": "Madre de Deus",
       "country": "South America",
@@ -587,33 +372,6 @@
       "divisions": [],
       "lat": null,
       "lon": null
-    },
-    {
-      "id": 3366,
-      "name": "Atlanta Fall Kids International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "atlanta-fall-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-11-15",
-      "endDate": "2026-11-15",
-      "city": "College Park",
-      "country": "North America",
-      "venue": "Georgia International Convention Center - Hall D",
-      "address": "2000 Convention Center Concourse, College Park, GA 30337",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3366/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 119.0,
-          "deadline": "2026-10-16"
-        },
-        {
-          "name": "Standard",
-          "price": 133.0,
-          "deadline": "2026-11-06"
-        }
-      ],
-      "divisions": [],
-      "lat": 35.7815615,
-      "lon": -78.6185623
     },
     {
       "id": 3400,
