@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T21:20:41.330865+00:00",
+  "generatedAt": "2026-11-10T18:31:50.134329+00:00",
   "events": [
     {
       "id": 2482,
@@ -236,43 +236,6 @@
       "lon": -78.6185623
     },
     {
-      "id": 3365,
-      "name": "Atlanta Fall International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "atlanta-fall-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-11-14",
-      "endDate": "2026-11-15",
-      "city": "College Park",
-      "country": "North America",
-      "venue": "Georgia International Convention Center - Hall D",
-      "address": "2000 Convention Center Concourse, College Park, GA 30337",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3365/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-10-16"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-11-06"
-        },
-        {
-          "name": "Atlanta Fall International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-10-16"
-        },
-        {
-          "name": "Atlanta Fall International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-11-06"
-        }
-      ],
-      "divisions": [],
-      "lat": 35.7815615,
-      "lon": -78.6185623
-    },
-    {
       "id": 3398,
       "name": "Madre de Deus International Open IBJJF Jiu-Jitsu Championship 2026",
       "slug": "madre-de-deus-international-open-ibjjf-jiu-jitsu-championship-2026",
@@ -308,6 +271,43 @@
       "divisions": [],
       "lat": null,
       "lon": null
+    },
+    {
+      "id": 3365,
+      "name": "Atlanta Fall International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "slug": "atlanta-fall-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-15",
+      "city": "College Park",
+      "country": "North America",
+      "venue": "Georgia International Convention Center - Hall D",
+      "address": "2000 Convention Center Concourse, College Park, GA 30337",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3365/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2026-10-16"
+        },
+        {
+          "name": "Standard",
+          "price": 167.0,
+          "deadline": "2026-11-06"
+        },
+        {
+          "name": "Atlanta Fall International Open IBJJF 2026 - Combo",
+          "price": 236.0,
+          "deadline": "2026-10-16"
+        },
+        {
+          "name": "Atlanta Fall International Open IBJJF 2026 - Combo",
+          "price": 284.0,
+          "deadline": "2026-11-06"
+        }
+      ],
+      "divisions": [],
+      "lat": 35.7815615,
+      "lon": -78.6185623
     },
     {
       "id": 3366,
@@ -1891,6 +1891,33 @@
       "lon": -118.4166991
     },
     {
+      "id": 3483,
+      "name": "Campeonato Sul-Brasileiro de Jiu-Jitsu 2027",
+      "slug": "campeonato-sul-brasileiro-de-jiu-jitsu-2027",
+      "startDate": "2027-01-30",
+      "endDate": "2027-01-31",
+      "city": "S\u00e3o Jos\u00e9",
+      "country": "South America",
+      "venue": "Arena Centro Multiuso de S\u00e3o Jos\u00e9",
+      "address": "Av. Acioni Souza Filho, S\u00e3o Jos\u00e9, SC 88103 790",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3483/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 293.0,
+          "deadline": "2027-01-01"
+        },
+        {
+          "name": "Standard",
+          "price": 317.0,
+          "deadline": "2027-01-22"
+        }
+      ],
+      "divisions": [],
+      "lat": -29.1552995,
+      "lon": -51.165914
+    },
+    {
       "id": 3437,
       "name": "Los Angeles Winter Kids International Open IBJJF Jiu-Jitsu Championship 2027",
       "slug": "los-angeles-winter-kids-international-open-ibjjf-jiu-jitsu-championship-2027",
@@ -1963,6 +1990,38 @@
       "divisions": [],
       "lat": 34.2013928,
       "lon": -118.4166991
+    },
+    {
+      "id": 3484,
+      "name": "Kids International IBJJF Jiu-Jitsu Championship - Florian\u00f3polis 2027",
+      "slug": "kids-international-ibjjf-jiu-jitsu-championship-florianopolis-2027",
+      "startDate": "2027-01-31",
+      "endDate": "2027-01-31",
+      "city": "S\u00e3o Jos\u00e9",
+      "country": "South America",
+      "venue": "Arena Centro Multiuso de S\u00e3o Jos\u00e9",
+      "address": "Av. Acioni Souza Filho, S\u00e3o Jos\u00e9, SC 88103 790",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3484/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 197.0,
+          "deadline": "2026-12-04"
+        },
+        {
+          "name": "Standard",
+          "price": 224.0,
+          "deadline": "2027-01-01"
+        },
+        {
+          "name": "Standard",
+          "price": 251.0,
+          "deadline": "2027-01-22"
+        }
+      ],
+      "divisions": [],
+      "lat": -29.1552995,
+      "lon": -51.165914
     },
     {
       "id": 3440,
