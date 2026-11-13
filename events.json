@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T18:44:48.456697+00:00",
+  "generatedAt": "2026-11-13T18:24:49.573328+00:00",
   "events": [
     {
       "id": 2482,
@@ -2439,6 +2439,60 @@
       "divisions": [],
       "lat": 30.5048697,
       "lon": -97.6823422
+    },
+    {
+      "id": 3488,
+      "name": "Orange County Winter International Open IBJJF Jiu-Jitsu Championship 2027",
+      "slug": "orange-county-winter-international-open-ibjjf-jiu-jitsu-championship-2027",
+      "startDate": "2027-02-27",
+      "endDate": "2027-02-28",
+      "city": "Costa Mesa",
+      "country": "North America",
+      "venue": "OC Fair & Event Center - The Hangar",
+      "address": "88 Fair Dr, Costa Mesa, California 92626",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3488/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 143.0,
+          "deadline": "2027-01-29"
+        },
+        {
+          "name": "Standard",
+          "price": 174.0,
+          "deadline": "2027-02-19"
+        }
+      ],
+      "divisions": [],
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": 3489,
+      "name": "Orange County Winter Kids International Open IBJJF Jiu-Jitsu Championship 2027",
+      "slug": "orange-county-winter-kids-international-open-ibjjf-jiu-jitsu-championship-2027",
+      "startDate": "2027-02-28",
+      "endDate": "2027-02-28",
+      "city": "Costa Mesa",
+      "country": "North America",
+      "venue": "OC Fair & Event Center - The Hangar",
+      "address": "88 Fair Dr, Costa Mesa, California 92626",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3489/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 124.0,
+          "deadline": "2027-01-29"
+        },
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2027-02-19"
+        }
+      ],
+      "divisions": [],
+      "lat": null,
+      "lon": null
     },
     {
       "id": 3477,
