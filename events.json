@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T18:24:49.573328+00:00",
+  "generatedAt": "2026-11-14T16:54:48.824918+00:00",
   "events": [
     {
       "id": 2482,
@@ -425,7 +425,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-11-13"
+          "deadline": "2026-11-14"
         },
         {
           "name": "New Jersey Fall International Open IBJJF 2026 - Combo",
@@ -435,7 +435,7 @@
         {
           "name": "New Jersey Fall International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-11-13"
+          "deadline": "2026-11-14"
         }
       ],
       "divisions": [],
@@ -462,7 +462,7 @@
         {
           "name": "Standard",
           "price": 167.0,
-          "deadline": "2026-11-13"
+          "deadline": "2026-11-14"
         },
         {
           "name": "New Jersey Fall International Open IBJJF 2026 - Combo",
@@ -472,7 +472,7 @@
         {
           "name": "New Jersey Fall International Open IBJJF 2026 - Combo",
           "price": 284.0,
-          "deadline": "2026-11-13"
+          "deadline": "2026-11-14"
         }
       ],
       "divisions": [],
@@ -536,7 +536,7 @@
         {
           "name": "Standard",
           "price": 133.0,
-          "deadline": "2026-11-13"
+          "deadline": "2026-11-14"
         }
       ],
       "divisions": [],
