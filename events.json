@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T17:37:17.416205+00:00",
+  "generatedAt": "2026-11-16T20:51:01.254461+00:00",
   "events": [
     {
       "id": 2482,
@@ -199,213 +199,6 @@
       "lon": -71.1468613
     },
     {
-      "id": 3364,
-      "name": "Atlanta Fall International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "atlanta-fall-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-11-14",
-      "endDate": "2026-11-15",
-      "city": "College Park",
-      "country": "North America",
-      "venue": "Georgia International Convention Center - Hall D",
-      "address": "2000 Convention Center Concourse, College Park, GA 30337",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3364/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-10-16"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-11-06"
-        },
-        {
-          "name": "Atlanta Fall International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-10-16"
-        },
-        {
-          "name": "Atlanta Fall International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-11-06"
-        }
-      ],
-      "divisions": [],
-      "lat": 35.7815615,
-      "lon": -78.6185623
-    },
-    {
-      "id": 3398,
-      "name": "Madre de Deus International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "madre-de-deus-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-11-14",
-      "endDate": "2026-11-15",
-      "city": "Madre de Deus",
-      "country": "South America",
-      "venue": "Gin\u00e1sio Poliesportivo de Madre de Deus",
-      "address": "R. Ern\u00e2ni Rocha, Madre de Deus, BA 42600 000",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3398/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 258.0,
-          "deadline": "2026-10-16"
-        },
-        {
-          "name": "Standard",
-          "price": 281.0,
-          "deadline": "2026-11-07"
-        },
-        {
-          "name": "Madre de Deus International Open IBJJF 2026 - Combo",
-          "price": 455.0,
-          "deadline": "2026-10-16"
-        },
-        {
-          "name": "Madre de Deus International Open IBJJF 2026 - Combo",
-          "price": 487.0,
-          "deadline": "2026-11-07"
-        }
-      ],
-      "divisions": [],
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": 3365,
-      "name": "Atlanta Fall International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "atlanta-fall-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-11-15",
-      "endDate": "2026-11-15",
-      "city": "College Park",
-      "country": "North America",
-      "venue": "Georgia International Convention Center - Hall D",
-      "address": "2000 Convention Center Concourse, College Park, GA 30337",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3365/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-10-16"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-11-06"
-        },
-        {
-          "name": "Atlanta Fall International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-10-16"
-        },
-        {
-          "name": "Atlanta Fall International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-11-06"
-        }
-      ],
-      "divisions": [],
-      "lat": 35.7815615,
-      "lon": -78.6185623
-    },
-    {
-      "id": 3366,
-      "name": "Atlanta Fall Kids International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "atlanta-fall-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-11-15",
-      "endDate": "2026-11-15",
-      "city": "College Park",
-      "country": "North America",
-      "venue": "Georgia International Convention Center - Hall D",
-      "address": "2000 Convention Center Concourse, College Park, GA 30337",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3366/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 119.0,
-          "deadline": "2026-10-16"
-        },
-        {
-          "name": "Standard",
-          "price": 133.0,
-          "deadline": "2026-11-06"
-        }
-      ],
-      "divisions": [],
-      "lat": 35.7815615,
-      "lon": -78.6185623
-    },
-    {
-      "id": 3399,
-      "name": "Madre de Deus International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "madre-de-deus-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-11-15",
-      "endDate": "2026-11-15",
-      "city": "Madre de Deus",
-      "country": "South America",
-      "venue": "Gin\u00e1sio Poliesportivo de Madre de Deus",
-      "address": "R. Ern\u00e2ni Rocha, Madre de Deus, BA 42600 000",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3399/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 258.0,
-          "deadline": "2026-10-16"
-        },
-        {
-          "name": "Standard",
-          "price": 281.0,
-          "deadline": "2026-11-07"
-        },
-        {
-          "name": "Madre de Deus International Open IBJJF 2026 - Combo",
-          "price": 455.0,
-          "deadline": "2026-10-16"
-        },
-        {
-          "name": "Madre de Deus International Open IBJJF 2026 - Combo",
-          "price": 487.0,
-          "deadline": "2026-11-07"
-        }
-      ],
-      "divisions": [],
-      "lat": null,
-      "lon": null
-    },
-    {
-      "id": 3400,
-      "name": "Madre de Deus Kids International Open IBJJF Jiu-Jitsu Championship 2026",
-      "slug": "madre-de-deus-kids-international-open-ibjjf-jiu-jitsu-championship-2026",
-      "startDate": "2026-11-15",
-      "endDate": "2026-11-15",
-      "city": "Madre de Deus",
-      "country": "South America",
-      "venue": "Gin\u00e1sio Poliesportivo de Madre de Deus",
-      "address": "R. Ern\u00e2ni Rocha, Madre de Deus, BA 42600 000",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3400/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 187.0,
-          "deadline": "2026-09-04"
-        },
-        {
-          "name": "Standard",
-          "price": 213.0,
-          "deadline": "2026-10-16"
-        },
-        {
-          "name": "Standard",
-          "price": 239.0,
-          "deadline": "2026-11-07"
-        }
-      ],
-      "divisions": [],
-      "lat": null,
-      "lon": null
-    },
-    {
       "id": 3256,
       "name": "New Jersey Fall International Open IBJJF Jiu-Jitsu Championship 2026",
       "slug": "w-jersey-fall-international-open-ibjjf-jiu-jitsu-championship-2026",
@@ -416,43 +209,6 @@
       "venue": "Meadowlands Exposition Center",
       "address": "355 Plaza Dr, Secaucus, NJ 07094",
       "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3256/PublicRegistrations?lang=en-US",
-      "priceTiers": [
-        {
-          "name": "Standard",
-          "price": 138.0,
-          "deadline": "2026-10-23"
-        },
-        {
-          "name": "Standard",
-          "price": 167.0,
-          "deadline": "2026-11-14"
-        },
-        {
-          "name": "New Jersey Fall International Open IBJJF 2026 - Combo",
-          "price": 236.0,
-          "deadline": "2026-10-23"
-        },
-        {
-          "name": "New Jersey Fall International Open IBJJF 2026 - Combo",
-          "price": 284.0,
-          "deadline": "2026-11-14"
-        }
-      ],
-      "divisions": [],
-      "lat": 40.7905945,
-      "lon": -74.0661789
-    },
-    {
-      "id": 3257,
-      "name": "New Jersey Fall International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
-      "slug": "w-jersey-fall-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
-      "startDate": "2026-11-21",
-      "endDate": "2026-11-22",
-      "city": "Secaucus",
-      "country": "North America",
-      "venue": "Meadowlands Exposition Center",
-      "address": "355 Plaza Dr, Secaucus, NJ 07094",
-      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3257/PublicRegistrations?lang=en-US",
       "priceTiers": [
         {
           "name": "Standard",
@@ -515,6 +271,43 @@
       "divisions": [],
       "lat": null,
       "lon": null
+    },
+    {
+      "id": 3257,
+      "name": "New Jersey Fall International Open IBJJF Jiu-Jitsu No-Gi Championship 2026",
+      "slug": "w-jersey-fall-international-open-ibjjf-jiu-jitsu-no-gi-championship-2026",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-22",
+      "city": "Secaucus",
+      "country": "North America",
+      "venue": "Meadowlands Exposition Center",
+      "address": "355 Plaza Dr, Secaucus, NJ 07094",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3257/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 138.0,
+          "deadline": "2026-10-23"
+        },
+        {
+          "name": "Standard",
+          "price": 167.0,
+          "deadline": "2026-11-14"
+        },
+        {
+          "name": "New Jersey Fall International Open IBJJF 2026 - Combo",
+          "price": 236.0,
+          "deadline": "2026-10-23"
+        },
+        {
+          "name": "New Jersey Fall International Open IBJJF 2026 - Combo",
+          "price": 284.0,
+          "deadline": "2026-11-14"
+        }
+      ],
+      "divisions": [],
+      "lat": 40.7905945,
+      "lon": -74.0661789
     },
     {
       "id": 3258,
