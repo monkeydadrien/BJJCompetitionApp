@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T19:38:15.132673+00:00",
+  "generatedAt": "2026-11-18T19:18:12.093089+00:00",
   "events": [
     {
       "id": 2482,
@@ -2281,6 +2281,100 @@
           "name": "Standard",
           "price": 138.0,
           "deadline": "2027-02-19"
+        }
+      ],
+      "divisions": [],
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": 3491,
+      "name": "Madrid International Open IBJJF Jiu-Jitsu Championship 2027",
+      "slug": "madrid-international-open-ibjjf-jiu-jitsu-championship-2027",
+      "startDate": "2027-03-06",
+      "endDate": "2027-03-07",
+      "city": "Alcobendas",
+      "country": "Europe",
+      "venue": "Pabell\u00f3n Amaya Valdemoro",
+      "address": "Carr. de Barajas 32, Alcobendas, Madrid 28108",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3491/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 99.0,
+          "deadline": "2026-12-04"
+        },
+        {
+          "name": "Standard",
+          "price": 143.0,
+          "deadline": "2027-02-05"
+        },
+        {
+          "name": "Standard",
+          "price": 174.0,
+          "deadline": "2027-02-26"
+        },
+        {
+          "name": "Madrid International Open IBJJF 2027 - Combo",
+          "price": 168.0,
+          "deadline": "2026-12-04"
+        },
+        {
+          "name": "Madrid International Open IBJJF 2027 - Combo",
+          "price": 245.0,
+          "deadline": "2027-02-05"
+        },
+        {
+          "name": "Madrid International Open IBJJF 2027 - Combo",
+          "price": 295.0,
+          "deadline": "2027-02-26"
+        }
+      ],
+      "divisions": [],
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": 3492,
+      "name": "Madrid International Open IBJJF Jiu-Jitsu No-Gi Championship 2027",
+      "slug": "madrid-international-open-ibjjf-jiu-jitsu-no-gi-championship-2027",
+      "startDate": "2027-03-06",
+      "endDate": "2027-03-07",
+      "city": "Alcobendas",
+      "country": "Europe",
+      "venue": "Pabell\u00f3n Amaya Valdemoro",
+      "address": "Carr. de Barajas 32, Alcobendas, Madrid 28108",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3492/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 99.0,
+          "deadline": "2026-12-04"
+        },
+        {
+          "name": "Standard",
+          "price": 143.0,
+          "deadline": "2027-02-05"
+        },
+        {
+          "name": "Standard",
+          "price": 174.0,
+          "deadline": "2027-02-26"
+        },
+        {
+          "name": "Madrid International Open IBJJF 2027 - Combo",
+          "price": 168.0,
+          "deadline": "2026-12-04"
+        },
+        {
+          "name": "Madrid International Open IBJJF 2027 - Combo",
+          "price": 245.0,
+          "deadline": "2027-02-05"
+        },
+        {
+          "name": "Madrid International Open IBJJF 2027 - Combo",
+          "price": 295.0,
+          "deadline": "2027-02-26"
         }
       ],
       "divisions": [],
