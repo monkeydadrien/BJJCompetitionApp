@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T20:24:44.129019+00:00",
+  "generatedAt": "2026-11-26T20:02:39.897449+00:00",
   "events": [
     {
       "id": 2482,
@@ -1916,6 +1916,43 @@
       "lon": -106.6132169
     },
     {
+      "id": 3493,
+      "name": "Teres\u00f3polis International Open IBJJF Jiu-Jitsu Championship 2027",
+      "slug": "resopolis-international-open-ibjjf-jiu-jitsu-championship-2027",
+      "startDate": "2027-02-19",
+      "endDate": "2027-02-20",
+      "city": "Teres\u00f3polis",
+      "country": "South America",
+      "venue": "Gin\u00e1sio Poliesportivo Pedro Jahara (Pedr\u00e3o)",
+      "address": "R. Ten. Luiz Meirelles, 211 - V\u00e1rzea, Teres\u00f3polis - RJ, 25955-001, Brazil, Teres\u00f3polis, Rio de Janeiro ",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3493/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 271.0,
+          "deadline": "2027-01-22"
+        },
+        {
+          "name": "Standard",
+          "price": 296.0,
+          "deadline": "2027-02-10"
+        },
+        {
+          "name": "Teres\u00f3polis International Open IBJJF 2027 - Combo",
+          "price": 478.0,
+          "deadline": "2027-01-22"
+        },
+        {
+          "name": "Teres\u00f3polis International Open IBJJF 2027 - Combo",
+          "price": 512.0,
+          "deadline": "2027-02-10"
+        }
+      ],
+      "divisions": [],
+      "lat": null,
+      "lon": null
+    },
+    {
       "id": 3442,
       "name": "Austin Winter International Open IBJJF Jiu-Jitsu Championship 2027",
       "slug": "austin-winter-international-open-ibjjf-jiu-jitsu-championship-2027",
@@ -1990,6 +2027,43 @@
       "lon": -97.6823422
     },
     {
+      "id": 3494,
+      "name": "Teres\u00f3polis International Open IBJJF Jiu-Jitsu No-Gi Championship 2027",
+      "slug": "resopolis-international-open-ibjjf-jiu-jitsu-no-gi-championship-2027",
+      "startDate": "2027-02-20",
+      "endDate": "2027-02-20",
+      "city": "Teres\u00f3polis",
+      "country": "South America",
+      "venue": "Gin\u00e1sio Poliesportivo Pedro Jahara (Pedr\u00e3o)",
+      "address": "R. Ten. Luiz Meirelles, 211 - V\u00e1rzea, Teres\u00f3polis - RJ, 25955-001, Brazil, Teres\u00f3polis, Rio de Janeiro ",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3494/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 271.0,
+          "deadline": "2027-01-22"
+        },
+        {
+          "name": "Standard",
+          "price": 296.0,
+          "deadline": "2027-02-10"
+        },
+        {
+          "name": "Teres\u00f3polis International Open IBJJF 2027 - Combo",
+          "price": 478.0,
+          "deadline": "2027-01-22"
+        },
+        {
+          "name": "Teres\u00f3polis International Open IBJJF 2027 - Combo",
+          "price": 512.0,
+          "deadline": "2027-02-10"
+        }
+      ],
+      "divisions": [],
+      "lat": null,
+      "lon": null
+    },
+    {
       "id": 3444,
       "name": "Austin Winter Kids International Open IBJJF Jiu-Jitsu Championship 2027",
       "slug": "austin-winter-kids-international-open-ibjjf-jiu-jitsu-championship-2027",
@@ -2062,6 +2136,132 @@
       "divisions": [],
       "lat": 30.5048697,
       "lon": -97.6823422
+    },
+    {
+      "id": 3495,
+      "name": "Teres\u00f3polis Kids International Open IBJJF Jiu-Jitsu Championship 2027",
+      "slug": "resopolis-kids-international-open-ibjjf-jiu-jitsu-championship-2027",
+      "startDate": "2027-02-21",
+      "endDate": "2027-02-21",
+      "city": "Teres\u00f3polis",
+      "country": "South America",
+      "venue": "Gin\u00e1sio Poliesportivo Pedro Jahara (Pedr\u00e3o)",
+      "address": "R. Ten. Luiz Meirelles, 211 - V\u00e1rzea, Teres\u00f3polis - RJ, 25955-001, Brazil, Teres\u00f3polis, Rio de Janeiro ",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3495/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 197.0,
+          "deadline": "2026-12-25"
+        },
+        {
+          "name": "Standard",
+          "price": 224.0,
+          "deadline": "2027-01-22"
+        },
+        {
+          "name": "Standard",
+          "price": 251.0,
+          "deadline": "2027-02-10"
+        },
+        {
+          "name": "Teres\u00f3polis Kids International Open IBJJF 2027 - Combo",
+          "price": 334.0,
+          "deadline": "2026-12-25"
+        },
+        {
+          "name": "Teres\u00f3polis Kids International Open IBJJF 2027 - Combo",
+          "price": 381.0,
+          "deadline": "2027-01-22"
+        },
+        {
+          "name": "Teres\u00f3polis Kids International Open IBJJF 2027 - Combo",
+          "price": 429.0,
+          "deadline": "2027-02-10"
+        }
+      ],
+      "divisions": [],
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": 3496,
+      "name": "Teres\u00f3polis Kids International Open IBJJF Jiu-Jitsu No-Gi Championship 2027",
+      "slug": "resopolis-kids-international-open-ibjjf-jiu-jitsu-no-gi-championship-2027",
+      "startDate": "2027-02-21",
+      "endDate": "2027-02-21",
+      "city": "Teres\u00f3polis",
+      "country": "South America",
+      "venue": "Gin\u00e1sio Poliesportivo Pedro Jahara (Pedr\u00e3o)",
+      "address": "R. Ten. Luiz Meirelles, 211 - V\u00e1rzea, Teres\u00f3polis - RJ, 25955-001, Brazil, Teres\u00f3polis, Rio de Janeiro ",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3496/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 197.0,
+          "deadline": "2026-12-25"
+        },
+        {
+          "name": "Standard",
+          "price": 224.0,
+          "deadline": "2027-01-22"
+        },
+        {
+          "name": "Standard",
+          "price": 251.0,
+          "deadline": "2027-02-10"
+        },
+        {
+          "name": "Teres\u00f3polis Kids International Open IBJJF 2027 - Combo",
+          "price": 334.0,
+          "deadline": "2026-12-25"
+        },
+        {
+          "name": "Teres\u00f3polis Kids International Open IBJJF 2027 - Combo",
+          "price": 381.0,
+          "deadline": "2027-01-22"
+        },
+        {
+          "name": "Teres\u00f3polis Kids International Open IBJJF 2027 - Combo",
+          "price": 429.0,
+          "deadline": "2027-02-10"
+        }
+      ],
+      "divisions": [],
+      "lat": null,
+      "lon": null
+    },
+    {
+      "id": 3497,
+      "name": "Campeonato Brasileiro de Jiu-Jitsu (idade 04 a 15 anos) 2027",
+      "slug": "campeonato-brasileiro-de-jiu-jitsu-idade-04-a-15-anos-2027",
+      "startDate": "2027-02-25",
+      "endDate": "2027-02-28",
+      "city": "Barueri",
+      "country": "South America",
+      "venue": "Gin\u00e1sio Poliesportivo Jos\u00e9 Correa",
+      "address": "Av. Guilherme Perereca Guglielmo, 1000 - Centro, Barueri - SP, 06401-145, Brazil, Barueri, SP 06401 145",
+      "registrationUrl": "https://www.ibjjfdb.com/ChampionshipResults/3497/PublicRegistrations?lang=en-US",
+      "priceTiers": [
+        {
+          "name": "Standard",
+          "price": 205.0,
+          "deadline": "2026-12-16"
+        },
+        {
+          "name": "Standard",
+          "price": 231.0,
+          "deadline": "2027-01-27"
+        },
+        {
+          "name": "Standard",
+          "price": 261.0,
+          "deadline": "2027-02-17"
+        }
+      ],
+      "divisions": [],
+      "lat": null,
+      "lon": null
     },
     {
       "id": 3488,
